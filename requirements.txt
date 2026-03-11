@@ -1,0 +1,7 @@
+feedparser
+google-genai
+python-dotenv
+sentence-transformers
+newspaper3k
+requests
+lxml_html_clean

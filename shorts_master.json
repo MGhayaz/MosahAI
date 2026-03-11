@@ -1,0 +1,1630 @@
+[
+  {
+    "short_id": "AI_BATCH_20260306_445ff7b0",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Meta's AI Reorganization",
+        "script": "Mark Zuckerberg is shaking up Meta by launching a dedicated Applied AI engineering team. This massive reorganization shifts key talent across the company to accelerate integration. Zuckerberg aims to embed advanced generative tools directly into every product for billions of global users immediately.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "OpenAI's Business Blueprint",
+        "script": "OpenAI just revealed five distinct value models that are redefining how businesses operate. From hyper-personalization to massive operational efficiency, these frameworks help companies reinvent their core strategy. Scaling intelligence is no longer optional; it is the primary driver for all future corporate growth.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Marvell Stock Skyrockets",
+        "script": "Marvell shares surged twenty percent after the CEO reported relentless demand for AI infrastructure. During the earnings call, the chief executive dismissed concerns about a bubble, asking if investors saw him blinking. The message is clear: the hardware boom is just beginning.",
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQVktjeDNEMjYzRjY1VV96bUE3V0JTaV96bi1yUWlPYzRyY1FRdXFXNmFLaExhdzFib180aWNtVW9NS1FtdGtYaFFpLUY5QU41OE9RNzVuYklwSlRkNm1PMFNnTkV5eVpKVEJZbm9SOG5IX1JyUlZ3alRrZEVoTTNmZWRDY09tcmZkdEZmLUtwU1Fqd09LMnI5Y0M3V1owcU1xcDdLaDdadU96MDRSZEpFWEJhMXZqNFNxQ2E2NW1fMVFCeFM2OXJiUHRIV0ZwZGxVaExOUlFfZS1pb1EtYWpacXp1Uk1INS1DT01oV0dFd21yZDFUR1YzT2xVUdIBgAJBVV95cUxNdkN6VERicEZPMWk2ang5N1ZaM3BnQk5VZ1BzTlFYaEJpbkU3aFhVUGNkU2JFX1p1ZUc0ZVo1T3BnNGJPRWdnMDhKekFYbHNBZHlmV0pOMXVnbmFTaEFwbmhBVFNfb201RC14M2piY1p0WW9wYTRleV9DOFBQUFFYV3FsNXNJRFl3NDlIWVVtZmE4Z2dPOVpCUTAtOXczVF92Y21hQnhEbHAxb3RweWkwNURPdWFoOFVaZnE2Z1hsUjBaaklQQ08ybFI4SW1GelNKc1lxbVFnbVhWMDRvejRZaFl1T1ZodFkxMDh4VkR2eTV1bnZQREtCd2w0V0RsdUtN?oc=5",
+      "https://news.google.com/rss/articles/CBMihgFBVV95cUxOU0wzQXRpVGVsemotMjgybG9zVjgzYjRSTDh4SS1RQXQ0VGNzZ3c4QlYxVGNYTTlYNVctUzVJS25Pc19lajB4RjIxSXlXeVUzcl9JbThHU0NGY0duU3ZYS09vR0ZXMXlTc2R5MUg1TmVKZmtQMGU4Y2ZZeVE5Mk5yYlhsaXhHdw?oc=5",
+      "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMmd2b2FQclpZRVhHbTVwWVlENGhNSzdqazRWMFJWN0dMU24xb2JXcVJ3bEVfTmtaTmtNQlF5am1kOFZEYVYtMzJZeHRVWWpkN2dRRVk2VW11TGhLWDJKWTlMSFFtTVNRUkp5TlItQ0pDcHQzMC1rX0dfeTlFRVJGZkJTeEMwbmhfcmJpTmNWb3licWZZUk16QVZ3YmpLVmRma1VBQndCS3LSAa4BQVVfeXFMTTY1MXdSdEYzcm9XZW85MzRYVDB0QTJlcTZUSzhWREU0cHhMamNBcjRfMll0eEZYWTNIbnFqSHo4SlVGU1VMYm0wd041dnhiRHNiRnVqU2h6WFVWek83UlpJQkw4MmV1NmhqUjZ4MFExdmhVTmMzSmt1clctcVQ0WEVfNGtvaGdqVndIeVRFY3gtbGxzSUNmejZBVi1TQW51bUttcVFPbjl3cHNCNmRR?oc=5"
+    ],
+    "timestamp": "2026-03-06T20:51:09.830451+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260306_38020817",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Sensex recovers 900 points on improving geopolitical cues",
+        "script": "The Indian stock market staged a massive recovery today as the Sensex surged over nine hundred points. Easing geopolitical tensions and positive global cues triggered a buying spree across major sectors. Investors are regaining confidence as regional stability appears to be returning.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Expert questions U.S. waiver on Indian oil purchase",
+        "script": "A geopolitics expert has sparked debate by questioning why India should seek external permission for its energy needs. The discussion centers on potential U.S. waivers for Russian oil purchases. India maintains that its sovereign energy security remains the top priority in diplomatic talks.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "The new age of resource geopolitics",
+        "script": "We are entering a new age of resource geopolitics where critical minerals are the new oil. Nations are racing to secure supply chains for lithium and cobalt to power the green energy transition. This shift is reshaping global alliances and economic power dynamics worldwide.",
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSGhiU29GWmRYOG1lYVpMN0JEVGZ6Y0h2alFYN004cVlqRlJoaEpTZXh0Wmp1RktmMEpVZ2F4OVY1dVp1WVpxdk5fZWpNejB0M09WN3dEV0tlamszWGg3eGNRWExhUkkzUzZWZHlsNW01WE1KX2VSeElLYm1PbUZhYUNEQWFRbVd3VXVlN3AwQXRvN0hBMWttWlppMHUxU0o5S21sRWdBaWVPT19PVWMyU2lfSEtkZV8zZzJxb0ZpdUw4V2Z6WmVxX2Zid2daSzczczZwXzExNNIB3AFBVV95cUxNY3NfUXlRdVB1NDh0VUJTNTlORE1UdGJYN3k4Tk00RDVkUWN2aFpNVXZPNTlvbWFidXFtcHB1TTQ3MzU0LVNuVUVwcG0zbUd4Z2V4SFdkQ2s5OTJ5c2s5cGxpRVNvSzRkTVdWd0hFYlpTaUdfUDJ0ZGdOeUJ4Ulh2WkxZLVJWZVhQSjNYOXpyZF9FdmFpZWE4YTY2TURSRGhsSXNZaUdXY2JHZUpCeGlDNGh0SlAwYUh2NXdvZDgteURfdS1YSFJPanBkU0xSQU1zcmljcXI2N2JsamFy?oc=5",
+      "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSnBGaWM3cVNYSDU3Nkc1UUNHenNUeF91LXg4M01xQmZmRFNISkFpODMxTFBnM1VKSVNQMTBBYkRoS2dWVElwdzFaX0RhT084cTV6a2gzaGduNzZYUC1taFpZRE83akE4TG92dWdjT0Y2UzBuQkNGN09NdjhSTjVTeHV3dVVjNHpPTmRVbVZ3UXItbzRyTzVGc25vM3ZuNjhodVBpbUx5czUwRFJPUlc3WTJsalpXakZ3N1hiclZGN29JclhiYmxKT3cyQ0duM0UyeGRyMWFmUTNBR0IwMGpGZ2hwdXNIYVlRRk5J0gHwAUFVX3lxTFBWRGpILURyci16TGUyV3Aza19GYXZ1bDYzVXBUM1p1ZU4xVlhicE8zcjRyVXF2UDZsMEhINlF0OXhaaGRSNS1qcUNsRGJ1NUhuTXZadnY4QWZVZzcxV0lPano0b2d5eXRTQTRXMFJrYmQ5M29fbHNYdUo2NUlrSnhmZjlOaVhLSm9LWGl3c0VlWk1QSHRoTnF6TWpNMmZsZ1VOSmlpUE5tRlEyeFp5TldQWWljcTlFOWF1Wk9GckEzTXZBSVN6LUwyT1BVUUh5eWd4YlZueXBFbjZRVWI2cFJDM2hiWVlEWFljbHZVS2hIZg?oc=5",
+      "https://news.google.com/rss/articles/CBMic0FVX3lxTE96TEZwbm5RZDhpNWs3eXZPazN3V0UwTHduMWt3R2Q2a05XZEVCbjJJSGdxd2lEQk45WUFvWUlGRV82bkxWNjZNU1ZZQ0J1ZWJhSkpOQVpqQldTUUJuN0dZTlBzRFZ6VDhVVkZ6UG1DRFMtbDQ?oc=5"
+    ],
+    "timestamp": "2026-03-06T20:51:54.562799+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260306_386097a9",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Musi project is core to urban renewal in Hyderabad",
+        "script": "Chief Minister Revanth Reddy declared the Musi Riverfront project as the heart of Hyderabad urban renewal. This massive initiative aims to transform the city landscape, clean the water, and boost tourism. Local authorities are now accelerating development plans to revitalize the entire region.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Allu Sirish marries Nayanika Reddy in Hyderabad",
+        "script": "Actor Allu Sirish has tied the knot with Nayanika Reddy in a grand ceremony in Hyderabad. The star-studded wedding saw the Allu and Konidela families reunite for the celebration. Telangana Chief Minister Revanth Reddy also attended the event to congratulate the newly married couple.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "CM Revanth to open Netflix global VFX hub",
+        "script": "Hyderabad tech scene gets a major boost as Chief Minister Revanth Reddy prepares to inaugurate Netflix global VFX hub on March 12. This facility marks a significant investment in the city entertainment industry, positioning Hyderabad as a premier destination for international digital production.",
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSUtmZTZKejNwZnk2bFRqdnBfckl1VEx5Nml4NUEtWG9JSDRkSnJIME9qNjM3enhaX2ZnLXB2cDBqeVNiX3RFRE1MNHBFVmRmWFVsY3BpNWxHUDBnNjF1WGJ1Qi1DY2RlNlNIME84QjVHZWFkcThEek5IWjJOSFM2aUF3Z0hvSUhuSEhoYkZwS2dUZjdtaUZ5R18tRi1tSDFKampqWE1qcTdfUmR3V3JmOTNWTWxNNkJqU3Q3Y3c5SdIBxgFBVV95cUxOWjk4US11NTJTd2JWTUdEUkhRaUtBcUlJRFFRSnBTel9KQWVuUXg5ejI4NHFERU9NaUVxeDJIZjBfWUJNVmF3QThNcVhZTHA3enF1NDc2N09oLVVLSXROV0lHa2FUU0xIMmJlcnJQU29TVGlOLXVyRE41bC1yOU9kanBWeW54VGM5UGRFalRUSFpCOWtrYWxvaFJ5d013WjdxbFh4STQ0bTdEeDF4NURxazBoNnZkZ1NUY3VsQlloNmQzRzllYUE?oc=5",
+      "https://news.google.com/rss/articles/CBMivAJBVV95cUxNYkpKY1RVUUFqZHNnWlNPVE1uaXF3QldjQlo3QW1PMUUzbm5zUlV4WHlod3haZ2dZYjR1YkhKdXdXZzB0TFlfNDR0Ukc3QXljYXFRTGdqeEU2RURKTUJyWlBZOVE1LVpMN21QR3pJZGVFdzhIZXp0VzJiWEpfN1ExZ0hYYy1CbE92c2NwNVhCTHlfU1hrSzI1akUxVEY2dlhfY1lTYkNVaVpZbVB3SXU3M244X3I4Vzh4a0tudDc3WkNBR29YcGk3THVJbEoxZjRXUkk0cUFDUzFOWHF3dC1sYjA3OW1RT21BWFRCSVlxdjJIRWtDVU50NWFPbUozcmpQaVlGXzBIUW5HaEZiNG1RdFRxVUdSM09nOFJSbWZJT3l4TUpyYnNxUlJaSk1rQ2dISzBCeVhReEdRbFYz0gHCAkFVX3lxTFBaU2l1bGs3bGx5RWNrVzl5NjdwTmpyazRZNmEzVk1mS29iRjNtMl8zdE45bHpLbEFNQ3ozTkpwVFpkcjR2MnZIaWtZeXl3MWFkQjJ5NXVoeXVtdU8wWXhtY3NhNjNRS2ZkVzdCSFRzR3k0Rnc0WkpoV3g5SE9QVG1KV3EtNzNKR3Q4NUdIYUxFa2pSTjRJNlNCYjlCYm5nZmh5VFZPVzk4YkxoeF90YjhjYWszZzcxNWtLSUR2dmlSUzJFd2dvdm9QcVpPeWFwdnBLSTdRdTJyVVZtM0JtQ3VNNTlqT25QTVR5MkVrU0FHRjdpYWtnV2NSQmxESE1yX21nZnZESjVvQ0x4d2dYZ2c1N1A4ZU40SU9aMXBqMUF1LU5iZWxmU1hud01CdjRvaXNVcDh6X280YXRnY0ZMTVpDcUE?oc=5",
+      "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdUM2cmVZUDRqelMzRjlOcjRmYTdyVkJIa0FFMTJoaE9jWjBWcVZsOUpKSEFXeUxWdWlDMGs1X0p3WlBsSUdyOWd2YzNYaW96ZnNkWVNPc0w1RkRCelBjaHl6SFdFVDQ5ajc5N3k2RHF6X2MzMEFjbWhwUGh0M1VtZkExS2tQWUNDeFNlNU91UGpYZWdnNkdxcFdwYUdYMWN6N1dPZHl4YTBRYVlHODZjdm9rU3pUUFVzN29zM3VoZmlSalNoSGp3bGlQMGRZZ03SAdYBQVVfeXFMTzN0THVyc3ZVWXBQOFBqN0Znai0zeWl2dFJKdUMzU3dYLU9GS3pUZmRGSC1INmRGdDZlS2hSWHRJU1R4MWNiUjZNT1hQalMzb05MbEMxdnFxWnl0eW1BUGVoYXA3UGNBMUFySWtZUFczVDRUcERZMDlRZndoTnYyZTdnelVEYmtCM3pTaVZoMHQwNTc5MWdsZzdpRWpuS0c1Z0FkajF5azREV05TUU1va1ZLdWt1bFFNNjk5RlhBaGQ3X0VVbm9Ed3FodGxwb01fdGFvbE5aUQ?oc=5"
+    ],
+    "timestamp": "2026-03-06T20:52:08.559402+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260307_c4573ed4",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Zuckerberg Reorganizes Meta For Applied AI",
+        "script": "Meta CEO Mark Zuckerberg is shaking up his empire by creating a brand-new Applied AI engineering group. This massive reorganization aims to integrate advanced artificial intelligence across every Meta product. The goal is to speed up development and stay competitive against industry rivals.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "AI Deepfakes Of Captured Soldiers Debunked",
+        "script": "Viral images showing the alleged capture of American soldiers in Iran have been officially debunked as sophisticated AI fakes. Fact-checkers identified unnatural textures and digital artifacts consistent with image generators. Experts warn these deepfakes are increasingly being used to manipulate global political tensions.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Pentagon CTO Clashes With Anthropic",
+        "script": "Tensions are rising as the Pentagon's chief technology officer reports a major clash with AI startup Anthropic. The dispute centers on the development of autonomous warfare capabilities. While the military seeks cutting-edge tools, Anthropic remains cautious about the ethical risks of weaponizing artificial intelligence.",
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQVktjeDNEMjYzRjY1VV96bUE3V0JTaV96bi1yUWlPYzRyY1FRdXFXNmFLaExhdzFib180aWNtVW9NS1FtdGtYaFFpLUY5QU41OE9RNzVuYklwSlRkNm1PMFNnTkV5eVpKVEJZbm9SOG5IX1JyUlZ3alRrZEVoTTNmZWRDY09tcmZkdEZmLUtwU1Fqd09LMnI5Y0M3V1owcU1xcDdLaDdadU96MDRSZEpFWEJhMXZqNFNxQ2E2NW1fMVFCeFM2OXJiUHRIV0ZwZGxVaExOUlFfZS1pb1EtYWpacXp1Uk1INS1DT01oV0dFd21yZDFUR1YzT2xVUdIBgAJBVV95cUxNdkN6VERicEZPMWk2ang5N1ZaM3BnQk5VZ1BzTlFYaEJpbkU3aFhVUGNkU2JFX1p1ZUc0ZVo1T3BnNGJPRWdnMDhKekFYbHNBZHlmV0pOMXVnbmFTaEFwbmhBVFNfb201RC14M2piY1p0WW9wYTRleV9DOFBQUFFYV3FsNXNJRFl3NDlIWVVtZmE4Z2dPOVpCUTAtOXczVF92Y21hQnhEbHAxb3RweWkwNURPdWFoOFVaZnE2Z1hsUjBaaklQQ08ybFI4SW1GelNKc1lxbVFnbVhWMDRvejRZaFl1T1ZodFkxMDh4VkR2eTV1bnZQREtCd2w0V0RsdUtN?oc=5",
+      "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwSmpJUUQxSm9QRTNud1VsUFVxQzBxUmNOUGJIb01Kbkc5WnZRR1ZzRzFfRm1XaE1ET2JqWFFnUjBzSXJOdS1ockIxS1kwZkFVVHYtRU9feW8?oc=5",
+      "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOSEdIT3Iwbl9QdzU1Z0dhbHV2ZkVCSTNFWU9iSnl1Xy03MXpPSkRpNU93eEpOdy1RUTVZYmhZRVUtYzF6RXc4cmdMVTZsamFHZW1Hc2RlWmlHdVlzNzFXVnB1cjZsN1JYa3luQVBVUEdIeS1qaWl6Y1JzZWluLUhCVWpadXNoTVlKTG05a1BYMzZmbXMyZEJhVldsM2NuT2xVTzdyUERJQk1WN2xXVGVGeDFIVUItckN1WjYyUGVXUFoxTXVBNGlfaFhSVWNRXzVKendmSEp4N3J3LWE0YnhxVG8yUE1ha2lEUDE2aVlaMWvSAfcBQVVfeXFMT0NEUEs4S2MyMkJCWFRaNFI5VU12bGlpN3JmQjFPVHdmclFKak9scVRrellTMWxPNnFGRk52TmdtYWwzVFpKN29UbVVUVjFTVko3dllZTVZ4VWNBQlBycEFpVEVETzVJOEtDM3VuWVRzNnVHcUZtSlczU0Y2Sld2bjNEdzVaMkI1S3FhOWRreEpJUnVEY1dYenNfUGlXOHc2d0FMVGFhTlo4cUg4Y0pIQVBwdWoweWtWSnhwQUQ3ZmRndlF6WmdtU2kwSlhvU2ZGdjNiUDRmR3dvQmJQclFDRnN3SWR6Q2RIVzRpOU5PTF9kRGVRU2hQbw?oc=5"
+    ],
+    "timestamp": "2026-03-07T05:05:45.763251+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260307_48ea9264",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Why does India need Trump's permission?",
+        "script": "Geopolitics experts are questioning why India requires a US waiver for Russian oil purchases as international pressure mounts. With shifting American leadership, New Delhi faces a complex balancing act. Can India maintain its strategic autonomy while navigating the strict sanctions imposed by Washington?",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The new age of resource geopolitics",
+        "script": "The global power struggle is shifting toward a new age of resource geopolitics. Nations are racing to secure critical minerals and renewable energy supply chains to ensure future dominance. This competition for raw materials is redefining international alliances and creating fresh economic battlegrounds.",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "India balancing energy security and geopolitics",
+        "script": "Growing tensions in West Asia are forcing India to rethink its energy security strategy. As regional conflicts threaten vital oil shipping routes, experts warn of potential price volatility. New Delhi must now balance its diplomatic ties while securing the fuel needed for economic growth.",
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSnBGaWM3cVNYSDU3Nkc1UUNHenNUeF91LXg4M01xQmZmRFNISkFpODMxTFBnM1VKSVNQMTBBYkRoS2dWVElwdzFaX0RhT084cTV6a2gzaGduNzZYUC1taFpZRE83akE4TG92dWdjT0Y2UzBuQkNGN09NdjhSTjVTeHV3dVVjNHpPTmRVbVZ3UXItbzRyTzVGc25vM3ZuNjhodVBpbUx5czUwRFJPUlc3WTJsalpXakZ3N1hiclZGN29JclhiYmxKT3cyQ0duM0UyeGRyMWFmUTNBR0IwMGpGZ2hwdXNIYVlRRk5J0gHwAUFVX3lxTFBWRGpILURyci16TGUyV3Aza19GYXZ1bDYzVXBUM1p1ZU4xVlhicE8zcjRyVXF2UDZsMEhINlF0OXhaaGRSNS1qcUNsRGJ1NUhuTXZadnY4QWZVZzcxV0lPano0b2d5eXRTQTRXMFJrYmQ5M29fbHNYdUo2NUlrSnhmZjlOaVhLSm9LWGl3c0VlWk1QSHRoTnF6TWpNMmZsZ1VOSmlpUE5tRlEyeFp5TldQWWljcTlFOWF1Wk9GckEzTXZBSVN6LUwyT1BVUUh5eWd4YlZueXBFbjZRVWI2cFJDM2hiWVlEWFljbHZVS2hIZg?oc=5",
+      "https://news.google.com/rss/articles/CBMic0FVX3lxTE96TEZwbm5RZDhpNWs3eXZPazN3V0UwTHduMWt3R2Q2a05XZEVCbjJJSGdxd2lEQk45WUFvWUlGRV82bkxWNjZNU1ZZQ0J1ZWJhSkpOQVpqQldTUUJuN0dZTlBzRFZ6VDhVVkZ6UG1DRFMtbDQ?oc=5",
+      "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRksyaVlEUWpxMW0zM3l2cDlCTVJDNV9uTTd5R2FPVk5nUVplM3RMV0pxSGJ3SHIwZllBdGMxMGVKWGxaNWVCaUlIaVNJTDUtSXdXQVl3SzM1eDBXNTExMmhNdUx6Y2FLNGlRXzBLbEFrdjFLZ1VlcHZEdS1oRVpCaENDdE1KOEVoN0ViRE1BQkFOYUpfNmpYd0RiczdyX3hsRXYyUEY3UFlSX2JlekRUWjQyOFpZd9IBuwFBVV95cUxNQ2hOVVJHTTVJWjY2ZG83WDJBZmcyclZhUkFKYkdFWGNYczFGQy1WaEVtQjVxQzMzT1JJamtLTm5EbV9HNmNXNld2LXRmVTBZdVNjdkpBaFBCRG9yWVd4Rk5wT3B4dmZMODhzQ2F2SFE4Vk1ER0lLMVh4ZFlvaUFWUUtjMzlRWkREZzFxeWZDZEZVWFBFeEJKQWk3OWxod3NpQlJoWGNlZHpKUUZCT3ZzUE5oaTFLbHhoLWgw?oc=5"
+    ],
+    "timestamp": "2026-03-07T05:06:26.769520+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260307_defd1354",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Jr NTR’s 25 crore Jubilee hills mansion: Inside the 'Dragon' actor’s luxurious Hyderabad home",
+        "script": "Tollywood superstar Jr NTR is making headlines with his massive 25 crore mansion in Hyderabad's Jubilee Hills. The actor, currently filming the project Dragon, enjoys a sprawling property known for its minimalist design and lush green gardens. It remains a prime landmark in the city's",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Hyderabad wakes up to a layer of smog, IMD links it to construction activity",
+        "script": "Hyderabad residents woke up to a thick layer of smog today as air quality dipped across the city. The IMD attributes this hazy condition to massive construction activity and rising dust levels. Authorities advise citizens to wear masks during morning commutes as visibility remains low",
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Musi project is core to urban renewal in Hyderabad: CM",
+        "script": "Chief Minister Revanth Reddy has reaffirmed that the Musi Riverfront Development project is the backbone of Hyderabad’s urban renewal strategy. The initiative aims to clean the water body and transform the surrounding areas into world-class green corridors. This project will reshape the city’s environmental and",
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMikAJBVV95cUxPaVI5NDI0X0QwUDVVMlo1QjFLS29sbl9YSHpnVk1ELXlFWldNMmxoSl9sM1F1VTZBYThyTnp3QmdPb1dmUmJSRE9fQ0ZjclV0V21WcUl0X21acUMtSHQ2M3BIeW5ITlBCa0QwUll2ZDhFQncxMjVpTm55SlBYZTFSRWoxVTlQeW1SaG1OTjNGY3U1RFczSlRORDAydjZPSmM1R2lXbGlweTFGbG1JUG5xaUQxSzB2UnFoVk5vQmFXTmxqWkhsTU5QWE5lTjM1QzNVVTRXeFN5WEowTmp2S1VBalRzLTBMMVhaNk8yUVFBdHVhRXFiZThUNmFMYXNveERIMEhjU0lrUVRseFY2ekszadIBlgJBVV95cUxORDU0R2txTkZuMGd5cHJSUS13R2NVUk5CblR1N196X0J3akFjUHlGa2VsS0ZaWVZlZVBMY0pPUmo5bzdnS0dFbTdHNG94R3NncmJFZnpKLXBHRWxIb3pncHdGQ1BvQ1MwaUlZeWU5QmhZOFlOaDJpejJyNkpfY0xEemMzLUlsTkFvNWk0aDMwOEpPWDcxT2ZQbTl1MjdaYzFfaGZnWnhDS0xwY0p1aVowSjhFbDBucVliNTF5SHVOR2tpTGE4Q3lvLVVWUFljaTRJcURQM1RjXzBNM1F6c1lJdlZtY0xBNW82ak1RYzFzUm1ibUFzTGV3OHl0Qld1WlM2RU4tcS1XRENaNTR3RUtrNkY0UEMwdw?oc=5",
+      "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYkdQOWUtM1Y2VUM2d2tHWkVGbHJfbWJNLWxPLWtCOExvdTVGa0dLbHdGTjhyQVN6MHZLMlFnMWp5aWFfVXpScWJRZVRUNExYY2RFLURLYkk1Tnl0MnFRVWtiRGc3TUdGcFVRWTluYnQ4RExCTGI5TnRCQkJVUzgwNmpzODRiUmxUR0F5Mkw2LXZhVFFsQ0tKeUdJb0Y0SEdScHFmR1BENHlPY1BEQlJIaTNkbEtiMGNaMnEycE16dUtGMG00V1htRHRSR0k2a204YVhVeXl3UnlRd9IB4AFBVV95cUxPemhadGZIT3dQMVZSRk5LTTE4Zk1MN2RsR0dfVUJxTGJwc2VEWjNaM0FfYWFBZ0hqbzBvMlFvQVVqTlpUYjRmR2QxRUJVZjNwWGhfekpwWDBac280djNCcURWTWdBaTdCbWJrdVQ0U05vVEZibmZjMGhISHhMREhKMFVneHdKd3JJTFBieUtPSGpBcUlwSWRZM3RFYmw1bEluWmU1WFVrZ0thTjBqVDdoTG0tRFZ2S1p4ajhLYl8wTVVnZ0FLRWZVZmhlMUxYTnRFYUtjZnN5OW56VWVWOV9MVQ?oc=5",
+      "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSUtmZTZKejNwZnk2bFRqdnBfckl1VEx5Nml4NUEtWG9JSDRkSnJIME9qNjM3enhaX2ZnLXB2cDBqeVNiX3RFRE1MNHBFVmRmWFVsY3BpNWxHUDBnNjF1WGJ1Qi1DY2RlNlNIME84QjVHZWFkcThEek5IWjJOSFM2aUF3Z0hvSUhuSEhoYkZwS2dUZjdtaUZ5R18tRi1tSDFKampqWE1qcTdfUmR3V3JmOTNWTWxNNkJqU3Q3Y3c5SdIBxgFBVV95cUxOWjk4US11NTJTd2JWTUdEUkhRaUtBcUlJRFFRSnBTel9KQWVuUXg5ejI4NHFERU9NaUVxeDJIZjBfWUJNVmF3QThNcVhZTHA3enF1NDc2N09oLVVLSXROV0lHa2FUU0xIMmJlcnJQU29TVGlOLXVyRE41bC1yOU9kanBWeW54VGM5UGRFalRUSFpCOWtrYWxvaFJ5d013WjdxbFh4STQ0bTdEeDF4NURxazBoNnZkZ1NUY3VsQlloNmQzRzllYUE?oc=5"
+    ],
+    "timestamp": "2026-03-07T05:06:47.806024+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260307_a64a4ea2",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Anthropic Unveils AI Marketplace",
+        "script": "Anthropic just launched a massive marketplace for AI tools modeled after Amazon’s retail giant. Developers can now sell custom software directly to businesses through this new portal. It is a major move to dominate the enterprise market and simplify how companies buy intelligence.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Anthropic",
+          "entity_domain": "technology",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "AI Saves Rarest Ape",
+        "script": "How do you save a species that refuses to be found? In the dense rainforests, researchers are deploying AI to track the world’s rarest ape. These smart cameras identify unique calls and movements, giving conservationists a fighting chance to prevent total extinction.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Hainan Gibbon",
+          "entity_domain": "technology",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "The Over-50 AI Edge",
+        "script": "Forget the myth that AI is only for the youth. New data shows professionals over fifty have a secret edge. While machines handle the logic, human experience and emotional intelligence remain irreplaceable. Your decades of expertise are now your biggest competitive advantage.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "conflict",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Experienced Professionals",
+          "entity_domain": "technology",
+          "hook_type": "conflict",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdC1xZ2tZb1JUZ0lLOFJZMlB0Nm9pMXF2eGY2LUlzOGowNm9LRWRIUjg3NFZHX042Z0dhOHdQc0FxR3JtaXg0NnBWSGtHX0hsVEZQbDJwU1E3d3poMkdJNmd6ZW5zaXQyTkN1aTFOUVZNRlgtdy1Zd2pTNFdWN1ZabFdadkphR2QyM2ctcmhnM3lVRVI5WlEzWmVqTDZ1X2JxZVhHTFlob0dJalM2Q2V2QTB3?oc=5",
+      "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWmRNMjFBT0hGajhfV0JPS3Y1MXNzNVNwam96ckE2bHBJdnlGSW5ucmI3TnVGMHNFY1dsVmxPeWFtRDZIaUh4TUtLU3JSaFdPaUN3cjd0NnBsY3lzMXdWTTBOWVM4VHkzdHpsN2pFNUxyY2lNV0hETjdJUndjMDdhaEgwTy1jYzhUYkRuV0hLYi1kU3R5bnJsUTFldVF4S3BVT21fRVhfem9pY21qN0ZLeWFB?oc=5",
+      "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVDNrTGJwMmswZVFxbjZfclkxdXpsbEl6WnRxR0d6eV9WTHByTTVMN0NZVmN2UEZBdGlnVzZtUXpGRDctN0xqVTZMcTdaU2t1Q2NfaGp0WXNkMWl3bFVVNmVueGV1Q0ZOc0pVQ2dKZ1ROX0Fyb0hWa1hiUG90Z0FVVVU1U0hyb01QVWV0YXRocGlfYUpSSXBFcg?oc=5"
+    ],
+    "timestamp": "2026-03-07T06:43:39.765133+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260307_4c485ad3",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "The Great Border Lockdown",
+        "script": "Global borders are tightening faster than ever. Seventy years of trade data reveals a chilling trend. National borders are becoming digital and physical fortresses as geopolitical tensions rise. This shift is fundamentally rewriting the rules of global commerce and human movement.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Global Trade Borders",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Energy Sovereignty Under Fire",
+        "script": "Is India’s energy independence under fire? Experts are questioning why sovereign nations need external permission to secure their energy future. As India navigates complex waivers for Russian oil, the friction between domestic needs and Western sanctions is reaching a critical breaking point.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-07",
+          "topic_entity": "India-Russia Oil Trade",
+          "entity_domain": "politics",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "The Rare Mineral War",
+        "script": "The battle for the future isn't over land; it's over what lies beneath it. We are entering a volatile era where rare minerals are now more valuable than oil. As nations scramble for lithium, the map of global power is being redrawn.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Rare Earth Minerals",
+          "entity_domain": "politics",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdElydlUydGVwdU1yQTg3aFV0SjRyeE5SUDRKYkF3ejVBcXJ3Wk5taTRqNi1BV2xzcXE3UWxHN0cySnNHdWxSbzVrRngwWE9QWU1CLW9pQUlmVXQ5U3ZVZVRIa21kLXA4M25PQzhVSnluY2o3Y1pneThrZjU1X0NKbzlxQ1p3UmpybjlxVGJoVE8xT1hldWlqTm1uaWRxanllR1I0MVB0UXdTZ1loVzlKd1AwRU4?oc=5",
+      "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSnBGaWM3cVNYSDU3Nkc1UUNHenNUeF91LXg4M01xQmZmRFNISkFpODMxTFBnM1VKSVNQMTBBYkRoS2dWVElwdzFaX0RhT084cTV6a2gzaGduNzZYUC1taFpZRE83akE4TG92dWdjT0Y2UzBuQkNGN09NdjhSTjVTeHV3dVVjNHpPTmRVbVZ3UXItbzRyTzVGc25vM3ZuNjhodVBpbUx5czUwRFJPUlc3WTJsalpXakZ3N1hiclZGN29JclhiYmxKT3cyQ0duM0UyeGRyMWFmUTNBR0IwMGpGZ2hwdXNIYVlRRk5J0gHwAUFVX3lxTFBWRGpILURyci16TGUyV3Aza19GYXZ1bDYzVXBUM1p1ZU4xVlhicE8zcjRyVXF2UDZsMEhINlF0OXhaaGRSNS1qcUNsRGJ1NUhuTXZadnY4QWZVZzcxV0lPano0b2d5eXRTQTRXMFJrYmQ5M29fbHNYdUo2NUlrSnhmZjlOaVhLSm9LWGl3c0VlWk1QSHRoTnF6TWpNMmZsZ1VOSmlpUE5tRlEyeFp5TldQWWljcTlFOWF1Wk9GckEzTXZBSVN6LUwyT1BVUUh5eWd4YlZueXBFbjZRVWI2cFJDM2hiWVlEWFljbHZVS2hIZg?oc=5",
+      "https://news.google.com/rss/articles/CBMic0FVX3lxTE96TEZwbm5RZDhpNWs3eXZPazN3V0UwTHduMWt3R2Q2a05XZEVCbjJJSGdxd2lEQk45WUFvWUlGRV82bkxWNjZNU1ZZQ0J1ZWJhSkpOQVpqQldTUUJuN0dZTlBzRFZ6VDhVVkZ6UG1DRFMtbDQ?oc=5"
+    ],
+    "timestamp": "2026-03-07T06:44:01.051092+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260307_a748dc60",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Hyderabad Girl Conquers Chanel",
+        "script": "A local face just conquered the world's most elite fashion stage. Hyderabad's Bhavitha Mandava is making history as the newest Chanel House Ambassador. This unprecedented appointment signals a massive shift in global representation, proving that the runway's future is being rewritten.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Bhavitha Mandava",
+          "entity_domain": "general",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Toxic Smog Grips City",
+        "script": "The city's skyline is disappearing under a toxic grey veil. Hyderabad woke up to suffocating smog as the IMD identifies rapid construction as the primary culprit. This environmental crisis highlights the dangerous cost of urban expansion, turning the air into a silent threat.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Hyderabad Air Quality",
+          "entity_domain": "general",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Reddy Launches Urban Overhaul",
+        "script": "The blueprint for a massive urban overhaul has officially arrived. Chief Minister Revanth Reddy just launched the Praja Palana initiative, a high-stakes plan to transform Hyderabad's infrastructure. This roadmap prioritizes aggressive development, aiming to turn the city into a global economic powerhouse.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Revanth Reddy",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMijwJBVV95cUxQdUQxVHYxYkljcF9QenBXRy1tb2VUUTZOREs2aENPTVBfZU1LelBKcl9pcHRRRnctUHgzUk5FakdYOV9HVWYwYVNsbERjUkVtY1dGMmR0X2JvdElNdVJ0MXhDem5tMjNxaXNKdm9Lbm85SGt6akhMUGRPRmhXaHN1Tl9qcHNnYXZQSzFGN0ZDUE1XaldybzMyaG1sQnZrdHo2ZHB5ZHU5RUREcUppQmMwZFVpT2V1WHhDTVBCUHpXaXNFY3ZTSzNRUTNOdnhQTkxjWE1kODdwbHVBUkVwT3A0djc4WjRXNnZ0R293WnpTWGk2OGVYa1NreGVUbnV2aUxHaEFKNy11NVJVUTRUajBV0gGUAkFVX3lxTFAwalNUZk9PbDJnZkxtUnhMTWdqMHVLRUluM3h4TEI5YlBHTWFybHVlWEFJQV9VZy1uVzV4R1d2R0h0TUhFakJVVVJvQTFMLTUxbmxndmdZNVpuYWJiLURVRlR4S0xRcXI2bkY3Q1Y0T1VPcGpqYTdBTHlqc2J0dTJIdmFHTERERmh2bEF1Yjl2c21NcmpaaUJmanUxUy13dkRQektfS1RXRlBwNXh6eGwtV0x6XzVFVi1TcVpKUlY4ZEp3T1FKTmtOSWVGeTFIQ1VMRlo5Y2R6b3gxd21iZC1BenFDQTV6WDVIbVd0X0ZuUkVkZVlGemJnVjJ1Z0VmSnA2X0lOc19xNUpvOWNMX2sxXzllTA?oc=5",
+      "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYkdQOWUtM1Y2VUM2d2tHWkVGbHJfbWJNLWxPLWtCOExvdTVGa0dLbHdGTjhyQVN6MHZLMlFnMWp5aWFfVXpScWJRZVRUNExYY2RFLURLYkk1Tnl0MnFRVWtiRGc3TUdGcFVRWTluYnQ4RExCTGI5TnRCQkJVUzgwNmpzODRiUmxUR0F5Mkw2LXZhVFFsQ0tKeUdJb0Y0SEdScHFmR1BENHlPY1BEQlJIaTNkbEtiMGNaMnEycE16dUtGMG00V1htRHRSR0k2a204YVhVeXl3UnlRd9IB4AFBVV95cUxPemhadGZIT3dQMVZSRk5LTTE4Zk1MN2RsR0dfVUJxTGJwc2VEWjNaM0FfYWFBZ0hqbzBvMlFvQVVqTlpUYjRmR2QxRUJVZjNwWGhfekpwWDBac280djNCcURWTWdBaTdCbWJrdVQ0U05vVEZibmZjMGhISHhMREhKMFVneHdKd3JJTFBieUtPSGpBcUlwSWRZM3RFYmw1bEluWmU1WFVrZ0thTjBqVDdoTG0tRFZ2S1p4ajhLYl8wTVVnZ0FLRWZVZmhlMUxYTnRFYUtjZnN5OW56VWVWOV9MVQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQOGJ5dXBIVnhkRDYtZTM5dGN5RUhOdTd4XzVDMkk0QTE4OEE2eDdSdFRoc0hTb0s2TlljTTE1MjJIa05PTUREX0J6NUVwR2ZzX0RlY2Y3UlJrYzVNb0Q3bzU0d0RFbkI1OFdjakR4TjFQS0oxRUE5WXlkRWEtS2E1eWRvem0tdWZ0RnRrRTQtYlJ6X01LdHhNajVGbEktZDlMMDNaN3hONkkwVmxSWnRha0Y3VlRtbEtkUGJZcjNxLXFnX2tTbFpNOXdGZFdLSmltaHhNX2VOOTFDTWRlRGl5Ynp3V2RkVThjeURz0gHyAUFVX3lxTE51ZHJpVnZOeTJjWncwOHgzTHJGQ1o5MVhGcXJWVGpkeUctYURfMk1iWjBWSEF1aGNGMEg3ZzZRTTBzdlRIcGNaN0x3amtvd0tjUHRvWlEzLVFXUHpnYTh3TUx4a1dCbktLYkJ2ak5HMlZfVFRWRGxQTHdMUk02bzJMazF1bjNEMUtTek9xTWNMcTFOTm5rNW5MZXJJRWItMWJYUWg5M3ZHNmRhaDFUNVRmN3VkTXpmdU9lRHVhYXdadm1GVVdEeWY0VmlqV1lKNndFUUkwb0hvQm5ROXA0aTEybXY1TFV2b182TTQxMHFlUVFB?oc=5"
+    ],
+    "timestamp": "2026-03-07T06:45:23.845060+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260307_067e5a63",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Weaponized Algorithms",
+        "script": "The software that once retouched your selfies is now dropping bombs. Recent strikes in Iran prove that image-editing AI has been weaponized for lethal precision. This is not science fiction anymore. Warfare has entered a terrifying new era where algorithms choose the targets.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-07",
+          "topic_entity": "AI Weaponization",
+          "entity_domain": "politics",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The War Paradigm Shift",
+        "script": "Is human strategy becoming a relic of the past. The Guardian warns that the Iran conflict is the definitive turning point for autonomous warfare. As AI takes the wheel, the speed of battle is outpacing human logic, creating a dangerous new global paradigm.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Autonomous Warfare",
+          "entity_domain": "politics",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Pentagon AI Reset",
+        "script": "The Pentagon just made a massive move in the global AI race. By appointing a former DOGE official to lead its artificial intelligence efforts, the U.S. military is prioritizing speed over bureaucracy. This appointment signals a total overhaul of modern defense strategy.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "U.S. Pentagon",
+          "entity_domain": "technology",
+          "hook_type": "reveal",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRzc4N0E1dDBxeU85R1RFZWhLTDhNV0gzZ3JTbWQzLWJZcHBobFctLUY2Ykc3OXUyaDZwWUFfTEwxeWc5YTAtNGJYajFraWpRYkEtcG9WQk9aRXY5S0lJWnBib3pVcGs3bW9MSTZVbkM1OHJyaEFMMjlLU0lBOWhoREFLYlo1dWRBWnRSeE5qNW1TZENCWno5YURWLS1nbHJjYlZocFRvcDlOSkhWOTN6LXJKZ1IyTV84YjF0MjlwMURiMnl3TGtYRWQwRQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNaHI4MlBHc29wVkJlaFpjczNvclZyMTlUd1FPcHo4cl93NHJmTUk4NnFpRmdQV3ByUGNWeGs1M2JaYlNFSElWbXBSMl9udmt4SVQ4Tl9rN29UWE4yOEdiRFhnUmpvV1VvaENDb1hqQl9QRk9ZdG1malQ4Mk9CRkJUbTYtUGlPbklNSEIyYVFOTmswZGdQYUxJSkhjQXExUHVaX2ViNXFlY0NWdU5zMDFNUmhMdWJSOERlTnBTQk5kYW5zbkdBN0szTTVhaUhMNU4tQV82VW1ZN1kyM1lXVjlKOXZrWUtiZjR6SEEyTXZlSVJ3b3M?oc=5",
+      "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWVAyWTloQWhwRHA5dkZpSnlISS1hbGRiQmNxMFNVd2pDbFAyZFBFYmtveGZ5NHdZbklyODV5VWZRYkowMDZNWTZ5czVIcGZvSk5KV0UtUzhQTUpIMVFsMks2bVR2eGs5QmVycFhSdkYzWTgwSVB4b0NvMV94NE9sajBrNGg0QUhpM2ZNUUlzLTcySzBJOWdiRVFMNDNhVkgzcjlOejRSLXRsTkE0UVdWWEY2cjVNZ1laMDJtMlFrTGd4eHc?oc=5"
+    ],
+    "timestamp": "2026-03-07T12:20:04.305318+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260307_60a425c3",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "The Hidden Cost of Efficiency",
+        "script": "New research suggests AI integration is backfiring on high performers. While automation promised efficiency, it is actually causing massive brain fry and cognitive burnout. Those doing the most are suffering the worst as the digital pace exceeds human mental limits today.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-07",
+          "topic_entity": "High Performers",
+          "entity_domain": "technology",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Anthropic Firing Line",
+        "script": "Is your career next on the automation list? Anthropic just revealed which professions face the highest risk from advanced AI systems. From coding to administrative roles, the firing line is moving closer to high-skill industries. Staying relevant now requires a major pivot.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Anthropic",
+          "entity_domain": "technology",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "The Evolution Myth",
+        "script": "The mass unemployment myth is finally crumbling. Recent data shows AI is not stealing roles but drastically reshaping them. Instead of total job loss, we are seeing a massive evolution in how tasks are handled, requiring a total rethink of professional value.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Global Workforce",
+          "entity_domain": "technology",
+          "hook_type": "reveal",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94WElxT3hkQ3I5ekJHRU5xQUM4anAwVlNoRjVwZ1cyM3BhV2llVFpxNGZiOWdtYUdNRURjT1l1MzNfVTVWdDY4anllUm0tTDlwYk5BcEp4NmxXUEpJYWZNOGZaRU4tZm5H?oc=5",
+      "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTEVPbk12QjUtTi1oVXFuNlAyOUhZOG5vak5yZ1ZuSmNjc1d5bGNpYVZCYWhUSktPQnB2Rk1reC1HaS1ZajljY1F0cGowZDR6WFZVS1VLcHhhbUYzVVZyOUtUWVNQVnRGcmN6ZUM3bkFIS0x2bUU5aWdoMHk0R0tUV1RUUk9CemI3NjZEa3p1YUtkN2JTNFNRdkJQQktESG5OZjRuRTRuS3hseTNmajB5TTItcGhVZEgzdGxiZWZSY1BpOHpkWHBHVEVRSWFVV3ZFUXfSAdcBQVVfeXFMUF9YWERPaDk5YjRuZnRsSUJ3UllJUW9LNTc4emg4anBLaWstOGh1X3BnMGc2VW0wZTE1dGFhTThnaVhweFlmTEJYT2pYM2tWNVQ5Z09xOUJxSVRGM2NwcXNQaXhUdmdhNzZwOTdlbkUzZ1NFcWV4S09iWmpnUWhGXzVQVkpBMW93SjVTNHdfcHJpclJ4TEJyaUs4WE12QjRjeWhLZnRYVTJjS21iQ2FLeVVkRDNoTDZhTHhHbnQ3WV9zWGRTOHM0WEh1NlR5eGhxWDNfbk5HQlE?oc=5",
+      "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9sUkNObW1RUGRXTThRLVlEQ2FTU0lFLXZ1dzdlWnUxN0FnLVB4VTU4VU5tNkRLbXA2VFFKQTE2V1hPbjVSOFdjSm9SWTY0NnNLRkdsLVAzaEpFcFEzTWlxNWFCT05ibHM?oc=5"
+    ],
+    "timestamp": "2026-03-07T14:38:46.275492+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260307_ae0dafe8",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "The Great Global Closure",
+        "script": "Seventy years of global integration are being dismantled in real-time. New data reveals that borders are hardening at a rate unseen since the Cold War. As geopolitical walls rise, the era of seamless travel and trade is facing its ultimate expiration.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-07",
+          "topic_entity": "CEPR",
+          "entity_domain": "politics",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The Mineral Weapon",
+        "script": "The global power struggle is shifting from ideologies to raw materials. Control over critical minerals is now the ultimate leverage in international relations. As superpowers race to secure rare earth deposits, the supply chain has become the world's most dangerous weapon.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "conflict",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Resource Geopolitics",
+          "entity_domain": "finance",
+          "hook_type": "conflict",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Delhi's Global Tilt",
+        "script": "Forget the traditional power centers of the West. The Raisina Dialogue 2026 is reshaping how the world negotiates its future. As India anchors this massive strategic shift, new alliances are forming that could permanently tilt the global balance of power southward.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Raisina Dialogue 2026",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdElydlUydGVwdU1yQTg3aFV0SjRyeE5SUDRKYkF3ejVBcXJ3Wk5taTRqNi1BV2xzcXE3UWxHN0cySnNHdWxSbzVrRngwWE9QWU1CLW9pQUlmVXQ5U3ZVZVRIa21kLXA4M25PQzhVSnluY2o3Y1pneThrZjU1X0NKbzlxQ1p3UmpybjlxVGJoVE8xT1hldWlqTm1uaWRxanllR1I0MVB0UXdTZ1loVzlKd1AwRU4?oc=5",
+      "https://news.google.com/rss/articles/CBMic0FVX3lxTE96TEZwbm5RZDhpNWs3eXZPazN3V0UwTHduMWt3R2Q2a05XZEVCbjJJSGdxd2lEQk45WUFvWUlGRV82bkxWNjZNU1ZZQ0J1ZWJhSkpOQVpqQldTUUJuN0dZTlBzRFZ6VDhVVkZ6UG1DRFMtbDQ?oc=5",
+      "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTmpJS3JXN0tRRnhIWDF3M0NELXFieFB0V192U2VQWVNubXVpNlFvWFlmZWZxRXJlNXQ2RWlkU1RTYTV4cm1HNEV0MDVZSVdiLVl1SlM3MWt4TzNjVW5QWTlSQ1h5T1R3Y185d3pxbW1DNFlTWnZaR1FtUGFrVVBFZmUyMmlES3NsRVUyY0Rpamd0c2xScHpQemZ0WmdVQTNYaXZYczVVYzE3djkzODFVb1lEYkNrN05pNmRabzgxVGV2YXhDTzhVYjVaVDFzcEE?oc=5"
+    ],
+    "timestamp": "2026-03-07T14:39:15.652199+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260307_abf71697",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Hyderabad Narcotics Crackdown",
+        "script": "Hyderabad's narcotics crackdown is hitting a fever pitch. Excise officials just dismantled a massive smuggling network stretching from the city to Khammam. With multiple arrests and heavy seizures, the state is declaring an all-out war on illicit trade. The net is closing fast.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Hyderabad Excise Department",
+          "entity_domain": "crime",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Mass Maoist Surrender",
+        "script": "A historic shift is unfolding in Telangana. Over one hundred and thirty Maoist insurgents have laid down their arms simultaneously before the Chief Minister. This massive surrender marks a decisive turn for internal security, signaling the end of a long era of rural insurgency.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Telangana Chief Minister",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Legislative Council Hall Restoration",
+        "script": "A silent witness to history has been reborn. The meticulously restored Telangana Legislative Council Hall is finally ready for its grand debut. After months of intensive preservation, this architectural icon stands as a bridge between the city’s royal past and its high-stakes political future.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-07",
+          "topic_entity": "Telangana Legislative Council Hall",
+          "entity_domain": "general",
+          "hook_type": "reveal",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNTmNhdGpMMWV0dFNvQVdfQUNVbWMyb0RLR1RjZVlXSVdUcFRqNkNiQi1UcDE5VmNpRjZreTdUSWVXMWhTdmRjMjZtWU11bzFyNXFhUm5LcE93eVhZc0VRSjE0NDRwVkpFOFpnQVpzSmRfUUhzN0NqSHRBbldwWGZMS2MwdVhSZmtFX3RHR2E0TzNTTWNpOU5OWk5BWGhpNmZCNm5ZZ1V2S1Jya0Z3OUJobnFMNXRsUkJCZ0w5M2ZlenU3ZVdkZmtSVXFtMTZfaWJNcVhxR3U2TWxGRmR6WXUwbTJZNndCV092Yi1IeU0tVHhQSXJRMUNB0gH-AUFVX3lxTFBHUENVMWlRYUpmQzZ5ZE9jLWIzUnczWkZQeGJsZUNhYlkwNlV5WUc0SVRIaXpPMkZUVkFzODFnTU41V3VRNlg3eXAtNk5qVnBPQTNmLWQ3QzN3aThmckhfMmtWa3FHN1AxMjU3SWRiWHFwdFhaZU9YR042UWo2VnE0TnhOcWptc1B0N05wOEZQbzNzLU9UX2ZuenlMUXZ1TnRhRDNlSmJHWE9PejdvUklCdS1xbWYyak0zWjUxNkowZkRyTHE3alN1eG9wcUhZMXpmVEEtd0lpczFreWsyWFQ2bEZPNHloUDJ1eEtIcjliRXhHOTBsR25ELVZMSUFn?oc=5",
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWGRTdU1IMk1sbFZoa1Q1ZXRFTkpmV09wS3YwQTNlRW95bnRCZ1c1YkRCdmhmaUtmVTZBZjZtYndIWWM4a19rTDhmUnVuZ1dHWWs0TEdmUDd1ZXlRZ25NdDhSc3JQNWpYRmdUbE9JY3BpcVZpSXBVdF9sajJNWlZKOGxtaEIxWkNvbzRtOVBSMWgtMXpsMExXcTQ0SEt2X2VwMlBWTEp1NlVTOWNzVW1Hb09aNjY2dHVocW9VenpDRERweVVNc05YcjMyTEdpdkpy0gHXAUFVX3lxTE52YkRVRUNBRjZ4Mkw0VFd5S2pyRnR2dGlHX1N4UFZESUR0S1dhWmI1YmRkUi1ROWE3VXVEblZUS3JIWDVKcEZKMXpjVUpTYkpLcWIwcFlpUkhfb2tXMzFURUxrbVZyNlJkWnpiQnNuNU5QVXRHU2MyN2N2VUl4ZHJoLVAzOUxuWXhQRmtLbF9YRmhIbjdWUDV5WThnRWI3Q01Yc2xwSVdQU0FnNnZUWGd4Qm1DbEp4TFNnY3doWkVGZEdJZ1h6cHRwRzJURTlIaU5HS3pQSWVV?oc=5",
+      "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNME5qbTdGMEJ4SzRMYkdUNEtBbXUzVzVvQS1yUnZPdjk1YUNfbFJFaTdpYk0wYzBDd2lhRXlWekFwYlNSR3E1T3VwejQ2bXY4NjhaamlUamFENW9JSUNudUlUNjFRWWZaZkprblNkTE1RU252SUV6UTU0aXRIQXZpeUZrWll3RmhReVJiT3lScUU3OHpwTG9tOWc3YXNVd1F2bS1tVExFcjFCaGlsUjg4dVRaTVc5S2xGNjNzcERjRlZLVUhFTVY4RVBPMHB6dVJ2QnVkSUE5QWNwRzAwZWfSAeQBQVVfeXFMT1huOXlURFZ5WXNlTVdFbXhXSmZSc1hSWG9STVRrLWRmRHFkdlVWLXVwZ0Ewd3owS2pQcERZbWZFYUdfYV8yVktlaWZsajVlcnRPSlVNNkNsdTdscnZSQzlhbXNYOFlsUThzRHh1VHpqYm5xcWc2OC1laDE1eFBScWVaWjZ0Qm54TnZ6YUY3dGxpb21QOGdzaFFJWER1NEVVNjM3c01lRGoybDNBV1B4aUpTOHlQTHVHWnNKMEQyMWp6SHFlTjZHLXExaGRfODBXWWllT25kLVY5clNfQ2tGdE5nam1I?oc=5"
+    ],
+    "timestamp": "2026-03-07T14:39:39.448648+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260308_26d91c8c",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "AI in Warfare",
+        "script": "Artificial intelligence is fundamentally rewriting the rules of modern warfare in Iran. High-speed algorithms are now identifying targets faster than any human operator could. As autonomous systems take control of the battlefield, the line between strategic precision and unintended escalation is vanishing.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Autonomous Warfare Systems",
+          "entity_domain": "politics",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Market Anxiety",
+        "script": "Is AI-induced panic the new market killer? The CEO of TCS warns that global anxiety over automation has already erased billions in stock value. This isn't just a tech shift; it is a financial earthquake triggered by the fear of being left behind.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-08",
+          "topic_entity": "TCS CEO",
+          "entity_domain": "finance",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Job Security Threat",
+        "script": "Your professional degree might not protect you from the next AI wave. A new Anthropic study identifies specific high-skill roles that are now squarely in the crosshairs of automation. The era of job security for white-collar workers is officially over. Adapt or disappear.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Anthropic",
+          "entity_domain": "technology",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRWZvdXdZUGgxaUNKTHZmeW40ZW5nRG1aUnFNdkNMeXJ2cW13ZDJ5VU9WUmpjRWJjZUhBSG1naWVwQUxHX2F5cENHX3lsaFB1XzFWaHN6Si16ZDV2OFZ2SEQxRFZlbkRMMktHQ3pkU3EydkUzeEQzMDhtN290MEVJbTF3?oc=5",
+      "https://news.google.com/rss/articles/CBMikgJBVV95cUxQYmNiMU1RVGtCaXVrWkRvQ20wOGx0YW1OeWFDU1lCVy1QM0JHRmlLZEJQYnk3aTZrM3I3anVaRnEzb011OGFIYlZqSGNfM0l0LW55SG5uTElwT0k5VUp3dzJaa2dGRU5aak1XZjFnMWo2OTNVRHNlUDFlSDhzY25FMXRIX3RpLVZoV21VNWhfTjZRVDkzWDY0U0VCX0l3WkVIcXNGalN4cjhQU0FFX1RlMVJHU0ZfdUVyd2Q2a29vV0RydjQ2bmpieG5ORzFZck9VX3BKeVNsaGRwOTJyS2JRcEYyQklWdEdUNlJ0SzJ5TExkdFBXWnFISGtvM0hNQVExbmZjZ0dsa0x2cHBrZXg3VERB0gGXAkFVX3lxTE52RFB3c2dlVVRtbFdsakY3WGhnYlhrTGI0a3FUcG9GaFBjZWVRM2hWTTRNTGt4N2JiQnFNQnc2ZTZZSUFTQXo2b1gyTkR3OXQ0bTBlaVhZWDZ0OHE5N2JOMmttZGR0RjJPRGlsX0czaU5VeVR5M0V6STd5eUtQaHQyREtCOEt3WFVVcVFQM05VMVBLZ1NKYXM3WlhpMVhWY3g0VDM3Wk50NE44Q2FXdHJHRFE4cm1CRHBWMGYyYXJBMXhucDJ5OHlFMVpTMncycUN5X19paF9Rbm1qZXlfQkJoU1M1eG9JUkFBM2lCU3R3dG5FNWJ5Y0JsVnFCcE9MVXRHNldVTGRFelpwVzdIMlIyWFY5WmtLWQ?oc=5",
+      "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVW83U0FCSkdKNXJlTEkxWnBpbkZENUI0UE9DLVo2WWQyVzZ1Q2dOYU1RbG9tMFV1VDZ5bXF6cldZMHBsMFM2Rm9pMjlybmVfSzNObGdQNVJKaWNaV1pNODVudzZfM0E4SGVXNV9jMEZNX2V0dVpaNHI0cVpGMUllV1ZmRTNzZk1mU0tFUFprZUpkQm1RREpvSzl3bjVLNnF0OVFuSHdVX3o4bGdkRzdLLWJTem5NUVl6U0ZDRTlpdFFBTjJx0gHLAUFVX3lxTE9jcVFwbENDR2JOWmVPTEc4NUg2d3BPZzE4QlhUdVl6aEZLWDFQYm1UcWM5TXF5ZnVJeFpxS2J2ZjJRVDJxaDlGNFNvcHlvVjQ0YzRrYmNPbTRKN21pUTJheGU3N1Z2eFZlTWs2b1VEMVZzbWx2Q2wxMzJjMFFtWGVfMzlFV1M3cGxXWEJvVEp6ckh1cnNlZnRGY041d05MZjlwYXowOUJ2SUM3aFI3NDR0aFhsbXNzcHB4Mkg1V2dYZE9uT1ZJOGdGRDVZ?oc=5"
+    ],
+    "timestamp": "2026-03-08T07:21:56.565524+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260308_9b73c4a5",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Hapag-Lloyd Board Shakeup",
+        "script": "Is the shipping giant Hapag-Lloyd sailing into a massive storm? A sudden leadership shuffle is forcing investors to re-evaluate the price of global instability. As trade routes tighten, this executive overhaul signals a desperate pivot to protect valuations against surging geopolitical threats.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Hapag-Lloyd",
+          "entity_domain": "finance",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Russell 2000 Risk Analysis",
+        "script": "Small-cap stocks are facing a reckoning that Wall Street ignored. The Russell 2000 is plummeting as markets realize global tensions are now bottom-line killers. Are retail investors blind to the danger, or is this massive wave of market volatility already priced in?",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "conflict",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Russell 2000",
+          "entity_domain": "finance",
+          "hook_type": "conflict",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "The Epstein Files",
+        "script": "The dark legacy of the Epstein files is resurfacing with a chilling focus on international blackmail. These records aren't just headlines; they expose a shadow network capable of compromising global leaders. The wall between high-level diplomacy and criminal leverage is finally collapsing.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Epstein Files",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNkY4cGZhT1RCUWgtQ0FLQ19wcUNVSng4SEZUajYtbTExa1UxWE9aejdiM3hrazZpYzBrVGhZVWcxa1F3Q0NzWF8xdllmeDB6MGVaTzR0dVpaZXNBdnNtUm9iNWNVWjg3NE5ZSElDdmhiYjVRbEEzSEVxZFZEZ282SzliY0wzM3V4blJTSkx4cDlUMHYwV0xIWl9UTm1TY1MtWjcwcGcwUjBjQnNKWkxub2dkMUtvMlJudWFVcnFBRkRfZlVoc1FteEY1akw2SWsyRzFvN0NSa9IB3AFBVV95cUxOMGZDMGlUQjNQRVVLMHB1QktSTmhCMlJ5bmw2WUdJdnp5Y0ZkMTNEaDJKSl92Z2NRMWc0dmNaUDhHOWV3YXNUM2NuLVNTcUtrQXZkd1hteTZKa2VnWUs3WVYyeXd2dTk2Nk9lU3JJdHpNSVRCNGIyN0Y2T1lJcEpaYXhxemdFaDNUckRacXZGbEh5anVWUHYzWTlSR0REYTdYaUNhWW11OFVFTEdYQ0l0SElfRWtDdzdIRmcwc2p0S09PcEtIbko2MGFUR19Ec0FHNjhtZnNkMFg4UW0w?oc=5",
+      "https://news.google.com/rss/articles/CBMingFBVV95cUxQeVkxR0dMWmNzUm1qaWlQRWFESGlzLXQya0w4VnFmNmE2Z2RvckJPMHVrZWlfaWp2bHNrNnZJa2RrRllVRjBCblpwS0VLN3h4U0l0Y2NBVVVySTA5dU9xS0lqempabGlrdVotWDNGZU5fai1YNjJ6bTV3c3pMTGN4N2tEOHBCTnpBN0V1ZTRWTFZGNjAyMTcxZVVDbHlsZw?oc=5",
+      "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYk1raEF3Vmo3WEVoYkpnQ2RYcnM2QUI2Y1BuS0lFYnJhd0RHZXhRZ1ZEaDFLVzkwaUROV1puVmduZkt5ZDVzeFJKOTIzZnoyQnQ5al9vczB6NXk1clJySzZMaEVMR19SQnAxVXJPTkN0Z1JNd041VlBwNFpzN2hhSWRvc3dDWWpoLWdxZUk5eURoRkhwYUxaTU1CelJpZk5OblFZ0gGoAUFVX3lxTE9xeE84SURXNUswT2RjbFZHWTYwRkVaU01hQ3lZdzl3UFJKaFNnXzgwV2hfUTBHRzJ0eklQa1J3NWEzTjBXdU9oZmRKOFpDTE92Ml9sdm1NLUM4SXVoMkhRXzh4QzBhcmxEMnRFYk5QcFdrMUNYcTZwYnBrczAxQ2FFSUdjd2UwNHJSLVhIY1Z5U2ZOOUJqTXhrblJIYVFPZjJEX0tSWVBxMw?oc=5"
+    ],
+    "timestamp": "2026-03-08T07:22:18.263882+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260308_6d79806b",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Mass Maoist Surrender",
+        "script": "A seismic shift in regional security just hit Hyderabad. Over one hundred and thirty Maoist operatives have officially surrendered to the Chief Minister, abandoning decades of conflict. This unprecedented mass move signals a potential end to the long-standing insurgency across the state.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Revanth Reddy",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Public Plea to Ganapathi",
+        "script": "The hunt for peace enters a bold new chapter. Chief Minister Revanth Reddy is making a public plea to top Maoist leader Ganapathi, urging him to join the democratic mainstream. It is a high-stakes gamble to finally resolve decades of internal unrest.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "conflict",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Ganapathi",
+          "entity_domain": "politics",
+          "hook_type": "conflict",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Insurgency Collapse",
+        "script": "A historic milestone for Telangana unfolded in the capital today. One hundred and thirty insurgents dropped their weapons simultaneously, choosing peace over violence. With the Chief Minister presiding, this mass surrender represents a total collapse of the rural guerrilla movement local infrastructure.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Telangana Government",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWGRTdU1IMk1sbFZoa1Q1ZXRFTkpmV09wS3YwQTNlRW95bnRCZ1c1YkRCdmhmaUtmVTZBZjZtYndIWWM4a19rTDhmUnVuZ1dHWWs0TEdmUDd1ZXlRZ25NdDhSc3JQNWpYRmdUbE9JY3BpcVZpSXBVdF9sajJNWlZKOGxtaEIxWkNvbzRtOVBSMWgtMXpsMExXcTQ0SEt2X2VwMlBWTEp1NlVTOWNzVW1Hb09aNjY2dHVocW9VenpDRERweVVNc05YcjMyTEdpdkpy0gHXAUFVX3lxTE52YkRVRUNBRjZ4Mkw0VFd5S2pyRnR2dGlHX1N4UFZESUR0S1dhWmI1YmRkUi1ROWE3VXVEblZUS3JIWDVKcEZKMXpjVUpTYkpLcWIwcFlpUkhfb2tXMzFURUxrbVZyNlJkWnpiQnNuNU5QVXRHU2MyN2N2VUl4ZHJoLVAzOUxuWXhQRmtLbF9YRmhIbjdWUDV5WThnRWI3Q01Yc2xwSVdQU0FnNnZUWGd4Qm1DbEp4TFNnY3doWkVGZEdJZ1h6cHRwRzJURTlIaU5HS3pQSWVV?oc=5",
+      "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQ1J1aXZDWnVGaHJGVFFGRXZ3cm1ndWs4TlVTZ2ZoaFhhdmxIRnlsaHgyR1lwX3N1X2hOaTJSMURvWGdTY1lmOUVEaUN0dVRua3lMS3pNRGVkSEt3VlU2MTFKc09XN2VXVTRDTG5WcGpvUGpqOXNiT2hFbDNUc3RkQm9sR2VGWFkwUkczOFZ5bDVwTXdzSGhydi1aRzVVNGR4UXNQWGU2alA3SExBbGlaWnRjY1BNdklTYTFBaVZnQ01rbTJhdGNaYXRseXhaa2VyY0xJWG5B0gHbAUFVX3lxTE5qanp2b0hoUEVMNXdNb2Rxc19NZ1c5X21yai1uR2VJa0N6Qi1oZ0M2NnEzRkZkalhiT1Bxd2ZiTHhfQnRfWWVLSFhEVTUwYmo3OW11MFNTazh4SEFyZENIUVdYR1YzV2VNaHFyWlNSYU43TnNhakxIcEU5LV9KQXp2aEg5WjNVOHlvYXk5Wk5WQk9rX2lvSEdKUF91QUFCdU9adWhoWElnNjhvZGJrZXptWjc1SUFYQTBuakdyRGZObXcxT0dXc0xpeHZSZk50ZnF3YkRDaG04YkI0dw?oc=5",
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcUZuSFlnNi12bDhhVXJhSzZ2V0t1RU1vZ01aQ01ldExTOGFmZzNYRTJtOWhZdUNNUWUyTzhCSW1XRUVreU93T3BPbjlNREQydHlvUFB2ZnBIY3FJQ0QxRjdkaTNCVTE0ZjhIR1I4R0ZGbVRPS2FQWjJMWUdfTm1BNzhzaFpldlR2QjQwajNlSWd6ZWs4bnRVVXZlX0RLTmdkLXAzZlVNMUhuSTRJWlFQVDBnMlp0LWMyQ1hmbUl1WTJOVzVKR0dHTHlsT1hvR2Fj0gHWAUFVX3lxTE1HN3NEeDBJRjFUTUFPTjhoOVZpNTYtUGZGXzZhVl9ZLXVPWDM0S0c5d1hzV19vX0dLdW5JQVBDTnd4M2JHRi1ucV9MVng5S1F1ajZ3aVBQNVNfS2JQMjhlZ3lCOHI0Mm5MaVc4Ujl2SmJVeXY4LWJmcXgwbUtlWXNVX013UjFRSXJScC1yNU10RVhRNEhvaVVKc0JHYTJsMURaeDlGSzE0aEk4TzZoMUw1Uk1JYkx2WlA1QjIyeWhkaE54YkdPYzlydmNZNlFaWjZBYXJrTkE?oc=5"
+    ],
+    "timestamp": "2026-03-08T07:22:33.621890+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260308_8385915e",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Autonomous Conflict in Iran",
+        "script": "Is a silent algorithm now calling the shots in the Middle East? Recent reports suggest AI-powered systems are identifying targets in Iran with terrifying speed. This isn't just technology; it's a fundamental shift where machines decide the fate of nations.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Iran",
+          "entity_domain": "politics",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The Billion Dollar AI Panic",
+        "script": "Global investors are panicking as AI anxiety wipes billions off the stock market. The CEO of TCS warns that fear of automation is now more dangerous than the tech itself. Markets are reacting to ghosts, proving that psychological terror drives modern finance.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-08",
+          "topic_entity": "TCS",
+          "entity_domain": "finance",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "The India-China AI Gap",
+        "script": "Why is China leaving India behind in the critical AI race? Critics argue an outdated bureaucratic mindset is stifling innovation while Beijing pours billions into neural networks. The gap isn't just about code; it is a battle for the future of global power.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-08",
+          "topic_entity": "China",
+          "entity_domain": "politics",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRWZvdXdZUGgxaUNKTHZmeW40ZW5nRG1aUnFNdkNMeXJ2cW13ZDJ5VU9WUmpjRWJjZUhBSG1naWVwQUxHX2F5cENHX3lsaFB1XzFWaHN6Si16ZDV2OFZ2SEQxRFZlbkRMMktHQ3pkU3EydkUzeEQzMDhtN290MEVJbTF3?oc=5",
+      "https://news.google.com/rss/articles/CBMikgJBVV95cUxQYmNiMU1RVGtCaXVrWkRvQ20wOGx0YW1OeWFDU1lCVy1QM0JHRmlLZEJQYnk3aTZrM3I3anVaRnEzb011OGFIYlZqSGNfM0l0LW55SG5uTElwT0k5VUp3dzJaa2dGRU5aak1XZjFnMWo2OTNVRHNlUDFlSDhzY25FMXRIX3RpLVZoV21VNWhfTjZRVDkzWDY0U0VCX0l3WkVIcXNGalN4cjhQU0FFX1RlMVJHU0ZfdUVyd2Q2a29vV0RydjQ2bmpieG5ORzFZck9VX3BKeVNsaGRwOTJyS2JRcEYyQklWdEdUNlJ0SzJ5TExkdFBXWnFISGtvM0hNQVExbmZjZ0dsa0x2cHBrZXg3VERB0gGXAkFVX3lxTE52RFB3c2dlVVRtbFdsakY3WGhnYlhrTGI0a3FUcG9GaFBjZWVRM2hWTTRNTGt4N2JiQnFNQnc2ZTZZSUFTQXo2b1gyTkR3OXQ0bTBlaVhZWDZ0OHE5N2JOMmttZGR0RjJPRGlsX0czaU5VeVR5M0V6STd5eUtQaHQyREtCOEt3WFVVcVFQM05VMVBLZ1NKYXM3WlhpMVhWY3g0VDM3Wk50NE44Q2FXdHJHRFE4cm1CRHBWMGYyYXJBMXhucDJ5OHlFMVpTMncycUN5X19paF9Rbm1qZXlfQkJoU1M1eG9JUkFBM2lCU3R3dG5FNWJ5Y0JsVnFCcE9MVXRHNldVTGRFelpwVzdIMlIyWFY5WmtLWQ?oc=5",
+      "https://news.google.com/rss/articles/CBMivAFBVV95cUxQXzlLT0hhcm9laUNYQ3c3RDYzVzlqNTV2V1IzdzNPdnd5Q1dWclkxa0tLOW5fcGpHem1CLVNkZGtGTGlxdFhEekZnSUYzVFNYbi1kNklGeHVaREdpTVRWQm9lVlJEWWdfQkVKbERKSXdzcEloT09NTHdra2NBeEtjOWdxSDNnaEw0SzlUMV8weTI1OE0tM1p1MXdKdkZydjR1cFpzQlp6T2JkMklyaWczT2NFYUZHdWZNUTY3cg?oc=5"
+    ],
+    "timestamp": "2026-03-08T07:31:26.087600+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260308_5b612263",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Unprecedented Maoist Surrender",
+        "script": "In a massive blow to the insurgency, over one hundred Maoists just surrendered to the Telangana government. This unprecedented mass exit marks a total shift in regional power. Is the decades-long conflict finally over? The capital watches as weapons are laid down.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Maoist Operatives",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Administrative Extension Request",
+        "script": "Will Telangana keep its top administrator? The state government is officially requesting a three-month extension for Chief Secretary Ramakrishna Rao. With critical projects hanging in the balance, this move aims to ensure stability during a high-stakes transition period. A decision is pending.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Ramakrishna Rao",
+          "entity_domain": "politics",
+          "hook_type": "question",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Hyderabad Wedding Chaos",
+        "script": "Disaster struck a high-profile Hyderabad wedding when Nayanika Reddy was blocked at the gates. Moments before marrying actor Allu Sirish, the bride faced an unexpected security standoff. The glittering ceremony came to a sudden halt as guests watched the chaos unfold.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Nayanika Reddy",
+          "entity_domain": "general",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWGRTdU1IMk1sbFZoa1Q1ZXRFTkpmV09wS3YwQTNlRW95bnRCZ1c1YkRCdmhmaUtmVTZBZjZtYndIWWM4a19rTDhmUnVuZ1dHWWs0TEdmUDd1ZXlRZ25NdDhSc3JQNWpYRmdUbE9JY3BpcVZpSXBVdF9sajJNWlZKOGxtaEIxWkNvbzRtOVBSMWgtMXpsMExXcTQ0SEt2X2VwMlBWTEp1NlVTOWNzVW1Hb09aNjY2dHVocW9VenpDRERweVVNc05YcjMyTEdpdkpy0gHXAUFVX3lxTE52YkRVRUNBRjZ4Mkw0VFd5S2pyRnR2dGlHX1N4UFZESUR0S1dhWmI1YmRkUi1ROWE3VXVEblZUS3JIWDVKcEZKMXpjVUpTYkpLcWIwcFlpUkhfb2tXMzFURUxrbVZyNlJkWnpiQnNuNU5QVXRHU2MyN2N2VUl4ZHJoLVAzOUxuWXhQRmtLbF9YRmhIbjdWUDV5WThnRWI3Q01Yc2xwSVdQU0FnNnZUWGd4Qm1DbEp4TFNnY3doWkVGZEdJZ1h6cHRwRzJURTlIaU5HS3pQSWVV?oc=5",
+      "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOSDR2dDhqNWE4VUs4ei1obENPdi15eGN1WXd6WTZkME5HWlgtb1ppZHBfckRVYzRZYUNjNGxDV3EzbTJJWGFhYlYzUmlEemxQVXp1RTViUE1GTjRPNmxKMG5PMXZGOFMzbElCWUZTMTFKUl90c2Z2Tm5ZcnMzeEpkcDJzVm93WV90WFI5M01hZURlSkpEbEpLQ05rUVdyMUdQV1p6Tjc1dmxfU1RuTlpwVHgxNjBocHFmNXZBdnQ2MUtkcVFjUVNucndtdHRYQUVBQkpMRUNzWWRpemhmcEtr0gHkAUFVX3lxTFBiQ0dDNlBmU2UtVlJIeGtGNWdnb1Fmc21tdC1JdHlhaXJDaEVnY1oydEZqeVo0LWxWcTNhR2MzUDdEMm10UEJxbmM1Q0NyMlhMYkhKVHhWWUlXZ0Q2cnpxMlRSUEFDUVhCZjl4MXh3VXBlOGp0VVRxcExpUDFWdEI0djktclJDd1RVWUxyVDNrQU1vaW0tSzdlN0cxWXRHemF4bHVXMzM5YUxCZzhnZjdabGRhb3luU1BRNHdtMWlVajV0NUNXNmRrSEl2dUktVGZGaE9VVDNDWFhDdHNMQ1NtZHk3dg?oc=5",
+      "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQYzVsQko4WHRHaF9CZXRsM0wtU3dPUzlSRlJGUDZGYlgzckpRV2VYUlRLX3hsa1NINDhuWjdHSXZHaE5QSDIwSXJ6ME5hby1JTG9lVUt5cjNGVFFMNmhNbnp3dDBFRXFkVFFmX010VWxURloyUmY5U2R1Y1dQUk1CT1drRzNwcW9DUThHeC0xaUJ6UjFHVEFpQkpCbDBiNEdZc1Zfa2RfUGNYYjE0QXJnOVEzRndqY09HMGNVMFZpX1I4a01Sa3hPb2M5ZjYxY1lCYUVPTzBmZWVVcHdK?oc=5"
+    ],
+    "timestamp": "2026-03-08T07:31:47.391113+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260308_3acb46e2",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Silicon Gunpowder",
+        "script": "Is silicon the new gunpowder? AI-driven weaponry is rapidly accelerating the conflict in Iran, turning traditional battlefields into high-speed digital kill zones. Military experts warn that automated decision-making is bypassing human oversight, making the next global escalation inevitable and terrifyingly fast.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Iran",
+          "entity_domain": "politics",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The Price of Hysteria",
+        "script": "Forget the robots; it is human hysteria destroying your portfolio. The TCS chief claims market volatility is now fueled by raw AI anxiety rather than actual performance. Investors are fleeing in terror from hypothetical threats, burning through massive capital as psychological dread outpaces technological reality.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "conflict",
+          "timestamp": "2026-03-08",
+          "topic_entity": "TCS",
+          "entity_domain": "finance",
+          "hook_type": "conflict",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Britain's Intelligence Bet",
+        "script": "Could a quiet English county become the next global tech superpower? Oxfordshire just secured elite growth zone status, unlocking massive investment for neural research. This isn't just about local jobs; it is a desperate play to secure Britain’s relevance in a cutthroat intelligence era.",
+        "metadata": {
+          "niche": "AI",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Oxfordshire",
+          "entity_domain": "technology",
+          "hook_type": "question",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRWZvdXdZUGgxaUNKTHZmeW40ZW5nRG1aUnFNdkNMeXJ2cW13ZDJ5VU9WUmpjRWJjZUhBSG1naWVwQUxHX2F5cENHX3lsaFB1XzFWaHN6Si16ZDV2OFZ2SEQxRFZlbkRMMktHQ3pkU3EydkUzeEQzMDhtN290MEVJbTF3?oc=5",
+      "https://news.google.com/rss/articles/CBMikgJBVV95cUxQYmNiMU1RVGtCaXVrWkRvQ20wOGx0YW1OeWFDU1lCVy1QM0JHRmlLZEJQYnk3aTZrM3I3anVaRnEzb011OGFIYlZqSGNfM0l0LW55SG5uTElwT0k5VUp3dzJaa2dGRU5aak1XZjFnMWo2OTNVRHNlUDFlSDhzY25FMXRIX3RpLVZoV21VNWhfTjZRVDkzWDY0U0VCX0l3WkVIcXNGalN4cjhQU0FFX1RlMVJHU0ZfdUVyd2Q2a29vV0RydjQ2bmpieG5ORzFZck9VX3BKeVNsaGRwOTJyS2JRcEYyQklWdEdUNlJ0SzJ5TExkdFBXWnFISGtvM0hNQVExbmZjZ0dsa0x2cHBrZXg3VERB0gGXAkFVX3lxTE52RFB3c2dlVVRtbFdsakY3WGhnYlhrTGI0a3FUcG9GaFBjZWVRM2hWTTRNTGt4N2JiQnFNQnc2ZTZZSUFTQXo2b1gyTkR3OXQ0bTBlaVhZWDZ0OHE5N2JOMmttZGR0RjJPRGlsX0czaU5VeVR5M0V6STd5eUtQaHQyREtCOEt3WFVVcVFQM05VMVBLZ1NKYXM3WlhpMVhWY3g0VDM3Wk50NE44Q2FXdHJHRFE4cm1CRHBWMGYyYXJBMXhucDJ5OHlFMVpTMncycUN5X19paF9Rbm1qZXlfQkJoU1M1eG9JUkFBM2lCU3R3dG5FNWJ5Y0JsVnFCcE9MVXRHNldVTGRFelpwVzdIMlIyWFY5WmtLWQ?oc=5",
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfdWF2b3VGRFhnVVFFRV9vWmVQZm9SR0dnWE1KSW54RkwxLXVQeHdyVlB0Z2FvNF8xdzJEV1JWdzFFY0F0bDJ6WHE1bnBhLTFIa2JLRVZIekJCUQ?oc=5"
+    ],
+    "timestamp": "2026-03-08T08:12:17.231935+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260308_a255c588",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Hapag-Lloyd Board Crisis",
+        "script": "Is a boardroom revolt at Hapag-Lloyd the final warning for global shipping? Massive executive exits are sparking fears that maritime trade is hitting a dead end. As shipping costs explode, investors are questioning if any valuation is safe from current chaos.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "question",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Hapag-Lloyd",
+          "entity_domain": "finance",
+          "hook_type": "question",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Russell 2000 Fragility",
+        "script": "Small-cap stocks are walking a tightrope as geopolitical tensions threaten to ignite a market meltdown. The Russell 2000 is facing a brutal reality check. Are domestic companies actually insulated from global war? High-stakes uncertainty is leaving investors with nowhere to hide.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Russell 2000",
+          "entity_domain": "finance",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "India Economic Rise",
+        "script": "While the West fractures, India is emerging as the world's ultimate economic fortress. Global capital is fleeing unstable regimes to bet on New Delhi's growing dominance. This isn't just a trend. It is a massive shift in the balance of global power.",
+        "metadata": {
+          "niche": "Geopolitics",
+          "tone": "neutral",
+          "pace": "fast",
+          "style": "conflict",
+          "timestamp": "2026-03-08",
+          "topic_entity": "India",
+          "entity_domain": "politics",
+          "hook_type": "conflict",
+          "hook_strength": "medium",
+          "engagement_score": 6.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNkY4cGZhT1RCUWgtQ0FLQ19wcUNVSng4SEZUajYtbTExa1UxWE9aejdiM3hrazZpYzBrVGhZVWcxa1F3Q0NzWF8xdllmeDB6MGVaTzR0dVpaZXNBdnNtUm9iNWNVWjg3NE5ZSElDdmhiYjVRbEEzSEVxZFZEZ282SzliY0wzM3V4blJTSkx4cDlUMHYwV0xIWl9UTm1TY1MtWjcwcGcwUjBjQnNKWkxub2dkMUtvMlJudWFVcnFBRkRfZlVoc1FteEY1akw2SWsyRzFvN0NSa9IB3AFBVV95cUxOMGZDMGlUQjNQRVVLMHB1QktSTmhCMlJ5bmw2WUdJdnp5Y0ZkMTNEaDJKSl92Z2NRMWc0dmNaUDhHOWV3YXNUM2NuLVNTcUtrQXZkd1hteTZKa2VnWUs3WVYyeXd2dTk2Nk9lU3JJdHpNSVRCNGIyN0Y2T1lJcEpaYXhxemdFaDNUckRacXZGbEh5anVWUHYzWTlSR0REYTdYaUNhWW11OFVFTEdYQ0l0SElfRWtDdzdIRmcwc2p0S09PcEtIbko2MGFUR19Ec0FHNjhtZnNkMFg4UW0w?oc=5",
+      "https://news.google.com/rss/articles/CBMingFBVV95cUxQeVkxR0dMWmNzUm1qaWlQRWFESGlzLXQya0w4VnFmNmE2Z2RvckJPMHVrZWlfaWp2bHNrNnZJa2RrRllVRjBCblpwS0VLN3h4U0l0Y2NBVVVySTA5dU9xS0lqempabGlrdVotWDNGZU5fai1YNjJ6bTV3c3pMTGN4N2tEOHBCTnpBN0V1ZTRWTFZGNjAyMTcxZVVDbHlsZw?oc=5",
+      "https://news.google.com/rss/articles/CBMinAFBVV95cUxPb0dwTXVCaU4zbFlhRFVBbmU2djlabDE2LWV3ekREWFJJbnR5ZThOWjBLQWtyY2RiR21RVTVOUHg2aWFWY1I2NnBOUHB0X1Nzdl8wTkVaTy1rS2l2NS1WQ3Fic3kzOGRPalBxbFpoZy1GejB1ZHdNdlplQks4cWNsSS04TlZTWXFHdTlTaXZSTFEyMTdWanRIemx6VUvSAaIBQVVfeXFMTTAyNHZmU09YNTJXUjRpRFJzMDVkRlFkR1A1d05xOWxjWWtQZFFGTDdYUVM2aG5WQ25zN2FtbHFGZUxhenRac2wwYjVFazg4MmJiTHNjZHBPb2Vhb0VNWTFCaFFwb1lWRjhYSlNQSExtdFpnWGlFZ05VOXptWkFiU2VVQXZhWngzaEVkMkdiSU9uT0NKYXV4UlNvOUd5SzQ4OXV3?oc=5"
+    ],
+    "timestamp": "2026-03-08T08:12:35.871569+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260308_6e41ab9f",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Hyderabad Real Estate Conflict",
+        "script": "Hyderabad is witnessing a massive political showdown as local builders face intense scrutiny over promotional freebies. While the High Court issues a landmark ruling on surrogacy rights, politicians are locking horns over real estate regulations. This power struggle could redefine the city's future.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "conflict",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Hyderabad Property Sector",
+          "entity_domain": "politics",
+          "hook_type": "conflict",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Rising Property Costs",
+        "script": "Your dream home in Hyderabad just got significantly more expensive. New development rules are forcing builders to hike prices by four hundred rupees per square foot. Industry leaders are demanding an urgent rethink as the cost of living reaches a breaking point.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Real Estate Market",
+          "entity_domain": "finance",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Mass Insurgency Collapse",
+        "script": "A historic turning point for Telangana just unfolded in the capital. Over one hundred and thirty operatives have laid down their arms before the Chief Minister, marking a massive collapse of the regional insurgency. Is this the definitive end of the decades-long conflict?",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Telangana Chief Minister",
+          "entity_domain": "politics",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMGd4QUxHbkg0WFdxUzJhRENUTUVJLUhrekVkWHFMaTZNT2tPdWppUHltUTlYTnBaSU1peHNwYW1NY09HeVUydWdnSHh5MDBsNGRzOUwzSzJvUmM3RE9jSXZ0QkdQTjVkU3JWUDhBblJHaEN6Y3lvVHZmNTFnVVBSM3o1eXJMWmY2V0Z4MlhGQkU1ZkNLbXk2ZTI1cDhCZThJV0ZlNlc3dEF2Y2kwdWExTHVoSWhwUjltOS1fcFdrU3NObFJmQ1Z0VmRGLVVIcWpZVUdua0thYXQ2a2py0gHiAUFVX3lxTE83WGhqeDRZYUYwZEZkbWJWOWl0bW5UQmZDQ1VTUmxCb19tMVVrdjc4amFKYnNHLVJJdFBKY05GTHA1TWNWWlZUTjh1OXZqTGtNdjhLWU5zUVhBSUtwUnU0bTdkWjNKbzcxOG9mZlpFNzdHOVFoeUhmWTJFb0YyczhvT1RGVEVKLS1MUnIyc0pSVVBmVlNGVmxYcHl3aXpQV3ZpWnpfdERHZFgwbHhNV2k3NmgzakVHdzRKM2lBUlAtUGFFQ0FPenlrQjduZURuMTdUa29MSkM3aWlpTUx1OWhXZ2c?oc=5",
+      "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbEFCUjB4SklyX3pZT25WUWhrYWlrU1JSbThSNlk1YkJNZmJrNWVOcklickpTN2tMeVZKSVpNVThVcVc3eWg3dzRyLXZQaFpDd1pQZDRRcFc0MGtRazU0OEgzU1NSZG9zWTJTNWgyMFAySDBrbkJEY1dhbU1PVm1BYXVDYnRQZTdoNUJQMzRzWnJkQUFCc254dUcwMHBTR2xrajJ1bENhZ09aSTNJemRDdkVMcEx2S0JMTWswZzN2WndIUQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWGRTdU1IMk1sbFZoa1Q1ZXRFTkpmV09wS3YwQTNlRW95bnRCZ1c1YkRCdmhmaUtmVTZBZjZtYndIWWM4a19rTDhmUnVuZ1dHWWs0TEdmUDd1ZXlRZ25NdDhSc3JQNWpYRmdUbE9JY3BpcVZpSXBVdF9sajJNWlZKOGxtaEIxWkNvbzRtOVBSMWgtMXpsMExXcTQ0SEt2X2VwMlBWTEp1NlVTOWNzVW1Hb09aNjY2dHVocW9VenpDRERweVVNc05YcjMyTEdpdkpy0gHXAUFVX3lxTE52YkRVRUNBRjZ4Mkw0VFd5S2pyRnR2dGlHX1N4UFZESUR0S1dhWmI1YmRkUi1ROWE3VXVEblZUS3JIWDVKcEZKMXpjVUpTYkpLcWIwcFlpUkhfb2tXMzFURUxrbVZyNlJkWnpiQnNuNU5QVXRHU2MyN2N2VUl4ZHJoLVAzOUxuWXhQRmtLbF9YRmhIbjdWUDV5WThnRWI3Q01Yc2xwSVdQU0FnNnZUWGd4Qm1DbEp4TFNnY3doWkVGZEdJZ1h6cHRwRzJURTlIaU5HS3pQSWVV?oc=5"
+    ],
+    "timestamp": "2026-03-08T08:12:52.701182+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260308_e67fd22d",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Real Estate Price Surge",
+        "script": "Buying an apartment in Hyderabad just became a nightmare for middle-class families. New development regulations are forcing builders to raise prices by four hundred rupees per square foot immediately. Local industry experts warn this shift makes housing unaffordable for thousands of citizens.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "shock",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Hyderabad Real Estate",
+          "entity_domain": "finance",
+          "hook_type": "shock",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Political and Legal Shift",
+        "script": "A fierce political battle is erupting across Hyderabad as authorities crack down on real estate marketing tactics. While leaders clash over illegal promotional gifts, the High Court has delivered a historic verdict on surrogacy laws. The city legal landscape is shifting overnight.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "conflict",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Hyderabad Government",
+          "entity_domain": "politics",
+          "hook_type": "conflict",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Wedding Venue Standfall",
+        "script": "Chaos erupted at the star-studded Hyderabad wedding of actor Allu Sirish when security barred the bride from entering her own venue. Nayanika Reddy was left stranded at the gates just minutes before the ceremony. The high-profile celebration turned into a public relations disaster.",
+        "metadata": {
+          "niche": "Hyderabad",
+          "tone": "dramatic",
+          "pace": "fast",
+          "style": "reveal",
+          "timestamp": "2026-03-08",
+          "topic_entity": "Allu Sirish Wedding",
+          "entity_domain": "general",
+          "hook_type": "reveal",
+          "hook_strength": "high",
+          "engagement_score": 8.0
+        },
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMGd4QUxHbkg0WFdxUzJhRENUTUVJLUhrekVkWHFMaTZNT2tPdWppUHltUTlYTnBaSU1peHNwYW1NY09HeVUydWdnSHh5MDBsNGRzOUwzSzJvUmM3RE9jSXZ0QkdQTjVkU3JWUDhBblJHaEN6Y3lvVHZmNTFnVVBSM3o1eXJMWmY2V0Z4MlhGQkU1ZkNLbXk2ZTI1cDhCZThJV0ZlNlc3dEF2Y2kwdWExTHVoSWhwUjltOS1fcFdrU3NObFJmQ1Z0VmRGLVVIcWpZVUdua0thYXQ2a2py0gHiAUFVX3lxTE83WGhqeDRZYUYwZEZkbWJWOWl0bW5UQmZDQ1VTUmxCb19tMVVrdjc4amFKYnNHLVJJdFBKY05GTHA1TWNWWlZUTjh1OXZqTGtNdjhLWU5zUVhBSUtwUnU0bTdkWjNKbzcxOG9mZlpFNzdHOVFoeUhmWTJFb0YyczhvT1RGVEVKLS1MUnIyc0pSVVBmVlNGVmxYcHl3aXpQV3ZpWnpfdERHZFgwbHhNV2k3NmgzakVHdzRKM2lBUlAtUGFFQ0FPenlrQjduZURuMTdUa29MSkM3aWlpTUx1OWhXZ2c?oc=5",
+      "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbEFCUjB4SklyX3pZT25WUWhrYWlrU1JSbThSNlk1YkJNZmJrNWVOcklickpTN2tMeVZKSVpNVThVcVc3eWg3dzRyLXZQaFpDd1pQZDRRcFc0MGtRazU0OEgzU1NSZG9zWTJTNWgyMFAySDBrbkJEY1dhbU1PVm1BYXVDYnRQZTdoNUJQMzRzWnJkQUFCc254dUcwMHBTR2xrajJ1bENhZ09aSTNJemRDdkVMcEx2S0JMTWswZzN2WndIUQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQYzVsQko4WHRHaF9CZXRsM0wtU3dPUzlSRlJGUDZGYlgzckpRV2VYUlRLX3hsa1NINDhuWjdHSXZHaE5QSDIwSXJ6ME5hby1JTG9lVUt5cjNGVFFMNmhNbnp3dDBFRXFkVFFmX010VWxURloyUmY5U2R1Y1dQUk1CT1drRzNwcW9DUThHeC0xaUJ6UjFHVEFpQkpCbDBiNEdZc1Zfa2RfUGNYYjE0QXJnOVEzRndqY09HMGNVMFZpX1I4a01Sa3hPb2M5ZjYxY1lCYUVPTzBmZWVVcHdK?oc=5"
+    ],
+    "timestamp": "2026-03-08T08:17:59.723309+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260308_60121edf",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Global Travel Rebound",
+        "script": "Is global travel facing a permanent freeze? The CEO of the world’s largest visa processor is sounding the alarm, claiming geopolitical hits are only temporary. While borders tighten and tensions rise, industry leaders are betting on a massive recovery despite current instability.",
+        "visual_keywords": [
+          "airport departure board",
+          "passport stamping",
+          "aerial view world map"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Market Inflation Storm",
+        "script": "Traders are bracing for a high-stakes week as global markets collide with geopolitical chaos. With oil prices surging and critical inflation data looming, investors are on edge. Can the economy survive this upcoming storm of CPI reports and escalating international conflict?",
+        "visual_keywords": [
+          "stock market ticker",
+          "oil refinery sunset",
+          "inflation chart rising"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Aviation Under Fire",
+        "script": "Is the aviation industry flying toward a total collapse? Boeing warns that long-term geopolitical conflict is now the single greatest threat to global flight demand. As war zones expand, the dream of seamless air travel is being grounded by relentless international instability.",
+        "visual_keywords": [
+          "grounded passenger planes",
+          "boeing factory assembly",
+          "storm clouds over runway"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMicEFVX3lxTE1icV9BQ09xZTMzRTRGem1ZbFBoUTBNaEZTSEVQNUpFc3RaN0EtajExYUtwTXQwVmVHa2RZXzNUYjhsa2NWT2pMSHlTelZGdlJhWnZtV3owWWU1azFoWVlBLXZ6Tm55c2tnY2VQejVSWDg?oc=5",
+      "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMkhlZUszMmp5dHVTaVlzNnNMX3AxUk9NN2FBVmxMbURCZ2dfMmJTcmRhRngtY1ZOalRsdzFlVDk4QTZIYWdpQ2tVRU9DMlVTWGducUlIOThNQ1V3bEVjN2MwckJ2YUJlMnJucHFQLXQ0dXcxQlc2U016SVZmckpHeXdFSWRseEJvTDRoNW8tbF9EOVpLQ0l4dl83ZEx1ZU5BcHd2b0hPbzQxdzg1X2xuNkd6ZzFHa1U2clNLdlNKekxfb1l0b09MZC0zUHhsYmZCbXc?oc=5",
+      "https://news.google.com/rss/articles/CBMijgJBVV95cUxNa2FsWV9vQVlQZjhwcEhwV2dFM1hxSTJwRkxxRE5RWVZfMW8zM0RZRXZYZW1ZZGtiYTBPMHNWdjMtcWJDM3o2c1I1cG1BWDg1V2Fwc0otLVpmNVFsR20tb3YxNlhuT3AtZEdwcG1MQjhTckt3bTR4WWFjVEs0d0ZzOUtjTWhhVlNZeVJwU210dG5nV1NnVUJvQTZMbWNMNjkwQXdZdDlPTnlVd1pNZkxCSElQMXFrRC10RE13RF95U25DWlRiQmFkUjgtNGxkX0lEZmNRLWppVDdWcE0tc2tlM0lySnJHT2NOemlkbVBSaTJ1dUdLVjZyOWdsSERpZnNFTjlyR09wUTZsMXg1V2fSAZMCQVVfeXFMUE5ybTdRNkI2QlBZVnJVRGdvdlNoWmpVM3RhcVV2N3NqVXBCaHc2WTVuVnktcTh0ZS1ucW15NnQzMlBLVHlzWkl0NlBNS0FxRUtyNkx3UG5GdGFXclFUOVRKUnlZcWpTMkVMeTJiOVdlMTlaaVEzRzE1LUwtdXJKZ2trdVdjSUs0STUzNm50LXpZS0hoLVRqVXlBM0dURnQzN1NVclNXazRCQjJFXzVMZmNnX1N1b2lBUkFLbEJFMnBlcHhoT2VqbVVrS3hmOWJvV0M2eFJ6dUZjczVWWlBlQTFqTVNaaV9UdnU4SEZiY2h1U1pLX1BUV3pBZ2gzUkE5aDZ0Nmh3MUl5dU42NjYyWnkxQU0?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\GEOP_BATCH_20260308_60121edf.jpg",
+    "timestamp": "2026-03-08T20:09:17.789038+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260309_31a9924a",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "OpenAI to acquire Promptfoo",
+        "script": "OpenAI is making a massive power play by acquiring Promptfoo. This isn't just a business deal; it is a strategic move to lock down AI reliability and security. Sam Altman's empire is expanding, gobbling up the critical infrastructure behind the tech.",
+        "visual_keywords": [
+          "openai corporate headquarters",
+          "digital security dashboard",
+          "business merger animation"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Can AI Kill the Venture Capitalist?",
+        "script": "Is the era of the human investor over? AI is targeting the venture capitalist elite. New algorithms are outperforming the world's top firms, vetting startups with a speed and accuracy that could leave traditional money managers completely extinct.",
+        "visual_keywords": [
+          "silicon valley skyline",
+          "algorithmic trading chart",
+          "empty boardroom"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "AI allows hackers to identify anonymous accounts",
+        "script": "Your anonymity just expired. A disturbing new study shows AI is giving hackers the power to unmask anonymous social media profiles instantly. The wall between your digital persona and real identity is crumbling as machines solve the privacy puzzle.",
+        "visual_keywords": [
+          "glitching digital mask",
+          "hacker typing code",
+          "social media profile grid"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBocmlqOVFocktaTGpPcVpOQmY1NTlTaWZzVkFNRGp6LXlxWmJrSmlpTzl0Wl9fSV9PX2xYRUloZlJnRDNsNUdsUzBCQWJFYVRyMWlHN2d4cThiT0lvWTBndVlZZw?oc=5",
+      "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBrWmI2S1MyRnBUdVd5LVRjR3FNeVpnSnpfWWZPd0N3NFJfOTNwcGdJYjhXdHZPeEdFblppUmQweldkY0QxcVZibGRfb2o3OXhCdmZYVUZKZ1k2YmYtUERIZWdR?oc=5",
+      "https://news.google.com/rss/articles/CBMikwFBVV95cUxOS3pOcTBKMldPRlFpZVRveXdaOHk1bEJ3eGFZczBvSno5eHB4VURVaUlqOFZ3WlZHaVVUemZ2VG5oaDBWOUY1ZFVYU0R1X2FFbXVQandjRHFQdFZjemFmWE5TRkFORXVTbUhlcWVuZ1A5eEpqelhCQ1RBMnEtd3Q2aWpPb09ybDZ4NFlHVEs0SUp1VUE?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\AI_BATCH_20260309_31a9924a.jpg",
+    "timestamp": "2026-03-09T17:40:07.177698+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260309_a0cb75b2",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Energy Crisis: Oil Becomes Geopolitical Weapon",
+        "script": "Energy is the new front line. As war consumes West Asia, oil has officially been weaponized, sending the global economy into a tailspin. With supplies at risk and tensions soaring, can the world survive this brutal shift in geopolitical power?",
+        "visual_keywords": [
+          "oil refinery explosion",
+          "global trade map",
+          "burning fuel barrels"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Nasscom Urges Cyber Resilience",
+        "script": "The battlefield has shifted to the digital shadows. Nasscom is sounding the alarm, demanding a massive surge in cyber resilience as global tensions boil over. In a world of invisible warfare, is your operational infrastructure strong enough to survive the strike?",
+        "visual_keywords": [
+          "hacker digital matrix",
+          "secure data center",
+          "cybersecurity shield icon"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Gold Rises Amid US-Iran Conflict",
+        "script": "Fear is driving the markets. As the US-Iran conflict persists, gold prices are surging to new heights while geopolitical risks remain dangerously elevated. Investors are fleeing to safety as global stability hangs by a thread. Is this the ultimate financial fortress?",
+        "visual_keywords": [
+          "gold bars stacking",
+          "stock market ticker",
+          "political protest silhouettes"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNUV4QWd1N2pCSVozQTNBUkJiazRzbF9vRURlak5SMXJHcmE3QlVUcnpxWWxzLXlFY1c2WDk0SmJrdDRpcUVvalByMDVISmdyR2FFRS14Q1dsREp4Y2lkb3laUXJDU3BhT0lPNWZnTUdPV2NwLXBGMklyZzhYcDVCcmdybVJOV0JTcS00WU1UMHlsS3YyZTJjZXVBODZzZG90XzRjTDhZT2R2ZzBWZ3pR?oc=5",
+      "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN3c0QlNlalJsSzRkR1FCNEkxb2Uyc3ZuYkRqWHBKS2l2ZFhWUHk0dmR4RnBmVWlTLWRFblJPR2FRNTBFd1kwMFBWbzBhbmZqbmt3SmJyMllCaUgwOUNobVBhRzlQaHduUTMxYk83OHpBTmJjVV9rYndhWDNoUEJfaktybktQX0ZkWnlBZlFYOWNUQXFITkQyVGMyT2tYRzVQalNHYzRBY2tKVkZhQnNWSFY4b1JaSWhGSFB6MdIBwgFBVV95cUxOeTZSUlRjdUh2RjktSmhucUh2SnU5VXNhR01VeVNtLVI3MFRkX1l1X0M2dGNEMEdrVjRqRFhhTk45Ti0zdUVFb0lkUlh4d250M3NEMGdRM191dTlSaFJYSFdqRHBRSTh2VkdMRThIeUJyLW9xRmlWcXBUUnFWd1AyUlNTWjk3UnJHRGhhX2pHRExuTHFvZzhNbHFPUzZRWHRjenYzVjkwSFh0U0RDNkEtUHlPUE00cWE1OENEbURJNUVWQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeEVLRjVlN0xhRGdkRmJBeXJpRTRodzV4TmxkVm5LYU94VkNMbm5fSUlHYVgzTzBBaTB3NGF4R2doVl9jZG5ZNGhmeWJUN29ETjhDX2xsOXZQeXVHVVdVRmc2MVJXWmFudGRMVVQ1QTk3Q2VUNGtzdkFXZU9KYkc4NXl4OENGRmgzWEFzRVVsLVJDS2wtTGotZGpkUDRQRkdGeHo4OUd2SGtwYzJWSTJndVlpNHFwS3d5M1RNcTVqQ2ZPSDRrOWp0RA?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\GEOP_BATCH_20260309_a0cb75b2.jpg",
+    "timestamp": "2026-03-09T17:40:27.348799+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260311_1db97173",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Facebook-owner buys 'social media network for AI' Moltbook",
+        "script": "Meta is moving beyond human users. Mark Zuckerberg’s empire just snatched up Moltbook, a social network built exclusively for AI bots. It is a massive strategic play to dominate machine-to-machine communication, building a digital playground where humans aren't invited.",
+        "visual_keywords": [
+          "meta headquarters logo",
+          "robotic hand scrolling smartphone",
+          "abstract digital network connection"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Expanding Chrome’s AI experiences to India, New Zealand and Canada",
+        "script": "Google is taking its browser war to a global scale. Chrome is officially launching advanced AI experiences across India, Canada, and New Zealand. This isn't just an update; it is a bid for dominance as Google embeds intelligence into every click.",
+        "visual_keywords": [
+          "google chrome browser logo",
+          "glowing world map highlighting countries",
+          "futuristic internet search interface"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Google announces new built-in AI features to Chrome in India",
+        "script": "India is the new frontline for Google’s artificial intelligence revolution. Major built-in AI features are landing in Chrome to supercharge how millions of users browse the web. The tech giant is locking down the market, making AI-driven search the new standard.",
+        "visual_keywords": [
+          "india cityscape with data overlays",
+          "mobile phone displaying chrome ai",
+          "fast digital processing animation"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBnTHZlOHJGOEtKOFdSdFc4dzFkTkxOME5hYTk5Q3RKNjhBRVBRY3FFWFptd09Fal9nLWVvZmJPZWJiS0VWZV9CY2tfVC1LcVhYR2dQeTNzbExMdw?oc=5",
+      "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYTNCVUtlSjB1UEZIb2xycTJnMXhYdHFLQncyN2RSODR1X0xGMDFGa0k3XzU3MDc4dmkwZlo2UU1JaHBfS19WVXM2SmZvWmNlTkZCSFUtYWNBQ2c5cWFQOENfUEZZZXVQWWVBMXhsUjNQYjBubHExZ25uT2tsblRXZHFaMFNUaDRKcFFhU1VSdFJ2TDNoNW0waGJvOUFmM3RH?oc=5",
+      "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdzBkOUlheDhRclQ3ZjNVa1p0ZjJGaUxNWHRLNGdnREMwcGxmTjR6aHQzUDJuT21lNzZhdjhIUmpVWTFOVVBBSUQwX3NfWnZ2a0EtRGhkaW9ZS3FjQWZtUVZoX29hYVYwcTJlZ0RiaU4wZ2p1bWtFcW9kN0pGaE81Ry1VYk84aDA4dFZWMExuQlJwdw?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\AI_BATCH_20260311_1db97173.jpg",
+    "timestamp": "2026-03-11T12:09:12.894264+00:00",
+    "status": "pending_review"
+  }
+]
