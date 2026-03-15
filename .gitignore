@@ -1,0 +1,6 @@
+.env
+*.db
+batches/
+logs/
+__pycache__/
+key_pool.json

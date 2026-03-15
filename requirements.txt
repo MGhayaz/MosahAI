@@ -5,3 +5,5 @@ sentence-transformers
 newspaper3k
 requests
 lxml_html_clean
+yt-dlp
+snscrape

@@ -1626,5 +1626,329 @@
     "visual_asset_path": "temp_assets\\AI_BATCH_20260311_1db97173.jpg",
     "timestamp": "2026-03-11T12:09:12.894264+00:00",
     "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260314_9b80369f",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "The Price of Intelligence",
+        "script": "AI is becoming a massive budget killer for Big Tech. Meta is reportedly planning sweeping layoffs as the cost of artificial intelligence skyrockets. Mark Zuckerberg is pivoting hard, sacrificing human roles to fund the massive computing power required to lead the digital frontier.",
+        "visual_keywords": [
+          "glowing server room",
+          "declining bar chart",
+          "holographic circuit board"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The 15,000 Person Exit",
+        "script": "The AI revolution just claimed fifteen thousand jobs. Meta is slashing twenty percent of its workforce to fuel a massive artificial intelligence push. It is a ruthless restructuring as the tech giant trades human employees for machine learning dominance. The cost is high.",
+        "visual_keywords": [
+          "empty office floor",
+          "digital layoff notification",
+          "fast scrolling code"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "The Bot Playground",
+        "script": "Meta just bought a social network where humans are banned. Mark Zuckerberg’s empire acquired Moltbook, a digital playground built exclusively for AI bots. It is a high-stakes testing ground where machines communicate without human help. Meta is building a future for autonomous agents.",
+        "visual_keywords": [
+          "robotic arm reaching",
+          "abstract digital avatar",
+          "interconnected web nodes"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMidEFVX3lxTE81UHV2eGJUQzlwNXVFNTZXUlg4MFZRaWZmRi1RNHhKUU5STGx6REh5V2FTWkNVYzZ4WVdyVWt2TVExc081Nnl2WFJnbkVMLVhISlB3TWh1OUpUTzRjT2J3UnNPMnk4WU95QVJLdWRWWDRGZXg4?oc=5",
+      "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUE1EbWVTTWxBR0U0Sms2WGZFUi00RUU0eld1SE1pX2hEbHZWMWd6d3BlU0dHWWtlcTRORld0UEZaOVluNFFQZUN2OUJCZU9qZFpsbF9IME03RzdPdnc3UDF6cmFEanFiaG5lbXNWbldIbXYwdU8waGlkemUyNHJ0UW9LdXp2Slc4dU9JM3dHRU1SUmw3MTRiY0xFV1lqZE1RNEdXZk84VlZqTWFDaURwTVBNOUszSDNEakdLak04d0Z6YXUzSlBoMmpwdzVTQklzZTU4Z0ZwRmVrRE9QaHZLRWRvNnVIbHAwRktJ0gHwAUFVX3lxTE9lVVlRRWk0NWpweDU3NG82T2s4VGRYZEVKM1ptRjVRQnphNGhoQjhObVJCa0lPRmdrUkQxWmJoLWxNN04yb3ZYcmFZUDE5bWN1REdvNGhHbWJUR190b0tKSVAyMjZXeEUxQWl4RlRGc0tWZ3hmU2E3bmNkbW9SZVQ2N3Fpc0liMGNsWWl5ZEFtWlZoOG5PNjh4NTZEYzl1OFNBc2JTMDR3QWY2NGJWRUw4MGhXODUxX3pSLWNrakNxbkFfcDNMcW9fYmZ2MkJQeW9Qd1VpbnlTajMwaUhybzFibTJlUHVmTHlIOXdvaXpkVQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQSk1UOV9qTXBiWHZHc1REeEtCQjAtSS1lVjFDa1o1bm9heFlMSHAtTzZ3ZU1lOG9xZWtKdUU3bW1pUVd4b1BIaDA4Q3Z2OXZqbU9PSklJOUQ5aF9jRmpPUXQzbktaZXhZOGdQbUZQOVh0Zzh3OGJFRHpKVVpDSkdiZWN6eHVjUnJ5WVhyVXR6Qms4a25xeDhsYlJ5bEQteFNtcGJOcmJNeDY3d1A4MUJ4UUdNSFZKYUl5VjZaV2tlVGQ2Z3pKOVNJR0N6UFhLQlFGSkl4X0k0VTlZSHhZSHM3ZlBPRUE0MXdXU2k4RXpCTER0VjVDaG82Z9IB_gFBVV95cUxPZVZQV0JLVkJoMUZEeC1sQ1lmTEdmRXVucGRYdlB6YnY2eFl5dXNQRDR1TEpPakl0SEZTMWFOS2dZR19HNnhRZ3VFNTdRZVhqOGR5eFo5YUZ1R1NYTzl2TXNGbUlnNlp2aWdpWDF1ZGFxcVVyX3VUS3BZUG0wSUctTXBmdWoxdHBVUTFoeUxJMjBoamFoVWpxMlAzYVE0NjZXcUdZUHZCalY3T01qMWNXLWsxU0NPRWtDSkJsWE04VkJFZEFvZVllUlVVN3hGWVE3WS1hSjA1UDJYNDQyNU5menNFZDhtNUNfckE2SWhOZlpFb0ZhTEJIUlZLTDRmdw?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\AI_BATCH_20260314_9b80369f.jpg",
+    "timestamp": "2026-03-14T05:24:41.985944+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260314_dd34c076",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "India's Global Bridge",
+        "script": "Is the world breaking apart into rival camps? While global powers retreat into isolated blocs, India is pulling off the impossible. New Delhi is building bridges across competing alliances, turning geopolitical fragmentation into a strategic masterstroke for global stability.",
+        "visual_keywords": [
+          "world map fragmentation",
+          "new delhi skyline",
+          "diplomatic handshake montage"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The GPU Silicon War",
+        "script": "The silicon war is reaching a breaking point. Nvidia CEO Jensen Huang is set to reveal a new inference chip, but the real story is the geopolitics of GPUs. This isn't just about hardware; it's a battle for computing supremacy.",
+        "visual_keywords": [
+          "glowing microchip macro",
+          "jensen huang presentation",
+          "futuristic data center"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Vietnam's Mineral Power",
+        "script": "Oil isn't the only front line anymore. Vietnam is emerging as the ultimate player in the high-stakes race for critical minerals. As global demand surges, these essential resources are becoming the newest weapon in a shifting geopolitical landscape.",
+        "visual_keywords": [
+          "industrial mineral mine",
+          "vietnam coastal map",
+          "raw metallic ores"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUmpOTW41dGQ3RVpTUXc5YkZvblNKMmNsN2pGRjJyRmVNbVNSZnNOcklBUjJBellpaXlDNWxvODNTcHdoME1PNVhDek9TaDJfRlE3TU1yT2FtZ3hTMDREZERHZW52WjhUMTYyWUhzOGNiR2lueU03cVpnVjRYdjNYUU1XVzEzeTBoREdFLWQzbWk0Y1JsakY3VEhDTEdVR1pLVldyc3l3VGgyMVlJblpqODRPYWJ4THI3bXBrem42ZzlodzJORG4zb0lrSXVleFRtbkJkbHV30gHbAUFVX3lxTE9YeFU5VjI2Q3hYNWVIWTZCRlg2MEJIcXFhaWg1My1VNjJQTnhQU0lzdWptdEZyeDQzT0JHbWhvUVlFeWp2S2hhWjlFdzNMVDY1ejFZRGVhY05VTkd5dC15NmVFSUlNRE5LSVp4RFhjWVhtOGhmNHZIS1R3QVV2OXZ3RWtLc2RMMVNVSUdQeWRpaDRzSFpRZ01FRTFsSE4zalhUQ1RCUWsxTXF2b09BUTJJX0ZQWVZZdGxZRUkyX2hHSFFaYlNrM3lCazJfaXc1VGFXMmZTa1FlX3ZpNA?oc=5",
+      "https://news.google.com/rss/articles/CBMiwAJBVV95cUxQdFZGRUNOQTNYUVlvQUhQUm9yQVVpdjRpdGl2ejRpOTVsdzhmbXF1WkdCSmoyc2xpU2U4TEM5LW82cElpdy0zSzVzNnRUQWxZZ2pqV3ZmbDFPVFZUQUZuSzBlVEpHR29UZ0xqejVFbVBHb250Wk4yNUk4VjBPak1ZdnRzeUU4RWVoS0Fja1hBZGhiYjVPeFp4ajJ0ekRLZkxnR2UtazNnWkNlMEtONk9zbVVOQWJxckJCTEVXSGZla1dkNDR2b0l5LVowZTRoT19abjFzcHVDZ1p3ZVJqOVJKZWE0NDVBSU5PQy1lMjM0b29lMFlDYmxDRlFNQ0U1cTFwc3plLTA1T0E0bEs0Ukk0Vy01bTlDT0w2SUl1NFkzX1ptQzNScmxwWVJxMGRNS1diamVibEg0dnF6V1ZqdlNweNIBxgJBVV95cUxOMVVybWFaZEZ1dk44cUQ0X01JaTBRcVVvV2EzcEFacGR6UTY5cmRsV1BpSnVOYlRGUk5RaVd1RG5kLWJkRTBlSlQwSHcyVUUwN3BaS0hQTnJrOERTZkY5VGd6REZ2WEhxVmk5d1BNY0tydThpWkIxT3NSYXRmczFvUDRrWjZ0dF9jXzZKTlgtWk9ma091ZC1pRDVROVhqdnFrNGdiNFZNdUJEOWhhX2h0RXprdlhNcmpMMzYtLWlZdUs3NUNfLUhpQ0U0QlNDTHV6RHhkazd5cGloZk5Xc2VST0ZYRTh3VTM1WXNZdExPalVRbUY0UjdOdVl6eUtSM1RTbWNOVFlTbjBtWTMzRHJhUHducWg4MTVBck5HS0dpci1TbUgwVG5saDlYNFJwRVZvbW5tbFAzTVQwaENqUU5FMFVRdHhpZw?oc=5",
+      "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONDk5R3E5dTV1R2RqVlB1aHgzcm0xdjlSa050elZDSW43cXFLN0VNNnprbnBpWE83aWlyVDRDREVHeEVjcUZnakU3eURtYmlrVHNpcXEwaHBtZXppTjJuQXV3Yk1XVUFCOEM5WWsxbDI3Ql80V1BLd1g4TVV1N1FWVXNSUXR5TTNH?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\GEOP_BATCH_20260314_dd34c076.jpg",
+    "timestamp": "2026-03-14T05:25:08.388601+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260314_1cc7d05b",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "The Rise of a Tech Giant",
+        "script": "Hyderabad is no longer just a city; it is becoming the world's next innovation powerhouse. IT Minister Sridhar Babu confirms a massive surge in global capital flowing into the region. Investors are ditching traditional markets to bet on Hyderabad's rapid rise.",
+        "visual_keywords": [
+          "modern city skyline",
+          "tech office interior",
+          "digital data flow"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Global Capital Magnet",
+        "script": "Global investors are flooding into Hyderabad and the stakes have never been higher. Minister Sridhar Babu reveals the city is transforming into a global innovation core. As international capital pours in, Hyderabad is solidifying its position as a top-tier investment destination.",
+        "visual_keywords": [
+          "bustling financial district",
+          "investor meeting room",
+          "new infrastructure construction"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Strategic Innovation Hub",
+        "script": "Is Hyderabad becoming the world's most strategic investment destination? The IT Minister claims the city is now a global magnet for innovation. By bridging local talent with international capital, Hyderabad is securing a dominant spot in the global tech market today.",
+        "visual_keywords": [
+          "global map graphics",
+          "innovation lab footage",
+          "aerial city drone"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQcFFKUzJsa0o4RTExUTFQNU9rLWlNa1ptM0d1c0NqWU1ET0d2ZE1aMG9xX2dDcWIwM1hrRWNnOEpMSmpycTZ4R2NTTEtTNnpXbnJuQ1MzZUhrcEctbWdobFFGNWIxXzZvY2d2eFdMcElJLVNOaXpuTmtLY0hYNFdhX3NETkcwdWNuS2ZnU3ZSUHZleFNLVUN6OFZidVpVeU1BSERLMkU2QWRZTHdKeE11YUxCX3hRNzFrVDgzWEY2VU9uRVY0V2JPWTVvRWxXMGtT?oc=5",
+      "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOdS1qMGNzdmdDZXJXdEZFTlUwZVM2cGJTejM4aHZTNlZVR2lzNlBDenZpOWhkdnFZQnZramo1NmVvYXpGQm9tM1pKa1RFOFdJS284QXl4N1ExZVNGbW5uUWJRcnJoaTVKU3M5aFZiN1VBNVJjclFabFVWck9TUE95eDVRcVdPWmt3Wlk5NGdGRElpZVJvNW9iSnZRcnk1MHFsUkVrRjlneHo0Y2JEZTZ0c01hZS0yUWFRbHE2dk5SRTd5WkZRWFc3VThtYnYtWlB3MHY5eFNVNHF1TER2VzBXU1FmQnE1YlJv0gHuAUFVX3lxTE0xRHRMa2V3OGRsLV9kejhJMngwZm1jbzI1b3g1bDU4em10Y0pYMVVhZ0tfLXFzeVpwR2o2eXByNkYwT2RqS2tnN0Y3dHFka2NnbHdwLUZzVDVOc0YwZ2YwbmU3ZC1UWXYtTTZKMHFMYTNWby0wTEVqY1AxeUUzN3hNV3Zmcnp2WVJaV2ZlSWFNdW1DdGhLMXJrclc3aUkwLTlEYVBFSC1CNHRVcjJpWThON2liWWxlcGhfMF9RVjFHa0cwV1FIMUtMQmVGWUdKT1p0MVYzblRQaDM5eDNSWVhwNWVGay1fWHl6ZUZCMFE?oc=5",
+      "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOYzJRQmFOeVB6OHdvMS00SUhHT2g4VlVvUUI2SEpOS3V0ZVZ6SW5YeGtka19PbWtuRVlZUlMtUnhlbmRJby1PZ3BxenRQcDNlRW9uMFcwVkJHVzNMTlQwdWVaZXZ0VkRDZm5hZUltTXBmNGtCbXZERTMwU3VvaFZMbFZnSFlPdTVLeF9pRU15OTY0bDRtVDM0a0gzLUlyUjZvRS1jUnFpSWtZMjJmakU1WUpOLWlyTlhEeXVuMm1IRVJOX2NVRjh0UzJETExQQW5WMUgycDVfR0dRd9IB3wFBVV95cUxPMVBaQkpmRlZtYVNjdy1HVUZoaEJhaTVpRVZhcTZITzBzQ1M0TFZqdXA4aV9lNzdTajl2SlNDXzFNU2FPb0tPRFpnYUZvT0FwQ3JlWGJ1RS1NZzRoYXFMb0NJejI0eTZvMjN4SDVseUljUG1rMjNHYUhWeU5UQ3M2emlYYzZ4djU3UXVFX3ZqQ2JGTzNUdDd4QXVtM2plU3VrVzdtRlJGZW1XMUhvYXY4bDA2NmtoV3UtRlY5bTQ3N2FIcmdOWDY0Vzd5a05MN24wR2p4VmI0QmZESWVHOV84?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\HYDE_BATCH_20260314_1cc7d05b.jpg",
+    "timestamp": "2026-03-14T05:25:35.286292+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260315_944adc48",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Meta’s AI Sacrifice",
+        "script": "Meta is making a brutal sacrifice to dominate the future. Reports indicate a massive twenty percent workforce cut as AI infrastructure costs skyrocket. Mark Zuckerberg is pivoting hard, trading human roles for the massive computing power needed to lead the digital frontier.",
+        "visual_keywords": [
+          "Meta corporate headquarters",
+          "high tech server farm",
+          "financial charts falling"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The Evolution of CS",
+        "script": "Computer science is changing forever. Perplexity AI CEO Aravind Srinivas agrees the industry is returning to its core domains as artificial intelligence evolves. This massive shift is redefining how we build technology, moving beyond traditional coding into a complex new era.",
+        "visual_keywords": [
+          "abstract digital code",
+          "tech CEO speaking",
+          "glowing circuit board"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Chatbot Delusions",
+        "script": "Your AI chatbot could be warping your reality. A chilling new study warns that these advanced tools are fueling delusional thinking in users. As AI becomes more persuasive, researchers are sounding the alarm that the boundary between fact and digital fiction is disappearing.",
+        "visual_keywords": [
+          "person using smartphone",
+          "surreal digital art",
+          "medical brain scan"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSVFGRGsyX0NsM2dnaXhLWGprbXBGRFVkMnZVNkhYSUg5NnlndDhlcXR3S0VsQjNnSkZYNG81Vm80WGsyRF92ZWVybGVYRmxkbDRYUTRVOWlUZkZ5N29OWFFtazZYd0ZUMU1HVXdudE9XOEQwNS1OTHJJVWVPVnlIM1YwMC1qVTZ0OVlKRmU4RUNWOVBBa0ppeUN6RGt2aTNoV0NjQ1EtcGx1aVV6N2JWN3hLZVVsTFE0TEVsTkpMUFVneDhGdzZJY2VGT2tVWG1JTHfSAdcBQVVfeXFMUHRRZzI3MjBUWDlKYnlyQ2hRUWFwcnRBWS1icFhSSjNVMHlOSk5GUUlJbE1QRlByMlEtVGl3cTNRR1A2RF9VM21wVkVHd0R4blJ1a1BFbWlOMkIxWjZaU0VmSXlUeGQxQS1JRjRVaTVpc3dwZGFjNTFxNFphUUp3UHhtTzdJUTVCeDNKWU1MbU1Mb201eTFtcEUwQjhXeEQ2anlfN3BqbjVUa3FFVVduQVFVVE5pei1MeGdOWWdoTEN4djhGYU1xd1VMTGQ4d21ERl9aNmlzcHc?oc=5",
+      "https://news.google.com/rss/articles/CBMilAJBVV95cUxQdEhFdUVaZTE0ejg0TGhuQUo4M29UOGZZVFpBYUY3NVNicXlGcmI4cnFVUFNoYVY0bEJ5OUlCbUYtakRYeEpaZ1VsQnFkZERKTVZnS014cEVIZ0gzMFJLR1EtYXBsYm0wTk11RF9WWVk5dS0zd2lvdFozVm9mTGswNnA4MFI3ZnNXUkRZYXFBOEEyVWhXdTNVR2NzMF9pTkF2dXBkZmFUc05IU0hsdDV3bnNaN01xRmhlRzJBZjF5WVBTak5KWTNfb0VYTG9ZOUJWSk9WU2JtOVV2eUxFRjZyNmp3VmExbVd0eksyNThMX2pSYjRhZHAzNFJXNUktUDJPaDQ0bTN4aWdZUzZYYU1IT1hYc2XSAZoCQVVfeXFMUGJ6Wjc2bGZPRERmVlNoMmNYS1RtT1dPU0NVSkFGWEhXb193UEo1Vms2RW5lUXV2LWo3bENvYkY3cVQ0TXg0d3ZoaTNpS3hYaldLT2VEVlZjZ05BajVpWDEtTnBjbWdrelhTOEE0VFpqcl9TeWJ0RmxEWHdwVFRkTEdKR3dCU3FZQmxXWU1ZZzB5cTlYbWtyd19kT1k4b1pNZFpMZnRzenBxSXFIY20xWEFEZ25WWE5ia3dubk84eFVSVUswM1hsZmVSYkZidi1SZ1JLMGFkUW81U0JNckVOeVduTUYwR2M1dUQyNXpFWUNuVnktMUNrWFotRzNaVDVoaVIxSEhwMjBIS2F2alYxSy0zQVVRVjNoOGh3?oc=5",
+      "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wRmxrTGtrdVJsSG5LVFZ4YlB3d1I5bUhEaW5SUW5kd2xYMFlJbUI4U3hxelliUTJlT2lNNVV2OUFVcG1PTDBJMC1LZ1dFcVd0VWlISjZmYUVhMmEyTTFuZ0JwcjFkUkRZLWZPdzM3QnYteWtJN2hySkdnYmQ?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\AI_BATCH_20260315_944adc48.jpg",
+    "timestamp": "2026-03-15T05:29:06.046254+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260315_676788e0",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Hyderabad's Ultimate Haleem Guide",
+        "script": "The search for the ultimate Hyderabadi Haleem is finally over. Local foodies have officially crowned the city's top spots for this iconic seasonal delicacy. From legendary traditional kitchens to hidden gems, find out which bowls are dominating the food scene this year.",
+        "visual_keywords": [
+          "steaming bowl of haleem",
+          "crowded hyderabad food stall",
+          "close up garnish pouring"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "High Profile Farmhouse Bust",
+        "script": "A massive scandal is rocking Hyderabad's elite. Authorities have detained ten individuals, including an Andhra Pradesh TDP MP and BRS leader Rohit Reddy, following a cocaine bust at a local farmhouse. The high-profile raid has sent immediate shockwaves through the region's political circles.",
+        "visual_keywords": [
+          "farmhouse entrance gates",
+          "police blue lights flashing",
+          "newspaper headline closeup"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Musi Riverfront Transformation",
+        "script": "Hyderabad’s landscape is about to transform forever. The Musi Riverfront will soon house a massive East-West Corridor and the two-hundred-acre Gandhi Sarovar park. This ambitious project aims to revitalize the city center using a specialized development model for a modern urban core.",
+        "visual_keywords": [
+          "riverfront architectural blueprint",
+          "aerial city landscape",
+          "construction site heavy machinery"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTW9WLVVuRkRROVJ3YlFsT2VlSl9hXzAzUmZrTC1NLWRpVnhtejlFRFJhcHZLREdldG1haUppeGpHWUVxOFdNaUZJeUt4TTk3VEhxTXF6c1M0X2JyUXR2Umh1T2VNejFpOS1PaGFabklIeWxLQ0lZNV9YSW9pYWM1VGpBRmlKajRaX3M1Nk5xTjY?oc=5",
+      "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZ0U5b0VzVTBRVUtpNF83aGxLLUVMZllJYnI5VE5ubXVLUVhVVE84MlZlc2NvYnM5M2NTZjJ3RGJNU3F0bmdhQmtTdnhEQ0QtR0pYZk1PY0xRUzZldzZ1VEVNaEd0VWJ2LUdxejVMcE55VEFOOEVQM1FYbFg0UmR5YUNXNThIZjkxazBNcTI1RUZrUWNFN2ZHZ09FYmhZSkFyNzJTU1gydXRlUjR1aDVfaDJLSWsyY2pEQ1ZiZ2xsb1VKSHZScGfSAcsBQVVfeXFMTWl0SWdzTzRyTW9KejdVRGJDdlA2enZJcURBaXdVREF6LWFTcC10NDZnRk9qRzBCTnlESTNkbzN4TENva0ZrdFRydkdzRlZlVTIwYzYwd2xPSFZTWGttNVZmV1Jfck1YeG5YZklwdEdPVnZhTDVZM2ZzN214Yi1jcDhDTkwwRnc1TXdKUUNNZWM2UXpuQVZmdkNITHN5UG5pVUhyQVEyclAwNVBaaUJqTzlVeTlCNmZLVi1iU0hIellSR1dRdkR6YThpMU0?oc=5",
+      "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNU2JHQXI5U3BlTEhZMlR0MmpUXzJndkQ0bEF6Sms0WHhKSHUxWUJ0RTNGNXppU2tySUFaWmxuNGVYb0R6SU1aNXVBbURCMmZBV296T3k3WExPVlVsLVk5TnE2R2ZkdVE5NklKZnJGLVBhU0l3NEhZM3pYaWJDd1g3VGQxdEtUN1BobWVFWjhpb0FNNFA4VVJmUXJOTlhMendVWHp1ODRkZ3hwVGVzMFFyOFZvZk40ZWZ6ODJlUENObmJISjQyaXVIN1RoSEZyNlc0UThsclVpX3pNZ2k5Sk00ZndISElIS2dHcGNUc0NTUTRxREdodGRKZ1VzMmfSAYMCQVVfeXFMTXFCUW5iYWxyZFVpT3VQeUotWTAwX3RnMXd6REZBaF8zYy1wemM4SVZKSGpwMXFYX3Z0dDQwSDJOYVhUVWE4Ujl2d0ktVkU3eTIySVVEMU5iaWh0eUlFc3N2dTlfTE11OEpRZHFsc3hyTFR4MDRkTEFfUUtnLXhNZlRDLUJnakcxYlVaaVNkU3RLb0VCblJOQTc4ajg1SlBjWEpPbi10NlNmVzdVSThLb1BjTFdydXFFLXFZWkJEcjlpa01wU2U5WlRjZkVMbGNaNFNEWTltNTg5QXF5VTJyRWhYVmlmQzlXVldUY1lRNTFidnAxWktnOHVQLTd2NjI3TlZ5MA?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\HYDE_BATCH_20260315_676788e0.jpg",
+    "timestamp": "2026-03-15T05:32:02.618230+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260315_1cd3339f",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "A $6 Billion Target",
+        "script": "A six-billion-dollar target is in the crosshairs. The IRGC has a singular mission: sinking the USS Abraham Lincoln. As tensions boil, this massive aircraft carrier represents the ultimate geopolitical prize. Is this a calculated power play or an invitation to total war?",
+        "visual_keywords": [
+          "aircraft carrier deck",
+          "military radar screen",
+          "ocean waves from sky"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The Strategic Pivot",
+        "script": "Could a war with Iran actually bring the world closer? Expert Adelle Nazarian suggests a surprising shift as conflict looms. While the Middle East destabilizes, the crisis may forge a powerful new bond between the US and India. Global power dynamics are shifting fast.",
+        "visual_keywords": [
+          "world map connecting lines",
+          "flags of US and India",
+          "expert speaking at podium"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Energy Weaponized",
+        "script": "Energy is no longer just about fuel; it is a weapon. Experts warn that global energy flows are being aggressively reshaped by geopolitical rivalries. As power struggles intensify, the flow of resources is becoming the ultimate tool of control. Is the world prepared?",
+        "visual_keywords": [
+          "glowing oil refinery pipes",
+          "digital stock market ticker",
+          "cargo ship at night"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUlZNZnF1X3luOEVzZ0FQdFB1THhhVTg1WENGbUpvN3dLQkRZYXA2R3NaRmg1djRyTXlpTjQ3UkZiS0M3WE5sODNPOC1wU0RaaC0wc29nbHdPLWhUZ0F1Uk52RTJjS2REMWY1c29lNTdQU2plNGlUMHZTc1NoRFM4eHctMzBJdTl6RGJjcEViODlTNVZVZmJPNmhsdi1lTFJ3emo3dDhLSW52R1FjWUp2OE9NVGRVVVRxME1mSVhpNHU3UGFWd2dYLVNSZ1J3VzJNMnRRbHdwOFM1QkNhWE5B?oc=5",
+      "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNT3MxZ1hBaHA3dHRfdmNsRGtRTlE5MnFVTEIweC1NVVNvUlUzS0ZxU2NITVo2WWV5SUdpUGdXc1hWeUJpX09mbmN3WWxjWHhOMHM3RFMtQlF0dnA3blF2WVhpX1dnUUlud3dXVG9PYVhzZW9LVk1XUEFPNE9qd2NYejJmTzhhMXdJSTNVYy10bFNDSXNVQTFGaTZhaDlCbE8zQVY0OW90M3JZLUU1OEhzU2dta0czc3dhN0R2SVVVTkZJeU91bl9QQVdjSjF3VTRMREk3QkF4RURMbGVubThwMmlDcm1vYThFelVNX3MxSm1hd9IB9wFBVV95cUxQX3lTQkFFNVVoZVF1dk1CQ1oyaGJYZ21RNW5FYzlpRWRkNlN5NFlHVEE4aWlZMmtqdmhPdmxZcGEzZnhlYkwtbWxwaDZ1a2kyTDZ2ejFZamNBT1Rlb3lyM2FFYnJZdEx1YW5nb0JEMWE0UXo0emxCMl9EQjcySThZNjg2cDUyWDk0V3lTU1J1cFYtbWRXRGdGOS1UN1BlYWRJbzNySS1HejRHZms3LXNQYU5ISElrSmpHQ2dhSWg4WTRJWlNIUkNyNndUX29laTd4UWxIWkFrczFMemtMQnV1enVhcFBvZGJKX0w1WWxFVHUtN1prU25v?oc=5",
+      "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUlFVQnJTdHEyNWRmLVpITzN1dFp2VTVVTHRQUkxhcE50bDlxRTZUREdNMmpvcXljLXM1dl9QdjBELXNjaThTbktWNTRDcGdNYU45Um43cmJjbUZvZUtSekIzN0psRlJiMU1tM0w2MHlrWkxkQUNoeUQwQnQ0R3pXcGk5OTU4T3hicHc4UlJZd0llUjdxUzhQaWhvS0YwMnh4T0FPYllUdUU0QWxz0gGyAUFVX3lxTE5tempkX2F5WjNVMl9sSFZjZEh1Rm9PemxkajFTaU9aalRldzhVY2dNQXlFSXI3Mk5DeGs5WXE5YUxsZ3l5OHdCQ3F5ZGdaUk0zQXBTaUNRczVrODM5VktiR1c4LVgxOHhUUGVuUVR5eTNfSlQtcW11Tlo4QU9zN3VvajlNVHhCSkRZS29QNmVoZ28yUndpbklqcWxOeTZQbUVkMk9xdVgzUHpRQnVpdnFzbFE?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\GEOP_BATCH_20260315_1cd3339f.jpg",
+    "timestamp": "2026-03-15T06:10:56.545870+00:00",
+    "status": "pending_review"
   }
 ]

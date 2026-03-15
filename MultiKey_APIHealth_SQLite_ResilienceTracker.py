@@ -165,7 +165,7 @@ class APIHealthTracker:
                 if key not in existing_keys:
                     conn.execute(
                         """
-                        INSERT INTO api_keys_health
+                        INSERT OR IGNORE INTO api_keys_health
                         (api_key, usage_count, status, last_used, error_type, cooldown_until)
                         VALUES (?, 0, 'Active', NULL, NULL, NULL)
                         """,

@@ -1,7 +1,15 @@
 import os
+import warnings
+import logging
+
+warnings.filterwarnings("ignore")
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
+logging.getLogger("transformers").setLevel(logging.ERROR)
+
 import time
 from datetime import datetime, timezone
+import torch
+from sentence_transformers import SentenceTransformer
 
 from MultiKey_APIHealth_SQLite_ResilienceTracker import APIHealthTracker, CircuitBreakerOpenError
 from ThreeSegment_DynamicScript_Synthesis_Processor import ThreeSegmentDynamicScriptSynthesisProcessor
@@ -239,7 +247,7 @@ class MosahAIFullPipelineExecutionBridge:
             finally:
                 if index < len(niche_items) - 1:
                     print("[THROTTLE] sleeping 5s before next topic")
-                    time.sleep(5)
+                    time.sleep(15)
 
         print("\nPhase 1.5 Final Summary")
         build_terminal_table(summary_rows)
