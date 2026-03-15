@@ -1,4 +1,4 @@
-# MosahAI Phase 1.5 Final Refinement
+MosahAI — Content Intelligence Pipeline
 
 Lightweight scope:
 - RSS intake from Google News
