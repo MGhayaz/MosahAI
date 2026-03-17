@@ -4,17 +4,14 @@ from __future__ import annotations
 
 import logging
 import os
-from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any
 
 
-@dataclass(slots=True)
 class MediaEngineLogger:
-    log_path: str = "logs/media_engine.log"
-    logger_name: str = "mosahai.media_engine"
-
-    def __post_init__(self) -> None:
+    def __init__(self, log_path: str = "logs/media_engine.log", logger_name: str = "mosahai.media_engine") -> None:
+        self.log_path = log_path
+        self.logger_name = logger_name
         self._logger = logging.getLogger(self.logger_name)
         self._logger.setLevel(logging.INFO)
         self._ensure_handler()

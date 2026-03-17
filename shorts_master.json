@@ -1950,5 +1950,221 @@
     "visual_asset_path": "temp_assets\\GEOP_BATCH_20260315_1cd3339f.jpg",
     "timestamp": "2026-03-15T06:10:56.545870+00:00",
     "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260315_f3573019",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Cognitive Decline Warning",
+        "script": "Your brain is rotting from digital shortcuts. Experts warn that over-relying on AI tools is actively damaging your cognitive ability. As we outsource our thinking to machines, we risk losing the mental skills that make us human. Stop now or atrophy.",
+        "visual_keywords": [
+          "human brain glowing",
+          "person staring at screen",
+          "digital data glitch"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "AI Cancer Breakthrough",
+        "script": "ChatGPT just did the impossible. A tech executive used the AI to engineer a custom cancer vaccine, saving his dying dog’s life. This breakthrough proves AI isn't just for chat; it’s becoming a literal lifesaver in the palm of your hand.",
+        "visual_keywords": [
+          "dog playing in grass",
+          "ai code on screen",
+          "medical laboratory vial"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "High-Tech Railway Detection",
+        "script": "The railways are evolving. In Bhilai, the SECR has deployed advanced AI wagon detection to revolutionize logistics. This high-tech upgrade eliminates manual tracking errors, ensuring massive freight operations are now governed by intelligent algorithms. The future of transport is here.",
+        "visual_keywords": [
+          "moving freight train",
+          "digital scanner overlay",
+          "industrial railway yard"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQ2NGOGcxazdGU3lfWURhemUycW1xVUp3dWsyYkRNZF94d2ZhcklpUzFfTVFDZGR5Qjh1NW9vRVlXZGxEZ3A3RVhBal9HaWFfMFBNdkg4bTQ4eTlCV3BZbVp3M2FuQjlPdUtVbkE5MTc5TFo1SnBweS1KOGdJME1QaUQzcjlOQ3VOajNzS0RKWENFRkdURXA5bQ?oc=5",
+      "https://news.google.com/rss/articles/CBMigAJBVV95cUxNSDBoNTh0QUJ1cUVmN0RReTlQLWlaY1I2UkNFemRzODNEVl9yOVZtTHVteEtXM2k2dllFOHktUktHNG9lSnc3RHBWMG54VTR4bVZKWEVRekFkbl8zbk13WU5aUWlDXzBtb0tMSnBKWkIycVlLdDZRSGJicjI2SE9SRllhOWU5T2RUMUN5bVo0QklnNFozZmFKRnNfTGFnM0J4Mk9qY0xGeFdPMGtLTHdFejZkNmxSblBlRWh2UXNJaDhFMmp5WnhNR19kWGtuOGRKbnBqdm1MMWNNNWlFeUp4Q1JMR0psR3ptdDNvTkRfTHlsaWpyYURDazNKRHFCaVJZ0gGGAkFVX3lxTE14US1TWkh5dW55OUJuOTJDU1pHNXFVc3NIV3ItaXkwSWRLSXY3a20tSFRodHBDazJGRVpqa1k1YWc0QVJSTFhiTTdObHBwRF9MOUcxb3NGbEd3eU9zSjU5X1p0cHFyNm9uRlg1aUhEOW53UW5vbVhMMUhsbk9haWdDQ2VhOU5zaUVZX0tjREhLX2hGbnBJTnhjdTNhOGJYVU1HZEZxdXdSYmZOVzktQVZYMlNmRlQ4cFlNbm00QkVOLWVMdm9La0JYWi02SV9FbDBtYXVCZmExV1BXNXhkOXUwUUNuanZEV2w3SUd6VVgxWWJlZlB6ekhUVjJsRWRDSW9MY0FUN2c?oc=5",
+      "https://news.google.com/rss/articles/CBMiygFBVV95cUxNT2Z4RFBPUmRQalZHUVhLNVFFRDFfVHp3bUtubUlBakx3X3FMcXIxVndjQWZXVGRJaUFUekxMZlFrUjVldjJHQVkxZFdHR2h4ZkNKVm1BdHNlck5sZ2I2ZHU3NUd4LV9SZ0RnOE9UTzZUY1JvUnFleXRkemt5UE1ja0RqODk5cXMzcUduQ1VtMEFTZ1RPUUZyYVkxR3BIaEJnZ1FKLUE4ZjhBeDl0QVBmeVJVTnVWVjhiNTN3NlVHdGUwY3RDeVp0QzJ30gHPAUFVX3lxTE04dldIVE0wRjhrTWZ1anRCRzUtUWhQelZELTJLbXhZSmJNSXJHUVp5VnQ2NHhITUNGVGJsOUMzX3pDbTc0YXluNVBHck0wTklyS05pMElrTzZJVXRoWnlaVzhQMGpfbjlNbHg5LWg1QnF1VTlmWGtWQjBtWU5EaHg5Rm8wcGxHalJ4dXVFTDJaTXotcmM3X1pCbTRHWlRERFl4cWxQRGU4bWdUcEhnZjBOdWJ0dmJrVUR4NVNKN0dIajd0c29BdUUtSmVUT2RCWQ?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\AI_BATCH_20260315_f3573019.jpg",
+    "timestamp": "2026-03-15T17:29:37.640676+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260315_364f7b77",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Bitcoin Defies Geopolitical Shock",
+        "script": "Bitcoin is rewriting the rules of finance. Despite Iran’s threats against Ukraine sending shockwaves through the globe, crypto is holding its ground. Analysts are signaling a massive regime shift as digital assets defy traditional geopolitical chaos. Is Bitcoin the new safe haven?",
+        "visual_keywords": [
+          "bitcoin digital graphic",
+          "iran ukraine map",
+          "financial market chart"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Massive Capital Flight from Equities",
+        "script": "A massive exodus is shaking the markets. Foreign investors have pulled over fifty-two thousand crore rupees from equities as oil fears and geopolitical tensions reach a boiling point. With capital fleeing to safety, is the global stock market facing a brutal winter?",
+        "visual_keywords": [
+          "stock market ticker",
+          "oil refinery silhouettes",
+          "currency outflow animation"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Energy Flows as Political Weapons",
+        "script": "Energy is the ultimate tool of control. Experts warn that global fuel flows are being aggressively reshaped by fierce geopolitical rivalries. As power struggles intensify, the very resources we rely on are becoming strategic weapons. Can the world adapt to this shift?",
+        "visual_keywords": [
+          "global pipeline map",
+          "industrial energy plant",
+          "political leaders meeting"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZXFBMWxKSUtGV0xQaWdIS0hoRGlPVXFIcGxlOGU5eDVPLXAyYjZ2WFpKaVAtT1BNeXQtbWk1MV9Cd3ZlZ1RXZmc5UmZMeEtSWWN3bWx0dWJmd3hHLXV5S2hSaDJsRmtyeF9TcS0yeGIta1R4d1kybmVPMk9ySUFfakxOLWI1QVhHeHZ1U3NsNF9EbFRPRWxFNEU4NGFHdUM0UUFiRUdHa1RvYXJ1QzRuRFNHUVktV2txYi1vbXctZnVlSl95SXF0cldxSEY3QnN5SXFVOVFfNWRPLXRqNzcxYzQyR2lEUdIB6wFBVV95cUxQZ24tdDZ1ckIwek5MSG9XeVZtSHBOLWtQeFdBZzJaREoxd3lsU3FIOVlFVWJ0QVFqWXNKSWdURk5vNVJyeWhBVGtuV1ZuRHprVTRrR09ScGFJUm9Vc25mdklFM0tCZl9Fa1owamRZUVo4VFNYMkQ0bU4zVmRhUjJPbk1KbkN6LWwtOU1ZNHlYdl9VSWREaHVUNmRyS1NPR1F5QUVaMGVTZjRKaG1PWjR4R0ppcjMtYlQ3WXk4Z3RrZTJxcllQbVVFcHNPem15S0lJRGhQeUdoMEtnbXYyVVhLbVh5WllWcGlrU0hj?oc=5",
+      "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTXdZN0thSlRIYTBjZDRMX2dpN2luOUNnejZQWDZLRFNMN3dsUktvTmVtMGxIcy1RQXV0UXU5WC02dEdyV2kwVzFBOC1IYi1RRl9Fa2FISnFMSjhFajRSa1lfVHJ4RWJwc2l4LUtnb284TDRPR2Ytd2JTOEUzT2xhZmpRVl8zZGdFTXNnX1Y0NEZvRFV6dmxQV2M2and2VmpYMTJzcEI3M20yc3RYbHJkSXhBZ2I?oc=5",
+      "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUlFVQnJTdHEyNWRmLVpITzN1dFp2VTVVTHRQUkxhcE50bDlxRTZUREdNMmpvcXljLXM1dl9QdjBELXNjaThTbktWNTRDcGdNYU45Um43cmJjbUZvZUtSekIzN0psRlJiMU1tM0w2MHlrWkxkQUNoeUQwQnQ0R3pXcGk5OTU4T3hicHc4UlJZd0llUjdxUzhQaWhvS0YwMnh4T0FPYllUdUU0QWxz0gGyAUFVX3lxTE5tempkX2F5WjNVMl9sSFZjZEh1Rm9PemxkajFTaU9aalRldzhVY2dNQXlFSXI3Mk5DeGs5WXE5YUxsZ3l5OHdCQ3F5ZGdaUk0zQXBTaUNRczVrODM5VktiR1c4LVgxOHhUUGVuUVR5eTNfSlQtcW11Tlo4QU9zN3VvajlNVHhCSkRZS29QNmVoZ28yUndpbklqcWxOeTZQbUVkMk9xdVgzUHpRQnVpdnFzbFE?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\GEOP_BATCH_20260315_364f7b77.jpg",
+    "timestamp": "2026-03-15T17:30:04.880489+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260315_f80ed27e",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Hyderabad LPG Cyber Fraud Warning",
+        "script": "Hyderabad police just issued a chilling warning. Cybercriminals are using fake LPG connection KYC updates to wipe out bank accounts. This high-tech fraud is targeting unsuspecting residents across the city. Stop before you click. Your digital security is under immediate threat.",
+        "visual_keywords": [
+          "police warning sign",
+          "smartphone phishing link",
+          "gas cylinder silhouette"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "High-Profile Farmhouse Raid Visuals",
+        "script": "Shocking footage has just surfaced from a high-profile farmhouse raid in Hyderabad. Authorities caught elite politicians and businessmen in a massive late-night drug bust. This scandal is rocking the city's upper crust as the secret lives of the powerful are finally being exposed.",
+        "visual_keywords": [
+          "luxury farmhouse gates",
+          "police flashing lights",
+          "money and contraband"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Gunfire and Drugs at Elite Party",
+        "script": "Gunfire and narcotics! A luxury farmhouse party in Hyderabad just turned into a legal nightmare. A former BRS MLA is among those who tested positive for drugs after a chaotic raid. The intersection of power and crime is now sparking a massive investigation.",
+        "visual_keywords": [
+          "crime scene tape",
+          "forensic team working",
+          "political party office"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMi6gFBVV95cUxORVQzUFRDUVpiMC1MOVZ3WDlETVR6TTliSTlpQXVVcGk0bG16aWxWcXdJWXNub3dOcXVFM2VfV1AtQ2VyeXZsVEc3Mm81eUxONGx1cEJyM3VDQnI3M1VObmtadDFINndhaEs2QnpzejJLYkdJT1RjZ19qSWtjY2h6aW0zSVJEcndFVGUwQ2prSzZDMHRsWERQdG90UElHUGd6aHplenNpVkZnVkdOU2VxMGtaSWRRZXVuSXprQU1OV3hrUDkwTl96UGYwcFQtYk0ybF90OEJmZXkwYVc0MWJSVFhlOUJWMDNlNkHSAfABQVVfeXFMTl9YamVOdktIeElDdkN5V0dpbW4ydWpoM3ZXa2t4R0xza1ltS0xNYVNLNk9ZRVhSandCaHF5TXZyUGdUVUN2Nm5POUdaUHpHOU1vUW5iMmVGNlZwZHhjYV9xMDFoTjEzakhGcWNsOHNBWVg3bXowOXZKNWJGYlk0d3ZjZTEySTRoQWVFNmMwdDJldHYyT1RoZ3FpZkFPNkt2VG9VbGJSNnpXcUVNZXRkaXpWRFIwcTVzQmRvVDRuVTdPS0N0elVoSWp5RFMzcnpHSFJoVGxxcU56N2JQWXlkSzlwY3N6U2ZxTjVzbkJ1ZGFT?oc=5",
+      "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNZzlubXRGRUoxSTFxQ1h5alpUWDFvbTF6b0kycVBxZ09XN1RoMDFaVzRfZVZMamVOR3QyM19FNWhpOVF1ZHdQUWpKRHVSaElyODJtSHpUbk5PNDR2VU5oNExrVlVqYnVJeVA5U0NieG54SXpTM1kyR2V3RnE4ajRHeWFEejBZaFNfbjVsWDFNMWtCcC1yS2xmZkRjSEI4VFNNVHZhV2s2dzhtNjdycFBZZnFoMXd6dzBybngzQkdNekc0bTkzQzVBVEpxZU5XaDZ1SkJyWWlXdnpQdFlxWjE0WTBmYTNZVHE0SmVDRHhjU3E1ak05SG5ROUs3WkY4YW9aYjNLZXZCUElBUEtRZG5FbFhLY3BERW1aemhjaEpOekQ0SDV4cDFjRUtB0gGvAkFVX3lxTFBsb0VhNm9rTDVZMEw3Wi1OcDUyLU1ySUJRN2lqZW5KUFVaT0hJZlF5SUxMWnNCdDFRMTJ6cG1MaE04MkhmOTdRMEd4NEF6bGgyN3N0UlZTQ3dEY1dNWjYyR0xrd3BfN0tOSG13RDdTYU4yNUNjXzZSQV9LX3ZwdUZaZEhlb3JjUVRaLXM3Qlp0WGxqbEFNTWNienkxaHB6dnVadWRXQ0w0SGljX3N3WkY0bndvYl9FQjN2X0NXN2hQM29GMnlWbzY2cGMydUQ4Ry1CeFpaME1UXzRoSnhnWWdrVHNXNFpJQkJPWF9rR0N3d3FsRWlqTG11Y05FU3g4TkRTTmc5RW04OEFfVW40SVMtWGo4d2hRZXktZ0poZllkZzZWeVdqTjVFbmZTN1NDWQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVlV5SVlFTlpoaE1uOHpDaklrWk8xdFZ4ZlJZTHhCSHhtYm1Yd0p3SEhfYUpOQ2Voa2lkLUhNdHA4VmUtVU84Z2tBYU40NjZMQnYtRkpWNmtIUUxuYTFOM3BGWTRtNms2bVRKTXg0aUtDaEhIaEVpaDRqeDdnVUJKamthcUpiWkZKNDhwMXZLSFBaWll3WldGZmxTMjRzTFJka0p6M3lzbGZ0VkZiRzRiRUsycDZOZXFHMkEta3Atb2hweGd3aXlsR0t5cWZ0bjVjU3FLSExLOWtRd9IB3wFBVV95cUxQREY3aFNXN3c2WmFJQy0tSVVmeW92UkJjNEd3MkJKUXE5c1NnbHMtZFNOTGttMW1lUTc4d0NOdGRDSjhMQjFKMXh0aHdQUHBhSHQ1a053NUNvaHMxbjJTbDZFOThNaWpoajBlVGpJaTNITEtHclE5RWRQazBCa3FLbXdJV3BXdkljblhJejFGYnA5YVIxSHA0dnllVjgxV2pmYTdORGhhaXZGQlZQUXEwN0hGaHBqY2x6b0JwLVRSdF9DNldtRkMyZWtoeURmUjkxXzhyVnE0WVhyTEZaRERV?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\HYDE_BATCH_20260315_f80ed27e.jpg",
+    "timestamp": "2026-03-15T17:30:39.362682+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260315_17c3e215",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "AI companies want to harvest improv actors’ skills to train AI on human emotion",
+        "script": "AI companies are coming for your personality. Tech giants are now harvesting the skills of improv actors to teach machines how to mimic human emotion. They aren't just coding logic anymore; they're learning how to perform your deepest feelings.",
+        "visual_keywords": [
+          "actors performing on stage",
+          "human face with digital nodes",
+          "robotic eye close up"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Human Creativity In The Age Of AI: Prasoon Joshi At NDTV Creators Manch",
+        "script": "Is your creativity becoming obsolete? Prasoon Joshi recently took the stage at NDTV Creators Manch to challenge the role of human expression. As AI dominates the landscape, we face a critical question: what actually remains unique in an automated world?",
+        "visual_keywords": [
+          "man speaking at tech conference",
+          "artist painting versus digital screen",
+          "glowing brain silhouette"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "AI’s finest hour: Tech executive uses ChatGPT to create cancer vaccine that saved his dog’s life",
+        "script": "A tech executive just used ChatGPT to perform a miracle. By using the AI to engineer a custom cancer vaccine, he successfully saved his dying dog's life. This proves that artificial intelligence is evolving from a simple chatbot into a literal lifesaver.",
+        "visual_keywords": [
+          "golden retriever being hugged",
+          "smartphone screen showing medical data",
+          "dna double helix animation"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa3F5QndNdVhvOEVkWlAwS2padXJCWHYwaUpBS0NZbjlab0hvSHNlTzdHcThHY1BFTlBXWTJoYVIxUHRiOFRxRkw3OW1yMk82TFdWOW16NEtsZHVfNUlVYnZIOHVud3pqbUpHMGsyd2NORzg0NDNXUmlKR2VKRzM4aVpoUnNjOWUwaktJQWZ1MG53YlF4NWliS2hsZjc0aTFVazhOTUJNQ2RaeHFIdXc?oc=5",
+      "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWVNyU1ZxXzh6UnNpV1dBRlI0SDNrbmFxSks5Tl9uRXExd1c4RzhyaGRPNjl3SDdfZDBVTGtwNldRRUFkMC1MRXNXRjVFQmM5WXZnb24xRDlNSDUxT1FTZjVlcjdIb2hKTHVYVTB4UkpCOG5obWRVSTg3aFF5Rm1wd3I3bktobjJaMUQ4dzZSSDJQajJvV3VPTE5Sb0oxXzlUcEJQZnZGazU?oc=5",
+      "https://news.google.com/rss/articles/CBMigAJBVV95cUxNSDBoNTh0QUJ1cUVmN0RReTlQLWlaY1I2UkNFemRzODNEVl9yOVZtTHVteEtXM2k2dllFOHktUktHNG9lSnc3RHBWMG54VTR4bVZKWEVRekFkbl8zbk13WU5aUWlDXzBtb0tMSnBKWkIycVlLdDZRSGJicjI2SE9SRllhOWU5T2RUMUN5bVo0QklnNFozZmFKRnNfTGFnM0J4Mk9qY0xGeFdPMGtLTHdFejZkNmxSblBlRWh2UXNJaDhFMmp5WnhNR19kWGtuOGRKbnBqdm1MMWNNNWlFeUp4Q1JMR0psR3ptdDNvTkRfTHlsaWpyYURDazNKRHFCaVJZ0gGGAkFVX3lxTE14US1TWkh5dW55OUJuOTJDU1pHNXFVc3NIV3ItaXkwSWRLSXY3a20tSFRodHBDazJGRVpqa1k1YWc0QVJSTFhiTTdObHBwRF9MOUcxb3NGbEd3eU9zSjU5X1p0cHFyNm9uRlg1aUhEOW53UW5vbVhMMUhsbk9haWdDQ2VhOU5zaUVZX0tjREhLX2hGbnBJTnhjdTNhOGJYVU1HZEZxdXdSYmZOVzktQVZYMlNmRlQ4cFlNbm00QkVOLWVMdm9La0JYWi02SV9FbDBtYXVCZmExV1BXNXhkOXUwUUNuanZEV2w3SUd6VVgxWWJlZlB6ekhUVjJsRWRDSW9MY0FUN2c?oc=5"
+    ],
+    "visual_asset_path": "temp_assets\\AI_BATCH_20260315_17c3e215.jpg",
+    "timestamp": "2026-03-15T17:51:48.219839+00:00",
+    "status": "pending_review"
   }
 ]

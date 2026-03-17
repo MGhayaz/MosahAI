@@ -11,6 +11,7 @@ from urllib.parse import parse_qs, urlparse
 @dataclass(slots=True)
 class NewsMediaRelevanceFilter:
     similarity_threshold: float = 0.6
+    youtube_similarity_threshold: float = 0.7
     model_name: str = "all-MiniLM-L6-v2"
     _model: object | bool | None = field(default=None, init=False, repr=False)
 
@@ -80,8 +81,13 @@ class NewsMediaRelevanceFilter:
             if canonical:
                 seen.add(canonical)
 
+            source = _extract_source(candidate)
+            threshold = self.similarity_threshold
+            if source == "youtube":
+                threshold = self.youtube_similarity_threshold
+
             similarity = self.compute_similarity(resolved_title, title)
-            if similarity < self.similarity_threshold:
+            if similarity < threshold:
                 continue
 
             filtered.append(
@@ -93,6 +99,12 @@ class NewsMediaRelevanceFilter:
             )
 
         return filtered
+
+
+def _extract_source(candidate: Any) -> str:
+    if isinstance(candidate, Mapping):
+        return str(candidate.get("source") or "").strip().lower()
+    return str(getattr(candidate, "source", "") or "").strip().lower()
 
 def _extract_title(candidate: Any) -> str:
     if isinstance(candidate, Mapping):

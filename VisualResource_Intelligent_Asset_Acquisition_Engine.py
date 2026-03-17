@@ -18,7 +18,13 @@ class VisualResourceIntelligentAssetAcquisitionEngine:
         safe_base = re.sub(r"[^A-Za-z0-9._-]+", "_", base)
         return f"{safe_base}.jpg"
 
-    def extract_visual_asset(self, news_url: str, short_id: str) -> str | None:
+    def extract_visual_asset(
+        self,
+        news_url: str,
+        short_id: str,
+        output_dir: str | None = None,
+        filename: str | None = None,
+    ) -> str | None:
         normalized_news_url = str(news_url or "").strip()
         if not normalized_news_url:
             return None
@@ -42,9 +48,14 @@ class VisualResourceIntelligentAssetAcquisitionEngine:
             return None
 
         try:
-            os.makedirs(self.assets_dir, exist_ok=True)
-            filename = self._safe_filename(short_id)
-            local_file_path = os.path.join(self.assets_dir, filename)
+            target_dir = str(output_dir).strip() if output_dir else self.assets_dir
+            os.makedirs(target_dir, exist_ok=True)
+
+            if filename:
+                safe_name = os.path.basename(str(filename))
+            else:
+                safe_name = self._safe_filename(short_id)
+            local_file_path = os.path.join(target_dir, safe_name)
 
             response = requests.get(
                 image_url,

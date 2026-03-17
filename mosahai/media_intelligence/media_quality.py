@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import os
 import re
 from dataclasses import dataclass
 from typing import Any, Mapping
@@ -23,6 +24,10 @@ class MediaQualityAnalyzer:
         fps = _extract_fps(candidate)
 
         reject = False
+
+        url = _extract_media_url(candidate)
+        if _is_image_candidate(candidate, url) and _looks_like_logo(url):
+            reject = True
 
         if duration is not None:
             if duration < self.min_duration_seconds or duration > self.max_duration_seconds:
@@ -82,6 +87,49 @@ def _extract_dimensions(candidate: Any) -> tuple[int | None, int | None]:
                 return parsed
 
     return width, height
+
+
+def _extract_media_url(candidate: Any) -> str:
+    for key in ("url", "media_url", "image_url", "thumbnail_url"):
+        value = _extract_value(candidate, key)
+        if value:
+            return str(value)
+
+    raw = _extract_value(candidate, "raw")
+    if isinstance(raw, Mapping):
+        for key in ("url", "media_url", "image_url", "thumbnail_url"):
+            value = raw.get(key)
+            if value:
+                return str(value)
+    return ""
+
+
+def _is_image_candidate(candidate: Any, url: str) -> bool:
+    source = _extract_value(candidate, "source")
+    if source and str(source).strip().lower() == "image":
+        return True
+
+    raw = _extract_value(candidate, "raw")
+    if isinstance(raw, Mapping):
+        media_type = raw.get("media_type")
+        if isinstance(media_type, str) and media_type.lower() == "image":
+            return True
+
+    lower_url = (url or "").lower()
+    if lower_url.endswith((".jpg", ".jpeg", ".png", ".webp", ".gif")):
+        return True
+    return False
+
+
+def _looks_like_logo(url: str) -> bool:
+    if not url:
+        return False
+    lower_url = url.lower()
+    filename = os.path.basename(lower_url)
+    for token in ("logo", "icon", "favicon"):
+        if token in lower_url or token in filename:
+            return True
+    return False
 
 
 def _extract_duration(candidate: Any) -> int | None:

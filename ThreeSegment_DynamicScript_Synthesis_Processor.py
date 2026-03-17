@@ -1,8 +1,8 @@
-import json
 import time
 from datetime import datetime, timezone
 
-from google import genai
+from config import GEMINI_MODEL
+from mosahai.gemini_client import generate_json
 
 from SemanticSearch_NicheHistory_EvolutionaryVault_Manager import EvolutionaryVaultManager
 
@@ -13,15 +13,15 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
     def __init__(
         self,
         key_manager,
-        model_name="gemini-1.5-flash",
-        max_attempts=12,
+        model_name=GEMINI_MODEL,
+        max_attempts=3,
         retry_sleep_seconds=2,
         vault_manager=None,
         enable_vault_storage=True,
     ):
         self.key_manager = key_manager
-        self.model_name = model_name
-        self.max_attempts = max(1, int(max_attempts))
+        self.model_name = str(model_name).strip() or GEMINI_MODEL
+        self.max_attempts = min(3, max(1, int(max_attempts)))
         self.retry_sleep_seconds = max(1, int(retry_sleep_seconds))
         self.enable_vault_storage = bool(enable_vault_storage)
 
@@ -32,7 +32,10 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
                 self.vault_manager = EvolutionaryVaultManager()
             except Exception as exc:
                 self.vault_manager = None
-                print(f"[VAULT WARN] Vault manager unavailable in synthesis processor. error={exc}")
+                self._log("WARN", f"Vault manager unavailable in synthesis processor. error={exc}")
+
+    def _log(self, level, message):
+        print(f"[{level}] {message}")
 
     def _extract_status_code(self, exc):
         status = getattr(exc, "status", None)
@@ -147,19 +150,6 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
         )
         return self._fit_word_window(base)
 
-    def _safe_parse_json(self, raw_text):
-        if not raw_text:
-            raise ValueError("Gemini returned empty response text.")
-
-        start = raw_text.find("{")
-        end = raw_text.rfind("}")
-        payload_text = raw_text[start : end + 1] if start != -1 and end != -1 and end > start else raw_text
-        try:
-            return json.loads(payload_text)
-        except json.JSONDecodeError as exc:
-            print(f"[WARN] Malformed JSON from Gemini, using fallback segments. error={exc}")
-            return {}
-
     def _normalize_hook_strength(self, hook_strength):
         normalized = str(hook_strength or "").strip().lower()
         if normalized in {"low", "medium", "high"}:
@@ -242,7 +232,7 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
             try:
                 self.vault_manager.add_script_to_vault(script_text=script_text, metadata=metadata)
             except Exception as exc:
-                print(f"[VAULT WARN] Failed to store generated script. error={exc}")
+                self._log("WARN", f"Failed to store generated script. error={exc}")
 
     def _normalize_segments(self, payload, short_id, titles, topic):
         if not isinstance(payload, dict):
@@ -303,6 +293,46 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
             contexts.append({"title": title, "summary": summary})
         return contexts
 
+    def _fallback_payload(self, titles, topic, short_id):
+        fallback = {
+            "segment_1": "Breaking news update just in.",
+            "segment_2": "More details are emerging on this story.",
+            "segment_3": "Stay tuned for further updates.",
+        }
+
+        segments = []
+        for index in range(3):
+            title = titles[index] if index < len(titles) else f"Segment {index + 1}"
+            script = fallback[f"segment_{index + 1}"]
+            metadata = self._normalize_segment_metadata(source_metadata={}, title=title, topic=topic)
+            visual_keywords = self._normalize_visual_keywords(
+                source_keywords=[],
+                title=title,
+                topic_entity=metadata.get("topic_entity"),
+                topic=topic,
+            )
+            metadata["visual_keywords"] = list(visual_keywords)
+
+            segments.append(
+                {
+                    "id": index + 1,
+                    "title": title,
+                    "script": script,
+                    "visual_keywords": visual_keywords,
+                    "duration_target": "15-18s",
+                    "transition_type": "cut" if index < 2 else "end",
+                    "transition_trigger": index < 2,
+                }
+            )
+
+        return {
+            "short_id": str(short_id).strip() or short_id,
+            "segments": segments,
+            "segment_1": fallback["segment_1"],
+            "segment_2": fallback["segment_2"],
+            "segment_3": fallback["segment_3"],
+        }
+
     def generate_segments(self, topic, language, titles, short_id, news_contexts=None):
         if len(titles) != 3:
             raise ValueError("ThreeSegmentDynamicScriptSynthesisProcessor expects exactly 3 titles.")
@@ -317,7 +347,7 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
             try:
                 reference_scripts = self.vault_manager.retrieve_similar_scripts(query_text=query_text, top_k=3)
             except Exception as exc:
-                print(f"[VAULT WARN] Similar-script retrieval failed. error={exc}")
+                self._log("WARN", f"Similar-script retrieval failed. error={exc}")
 
         prompt = self._build_prompt(
             topic=topic,
@@ -327,22 +357,20 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
             reference_scripts=reference_scripts,
         )
 
+        last_error = None
         for attempt in range(1, self.max_attempts + 1):
             api_key = self.key_manager.get_next_key()
             if not api_key:
-                raise RuntimeError("No active API keys available.")
+                last_error = RuntimeError("No active API keys available.")
+                self._log("ERROR", "Gemini failed: No active API keys available.")
+                break
 
+            self._log("INFO", f"Gemini attempt {attempt}")
             try:
-                client = genai.Client(api_key=api_key)
-                response = client.models.generate_content(
-                    model=self.model_name,
-                    contents=prompt,
-                    config={"response_mime_type": "application/json"},
-                )
+                payload = generate_json(prompt=prompt, api_key=api_key, model_name=self.model_name)
+                if not payload:
+                    raise ValueError("Empty or invalid JSON payload from Gemini.")
 
-                payload = self._safe_parse_json(
-                    (getattr(response, "text", "") or getattr(response, "output_text", "") or "").strip()
-                )
                 normalized_payload, extracted_metadata = self._normalize_segments(
                     payload=payload,
                     short_id=short_id,
@@ -354,14 +382,13 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
                     extracted_metadata=extracted_metadata,
                 )
                 self.key_manager.mark_success(api_key)
+                self._log("SUCCESS", "Gemini response parsed")
                 return normalized_payload
             except Exception as exc:
+                last_error = exc
                 status_code = self._extract_status_code(exc)
                 message = str(exc).lower()
-                print(
-                    f"[GEMINI ERROR] attempt={attempt} status={status_code} "
-                    f"key=...{api_key[-4:]} error={exc}"
-                )
+                self._log("ERROR", f"Gemini failed: {exc}")
 
                 if status_code == 429 or "quota" in message or "rate" in message:
                     self.key_manager.mark_error(api_key, 429)
@@ -370,11 +397,13 @@ class ThreeSegmentDynamicScriptSynthesisProcessor:
                 elif status_code is not None:
                     self.key_manager.mark_error(api_key, status_code)
 
-                if attempt >= self.max_attempts:
-                    raise
-                time.sleep(self.retry_sleep_seconds)
+                if attempt < self.max_attempts:
+                    time.sleep(self.retry_sleep_seconds)
 
-        raise RuntimeError("Batch segment generation failed after all retries.")
+        self._log("ERROR", "Gemini failed after retries \u2014 fallback script used")
+        if last_error is not None:
+            self._log("ERROR", f"Last Gemini error: {last_error}")
+        return self._fallback_payload(titles=titles, topic=topic, short_id=short_id)
 
 
 # Backward-compatible alias.

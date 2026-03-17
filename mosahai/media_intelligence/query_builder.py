@@ -11,10 +11,11 @@ from typing import Iterable, Sequence
 @dataclass(slots=True)
 class QueryBuilder:
     min_queries: int = 5
-    max_queries: int = 10
+    max_queries: int = 5
     max_keywords: int = 6
     max_entities: int = 4
     max_title_words: int = 10
+    min_meaningful_tokens: int = 2
 
     def generate_queries(
         self, title: str | None, keywords: Sequence[str] | None, entities: Sequence[str] | None
@@ -25,68 +26,124 @@ class QueryBuilder:
         keyword_terms = _normalize_terms(keywords)
         entity_terms = _normalize_terms(entities)
 
+        min_tokens = max(self.min_meaningful_tokens, 2)
+        max_queries = min(self.max_queries, 5)
+        min_queries = min(self.min_queries, max_queries)
+
         primary_entity = _choose_primary_entity(entity_terms, keyword_terms, title_phrase)
         if primary_entity:
             entity_terms = [primary_entity] + [e for e in entity_terms if e != primary_entity]
 
-        queries: list[str] = []
+        keyword_terms = keyword_terms[: self.max_keywords]
+        if primary_entity:
+            keyword_terms = [
+                keyword for keyword in keyword_terms if not _equivalent_phrase(keyword, primary_entity)
+            ]
+        modifiers = ["announcement", "launch", "delay", "conference", "press conference", "update", "model"]
+        modifier_set = {modifier.lower() for modifier in modifiers}
+        primary_keyword = _choose_primary_keyword(keyword_terms, primary_entity, modifier_set)
+        primary_keyword_key = primary_keyword.lower() if primary_keyword else ""
+
+        topic_hints = _collect_topic_hints(title_phrase, keyword_terms, entity_terms)
+
+        candidates: list[tuple[float, int, str]] = []
+        order = 0
+
+        def add_candidate(text: str, score: float, force_entity: bool = False) -> None:
+            nonlocal order
+            normalized = _normalize_query(text)
+            if not normalized:
+                return
+            if force_entity and primary_entity and not _contains_entity(normalized, primary_entity):
+                normalized = _normalize_query(f"{primary_entity} {normalized}")
+            if not _has_min_meaningful_tokens(normalized, min_tokens):
+                return
+            candidates.append((score, order, normalized))
+            order += 1
 
         if title_phrase:
             base = title_phrase
             if primary_entity and not _contains_entity(base, primary_entity):
                 base = f"{primary_entity} {base}"
-            queries.extend(
-                [
-                    base,
-                    _append_tail(base, "news"),
-                    _append_tail(base, "video"),
-                ]
-            )
+            add_candidate(base, 70.0)
+            add_candidate(_append_tail(base, "news"), 68.0)
+            add_candidate(_append_tail(base, "video"), 67.0)
 
-        for keyword in keyword_terms[: self.max_keywords]:
-            if primary_entity:
-                queries.append(f"{primary_entity} {keyword}")
-                queries.append(f"{primary_entity} {keyword} news")
-            else:
-                queries.append(keyword)
+        core_pair = ""
+        if primary_entity and primary_keyword:
+            core_pair = f"{primary_entity} {primary_keyword}"
+            add_candidate(core_pair, 96.0)
+            add_candidate(f"{core_pair} announcement", 95.0)
+            add_candidate(f"{core_pair} launch", 94.0)
+            add_candidate(f"{core_pair} update", 93.0)
 
-        for left, right in combinations(keyword_terms[:4], 2):
-            phrase = f"{left} {right}"
-            if primary_entity:
-                queries.append(f"{primary_entity} {phrase}")
-            else:
-                queries.append(phrase)
+            extra_terms: list[tuple[str, float]] = []
+            seen_extras: set[str] = set()
+            for keyword in keyword_terms:
+                if _equivalent_phrase(keyword, primary_keyword):
+                    continue
+                if _equivalent_phrase(keyword, primary_entity):
+                    continue
+                key = keyword.lower()
+                if key in seen_extras:
+                    continue
+                seen_extras.add(key)
+                extra_terms.append((keyword, 95.0))
 
-        modifiers = ["announcement", "launch", "delay", "conference", "press conference", "update"]
-        for modifier in modifiers:
-            if len(queries) >= self.max_queries:
+            for modifier in modifiers:
+                key = modifier.lower()
+                if key in seen_extras:
+                    continue
+                seen_extras.add(key)
+                extra_terms.append((modifier, 90.0))
+
+            for term, score in extra_terms:
+                add_candidate(f"{core_pair} {term}", score)
+
+        if primary_entity and topic_hints:
+            for hint in topic_hints:
+                add_candidate(f"{primary_entity} {hint}", 92.0, force_entity=True)
+
+        if not primary_entity:
+            for left, right in combinations(keyword_terms[:4], 2):
+                add_candidate(f"{left} {right}", 70.0)
+
+        if primary_entity and not primary_keyword:
+            for keyword in keyword_terms:
+                if _equivalent_phrase(primary_entity, keyword):
+                    continue
+                if keyword.lower() in modifier_set:
+                    continue
+                add_candidate(f"{primary_entity} {keyword}", 80.0)
+
+        if primary_entity and not keyword_terms:
+            for modifier in modifiers:
+                add_candidate(f"{primary_entity} {modifier}", 55.0)
+
+        candidates.sort(key=lambda item: (-item[0], item[1]))
+
+        queries: list[str] = []
+        seen: set[str] = set()
+        for _, _, query in candidates:
+            key = query.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            queries.append(query)
+            if len(queries) >= max_queries:
                 break
-            if primary_entity:
-                queries.append(f"{primary_entity} {modifier}")
 
-        queries = [_normalize_whitespace(q) for q in queries if q and q.strip()]
-        queries = _dedupe_strings(queries)
-
-        if primary_entity:
-            enforced: list[str] = []
-            for query in queries:
-                if not _contains_entity(query, primary_entity):
-                    enforced.append(_normalize_whitespace(f"{primary_entity} {query}"))
-                else:
-                    enforced.append(query)
-            queries = _dedupe_strings(enforced)
-
-        queries = [q for q in queries if q]
-
-        if len(queries) < self.min_queries:
+        if len(queries) < min_queries:
+            fallback_base = core_pair or primary_entity or title_phrase
             queries = _add_fallback_queries(
                 queries,
                 primary_entity,
-                title_phrase,
-                self.min_queries,
+                fallback_base,
+                min_queries,
+                min_tokens,
             )
 
-        return queries[: self.max_queries]
+        return queries[: max_queries]
 
 
 def _normalize_terms(terms: Sequence[str] | None) -> list[str]:
@@ -94,7 +151,7 @@ def _normalize_terms(terms: Sequence[str] | None) -> list[str]:
         return []
     cleaned: list[str] = []
     for term in terms:
-        value = _normalize_text(term)
+        value = _normalize_query(term)
         if value:
             cleaned.append(value)
     return _dedupe_strings(cleaned)
@@ -140,6 +197,48 @@ def _dedupe_strings(values: Iterable[str]) -> list[str]:
     return deduped
 
 
+def _dedupe_tokens(tokens: Sequence[str]) -> list[str]:
+    seen: set[str] = set()
+    deduped: list[str] = []
+    for token in tokens:
+        key = token.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(token)
+    return deduped
+
+
+def _normalize_query(text: str) -> str:
+    cleaned = _normalize_text(text)
+    if not cleaned:
+        return ""
+    tokens = _dedupe_tokens(cleaned.split())
+    return " ".join(tokens)
+
+
+_STOPWORDS = {"a", "an", "the"}
+
+
+def _is_meaningful_token(token: str) -> bool:
+    if not token:
+        return False
+    if token.lower() in _STOPWORDS:
+        return False
+    alnum = re.sub(r"[^A-Za-z0-9]+", "", token)
+    if not alnum:
+        return False
+    if len(alnum) >= 2:
+        return True
+    return token.isupper()
+
+
+def _has_min_meaningful_tokens(text: str, min_tokens: int) -> bool:
+    tokens = text.split()
+    meaningful = [token for token in tokens if _is_meaningful_token(token)]
+    return len(meaningful) >= min_tokens
+
+
 def _choose_primary_entity(
     entities: Sequence[str], keywords: Sequence[str], title_phrase: str
 ) -> str:
@@ -155,6 +254,40 @@ def _choose_primary_entity(
     return title_tokens[0] if title_tokens else ""
 
 
+def _choose_primary_keyword(
+    keywords: Sequence[str], primary_entity: str, modifier_terms: set[str]
+) -> str:
+    best_keyword = ""
+    best_score: int | None = None
+    for keyword in keywords:
+        if not keyword:
+            continue
+        if primary_entity and _equivalent_phrase(keyword, primary_entity):
+            continue
+        if not _has_min_meaningful_tokens(keyword, 1):
+            continue
+        score = 0
+        keyword_key = keyword.lower()
+        if keyword_key in modifier_terms:
+            score -= 3
+        if " " in keyword:
+            score += 2
+        if keyword.isupper():
+            score += 2
+        if any(char.isupper() for char in keyword):
+            score += 1
+        if keyword.isalpha() and len(keyword) <= 3:
+            score += 2
+        alnum = re.sub(r"[^A-Za-z0-9]+", "", keyword)
+        if len(alnum) >= 4:
+            score += 1
+        if best_score is None or score > best_score:
+            best_keyword = keyword
+            best_score = score
+    return best_keyword
+    return ""
+
+
 def _append_tail(base: str, tail: str) -> str:
     if not base:
         return tail
@@ -163,32 +296,68 @@ def _append_tail(base: str, tail: str) -> str:
     return f"{base} {tail}"
 
 
+def _equivalent_phrase(left: str, right: str) -> bool:
+    if not left or not right:
+        return False
+    return _normalize_text(left).lower() == _normalize_text(right).lower()
+
+
+def _collect_topic_hints(title_phrase: str, keywords: Sequence[str], entities: Sequence[str]) -> list[str]:
+    combined = " ".join([title_phrase] + list(keywords or []) + list(entities or [])).lower()
+    hints: list[str] = []
+
+    if "ai" in combined or "artificial intelligence" in combined:
+        hints.extend(["AI announcement", "AI launch", "AI update"])
+
+    if "chip" in combined or "gpu" in combined or "semiconductor" in combined:
+        if "ai" in combined:
+            hints.append("AI chip announcement")
+        hints.append("chip launch")
+
+    if "data center" in combined or "datacenter" in combined:
+        if "ai" in combined:
+            hints.append("data center AI launch")
+        else:
+            hints.append("data center launch")
+
+    if "earnings" in combined:
+        hints.append("earnings call")
+
+    return _dedupe_strings(hints)
+
+
 def _add_fallback_queries(
     queries: list[str],
     primary_entity: str,
-    title_phrase: str,
+    base_phrase: str,
     min_queries: int,
+    min_tokens: int,
 ) -> list[str]:
     fillers = [
-        "latest",
-        "news",
-        "video",
-        "announcement",
+        "latest news",
+        "news video",
+        "official announcement",
         "press conference",
-        "update",
+        "latest update",
     ]
 
-    base = primary_entity or title_phrase
-    base = _normalize_whitespace(base)
+    base = base_phrase
+    base = _normalize_query(base)
+    seen = {query.lower() for query in queries}
 
     for filler in fillers:
         if len(queries) >= min_queries:
             break
         candidate = f"{base} {filler}" if base else filler
-        candidate = _normalize_whitespace(candidate)
+        candidate = _normalize_query(candidate)
         if primary_entity and not _contains_entity(candidate, primary_entity):
-            candidate = _normalize_whitespace(f"{primary_entity} {candidate}")
-        if candidate and candidate.lower() not in {q.lower() for q in queries}:
+            candidate = _normalize_query(f"{primary_entity} {candidate}")
+        if not candidate:
+            continue
+        if not _has_min_meaningful_tokens(candidate, min_tokens):
+            continue
+        if candidate.lower() not in seen:
             queries.append(candidate)
+            seen.add(candidate.lower())
 
     return queries

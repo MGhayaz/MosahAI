@@ -28,6 +28,13 @@ from SemanticSearch_NicheHistory_EvolutionaryVault_Manager import EvolutionaryVa
 from VisualResource_Intelligent_Asset_Acquisition_Engine import (
     VisualResourceIntelligentAssetAcquisitionEngine,
 )
+from mosahai.storage_manager import (
+    archive_old_batches,
+    build_batch_layout,
+    create_unique_batch_id,
+    ensure_assets_structure,
+    save_json,
+)
 
 
 def language_name_to_code(language_name):
@@ -108,6 +115,8 @@ class MosahAIFullPipelineExecutionBridge:
             time.sleep(wait_seconds)
 
     def run(self):
+        ensure_assets_structure()
+        archive_old_batches()
         summary_rows = []
         niche_items = list(self.niches.items())
 
@@ -157,6 +166,9 @@ class MosahAIFullPipelineExecutionBridge:
                         }
                     )
                     continue
+
+                batch_id = create_unique_batch_id()
+                batch_layout = build_batch_layout(batch_id=batch_id, news_count=3)
 
                 try:
                     payload = self.batch_engine.generate_segments(
@@ -208,17 +220,68 @@ class MosahAIFullPipelineExecutionBridge:
                             }
                         )
 
+                fallback_used = all(key in payload for key in ("segment_1", "segment_2", "segment_3"))
+
                 primary_news_url = str(top_three[0].get("link", "")).strip() if top_three else ""
                 visual_asset_path = None
                 if primary_news_url:
+                    media_dir = batch_layout[0]["media_dir"]
                     visual_asset_path = self.visual_engine.extract_visual_asset(
                         news_url=primary_news_url,
                         short_id=payload.get("short_id", short_id),
+                        output_dir=media_dir,
+                        filename="image_1.jpg",
                     )
                 if visual_asset_path:
                     print(f"[VISUAL] Asset saved at {visual_asset_path}")
                 else:
                     print("[VISUAL] No asset extracted for this short.")
+
+                for idx, layout in enumerate(batch_layout):
+                    segment = segments[idx] if idx < len(segments) else {}
+                    script_payload = {
+                        "short_id": payload.get("short_id", short_id),
+                        "batch_id": batch_id,
+                        "news_id": layout["news_id"],
+                        "segment": segment,
+                    }
+                    save_json(layout["script_path"], script_payload)
+
+                    selected_media = []
+                    media_found = False
+                    if idx == 0 and visual_asset_path:
+                        media_found = True
+                        selected_media.append(
+                            {
+                                "source": "article",
+                                "url": primary_news_url,
+                                "local_path": visual_asset_path,
+                                "duration": "",
+                                "resolution": "",
+                                "score": "",
+                            }
+                        )
+
+                    generation_status = "fallback" if fallback_used else "success"
+                    notes = ""
+                    if not media_found:
+                        generation_status = "partial"
+                        notes = "media not found, fallback needed"
+
+                    metadata_payload = {
+                        "headline": str(segment.get("title", "")),
+                        "topic": str(topic),
+                        "language": str(language_name),
+                        "batch_id": str(batch_id),
+                        "news_id": str(layout["news_id"]),
+                        "timestamp": datetime.now(timezone.utc).isoformat(),
+                        "queries_used": [],
+                        "selected_media": selected_media,
+                        "fallback_used": bool(fallback_used),
+                        "generation_status": generation_status,
+                        "notes": notes,
+                    }
+                    save_json(layout["metadata_path"], metadata_payload)
 
                 record = {
                     "short_id": payload.get("short_id", short_id),

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import math
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any, Mapping, Sequence
 from urllib.parse import parse_qs, urlparse
@@ -21,6 +21,7 @@ class MediaRankingEngine:
     max_results: int = 3
     model_name: str = "all-MiniLM-L6-v2"
     source_reputation_engine: SourceReputationEngine | None = None
+    _model: object | bool | None = field(default=None, init=False, repr=False)
 
     def __post_init__(self) -> None:
         total = (
@@ -40,7 +41,6 @@ class MediaRankingEngine:
         self.weight_quality /= total
         self.weight_source /= total
         self.max_results = max(1, int(self.max_results))
-        self._model = None
         if self.source_reputation_engine is None:
             self.source_reputation_engine = SourceReputationEngine()
 
@@ -50,10 +50,10 @@ class MediaRankingEngine:
         if not news_title or not media_title:
             return 0.0
 
-        model = self._get_model()
-        if model:
+        self._load_model()
+        if self._model:
             try:
-                embeddings = model.encode([news_title, media_title], normalize_embeddings=True)
+                embeddings = self._model.encode([news_title, media_title], normalize_embeddings=True)
                 return float(embeddings[0] @ embeddings[1])
             except Exception:
                 pass
@@ -131,16 +131,15 @@ class MediaRankingEngine:
         scored.sort(key=lambda item: item.get("final_score", 0.0), reverse=True)
         return scored[: self.max_results]
 
-    def _get_model(self):
+    def _load_model(self) -> None:
         if self._model is not None:
-            return self._model
+            return
         try:
             from sentence_transformers import SentenceTransformer
 
             self._model = SentenceTransformer(self.model_name)
         except Exception:
-            self._model = None
-        return self._model
+            self._model = False
 
 
 def _normalize_candidate(candidate: Any) -> dict[str, Any]:

@@ -189,14 +189,23 @@ class YouTubeVideoAgent(VideoSourceAgent):
         self.min_duration_seconds = max(1, int(min_duration_seconds))
         self.max_duration_seconds = max(self.min_duration_seconds, int(max_duration_seconds))
         self.top_k_per_query = max(1, int(top_k_per_query))
+        self._batch_state: dict[str, Any] = {
+            "id": None,
+            "failures": 0,
+            "warned": False,
+            "disabled": False,
+        }
 
     def search(self, query: str, *, max_results: int | None = None) -> list[dict[str, Any]]:
         safe_query = str(query or "").strip()
         if not safe_query:
             return []
 
-        max_results = int(max_results or 10)
-        max_results = max(1, min(25, max_results))
+        if self._batch_state.get("disabled"):
+            return []
+
+        max_results = int(max_results or 3)
+        max_results = max(1, min(3, max_results))
 
         command = [
             "yt-dlp",
@@ -214,17 +223,16 @@ class YouTubeVideoAgent(VideoSourceAgent):
                 check=False,
             )
         except FileNotFoundError:
-            LOGGER.warning("yt-dlp is not installed or not on PATH.")
+            self._register_failure("yt-dlp is not installed or not on PATH.")
             return []
         except Exception as exc:
-            LOGGER.warning("yt-dlp search failed. query=%s error=%s", safe_query, exc)
+            self._register_failure(f"yt-dlp search failed. query={safe_query} error={exc}")
             return []
 
         if process.returncode != 0:
-            LOGGER.warning(
-                "yt-dlp search returned non-zero exit code. query=%s stderr=%s",
-                safe_query,
-                (process.stderr or "").strip(),
+            stderr = (process.stderr or "").strip()
+            self._register_failure(
+                f"yt-dlp search returned non-zero exit code. query={safe_query} stderr={stderr}"
             )
             return []
 
@@ -251,7 +259,31 @@ class YouTubeVideoAgent(VideoSourceAgent):
                 }
             )
 
+        self._reset_failures()
         return results
+
+    def prepare_batch(self, batch_id: str) -> None:
+        batch_id = str(batch_id or "")
+        if self._batch_state.get("id") != batch_id:
+            self._batch_state = {
+                "id": batch_id,
+                "failures": 0,
+                "warned": False,
+                "disabled": False,
+            }
+
+    def _register_failure(self, message: str) -> None:
+        failures = int(self._batch_state.get("failures", 0)) + 1
+        self._batch_state["failures"] = failures
+        if failures >= 3:
+            self._batch_state["disabled"] = True
+
+        if not self._batch_state.get("warned"):
+            LOGGER.warning(message)
+            self._batch_state["warned"] = True
+
+    def _reset_failures(self) -> None:
+        self._batch_state["failures"] = 0
 
     def filter_results(
         self, results: Sequence[Mapping[str, Any]], context: VideoQueryContext
@@ -372,6 +404,9 @@ class TwitterVideoAgent(VideoSourceAgent):
             if not media_entries:
                 continue
             for entry in media_entries:
+                media_type = str(entry.get("media_type") or "").lower()
+                if media_type == "image":
+                    continue
                 if entry.get("media_url"):
                     media_filtered.append(
                         {
@@ -584,9 +619,9 @@ class VideoIntelligenceEngine:
         image_fallback_provider: Callable[[VideoQueryContext], str | None] | None = None,
     ) -> None:
         self.agents = list(agents or [
-            YouTubeVideoAgent(),
             TwitterVideoAgent(),
             ArticleVideoAgent(),
+            YouTubeVideoAgent(),
         ])
         self.max_candidates = max(1, int(max_candidates))
         self.max_results_per_query = max(1, int(max_results_per_query))
@@ -623,7 +658,11 @@ class VideoIntelligenceEngine:
             article_urls=list(article_urls or []),
         )
 
-        queries = self.build_queries(context)
+        for agent in self.agents:
+            if isinstance(agent, YouTubeVideoAgent):
+                agent.prepare_batch(context.batch_id)
+
+        queries = self.build_queries(context)[:5]
         if self.media_logger:
             self.media_logger.search_started(
                 batch_id=context.batch_id,
@@ -633,43 +672,50 @@ class VideoIntelligenceEngine:
 
         candidates = self._collect_from_agents_parallel(queries, context)
 
+        source_counts = _count_by_source(candidates)
         candidates = self._apply_relevance_filter(candidates, context.news_title)
         candidates = self._apply_quality_filter(candidates)
         if self.dedup_engine:
             candidates = self.dedup_engine.remove_duplicates(candidates)
 
         ranked = self._rank_candidates(candidates, context)
-        ranked = [c for c in ranked if c.score >= self.min_score][: self.max_candidates]
+        ranked = [c for c in ranked if c.score >= self.min_score]
+
+        selected = self._select_by_priority(ranked, context)[:2]
+
+        if not selected:
+            fallback_ranked = self._run_fallback_strategy(context)
+            fallback_ranked = [c for c in fallback_ranked if c.score >= self.min_score]
+            selected = self._select_by_priority(fallback_ranked, context)[:2]
+
+        image_candidate = None
+        if not selected:
+            image_candidate = self._build_image_candidate(context, ranked)
+            if image_candidate:
+                selected = [image_candidate]
 
         response: dict[str, Any] = {
             "batch_id": context.batch_id,
             "news_id": context.news_id,
-            "video_candidates": [c.to_dict(include_details=self.include_details) for c in ranked],
+            "video_candidates": [c.to_dict(include_details=self.include_details) for c in selected],
+            "debug": {
+                "source_counts": source_counts,
+                "after_filter": len(candidates),
+                "selected": len(selected),
+            },
         }
 
-        if not ranked:
-            ranked = self._run_fallback_strategy(context)
-
-        if not ranked:
+        if not selected:
             response["fallback"] = "image_required"
-            if self.image_fallback_provider:
-                try:
-                    fallback_url = self.image_fallback_provider(context)
-                    if fallback_url:
-                        response["image_fallback"] = {"url": fallback_url, "source": "image"}
-                except Exception as exc:
-                    LOGGER.warning("Image fallback failed. error=%s", exc)
-        else:
-            response["video_candidates"] = [
-                c.to_dict(include_details=self.include_details) for c in ranked
-            ]
+        elif image_candidate:
+            response["image_fallback"] = {"url": image_candidate.url, "source": "image"}
 
         if self.media_logger:
             self.media_logger.ranking_results(
                 batch_id=context.batch_id,
                 news_title=context.news_title,
-                total_candidates=len(ranked),
-                top_urls=[candidate.url for candidate in ranked],
+                total_candidates=len(selected),
+                top_urls=[candidate.url for candidate in selected],
             )
 
         return response
@@ -744,6 +790,98 @@ class VideoIntelligenceEngine:
 
     def rank_candidates(self, candidates: Sequence[VideoCandidate]) -> list[VideoCandidate]:
         return sorted(candidates, key=lambda item: item.score, reverse=True)
+
+    def _select_by_priority(
+        self,
+        candidates: Sequence[VideoCandidate],
+        context: VideoQueryContext,
+    ) -> list[VideoCandidate]:
+        if not candidates:
+            return []
+
+        buckets: dict[str, list[VideoCandidate]] = {
+            "twitter": [],
+            "article": [],
+            "youtube": [],
+            "image": [],
+        }
+
+        for candidate in candidates:
+            source_key = _normalize_source(candidate.source)
+            if source_key not in buckets:
+                source_key = "article"
+            buckets[source_key].append(candidate)
+
+        if buckets["twitter"]:
+            return buckets["twitter"][:2]
+
+        if buckets["article"]:
+            return buckets["article"][:2]
+
+        youtube_threshold = 0.7
+        if self.relevance_filter and hasattr(self.relevance_filter, "youtube_similarity_threshold"):
+            try:
+                youtube_threshold = float(self.relevance_filter.youtube_similarity_threshold)
+            except Exception:
+                youtube_threshold = 0.7
+
+        youtube_allowed = [
+            candidate
+            for candidate in buckets["youtube"]
+            if _candidate_similarity(candidate) >= youtube_threshold
+        ]
+        if youtube_allowed:
+            return youtube_allowed[:2]
+
+        if buckets["image"]:
+            return buckets["image"][:2]
+
+        return []
+
+    def _build_image_candidate(
+        self,
+        context: VideoQueryContext,
+        seen_candidates: Sequence[VideoCandidate],
+    ) -> VideoCandidate | None:
+        if not self.image_fallback_provider:
+            return None
+
+        try:
+            fallback_url = self.image_fallback_provider(context)
+        except Exception as exc:
+            LOGGER.warning("Image fallback failed. error=%s", exc)
+            return None
+
+        fallback_url = str(fallback_url or "").strip()
+        if not fallback_url:
+            return None
+
+        seen_urls = {_canonicalize_url(candidate.url) for candidate in seen_candidates if candidate.url}
+        if _canonicalize_url(fallback_url) in seen_urls:
+            return None
+
+        candidate = VideoCandidate(
+            source="image",
+            url=fallback_url,
+            score=40.0,
+            title=context.news_title,
+            raw={"media_type": "image"},
+        )
+
+        if self.quality_analyzer:
+            try:
+                result = self.quality_analyzer.evaluate_quality(candidate)
+                if result.get("reject"):
+                    return None
+                if isinstance(candidate.raw, dict):
+                    candidate.raw = {
+                        **candidate.raw,
+                        "quality_score": result.get("quality_score"),
+                    }
+            except Exception:
+                return None
+
+        return candidate
 
     def _collect_from_agent(
         self,
@@ -850,11 +988,11 @@ class VideoIntelligenceEngine:
             return []
 
         ordered_agents = [
-            agent for agent in self.agents if isinstance(agent, YouTubeVideoAgent)
-        ] + [
             agent for agent in self.agents if isinstance(agent, TwitterVideoAgent)
         ] + [
             agent for agent in self.agents if isinstance(agent, ArticleVideoAgent)
+        ] + [
+            agent for agent in self.agents if isinstance(agent, YouTubeVideoAgent)
         ]
 
         for agent in ordered_agents:
@@ -1094,6 +1232,39 @@ def _canonicalize_url(url: str) -> str:
             return f"twitter.com/i/status/{tweet_id}"
 
     return f"{netloc}{path}"
+
+
+def _normalize_source(source: str | None) -> str:
+    value = str(source or "").strip().lower()
+    if value in {"x", "twitter"}:
+        return "twitter"
+    if value in {"article", "news"}:
+        return "article"
+    if value in {"youtube", "yt"}:
+        return "youtube"
+    if value in {"image", "news_image"}:
+        return "image"
+    return value or "article"
+
+
+def _candidate_similarity(candidate: VideoCandidate) -> float:
+    raw = candidate.raw if isinstance(candidate.raw, dict) else {}
+    for key in ("relevance_similarity", "relevance_score"):
+        value = raw.get(key)
+        if value is not None:
+            try:
+                return float(value)
+            except Exception:
+                return 0.0
+    return 0.0
+
+
+def _count_by_source(candidates: Sequence[VideoCandidate]) -> dict[str, int]:
+    counts: dict[str, int] = {"twitter": 0, "article": 0, "youtube": 0, "image": 0}
+    for candidate in candidates:
+        key = _normalize_source(candidate.source)
+        counts[key] = counts.get(key, 0) + 1
+    return counts
 
 
 def _parse_yt_dlp_published_at(payload: Mapping[str, Any]) -> datetime | None:

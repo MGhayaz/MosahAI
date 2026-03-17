@@ -32,7 +32,14 @@ class VideoDownloader:
     media_logger: MediaEngineLogger | None = None
     batch_registry: BatchMediaRegistry | None = field(default=None)
 
-    def download_video(self, url: str, batch_id: str, news_id: str) -> Optional[str]:
+    def download_video(
+        self,
+        url: str,
+        batch_id: str,
+        news_id: str,
+        output_dir: str | None = None,
+        filename: str | None = None,
+    ) -> Optional[str]:
         safe_url = str(url or "").strip()
         if not safe_url:
             LOGGER.warning("Download skipped: empty url.")
@@ -47,10 +54,20 @@ class VideoDownloader:
 
         safe_batch = _safe_segment(batch_id, fallback="BATCH_UNKNOWN")
         safe_news = _normalize_news_id(news_id)
-        target_dir = os.path.join(self.base_dir, safe_batch, "videos", safe_news)
+
+        if output_dir:
+            target_dir = str(output_dir).strip()
+        else:
+            target_dir = os.path.join(self.base_dir, safe_batch, "videos", safe_news)
         os.makedirs(target_dir, exist_ok=True)
 
-        output_path = os.path.join(target_dir, self._next_filename(target_dir))
+        if filename:
+            safe_name = os.path.basename(str(filename))
+            output_path = os.path.join(target_dir, safe_name)
+            if os.path.exists(output_path):
+                output_path = os.path.join(target_dir, self._next_filename(target_dir))
+        else:
+            output_path = os.path.join(target_dir, self._next_filename(target_dir))
         metadata = self._fetch_metadata(safe_url)
         command = self._build_command(safe_url, output_path)
 
