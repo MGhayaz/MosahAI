@@ -2166,5 +2166,815 @@
     "visual_asset_path": "temp_assets\\AI_BATCH_20260315_17c3e215.jpg",
     "timestamp": "2026-03-15T17:51:48.219839+00:00",
     "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260317_24b6ee70",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Nvidia Gamer Backlash",
+        "script": "Nvidia thought they had a breakthrough, but the gaming community is revolting. A new AI-powered graphics feature was meant to revolutionize play, yet massive backlash is brewing. This isn’t just a tech update; it’s a war over the future of digital reality.",
+        "visual_keywords": [
+          "high end graphics card",
+          "angry social media feed",
+          "cyberpunk digital glitch"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Google Personal Intelligence",
+        "script": "Google is going personal. The tech titan just revealed a massive expansion of its Personal Intelligence ecosystem, aiming to put advanced AI in every hand. This isn’t just software; it’s a fundamental shift in how humans and machines finally become one.",
+        "visual_keywords": [
+          "glowing smartphone screen",
+          "abstract neural network",
+          "fast paced urban life"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Iran AI Photo Mystery",
+        "script": "A viral photo of a bombed schoolgirl graveyard in Iran is haunting the world, but experts are asking a chilling question. Is it real, or AI? The truth is now a battlefield where machines are rewriting the history of human conflict.",
+        "visual_keywords": [
+          "distorted news photograph",
+          "digital forensic analysis",
+          "tehran city skyline"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IUFZlM1lVNEhrU1EtOWFVQ2NRVnFibVdTVWlsclROZ1c5VV9rM0t5X3VNWFM0eVZIUmFQNFQ5dTVwZnJuUF92OHdkdll2UHlVNTRpeG9hbUwxZw?oc=5",
+      "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaEpNUnUzYnZPa21kcEFLM2NsN3k3VU8wSlJTNnZqLTJ2Yy1CR0Y3NU1kZ3EyamxCUUhTOHc1ckdKTzJmSHZUSmR4bXRnRENtMEkyS3EzY1g3RnBpR0xidEg0MUJFb0V2WWlLbDhvWjRiOHprM1Ztb0NIZVZqdkEwRk1MZU9IeW5YQzNGLV9XdUJMbWMxRUE?oc=5",
+      "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSXFYOTYtYkJGRzBiYnJ5Z0pyNFl5bGk0SHlfdENfTnNicVFnM1FVNzRMaXZGSkwtd3N6S0NsbEkweXhtYUtEalQ0bVZMdGVocHpGTHdTS2tadjRoVUozb0NvY0JtVkZ1S0pOMmdWNGFOMnBHOW1CQS1NbU9sRUxWMmxoaFJ5clphVlRwN3A5eVN6UnlOQ2RCVl9yTHFucVdva3B5R0NUdl81UQ?oc=5"
+    ],
+    "visual_asset_path": null,
+    "timestamp": "2026-03-17T19:45:44.765807+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260317_b6062740",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Infosys at 3-year low on AI disruption fears",
+        "script": "Is AI killing the tech giants? Infosys has plummeted to a three-year low as investors panic over AI disruption and global instability. It is a massive wake-up call for the industry. Is this the end of the traditional outsourcing era?",
+        "visual_keywords": [
+          "falling stock chart",
+          "tech office building",
+          "digital data streams"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "ING CEO: Geopolitical uncertainty may lead firms to reduce cap-ex",
+        "script": "Global business is hitting the brakes. The CEO of ING warns that soaring geopolitical uncertainty is forcing companies to slash their spending plans. Innovation is stalling as firms hoard cash to survive the storm. Are we entering a global investment freeze?",
+        "visual_keywords": [
+          "corporate boardroom meeting",
+          "currency exchange display",
+          "industrial construction site"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Trump is lying on every single level",
+        "script": "Tensions are exploding as geopolitical analyst Shaiel Ben-Ephraim sounds the alarm. He claims Trump is lying on every single level regarding the Iran war. With global stability at risk, the truth behind these military conflicts is becoming more dangerous than ever.",
+        "visual_keywords": [
+          "political news broadcast",
+          "military fighter jets",
+          "tehran city skyline"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRmFVanRONkM0TW90SWUxMkE5MG5GekVHSGlGWnVaMHN4RkIzQThaTkxyWW1FWGphaXZEU3ljcnlmTGZOeGxDUEZGTXFZVW1RQ1FjZ2kwYlVLMi1Xam9YRGZkSEFrME5hY2ZLZlcxMTZWUWRBblZ4c1prb29ONTJnX1ExbUdJSDZnSmJ6Nm5kZThfdTE0MmwyYVlDal9IRGotano2MWJrUV91VHBzTVlQWEh1d19QMm9samlDX2130gHEAUFVX3lxTE5kd0h4bFU4Z1lRcXlvbURvNFhCSkNadWRkeWItTTdhLTJhV0NDaTl6aW9NQ1lSRGFCNXlRbGZJc0NZR3Vob2JVbUFBSjJ0YnU1c3luSDBlRXRCOTJ6OTZyWE8waFZSS3hrTDZUdGJHd2xLenJrbU5OS0JUdzVMUEtsTUVSLThUVFYxRU9fSlhOVFVKMlZld1NiQmdYT0xzbm50Q1ZERFN1V215Zm1SSGNDXzNOd3czdUY4QVhFWTJ1OXY1ajk?oc=5",
+      "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSHo1NHZoYXlqcDJJak1ucm03SE9MU3I4aW0wc2kxZDFHWVhEWTkxbS1ZTmhGNG9Pd0k4QUdIYTBHX1J4b0xydk42Xy1nbHZSWVF6Z0RpZjZDYldWZVV5bXRiMWh6NmxQLTFzUHptRVZCN1JNeWR1Z2trZkVSaVJnRHVGaU5IWFZwZFl1bGJfWEllMm13MVptcnAweGc4Zlk4dm1TOFFucE1yMmZmRmZn?oc=5",
+      "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcjJINkRVQ05TZGdkdHhaamh1blFWMkNCTmpEVWU0aThTWG9xUTJWX2pJdmEwZXY2VnVkWFlEM3pBQl9iemJDbHJ1VDQwcjQ2QkJ3SlJJMXdTMVVnaFFtcTkyby1Db25rWkFEWm5SMWlpd1JJUkxhb0lMOWY1ZVRkT2p4N1otOHNLdVg2eUNfTWtkMzlzeHpzRjBZT245b1A5Wm5iZUJqZG1nQ3ZNSjVlZVVIaG14S2ZjTnc0RWpkbzR5ZUlpN2NELW13VHZTNkFtTloxeXllRzhFNEo3M3fSAeMBQVVfeXFMTlpSS3ZoNFNGcGdhUlpwTXJBeV80WGZIdHJpTVY2N043VUl6Z3MwVGRzeUVrUUNtb19WVURDdk5BZENNeDlpbG14X1FaaUlNOHhZLWZxNWVfRHFIY2xMZXJ3MDJIbHRNME5ZMnNUUVRlTF9sVGNfcU9oUG1RbnlSVkNhMFRtamVvN1UzOXJ6bE5QWGpIclUybUtTYVBLaUI2WkRjRnIzbm5kNlpqRU4wOHlVWXMzTVNTanhvZzBzYnhWZHRMaHNVZXhvNjZqVkVpNTBKQmtZYTVDN1VFRmZLYi0wek0?oc=5"
+    ],
+    "visual_asset_path": null,
+    "timestamp": "2026-03-17T19:46:10.611206+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260317_17cf8fdc",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Dignity Over Identity",
+        "script": "Hyderabad’s LGBTQIA+ community is sounding the alarm! They are standing firm against the Transgender Amendment Bill, demanding that the law recognizes human dignity rather than just verifying identity. It’s a powerful fight for civil rights that is reshaping the city’s social fabric.",
+        "visual_keywords": [
+          "protesters holding signs",
+          "hyderabad street view",
+          "legal gavel striking"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "The Science of Names",
+        "script": "What is in a name? A lot, according to experts in Hyderabad! A new five-day intensive course on botanical nomenclature has officially kicked off. Scientists are diving deep into the complex world of plant naming, ensuring global standards are met right here in the city.",
+        "visual_keywords": [
+          "botanical garden plants",
+          "scientists in lab",
+          "microscope close up"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Genome Valley Breakthrough",
+        "script": "A major healthcare revolution is unfolding in Genome Valley! A French firm has launched advanced diagnostic kits to fight Tuberculosis. With a government minister officially unveiling the tech, Hyderabad is cementing its status as a global hub for medical innovation and life-saving technology.",
+        "visual_keywords": [
+          "medical diagnostic kit",
+          "high tech laboratory",
+          "minister cutting ribbon"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQbF8xYzJUSXNSMnpBWEVRc2dXYmk0eVF5TTVIOFhPY1RWb19BaGtIYVZfenpqNDE3UEZTbDhTVjBFN0pNYmtCLTRhZUlveV9ZazQ5RmpaM2dyR0hYY2J3TDlndnFSNUZyMkk1MVBjTkg4eHJaLXhEN1AzeXZxb0RKalR5N1B3dkNiYW1mXzM0QWhLWDdDQm9NVnRrVjlEUDNsUng0bERtc1hTLTJtaFdONjFqOWktMXNoUXlvOGs3UFhwem5VbjlRMENNY0NhTDBHaVM5Zl8yd0xWOTBsNllKWVI2cW1Kbl8zclRIRGFHaEZ1ZGJKNlhGTlBEa1dkTDZWTWx0SWwzbEbSAY8CQVVfeXFMTUx6STZSbmZHSGl6dTZCcXZpQUdEN0JVT3lwV1JNVm5PNm5yOXJjelF6VVlfQVVERzd6WlIzVFd1Ump3alhvRFAwMUU4aDduRTM0VmN2akhvUG44WWJDMG5BRDAteDN3bkdwckM2ZXlyUnUtOWRlamdwNDZWWmltbGFLYUk1TjNYLXVDLWc4eFdXY2NDWllMbldaNTFQU0ZNVTBTcnYxQk9fbVRuWU94VkNoSFhOR1F2TjRJYnR1TjZXQW1YZzJJQ2MxVEZJdGVzUS0zaEJYQkJoRmR0ZEJQN3Iza2R1R3c3dDI4YkxVUXA0OVl1WHdSQmVXUG9DNy11UlIzckNuVWRpRmh1UFFvUQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNenJleGdhYV94YkhKM2ppU1VZcXBORllLRW5Cdzd3SGExbUlqMGhjY1N5VWsxMTFpeFpVSGFidEtKNFpsNEhJWXZ6NnFBaDdTM0hsczBwR2QtN2tmc3BWV2pSQ2V2RzkyZGJwOGxGTFRMSWpVQy1UQXF5R25xR0lnZElfa19INWhtSEZIeWEta0hCWUtFekVSUmptSlpxNzUwN1ljdnltZjJFbEFZOEpBVm1ETWhNZlgxXzJmVDJTU3U3WkhlRFI4MUtqS2FRb0pS0gHXAUFVX3lxTE1GRHpSTmZzTVVPMmVTMHREclZhM09PZFFuSkdsM3JWMGFId2V5X0pLUzY5OXZnd2tKRV84dFJNVEQzWmhzaE14UDdCX1k0WHZCQXVYeFFBX1lwWGJpTnhhMklUZkdyMzQzaHJfcV84STkzM0t1OGpWT21VZ1B0S0ItU2JGYXVpa1k1RWNvdWFLZEFWNFMya29zZ0E0WWl6a3B6Zm9Tcmw4MFRrTjlrU2FIbUpfZWw5VnphSmRSYnpxS3JnOXZ0Q2dTRjkwZ3c5cm42RTBjOHFr?oc=5",
+      "https://news.google.com/rss/articles/CBMi7AFBVV95cUxONzlwUERBdWg3UGJfR1dXZmN1ZFJJQkRXUUJ3SW5UR0V4Z2tVNDFLbVlFZklVTV9aSHRtMHRvckRVVzFWTndPdlpIQnNudnNnLTFpNFB3Y0V6bEQ0dC1fOWQ1MDZSQlZSelhOX21aZDZOT3FyNlMtclMxSHBjUWkyaVZrVU8wS3RPN2Y2NWNoQTZRbTZYQlNjN3FBbFNtVnFvNGloaUpTNGFmTHY2MHFmNmdJcW1pRmNkMmNWbmw3and2a3U3U0k0NGg0eVdqc0dwWW5kTGowMVZoa1MyMWhycGFGUGxqZWRwZVkzbNIB8wFBVV95cUxPb2YzNV9nVVJralQyaEZEWXF4TEJQdjlVYVdtWnFQcXAxOVhXTDJvVERNaUdyZS14d3NXZHVUV3F0VVp4U19CaVI2djAwRmVJQ2VlMl9iRjNCRUozNXF4bk1OSElwODZmWHBMYVhhUmtPc0VUamVyT2U5VnRFOG1hOHZVLTN1Z0Z0V3hPWjNyWXY5OHh2dGQ0cTU2dXJONklPSDhCVVZNeGVlT2lqRGhmcEhwZlpBeUtuVEFDVVJ2VGVZYTZ0UlI3TTNaMDNORXJYclB2bTlENjJ3WFFwUWNScm9Wb3U5YTVCS1JRajlSOUlVams?oc=5"
+    ],
+    "visual_asset_path": null,
+    "timestamp": "2026-03-17T19:46:38.497116+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260318_6beff844",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Nvidia Gamer Backlash",
+        "script": "Nvidia thought they had a breakthrough, but the gaming community is revolting. A new AI-powered graphics feature was meant to revolutionize play, yet massive backlash is brewing. This isn’t just a tech update; it’s a war over the future of digital reality.",
+        "visual_keywords": [
+          "graphics card close up",
+          "angry gamer silhouette",
+          "digital glitch effects"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Banned AI App Ad",
+        "script": "They promised it could remove anything, but now the regulators have removed them. A viral ad for an AI editing app has been officially banned after claiming impossible results. This isn't just a marketing fail; it's a crackdown on AI deception.",
+        "visual_keywords": [
+          "smartphone screen blurry",
+          "stamped banned text",
+          "erasing digital photo"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Google Personal Intelligence",
+        "script": "Google is going personal. The tech titan just revealed a massive expansion of its Personal Intelligence ecosystem, aiming to put advanced AI in every hand. This isn’t just software; it’s a fundamental shift in how humans and machines finally become one.",
+        "visual_keywords": [
+          "google logo neon",
+          "hand holding smartphone",
+          "neural network animation"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IUFZlM1lVNEhrU1EtOWFVQ2NRVnFibVdTVWlsclROZ1c5VV9rM0t5X3VNWFM0eVZIUmFQNFQ5dTVwZnJuUF92OHdkdll2UHlVNTRpeG9hbUwxZw?oc=5",
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PdHBHLUpCZm53Vy1EY3ZiUzJ1b2dMN0tDNGhhVlRPUXRRVjJXZHRja1oxVVpzVzlNa2NXcVZpc2ctM1ZRN2ZRWVlaUkVFN2E1VkRKQUZHX0luQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaEpNUnUzYnZPa21kcEFLM2NsN3k3VU8wSlJTNnZqLTJ2Yy1CR0Y3NU1kZ3EyamxCUUhTOHc1ckdKTzJmSHZUSmR4bXRnRENtMEkyS3EzY1g3RnBpR0xidEg0MUJFb0V2WWlLbDhvWjRiOHprM1Ztb0NIZVZqdkEwRk1MZU9IeW5YQzNGLV9XdUJMbWMxRUE?oc=5"
+    ],
+    "visual_asset_path": null,
+    "timestamp": "2026-03-18T11:02:19.757975+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260318_0bfa27f6",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "A Geopolitical Three-Body Problem",
+        "script": "Is the Iran conflict actually a hidden front for a much larger war? A complex geopolitical three-body problem is emerging between global giants. Experts now question: is this struggle really about Tehran, or is the ultimate target actually China?",
+        "visual_keywords": [
+          "world map animation",
+          "naval warships",
+          "beijing skyline"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Crude Oil Prices Slide",
+        "script": "Crude oil prices just plummeted over three percent as geopolitical tensions hit a breaking point. Markets are reacting sharply to the growing instability. As the price slide accelerates, the global economy faces a massive test. Is a bigger crash coming?",
+        "visual_keywords": [
+          "oil price graph falling",
+          "oil refinery at dusk",
+          "stock market tickers"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "India's Energy Influence",
+        "script": "India is officially flipping the script on global energy. Long held back by fuel dependence, the nation is transforming this vulnerability into a tool of geopolitical influence. By leveraging its strategic needs, India is turning an old weakness into power.",
+        "visual_keywords": [
+          "indian flag waving",
+          "industrial cargo port",
+          "energy infrastructure"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR01QNWRyWHNzamRTZlRvSWdjajVsaXA5NDRjUmhrTXo3YmRCRUY1NjhYQU5HUWdwYVJvZWVZN2c5UFBkTGM2NTRCQkJNQXJlQWNHOE02dzhwVVFGZ29EX3k0SVdxTGdXZlJQUUQySTUtcUNnMkxGbElHaE84dHJ0am5oVC0wTzBjaGdvX0VSb3FBeWVBY3NoVlV6VmZqeEsyaGFVSkFhQU8xbHPSAbsBQVVfeXFMTUYxcWp4MEgyNEt4QXJrT0ZMQWdWSV9OdzFRaVZFV04xUkNKZzBZVEctVGxOdV9DSlF5R1ZnUlRCNUYyZU9VVUVJbGhrYWxtQV85b1k1WmUyZVp4QU9NbjcxNllSOG9XdWstcU56ck82YTFza2NWeDhTTGp2UE9rRDNDS2txUF93V0ZHMEw3U0JZaFczWTFhUUFuY0xDcElSQnlCODZxckwtQ2ZjNGR5bVZ6T3NxbXB1ci1KQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOHFPZ21ReFdEcjJPRkRRR3d5dHJIaEhqbndzeEhOS2FHSTJnV2g1UnhOR0p3MDRqUUpodG1vTnVfRTBvSDR6OU8xMTUyZTIwU3JwNmNxR2ljd09ITGQ4dU1sbllCemhSZi1MNTdVcno0bzNsR010cmFuXzQzZkFYM0s5LXRGZ18wNEZXeDQzMA?oc=5",
+      "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUTFPaWkxZFYtZnJGUlN3MWdZRVoyQ0FBbHFWR3RsTWROcExpakZXWk5Ncnh4VlNndHQwT29RLXVsbU13N19UaHRyNnBSbmtCUWEtRHBLb0o0LVpuVVBtNmVacUNvTlRaZnJZaC1ncHF2QVc5ZEJiR1NYRHA0c3JCRHV4b0dXM0xTM2FWSWZYNzhzOTg2blRTaGFnUG9EbGc2ZkYtaHRLWWdBcEZpWS1vMm5pMzNQWThTcTV1RHU3aWdlU1N3N0diU1RiTkM5dEpjeEhZQ0ZPZ0rSAeYBQVVfeXFMT0FaM1dBX0ktTFc2ek9rcEk0cEVqWmdJMlV5SmJkM00zMUxnMWlqenRCTU40MnJ2aDc2TTJUS1E3Zm53dktEcFFwbXNIZlBOX01EMlQ2V1ZxaUhwNm9aZlVmWTVFZTJSR01rejhkNFcxenBwZEV2c21Bd1NCM1pXcjJxbEsyR2hfM0ozR0tyeS1xeUR2RkR4anJmMEY3aGxIZUR0QS1kVV9CSHNKNnRmaWlpMWlHSEgtU0hWRl9EdFp5Y2pzVDd0YWpGWEVLbTl1SUliMV9adkItbzF1TEVKeVpEaU42LVE?oc=5"
+    ],
+    "visual_asset_path": null,
+    "timestamp": "2026-03-18T11:02:43.954311+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260318_7535bb75",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "PSL 2026 Captaincy Shift",
+        "script": "A major leadership shakeup is hitting the cricket world! Marnus Labuschagne has just been officially appointed as the new captain of the Hyderabad Kingsmen for PSL 2026. Fans are buzzing as the Aussie star prepares to lead the charge. Can this bold move secure the",
+        "visual_keywords": [
+          "cricket stadium crowd",
+          "Marnus Labuschagne batting",
+          "Hyderabad Kingsmen logo"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Illegal Auto Fare Surge",
+        "script": "Hyderabad commuters are facing a crisis! Illegal auto LPG price hikes are causing travel fares to skyrocket across the city. Residents are feeling the burn as drivers demand more money for daily trips. This sudden surge is leaving thousands of passengers stranded and frustrated.",
+        "visual_keywords": [
+          "hyderabad auto rickshaw",
+          "lpg gas station",
+          "frustrated commuters"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Viral Dosa Gas Charge",
+        "script": "Would you pay extra for heat? A Hyderabad restaurant is sparking outrage after adding a Gas Charge to a plain dosa order. This bizarre new fee is going viral, leaving local diners shocked. Is your next meal about to get even more expensive?",
+        "visual_keywords": [
+          "plain dosa plate",
+          "restaurant bill receipt",
+          "viral social media post"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdUY4Wkd1WVFOS3g4WmxkUThnV2t1eE02WFJPSkt0dXdLSXgxbmNLZ1BHNWRKN1lIYkRUbTJqd1doUjRvME9VZUFFczJsV0Y2eURObk12Ym5TVFQxOF9QN0VQWXd1SjZYYU5nb3RUX1B3RXQtQlRIdnhNR015eG5TV0p2ZmpTWHV3dXFxZjB4UVM3RlBPYUhxOTVfakNCS051MEdRUnZnbElsNUnSAbwBQVVfeXFMUHYzR01qVk9scTJOcEc4UUMxVzRpOElGV3g5Szh5OFJSX0RGVnpVblAtTV9xTy1jR2w0cnl0alB1Q2ZhWmdlYkphMHBOdmZmcGNPc1hKWUVFQnl3ZEVwQ3R1QW1YbnFELW1uendMOFpmTkJJZjg2NWxxREFHa3RKYUUtbUxhT2JQSTJrcDdfVFg0SWNPRkJNbDl0dXNFRFJpZ2J2UThFcXY0TUQ0VUhScTZwUURPaWdlWVF4Q08?oc=5",
+      "https://news.google.com/rss/articles/CBMimgFBVV95cUxNLWdsaHNTZHFuOUliYjRhSUJ1TmFINGFoSVB4ZU5pVTV4THhiSDM5WWhaVTFveXAzMUc4TGxWekJsUy1WWmJ6R1drdW5SakRXMk9MZ1YzNzctZjM0amtTM0pLQk5yUmFmdnNPT3lZc3FpZVVpUXlzT3UybHlFZ1UwbWpScFd3TjJBMzNfOWhFbjZDckxSUjVHOWN3?oc=5",
+      "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOWXdBaHFKYmVVMjB2RjRXZEVLWnZsWGxvc2ZDM0J5NTY2Y2pHcEtrQXhTdDhqeExvQnFNbmxKaXZBWUJETzhNWjFzR0x5cDdtenNGWExnbHU3ME5FM1c3X0FCeEdOa3NqQTJrR1gwYWZnUkFLZnZWMjdma2JCcm1oOEZPOXlYRWdfQkxrREx5U0ZNbVllLXN1Y0JvYTYtV0I3UXhCQS1IOG5QZGFaRlJocFREd19INjdyLWtzV3R2ZE80YXNSYkVoYmVSQnZrRnNDOW1SeHlhWEVfNmVQbUpoWEVFbVlOazhJ?oc=5"
+    ],
+    "visual_asset_path": null,
+    "timestamp": "2026-03-18T11:03:09.598597+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260318_e3662dca",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Nvidia Gamer Backlash",
+        "script": "Nvidia’s latest breakthrough has triggered a massive revolt. Gamers are slamming a new AI-powered graphics feature that was supposed to revolutionize the industry. This isn’t just a simple tech update; it’s an all-out war over the future of digital reality.",
+        "visual_keywords": [
+          "nvidia logo close up",
+          "gaming pc setup",
+          "angry social media comments"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "China's AI Tigers Surge",
+        "script": "The global silicon war is entering a volatile new phase. Nvidia’s CEO just hailed OpenClaw as the next ChatGPT, causing shares for China’s AI tigers to skyrocket. It’s no longer just a market rally; it’s a race for absolute computing supremacy.",
+        "visual_keywords": [
+          "chinese stock market ticker",
+          "jensen huang speaking",
+          "neural network animation"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Banned AI App Ad",
+        "script": "A major AI controversy is forcing regulators to step in. A viral ad for an AI editing app claiming it could remove anything has been banned. This high-profile crackdown marks a turning point in the battle against misleading artificial intelligence marketing.",
+        "visual_keywords": [
+          "smartphone photo editing",
+          "red banned stamp",
+          "person looking at screen"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IUFZlM1lVNEhrU1EtOWFVQ2NRVnFibVdTVWlsclROZ1c5VV9rM0t5X3VNWFM0eVZIUmFQNFQ5dTVwZnJuUF92OHdkdll2UHlVNTRpeG9hbUwxZw?oc=5",
+      "https://news.google.com/rss/articles/CBMipgFBVV95cUxOa0xaRWRlekwzZ3BQR1FPWWNlLW1nT3E1UVhINUoyRG5QTklOVEpIYUFEWGJaT0EzbXVQMGhzOE5wYk8xS1ZyWHJMc3Z0bFliU1lHUnpJV0U3blhSYlVYRVMxRWppb2tVWUlRX1lKMmw4dkphZTdBNUpjY092N0xMSVBXT2FxS2xwYkpiV2Y2cmhLOXo1YkFrZUtPYnJUWXVmM2dsazlR0gGrAUFVX3lxTFBzazE2OGJKOEtOc2hDQWUwajU2UWRRblJXdGRNa1owdzF4aWpmMGd6WEVKc1kyZDlneWo4T3NRNTdrbl92ajI0akRfbDNsTU4zdlJTUFEyYmc1OGlVNUo0WXh6MnpYaERGblFGa1dVZk5iWEp4Sk9zbGhUVVRpMHdaaWhSNVI5X3RGT2lMQ2VuMUtmMFNMellEaHlMeFZQTWF5bWNiVl9fSmdBaw?oc=5",
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PdHBHLUpCZm53Vy1EY3ZiUzJ1b2dMN0tDNGhhVlRPUXRRVjJXZHRja1oxVVpzVzlNa2NXcVZpc2ctM1ZRN2ZRWVlaUkVFN2E1VkRKQUZHX0luQQ?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260318_1816\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T12:46:51.438174+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260318_928a1649",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "A Geopolitical Three-Body Problem: Is The Iran Conflict Ultimately About China?",
+        "script": "Is the Iran conflict just a cover for a much larger confrontation? A new geopolitical three-body problem is shifting the balance between global powers. Analysts are now investigating: is the real objective Tehran, or is the ultimate target actually China?",
+        "visual_keywords": [
+          "world map highlights",
+          "beijing skyline",
+          "military silhouettes"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Crude oil prices slide over 3 pc amid geopolitical tensions",
+        "script": "Energy markets are reeling as crude oil prices suddenly crash by over three percent. Despite escalating geopolitical tensions, fuel costs are sliding. Now, the global economy is left questioning: why is oil falling while the threat of international conflict continues to rise?",
+        "visual_keywords": [
+          "oil price ticker",
+          "cargo ship",
+          "gas station sign"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Dr. Subhash Chandra speaks on India's growth in geopolitics & economy",
+        "script": "India is officially rewriting the rules of global influence. During a recent address, Dr. Subhash Chandra detailed the nation's massive surge in both economic power and geopolitical status. The question remains: has India finally secured its position as the world's next superpower?",
+        "visual_keywords": [
+          "new delhi skyline",
+          "dr subhash chandra",
+          "factory production line"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR01QNWRyWHNzamRTZlRvSWdjajVsaXA5NDRjUmhrTXo3YmRCRUY1NjhYQU5HUWdwYVJvZWVZN2c5UFBkTGM2NTRCQkJNQXJlQWNHOE02dzhwVVFGZ29EX3k0SVdxTGdXZlJQUUQySTUtcUNnMkxGbElHaE84dHJ0am5oVC0wTzBjaGdvX0VSb3FBeWVBY3NoVlV6VmZqeEsyaGFVSkFhQU8xbHPSAbsBQVVfeXFMTUYxcWp4MEgyNEt4QXJrT0ZMQWdWSV9OdzFRaVZFV04xUkNKZzBZVEctVGxOdV9DSlF5R1ZnUlRCNUYyZU9VVUVJbGhrYWxtQV85b1k1WmUyZVp4QU9NbjcxNllSOG9XdWstcU56ck82YTFza2NWeDhTTGp2UE9rRDNDS2txUF93V0ZHMEw3U0JZaFczWTFhUUFuY0xDcElSQnlCODZxckwtQ2ZjNGR5bVZ6T3NxbXB1ci1KQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOHFPZ21ReFdEcjJPRkRRR3d5dHJIaEhqbndzeEhOS2FHSTJnV2g1UnhOR0p3MDRqUUpodG1vTnVfRTBvSDR6OU8xMTUyZTIwU3JwNmNxR2ljd09ITGQ4dU1sbllCemhSZi1MNTdVcno0bzNsR010cmFuXzQzZkFYM0s5LXRGZ18wNEZXeDQzMA?oc=5",
+      "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWkhjT19GN3hrSTJCSHNyZEVuVFUtU2s1ZV9qSHprTU0yTE9hellFeWMzcHZoOWp6TTFiZUN4TEl0aWxJMjZRRDRVQmowQ0JLSXpQbXpiRU1HZlMwc3FQZXZvbUNIazFnb3QzUVYwdEVTTmh2LURteVAzQ1A5LVNhSWxqREZOMFhJS2M2dHU2QjlZVzlha2pHd1JzTXVaMkk1M2NjTE9HcEJBNkFDRS1jMllqZlh3czliQ1ZJN3g1Y2ROTVh0TUR0ZXhPOW50cWs?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260318_1817\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T12:47:20.722067+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260318_01d3b68c",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "IMD Climate Warning",
+        "script": "Climate chaos is hitting hard! The IMD just issued an urgent orange alert with hailstorms striking Shimla and rain forecast for Hyderabad and Delhi. Sudden climate shifts are catching everyone off guard. Stay prepared as the weather takes a wild turn.",
+        "visual_keywords": [
+          "thunderstorm clouds",
+          "weather radar map",
+          "heavy rain"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Hyderabad PSL Captaincy",
+        "script": "A massive leadership shakeup just hit the Hyderabad cricket franchise! Aussie star Marnus Labuschagne has been officially named the new captain for the PSL season. Fans are buzzing as this cricket legend prepares to lead the team to victory. Can he succeed?",
+        "visual_keywords": [
+          "cricket captain portrait",
+          "crowded cricket stadium",
+          "action sports shot"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "LPG Fare Crisis",
+        "script": "Hyderabad commuters are facing a crisis! Illegal auto LPG price hikes are forcing travel fares to skyrocket across the city. Residents are feeling the burn as drivers demand higher costs, leaving thousands of daily passengers frustrated and stranded on the streets.",
+        "visual_keywords": [
+          "yellow auto rickshaw",
+          "gas pump nozzle",
+          "crowded city street"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMjlWSUNfMlMxcUJaa1VHbV9tUjlwaHB6NEd0Z1lBLWVzVDk3a3ppR3E4Zm5ZYVc3bllfM1JLbU1HRWplRlgzYlNLaHk1Q3A5alg3WEp4dzIxQW5Wd0hlVkxNWWFNOG9EYjBBWnp5b3BTeFhQQzNhanJSX1VldUF5a2dNaUFmMWhjejFYdjFERS1RYzA4TDRYT2FLRVk3dENXR2NQYjVaU0N6MmkwYWQ1M2hNYVR1bnFLbnFRZnREMVRVNlQxMUV4ZlhwU3RlWGRxYXBjR25KbmYzaVFsUG9VcUwwQ1pEdDlfTE1FWklmNW5lSU8xTHl6UVRGczRqbWlZLVE4cmxycV85QkEtVHhZcmRfd3FkajU10gGeAkFVX3lxTFByamtoRDU2cDlVdm5tZDNyOEc4YUhlWUsyUlNMcUlGalI1ZldidTdXYVpBV1o0VV9maG11YU42Vmg4V0h1dzNpRFVWRkJ4aktzYm1jMTBTWVBySEdEMU15TjRPQXNYWHFOSnF5c29vdFNBQVBzVEZhX1h3a2RwY3BTb0dEOERQcUVLWnBFbVRIV25MX0dwQUxreTdJQjlNcFM3ZzVCZ1Vtcmo5N0xYeTJyWWRSWDZMSWN4bzN1bGZmemJKZXFTNHhQX3pqOFUtMU9RUEFtLTFTN3I1NFlDbGwzWm9wRGdtYk9DR1BfbDg5TnJIVkpSdUtaY0llUmtVTlAzZ1JFMXRPaWNzMW52bXhuQ0VydlJTakItZkUtc2c?oc=5",
+      "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVEtZUVRKNjVTMUdsMG5jenNPbzI3Z3ZUN2V6UDQ3bldKXzlfaW80WS0zNmp3eG85WnJLZ256R2FJY2Y4eE52dVZRSDFhWGZEODZpYzI5U1RPVkJEeTZibmZyQkVXTE1mYi1YRlE2STZsVnJnb04wWW5CTnhMNk83ZU9qT2hQaVl6Q3l6ZHBkS0FoRkVrVmt1QUhR0gGgAUFVX3lxTFBDT2o1ZnF4RTFWS0FqeFRlYXo4TFBhclZPTE5UTHFLelNQWlEzTl9DbzBDSXNBeTlTNkFXYm02TW44ZzZkc1lxVEtzalVqWWZxNEsxcUFaX3R0amctZm9mWF9rQ29Bd0dMMjZPVmtzMXBrTjF1eUdneDNYbW8wcGpLaEJfbkRkQjZzSFlycjNlazBGLUI2OUpWUVprMEdjYXg?oc=5",
+      "https://news.google.com/rss/articles/CBMimgFBVV95cUxNLWdsaHNTZHFuOUliYjRhSUJ1TmFINGFoSVB4ZU5pVTV4THhiSDM5WWhaVTFveXAzMUc4TGxWekJsUy1WWmJ6R1drdW5SakRXMk9MZ1YzNzctZjM0amtTM0pLQk5yUmFmdnNPT3lZc3FpZVVpUXlzT3UybHlFZ1UwbWpScFd3TjJBMzNfOWhFbjZDckxSUjVHOWN3?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260318_1817_01\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T12:47:50.394971+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260318_61e1de83",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "AI Editing App Ban",
+        "script": "They promised it could remove anything from your photos, but now regulators have removed them. A viral ad for an AI editing app has been officially banned after claiming impossible results. This crackdown marks a turning point against deceptive marketing.",
+        "visual_keywords": [
+          "smartphone photo editing",
+          "official ban stamp",
+          "blurry digital background"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "China's AI Tigers Surge",
+        "script": "The global silicon war is entering a volatile new phase. Nvidia’s CEO just hailed OpenClaw as the next ChatGPT, causing shares for China’s AI tigers to skyrocket. It is no longer a market rally; it is a race for supremacy.",
+        "visual_keywords": [
+          "stock market ticker",
+          "silicon microchip",
+          "shanghai skyline"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "MKBHD Warns of AI Threat",
+        "script": "Is your favorite creator about to become obsolete? Tech legend Marques Brownlee is sounding the alarm on YouTube’s AI threat. MKBHD admits that advanced artificial intelligence could soon replace humans, marking a volatile shift for the future of digital media.",
+        "visual_keywords": [
+          "high tech studio",
+          "digital human interface",
+          "video camera lens"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PdHBHLUpCZm53Vy1EY3ZiUzJ1b2dMN0tDNGhhVlRPUXRRVjJXZHRja1oxVVpzVzlNa2NXcVZpc2ctM1ZRN2ZRWVlaUkVFN2E1VkRKQUZHX0luQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMipgFBVV95cUxOa0xaRWRlekwzZ3BQR1FPWWNlLW1nT3E1UVhINUoyRG5QTklOVEpIYUFEWGJaT0EzbXVQMGhzOE5wYk8xS1ZyWHJMc3Z0bFliU1lHUnpJV0U3blhSYlVYRVMxRWppb2tVWUlRX1lKMmw4dkphZTdBNUpjY092N0xMSVBXT2FxS2xwYkpiV2Y2cmhLOXo1YkFrZUtPYnJUWXVmM2dsazlR0gGrAUFVX3lxTFBzazE2OGJKOEtOc2hDQWUwajU2UWRRblJXdGRNa1owdzF4aWpmMGd6WEVKc1kyZDlneWo4T3NRNTdrbl92ajI0akRfbDNsTU4zdlJTUFEyYmc1OGlVNUo0WXh6MnpYaERGblFGa1dVZk5iWEp4Sk9zbGhUVVRpMHdaaWhSNVI5X3RGT2lMQ2VuMUtmMFNMellEaHlMeFZQTWF5bWNiVl9fSmdBaw?oc=5",
+      "https://news.google.com/rss/articles/CBMijwJBVV95cUxQbFhQTlduNl9pRHlzODZILW1odjU5QWhlZjdJNHNaeUd2anpxc0VaTmpvM0tLUk4wXzduT25hcmhETkFkaWlwNWhCVlAwb21KNzQyUnYwTnVWQVJJQ0ZjYU1sTnpuSVNLSUFIeW9CN0ExVzhyN3lBWDgtVnpOZ3QwVC1kTDNHY0MwQ1dMZlJ2OXExM2ZqZldXTnI1R3BYSmFCQ1h2dVZFQ1hQZFFWeThSX0hLb19mWG5rUWN4VTdORm0yVjNNR3lsZ3hZdmxIakV0V2syUEM0UXlXRE9YN2lUcGoxZ291XzVRLTlkTkdPb2FEVDdUYWJZU05CY1VodnZMeGIxVTJNbUVKWFFjU1ZZ0gGUAkFVX3lxTE5qMW5mWXRTTFNLTkVSUUJNajlkMlVmOEdzVWZ4aFBiM1RTNGdLM1RRUXRpU0NQbDVSSjZ2V0d2ckJVZmtYeHBzRXhjYVhWc0h1TUs4WWNFUlVNOEpUSDF0ZHBNNlBTdDRSalZrMXJTWFd4Rk9WeWlwejF3Z3cwLUlpTV94ZnVwSlVEektMUTNoUDlZYTZtbkI1VkVpWGdFWWRUTkJvZmFOSU5sd0U1cWV6SVNLbEdxSmN2WTdsblRiUXdheVZzelhjYXZQb2pYSTdtck9RckdsYkdQdDBGcXNoS2x4TFBqMlE4eGxoSGlVU3U5ZFgyemdmQnhXeXp6MGRXbERTMFRtMkxfSFJESDIwQlI1TQ?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0107\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T19:38:05.423714+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260318_6f41afb2",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "A Geopolitical Three-Body Problem: Is The Iran Conflict Ultimately About China?",
+        "script": "Is the conflict in Iran just a massive distraction? A geopolitical three-body problem is unfolding, shifting the global power balance. Analysts are now asking: is this struggle really about Tehran, or is China the actual ultimate target?",
+        "visual_keywords": [
+          "middle east map",
+          "chinese flag",
+          "military radar screen"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Crude oil prices slide over 3 pc amid geopolitical tensions",
+        "script": "Markets are reeling as crude oil prices plummet over three percent. Despite escalating geopolitical tensions, the sudden slide is catching traders off guard. With global energy stability on the line, the question remains: how low will prices go?",
+        "visual_keywords": [
+          "falling stock chart",
+          "oil refinery silhouettes",
+          "trading floor chaos"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Policy action in times of geopolitical crises",
+        "script": "Global stability is under fire as geopolitical crises force immediate policy action. Leaders are scrambling to manage escalating risks that threaten the world economy. As pressure builds, will these drastic measures be enough to prevent a total financial collapse?",
+        "visual_keywords": [
+          "government building exterior",
+          "digital globe rotating",
+          "blurred protest crowds"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR01QNWRyWHNzamRTZlRvSWdjajVsaXA5NDRjUmhrTXo3YmRCRUY1NjhYQU5HUWdwYVJvZWVZN2c5UFBkTGM2NTRCQkJNQXJlQWNHOE02dzhwVVFGZ29EX3k0SVdxTGdXZlJQUUQySTUtcUNnMkxGbElHaE84dHJ0am5oVC0wTzBjaGdvX0VSb3FBeWVBY3NoVlV6VmZqeEsyaGFVSkFhQU8xbHPSAbsBQVVfeXFMTUYxcWp4MEgyNEt4QXJrT0ZMQWdWSV9OdzFRaVZFV04xUkNKZzBZVEctVGxOdV9DSlF5R1ZnUlRCNUYyZU9VVUVJbGhrYWxtQV85b1k1WmUyZVp4QU9NbjcxNllSOG9XdWstcU56ck82YTFza2NWeDhTTGp2UE9rRDNDS2txUF93V0ZHMEw3U0JZaFczWTFhUUFuY0xDcElSQnlCODZxckwtQ2ZjNGR5bVZ6T3NxbXB1ci1KQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOHFPZ21ReFdEcjJPRkRRR3d5dHJIaEhqbndzeEhOS2FHSTJnV2g1UnhOR0p3MDRqUUpodG1vTnVfRTBvSDR6OU8xMTUyZTIwU3JwNmNxR2ljd09ITGQ4dU1sbllCemhSZi1MNTdVcno0bzNsR010cmFuXzQzZkFYM0s5LXRGZ18wNEZXeDQzMA?oc=5",
+      "https://news.google.com/rss/articles/CBMirwFBVV95cUxPa1BQQTlxODlHdDY4N1FhdFNubVZON29RM080SDZUbDNzU21HTkdZcUppRnItWUxGeDBuc2NBb3FDRUNfSHRsTVpQTVNaeHFIOWdfQ2NFUzcyT3lpQ2RoT3RfcmVqSm91cnhVRmkxek94STRkREpOOEh1Wk5mUnlIOTFBWENpT2VEa0xQVlJXRDg2MHV5YXQwd3d3R0gtc1JrUFIzalFiNUxSNEVZbnhF0gG2AUFVX3lxTE1wTmd2enkxOVk0b2M4VndWNTJxb1FMbzlwbWdQOHNwT2gxa0NIRWZHdkYzX3U5ajB4ZE41UERwWk1BSzFVaGdwcE1JVmticnJtMlNINFlaZmVWWXRmdFdjUEFRaWVsREJmdlZJaDlGYkpmNXo4SG9TLWppQnJueVoxWlRBb2w4VXRiRHljN0JtalRsQ1pzZWNLdXZRNDRTVmM0V0FleEtLWkpVdWZscjB3NzdTbWp3?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0108\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T19:38:30.121832+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260318_c8328a9b",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Trans Rights Protests in Hyderabad",
+        "script": "Hyderabad is echoing with a powerful message! The LGBTQIA plus community is hitting the streets to protest the Transgender Persons Amendment Bill. Demanding that trans rights be recognized as human rights, they are fighting for dignity and legal equality across the city.",
+        "visual_keywords": [
+          "protest banners",
+          "city street crowd",
+          "legal documents"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Telangana Transport Surge and Welfare",
+        "script": "Public transport in Telangana is reaching a massive breaking point! RTC bus occupancy has hit a staggering 98 percent. To balance the load, the government just announced a brand-new welfare scheme for auto-rickshaw drivers to support the city's vital transport network.",
+        "visual_keywords": [
+          "crowded public bus",
+          "auto rickshaw line",
+          "government building"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Sunrisers Hyderabad Leadership Change",
+        "script": "Huge leadership shakeup for Sunrisers Hyderabad! With Pat Cummins out of action, Kishan is officially stepping up to lead the team. Fans are buzzing as the Orange Army prepares for a new era on the field. Can Kishan lead them to victory?",
+        "visual_keywords": [
+          "cricket stadium lights",
+          "team jersey close-up",
+          "athlete training"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMimAJBVV95cUxNeXlicmpJRlUtdm9KYUkxZHU5bnJPajRhU2lXMXZCb1Q5YU9yT2xLT2lRTjZ4WUVPTVVxS0dIUHp1bnRvd2hYaTMxSU9CQjNFcFNkekxmWmM0SDNNTk5GWHRtZmhXNjRfQlUzVXRmS1NMZ3pBUV8yNURPcm44a25WWkR1SjlDbWRZR1NXMW1XSnRSVmhwTDJuWWVzU292bmVkdGpkTzNBaXlzN191Z3ZDbU5NLXBpQTZIRFBoSC1UM3hENXdWX1B4MXZ5a1hvVXJOcEp5MmlJU1FZaEtvWWo4SEhiMERFVEppNHhyd3VQMjJqVUt3VjBDeFBSbjBtS1VhS014ODhrM1ZHa1BjSWpZLUFUMmtONm5O0gGfAkFVX3lxTE5JNkRhLU8xWUt0dGdadEpXSkVpa1lxZHdMeDVqYXRXS0huMlNBRm1tYW5QQ0pObzh2b2Y5VmhNemVpaWxyZWk5SXRQM2t0UjVmVUZSbENycTJvcHIyZTFkRnpSV0dIY0daUXp1NDVtNkVCWW51ckRvdm9NVDkzQ1VxbVhqYlQ3cmRvX1oxWWQtMGtvUXZxUmRNckF6eWxvd2VpN25aZV9mM1hCWElMbWhZMzl4Q1dtTFY2LWVTeHRtYVZNbXRYVkVKZlNEQXVoSkhXV2tfdVhSb3lyTDhYRDRCYUtUM1ZBLXd2WDNEeU1SMmIwaERUTURTR0trSHRqM25Mc1ZWaF9URnBqcGJtamNfbFo4cXBGSWdpcFY1aG9V?oc=5",
+      "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQS1c0ODA3bExlUVNTQTRPZlp4enhVLW01bGU3U1EweEExbmZhNzRqcmIyVVd0RTByOEFNNU5qeTdJNUc2MEhLaUdoa2pkMExzVlJzTzNaMGNoMGxDUU0wOGJ1R25LcWJvU1JUMk1ESmhLaWhSTnR5aXRjZDhDM3daTVBvdGRqb1ZfRndTM3NTbEhRaU80cHRuekwxclhaUU9sZTRpODAyR1dzYU9uamlzR3VRQjVILVhUZ0ZsT1dXNk1OTm53NlViSnRObUNxdkFoVmUyZnFHaENvZGt4ek5lbEFWUXJrbzV2NlhKOUxBTEdFaS1ueDZxc3kwSdIBgAJBVV95cUxNc3o1OHlTeXpHT256YXdObUsySWhXbEhrejB1bjdGZDREc0t4dkhPV3N5TzViRW16Qng2RjJSczZGVElRSlgwT1Z3d3F5cldPbHZyTkdrYTB3Mkx6aXpqdW9waHdNb2daX1h3V3ZOQ2V0bE84N1Z0aEc3WjVZd1l4Y3pnQlltZGY2UmVPX3dVMEY2TFVGdWlCRVZabVZiX19VdVBzNW5IX3lUVkNDNWtsUG43YWdCOGpfbFV1Y3Q4VFlmRmRGcGxwR2I2dFEyMU82YUhJczItRURhQ3hGWUNmTmowVnRWeUpuRUZ2RUlzSFVQYUpPa1VUWXlsYnVyYk9m?oc=5",
+      "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQekNnNzRUUlpYWGU0WlNCWjdwVzIzWEtuWnc1SWhQOWowLS1lck5CV1pydnJqcy1KbUFua0FGN3BBaW44ZHV2djFPYktuRjd1ZjVtYkRGX0hwbmVuWnFWRkQ1RVZMSmZjTmp3c3VScUV3WWxyMGJVeEFPNGV2S2g3OXRGUHZJTm8xcnpxSnF6NmJkamF5TmFnZGhyUGFiYkpRUUFEWkI2Qk1qd01YeXdiMEEwTWNWVFFwUDM40gHMAUFVX3lxTE9ySURJYllzelVNdVo0UW9EVlN4czdfdmtFbkFVXzM0VS1UaURCSFdSdG1tQTNBYjBoc05iYllySVFaRDA0VGJ6UmhQT1JCRUUzUDRDcjd2YUNtZkotU1V5OXJOeF9rOHZiNU1haUZuRmlXd29RTFJsZnk4VFhFSGpWUW5HM0d5NjlSWlU5ZHV1UDFaVV9JWHdyMTIzVzlJcVlJNTU5T0hTOHRUWnpYT0tYb1Z1c2Zabk9YZExkNUhPVW15OVhqODdpVy1iVA?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0108_01\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T19:38:54.133990+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "AI_BATCH_20260318_edef8a6d",
+    "topic": "AI",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "AI Ad Ban",
+        "script": "A popular AI tool just hit a major legal wall. Regulators have officially banned an advertisement for an AI photo editor that claimed it could remove anything. This crackdown follows growing concerns over deceptive marketing and impossible promises in the AI space.",
+        "visual_keywords": [
+          "smartphone editing app",
+          "red banned stamp",
+          "scrolling news feed"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Good vs Bad AI",
+        "script": "Not all AI is created equal, but can you really tell the difference? Experts are now debating how to separate helpful innovation from harmful algorithms. As technology evolves, we are forced to redefine trust in the software controlling our digital lives.",
+        "visual_keywords": [
+          "digital neural network",
+          "binary code overlay",
+          "futuristic eye scan"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Google Vibe Design",
+        "script": "Google is changing how we interact with technology through something called vibe design. Their new tool, Stitch, aims to create seamless, intuitive experiences that feel natural. It is a bold move to make artificial intelligence feel less like a robot and more human.",
+        "visual_keywords": [
+          "google logo interface",
+          "colorful abstract shapes",
+          "modern user experience"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PdHBHLUpCZm53Vy1EY3ZiUzJ1b2dMN0tDNGhhVlRPUXRRVjJXZHRja1oxVVpzVzlNa2NXcVZpc2ctM1ZRN2ZRWVlaUkVFN2E1VkRKQUZHX0luQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNG1xbEpnQmxhOVE3SnJIVjQySDVaUzhSeVR1YmtkcHhCeUpUcU1LTjdQYlFLMTFNcERTME1qWmo4NGVMS0VPTk5URmtfcWNNVHhiN2dmTVQ3ZDhlUTltY2xESXZDWmtMVFR2d3ZBUFJ4V2tCVURmV2puMnRmVG9YZ3hGd3k?oc=5",
+      "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYkJaSndfYzVGb3ZaTERNMXVGS0Y5UzI0OEhlclFzWHg1N1ZnNjVNRm9mblJ4OUl4RW1YOUktcVlMNnFpSm5HeHpqb2ZHZm0wd3gwVWNPQTR0cE0xSks3Rm1MWktmT3liblVVRUVuZjNmSkJkRnZlY2o4SDJGeXRlQXZiRGdhSzJxeWpvcnZOS0kxdHlq?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0228\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T21:01:29.266761+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "GEOP_BATCH_20260318_d47dbbba",
+    "topic": "Geopolitics",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "NSA Doval, US envoy Gor discuss geopolitical issues",
+        "script": "A high-stakes meeting just unfolded behind closed doors. NSA Ajit Doval and US envoy Gor are tackling critical geopolitical issues as tensions rise. What does this alliance mean for global stability? Analysts are watching closely as these two powers align.",
+        "visual_keywords": [
+          "official diplomatic meeting",
+          "world map background",
+          "flags of India and USA"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "A Geopolitical Three-Body Problem: Is The Iran Conflict Ultimately About China?",
+        "script": "Is the chaos in Iran just a shadow play for a much larger struggle? A geopolitical three-body problem is emerging, pulling global powers into its orbit. Is Tehran the real prize, or is China the ultimate target in this complex game?",
+        "visual_keywords": [
+          "map of middle east",
+          "military satellite footage",
+          "red and blue arrows"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "Crude oil prices slide over 3 pc amid geopolitical tensions",
+        "script": "Why are oil prices crashing while global tensions rise? Crude oil has just plummeted over three percent as geopolitical instability shakes the market. Investors are on edge—is this a temporary slide or the start of a massive energy shift?",
+        "visual_keywords": [
+          "oil pump jack",
+          "stock market red charts",
+          "gas station price sign"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiugFBVV95cUxOM0hVTTNTX1F1QmNsc2Ixd24xZG9TVEhIN0ZUaGJsWGtxN2tGWFhUQzJBMGU2eVhnUUdvVklhTTY0Yk9pVmRndHV1dENpX2d5YVBfNXFDc2ZVeGx2NmV2VEJvMnQzc0hKU2VyMHRfNU5wMjB4dzVnOExxamVaT2xaZ3F1bXpHVEdmdzNCTEVMLWhpUVRfUUFleFloMVcwQ1RFUkJtSGs1UXNDMGZKTHFuYTRMa0hGT1pnbFHSAb8BQVVfeXFMTzVUMDNKQUU3NG5BNlpRc21FMktoVkg4ZHhpZ1pQdE5rVktadDlLVUlHLXZJMmt1dmI4X29PSlBMTXFJTWdfYXk3bGdUTHByNG83bTJJbGlWZlBwNjVvQU05Tk9Fc2FFbnpyVk50UmlqOTQzTDlsa2ZGVlZlZV9oN01oZnNGSmEydUZCblJJV1l4VmF1blM3X0xMNUhpaXJSUl8yd0FLTjRzZk1VMDBNaFZzUFFUWFgycmtFcDZnVHc?oc=5",
+      "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR01QNWRyWHNzamRTZlRvSWdjajVsaXA5NDRjUmhrTXo3YmRCRUY1NjhYQU5HUWdwYVJvZWVZN2c5UFBkTGM2NTRCQkJNQXJlQWNHOE02dzhwVVFGZ29EX3k0SVdxTGdXZlJQUUQySTUtcUNnMkxGbElHaE84dHJ0am5oVC0wTzBjaGdvX0VSb3FBeWVBY3NoVlV6VmZqeEsyaGFVSkFhQU8xbHPSAbsBQVVfeXFMTUYxcWp4MEgyNEt4QXJrT0ZMQWdWSV9OdzFRaVZFV04xUkNKZzBZVEctVGxOdV9DSlF5R1ZnUlRCNUYyZU9VVUVJbGhrYWxtQV85b1k1WmUyZVp4QU9NbjcxNllSOG9XdWstcU56ck82YTFza2NWeDhTTGp2UE9rRDNDS2txUF93V0ZHMEw3U0JZaFczWTFhUUFuY0xDcElSQnlCODZxckwtQ2ZjNGR5bVZ6T3NxbXB1ci1KQQ?oc=5",
+      "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOHFPZ21ReFdEcjJPRkRRR3d5dHJIaEhqbndzeEhOS2FHSTJnV2g1UnhOR0p3MDRqUUpodG1vTnVfRTBvSDR6OU8xMTUyZTIwU3JwNmNxR2ljd09ITGQ4dU1sbllCemhSZi1MNTdVcno0bzNsR010cmFuXzQzZkFYM0s5LXRGZ18wNEZXeDQzMA?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0231\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T21:04:20.144356+00:00",
+    "status": "pending_review"
+  },
+  {
+    "short_id": "HYDE_BATCH_20260318_856687b2",
+    "topic": "Hyderabad",
+    "language": "English",
+    "segments": [
+      {
+        "id": 1,
+        "title": "Kishan to lead Sunrisers Hyderabad in Cummins' absence",
+        "script": "Big leadership shakeup at Sunrisers Hyderabad! With Pat Cummins sidelined, the Orange Army has officially handed the captaincy to Ishan Kishan. It is a massive move that has fans talking. Can Kishan step up and lead the team to a championship victory?",
+        "visual_keywords": [
+          "Sunrisers Hyderabad logo",
+          "Ishan Kishan batting",
+          "Pat Cummins standing"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 2,
+        "title": "Ishan Kishan appointed interim captain of Sunrisers Hyderabad for TATA IPL 2026",
+        "script": "A major change is coming to the TATA IPL 2026 season! Sunrisers Hyderabad has officially named Ishan Kishan as their interim captain. This bold appointment marks a new chapter for the franchise. Will Kishan’s leadership be the game-changer the team needs?",
+        "visual_keywords": [
+          "IPL 2026 logo",
+          "cricket captain interview",
+          "stadium crowd cheering"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "cut",
+        "transition_trigger": true
+      },
+      {
+        "id": 3,
+        "title": "No domestic LPG shortage in Hyderabad; don’t do panic booking: Collector",
+        "script": "Stop the panic! Hyderabad officials are speaking out. The City Collector has confirmed there is absolutely no shortage of domestic LPG in Hyderabad. Residents are being urged to stop panic booking immediately. Supplies are stable, so don't worry about your next refill.",
+        "visual_keywords": [
+          "Gas cylinder delivery",
+          "Hyderabad city view",
+          "government official speaking"
+        ],
+        "duration_target": "15-18s",
+        "transition_type": "end",
+        "transition_trigger": false
+      }
+    ],
+    "source_urls": [
+      "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQekNnNzRUUlpYWGU0WlNCWjdwVzIzWEtuWnc1SWhQOWowLS1lck5CV1pydnJqcy1KbUFua0FGN3BBaW44ZHV2djFPYktuRjd1ZjVtYkRGX0hwbmVuWnFWRkQ1RVZMSmZjTmp3c3VScUV3WWxyMGJVeEFPNGV2S2g3OXRGUHZJTm8xcnpxSnF6NmJkamF5TmFnZGhyUGFiYkpRUUFEWkI2Qk1qd01YeXdiMEEwTWNWVFFwUDM40gHMAUFVX3lxTE9ySURJYllzelVNdVo0UW9EVlN4czdfdmtFbkFVXzM0VS1UaURCSFdSdG1tQTNBYjBoc05iYllySVFaRDA0VGJ6UmhQT1JCRUUzUDRDcjd2YUNtZkotU1V5OXJOeF9rOHZiNU1haUZuRmlXd29RTFJsZnk4VFhFSGpWUW5HM0d5NjlSWlU5ZHV1UDFaVV9JWHdyMTIzVzlJcVlJNTU5T0hTOHRUWnpYT0tYb1Z1c2Zabk9YZExkNUhPVW15OVhqODdpVy1iVA?oc=5",
+      "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSFZsOFhHREFPNF9hQ0NkOGExMzdsWjhLcXNYNHNQamNrX0VISVJ3Tm0ySUlseVFFTks0bjgxWDNnUnlSbEJnSHhXeWJZZU50ZHZFdzhwd1FHVV9tVXVYRElJaXpVdFhzRTZpZUhZZjJUTEdrMEtncEFuVms2SGdNZF9fcWVZUmkxbVJMalFTYnF6WEd6NGwzN2F0WWp1aGVmcmMwVWNPYm1UNDU0UEdSaGJR?oc=5",
+      "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbE9oaVJta0dpenk5cnFaS2lsY1lOLXRsTHBTTDYweFdTQ19tdF84ek5wdzFBdVd4Rl9kbHR3c004YUtoVk56LXhqYzctN21ZNTBUcjN2WEliM21vME1zcjlKZFRSY3k4VDR3dml5WXlBUklnaEhWVXIwbW9RX0JoZ2NOVzBHTnpSTGxoTTdYU3pxXzZOMVBWMGlOVUJFNmlyWDNRQzJTWFdoWFg5Zmp2ZExvQ09VOHp1X29sUnl0OTN3QWVjUl9uNDBXY2VJbGhXb3fSAdgBQVVfeXFMT1ZvSGJMUkNVYmRheFVsWURYeXBrT1lFU2JqSEhuQ0l3WU5ZbWNDbDUtczhJM1JSTkhoYU92NkkwWEhrYmY4bmh6TUlveUJRT3JVbTdPY3dFQVlBWGlSOThnSjZGODYyU1ctc2tETldNYWRuYzlZdXlTSlBYYlBvZVc5TzJxQ2l1NVRHOTNIT0FHWjJGcDVnVHdzVS1MVXdjRlpMSDhsQ1RPcWhBYkFXYXVYd1lpb05wcklMajQxYl9ON2JFNzVuVU9yV0pkWDhPRDk1V3hiUkt4?oc=5"
+    ],
+    "visual_asset_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0234\\NEWS_1\\media\\image_1.jpg",
+    "timestamp": "2026-03-18T21:06:42.204410+00:00",
+    "status": "pending_review"
   }
 ]

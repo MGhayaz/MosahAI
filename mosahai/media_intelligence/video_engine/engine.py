@@ -657,12 +657,14 @@ class VideoIntelligenceEngine:
             now=datetime.now(timezone.utc),
             article_urls=list(article_urls or []),
         )
+        print(f"[DEBUG] Processing {context.news_id}")
 
         for agent in self.agents:
             if isinstance(agent, YouTubeVideoAgent):
                 agent.prepare_batch(context.batch_id)
 
-        queries = self.build_queries(context)[:5]
+        queries = self.build_queries(context)[:6]
+        print(f"[DEBUG][QUERY] Using queries: {queries}")
         if self.media_logger:
             self.media_logger.search_started(
                 batch_id=context.batch_id,
@@ -671,9 +673,11 @@ class VideoIntelligenceEngine:
             )
 
         candidates = self._collect_from_agents_parallel(queries, context)
+        print(f"[DEBUG][MEDIA] Raw candidates: {len(candidates)}")
 
         source_counts = _count_by_source(candidates)
         candidates = self._apply_relevance_filter(candidates, context.news_title)
+        print(f"[DEBUG][MEDIA] After relevance filter: {len(candidates)}")
         candidates = self._apply_quality_filter(candidates)
         if self.dedup_engine:
             candidates = self.dedup_engine.remove_duplicates(candidates)
@@ -682,6 +686,7 @@ class VideoIntelligenceEngine:
         ranked = [c for c in ranked if c.score >= self.min_score]
 
         selected = self._select_by_priority(ranked, context)[:2]
+        
 
         if not selected:
             fallback_ranked = self._run_fallback_strategy(context)
@@ -693,6 +698,7 @@ class VideoIntelligenceEngine:
             image_candidate = self._build_image_candidate(context, ranked)
             if image_candidate:
                 selected = [image_candidate]
+        print(f"[DEBUG][MEDIA] FINAL selected candidates: {len(selected)}")
 
         response: dict[str, Any] = {
             "batch_id": context.batch_id,
@@ -745,6 +751,7 @@ class VideoIntelligenceEngine:
             fallback.append(" ".join(entities[:4]))
         if title and entities:
             fallback.append(f"{title} {' '.join(entities[:3])}")
+        print(f"[DEBUG][QUERY] Generated queries: {candidates if candidates else fallback}")
 
         return _dedupe_strings(fallback)
 
@@ -818,12 +825,12 @@ class VideoIntelligenceEngine:
         if buckets["article"]:
             return buckets["article"][:2]
 
-        youtube_threshold = 0.7
+        youtube_threshold = 0.5
         if self.relevance_filter and hasattr(self.relevance_filter, "youtube_similarity_threshold"):
             try:
                 youtube_threshold = float(self.relevance_filter.youtube_similarity_threshold)
             except Exception:
-                youtube_threshold = 0.7
+                youtube_threshold = 0.5
 
         youtube_allowed = [
             candidate
@@ -1136,6 +1143,7 @@ class VideoIntelligenceEngine:
 
         try:
             filtered = self.relevance_filter.filter_candidates(candidates, news_title)
+            print(f"[DEBUG][MEDIA] After relevance filter: {len(filtered)}")
         except Exception as exc:
             LOGGER.warning("Relevance filter failed. error=%s", exc)
             return list(candidates)

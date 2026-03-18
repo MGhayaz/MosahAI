@@ -11,7 +11,7 @@ from urllib.parse import parse_qs, urlparse
 @dataclass(slots=True)
 class NewsMediaRelevanceFilter:
     similarity_threshold: float = 0.6
-    youtube_similarity_threshold: float = 0.7
+    youtube_similarity_threshold: float = 0.5
     model_name: str = "all-MiniLM-L6-v2"
     _model: object | bool | None = field(default=None, init=False, repr=False)
 

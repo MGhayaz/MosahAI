@@ -163,15 +163,17 @@ class MediaBatchProcessor:
     ) -> None:
         payload = _load_metadata(metadata_path)
         payload.setdefault("headline", headline)
-        payload["selected_media"] = list(selected_media)
-
-        if not selected_media:
-            payload["generation_status"] = "partial"
-            payload["notes"] = "media not found, fallback needed"
-        else:
+        existing_media = payload.get("selected_media") or []
+        if selected_media:
+            payload["selected_media"] = list(selected_media)
             payload["generation_status"] = "success"
             if "notes" not in payload:
                 payload["notes"] = ""
+        else:
+            payload["selected_media"] = list(existing_media)
+            if not existing_media:
+                payload["generation_status"] = "partial"
+                payload["notes"] = "media not found, fallback needed"
 
         _write_metadata(metadata_path, payload)
 

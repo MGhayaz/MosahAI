@@ -11,7 +11,7 @@ from typing import Iterable, Sequence
 @dataclass(slots=True)
 class QueryBuilder:
     min_queries: int = 5
-    max_queries: int = 5
+    max_queries: int = 6
     max_keywords: int = 6
     max_entities: int = 4
     max_title_words: int = 10
@@ -27,7 +27,7 @@ class QueryBuilder:
         entity_terms = _normalize_terms(entities)
 
         min_tokens = max(self.min_meaningful_tokens, 2)
-        max_queries = min(self.max_queries, 5)
+        max_queries = min(self.max_queries, 6)
         min_queries = min(self.min_queries, max_queries)
 
         primary_entity = _choose_primary_entity(entity_terms, keyword_terms, title_phrase)
@@ -58,8 +58,9 @@ class QueryBuilder:
                 normalized = _normalize_query(f"{primary_entity} {normalized}")
             if not _has_min_meaningful_tokens(normalized, min_tokens):
                 return
-            candidates.append((score, order, normalized))
-            order += 1
+            for variant in _expand_with_intent_suffixes(normalized):
+                candidates.append((score, order, variant))
+                order += 1
 
         if title_phrase:
             base = title_phrase
@@ -68,6 +69,11 @@ class QueryBuilder:
             add_candidate(base, 70.0)
             add_candidate(_append_tail(base, "news"), 68.0)
             add_candidate(_append_tail(base, "video"), 67.0)
+
+        if title_phrase and (keyword_terms or entity_terms):
+            combo_terms = _dedupe_strings(keyword_terms[:2] + entity_terms[:2])
+            if combo_terms:
+                add_candidate(f"{title_phrase} {' '.join(combo_terms)}", 78.0, force_entity=True)
 
         core_pair = ""
         if primary_entity and primary_keyword:
@@ -115,6 +121,13 @@ class QueryBuilder:
                 if keyword.lower() in modifier_set:
                     continue
                 add_candidate(f"{primary_entity} {keyword}", 80.0)
+
+        if primary_entity and keyword_terms:
+            add_candidate(f"{primary_entity} {' '.join(keyword_terms[:2])}", 86.0, force_entity=True)
+        if primary_entity and len(entity_terms) > 1:
+            add_candidate(f"{primary_entity} {entity_terms[1]}", 82.0, force_entity=True)
+        if keyword_terms and entity_terms:
+            add_candidate(f"{entity_terms[0]} {keyword_terms[0]}", 76.0)
 
         if primary_entity and not keyword_terms:
             for modifier in modifiers:
@@ -218,6 +231,8 @@ def _normalize_query(text: str) -> str:
 
 
 _STOPWORDS = {"a", "an", "the"}
+_INTENT_TOKENS = ("news", "video", "footage", "breaking")
+_INTENT_SUFFIXES = ("news", "video", "footage", "breaking news")
 
 
 def _is_meaningful_token(token: str) -> bool:
@@ -237,6 +252,30 @@ def _has_min_meaningful_tokens(text: str, min_tokens: int) -> bool:
     tokens = text.split()
     meaningful = [token for token in tokens if _is_meaningful_token(token)]
     return len(meaningful) >= min_tokens
+
+
+def _contains_intent_token(text: str) -> bool:
+    if not text:
+        return False
+    pattern = r"\b(" + "|".join(re.escape(token) for token in _INTENT_TOKENS) + r")\b"
+    return re.search(pattern, text.lower()) is not None
+
+
+def _expand_with_intent_suffixes(base: str) -> list[str]:
+    normalized = _normalize_query(base)
+    if not normalized:
+        return []
+    if _contains_intent_token(normalized):
+        return [normalized]
+    variants: list[str] = []
+    for suffix in _INTENT_SUFFIXES:
+        candidate = _normalize_query(f"{normalized} {suffix}")
+        if not candidate:
+            continue
+        if candidate.lower() in {item.lower() for item in variants}:
+            continue
+        variants.append(candidate)
+    return variants
 
 
 def _choose_primary_entity(
@@ -336,9 +375,9 @@ def _add_fallback_queries(
     fillers = [
         "latest news",
         "news video",
-        "official announcement",
-        "press conference",
-        "latest update",
+        "breaking news",
+        "official announcement video",
+        "event footage",
     ]
 
     base = base_phrase
@@ -356,8 +395,13 @@ def _add_fallback_queries(
             continue
         if not _has_min_meaningful_tokens(candidate, min_tokens):
             continue
-        if candidate.lower() not in seen:
-            queries.append(candidate)
-            seen.add(candidate.lower())
+        for variant in _expand_with_intent_suffixes(candidate):
+            key = variant.lower()
+            if key in seen:
+                continue
+            queries.append(variant)
+            seen.add(key)
+            if len(queries) >= min_queries:
+                break
 
     return queries

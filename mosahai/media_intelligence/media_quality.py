@@ -26,6 +26,8 @@ class MediaQualityAnalyzer:
         reject = False
 
         url = _extract_media_url(candidate)
+        if _is_blocked_url(url):
+            reject = True
         if _is_image_candidate(candidate, url) and _looks_like_logo(url):
             reject = True
 
@@ -34,12 +36,16 @@ class MediaQualityAnalyzer:
                 reject = True
 
         if width and height:
+            if width < 300 or height < 200:
+                reject = True
             if min(width, height) < self.min_resolution:
                 reject = True
 
         aspect_score = 0.5
         if width and height:
             ratio = width / height
+            if ratio < (1.0 / 3.0) or ratio > 3.0:
+                reject = True
             if ratio < self.extreme_aspect_ratio_bounds[0] or ratio > self.extreme_aspect_ratio_bounds[1]:
                 reject = True
             aspect_score = _aspect_score(ratio, self.preferred_aspect_ratios, self.aspect_ratio_tolerance)
@@ -128,6 +134,16 @@ def _looks_like_logo(url: str) -> bool:
     filename = os.path.basename(lower_url)
     for token in ("logo", "icon", "favicon"):
         if token in lower_url or token in filename:
+            return True
+    return False
+
+
+def _is_blocked_url(url: str) -> bool:
+    if not url:
+        return False
+    lower_url = url.lower()
+    for token in ("news.google", "googleusercontent", "gstatic"):
+        if token in lower_url:
             return True
     return False
 

@@ -28,6 +28,7 @@ from SemanticSearch_NicheHistory_EvolutionaryVault_Manager import EvolutionaryVa
 from VisualResource_Intelligent_Asset_Acquisition_Engine import (
     VisualResourceIntelligentAssetAcquisitionEngine,
 )
+from mosahai.media_intelligence import MediaBatchProcessor, NewsMediaRequest
 from mosahai.storage_manager import (
     archive_old_batches,
     build_batch_layout,
@@ -106,6 +107,7 @@ class MosahAIFullPipelineExecutionBridge:
             enable_vault_storage=self.enable_vault_storage,
         )
         self.visual_engine = VisualResourceIntelligentAssetAcquisitionEngine()
+        self.media_processor = MediaBatchProcessor()
         self.niches = dict(PHASE15_NICHES)
 
     def _pause_if_circuit_open(self):
@@ -221,24 +223,27 @@ class MosahAIFullPipelineExecutionBridge:
                         )
 
                 fallback_used = all(key in payload for key in ("segment_1", "segment_2", "segment_3"))
-
-                primary_news_url = str(top_three[0].get("link", "")).strip() if top_three else ""
-                visual_asset_path = None
-                if primary_news_url:
-                    media_dir = batch_layout[0]["media_dir"]
-                    visual_asset_path = self.visual_engine.extract_visual_asset(
-                        news_url=primary_news_url,
-                        short_id=payload.get("short_id", short_id),
-                        output_dir=media_dir,
-                        filename="image_1.jpg",
-                    )
-                if visual_asset_path:
-                    print(f"[VISUAL] Asset saved at {visual_asset_path}")
-                else:
-                    print("[VISUAL] No asset extracted for this short.")
-
+                primary_visual_asset_path = None
+                media_requests: list[NewsMediaRequest] = []
                 for idx, layout in enumerate(batch_layout):
                     segment = segments[idx] if idx < len(segments) else {}
+                    news_item = top_three[idx] if idx < len(top_three) else {}
+                    news_url = str(news_item.get("link", "")).strip()
+                    visual_asset_path = None
+                    if news_url:
+                        visual_asset_path = self.visual_engine.extract_visual_asset(
+                            news_url=news_url,
+                            short_id=payload.get("short_id", short_id),
+                            output_dir=layout["media_dir"],
+                            filename="image_1.jpg",
+                        )
+                    if visual_asset_path:
+                        print(f"[VISUAL] Asset saved at {visual_asset_path}")
+                        if idx == 0:
+                            primary_visual_asset_path = visual_asset_path
+                    else:
+                        print(f"[VISUAL] No asset extracted for {layout['news_id']}.")
+
                     script_payload = {
                         "short_id": payload.get("short_id", short_id),
                         "batch_id": batch_id,
@@ -249,12 +254,12 @@ class MosahAIFullPipelineExecutionBridge:
 
                     selected_media = []
                     media_found = False
-                    if idx == 0 and visual_asset_path:
+                    if visual_asset_path:
                         media_found = True
                         selected_media.append(
                             {
                                 "source": "article",
-                                "url": primary_news_url,
+                                "url": news_url,
                                 "local_path": visual_asset_path,
                                 "duration": "",
                                 "resolution": "",
@@ -283,13 +288,37 @@ class MosahAIFullPipelineExecutionBridge:
                     }
                     save_json(layout["metadata_path"], metadata_payload)
 
+                    headline = str(news_item.get("title") or segment.get("title") or "").strip()
+                    summary = str(news_item.get("summary") or "").strip()
+                    keywords = [
+                        str(keyword).strip()
+                        for keyword in (segment.get("visual_keywords") or [])
+                        if str(keyword).strip()
+                    ]
+                    media_requests.append(
+                        NewsMediaRequest(
+                            batch_id=batch_id,
+                            news_id=str(layout["news_id"]),
+                            headline=headline,
+                            keywords=keywords,
+                            entities=[],
+                            summary=summary if summary else None,
+                            article_urls=[news_url] if news_url else None,
+                            media_dir=layout["media_dir"],
+                            metadata_path=layout["metadata_path"],
+                        )
+                    )
+
+                if media_requests:
+                    self.media_processor.process_news_items(media_requests)
+
                 record = {
                     "short_id": payload.get("short_id", short_id),
                     "topic": topic,
                     "language": language_name,
                     "segments": segments,
                     "source_urls": [item.get("link", "") for item in top_three],
-                    "visual_asset_path": visual_asset_path,
+                    "visual_asset_path": primary_visual_asset_path,
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                     "status": "pending_review",
                 }
