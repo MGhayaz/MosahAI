@@ -1,0 +1,22 @@
+{
+  "headline": "Kishan Leads Opening Matches",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260319_1558",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-19T10:28:32.153917+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZm1OeXpiMUI1VHRZSDEyQ0wyZXpFOEl2R1lTV3hpZ1pLTHowRlo0ZFAwdGNDM3dmeldQQ2o4eXJPMGZESUQ4a0RlTHdEX0FwS25PQnF4TTRKaVZoWnRUY0FVM0VZNXM1clE0OFNCeURJSUk4Tks4SzlJOXRNWHVRdFhXTmhTal9XZ1B3Ymd2ZlIyaEo2TGZXMkZWLWROTmhpSjBXbHpldjZzdw?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_1558\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

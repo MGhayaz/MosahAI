@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260318_7535bb75",
+  "batch_id": "BATCH_20260318_1633",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Illegal Auto Fare Surge",
+    "script": "Hyderabad commuters are facing a crisis! Illegal auto LPG price hikes are causing travel fares to skyrocket across the city. Residents are feeling the burn as drivers demand more money for daily trips. This sudden surge is leaving thousands of passengers stranded and frustrated.",
+    "visual_keywords": [
+      "hyderabad auto rickshaw",
+      "lpg gas station",
+      "frustrated commuters"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

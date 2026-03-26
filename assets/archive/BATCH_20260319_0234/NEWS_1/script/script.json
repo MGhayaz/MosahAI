@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260318_856687b2",
+  "batch_id": "BATCH_20260319_0234",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Kishan to lead Sunrisers Hyderabad in Cummins' absence",
+    "script": "Big leadership shakeup at Sunrisers Hyderabad! With Pat Cummins sidelined, the Orange Army has officially handed the captaincy to Ishan Kishan. It is a massive move that has fans talking. Can Kishan step up and lead the team to a championship victory?",
+    "visual_keywords": [
+      "Sunrisers Hyderabad logo",
+      "Ishan Kishan batting",
+      "Pat Cummins standing"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

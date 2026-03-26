@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260319_ea8af96c",
+  "batch_id": "BATCH_20260319_1550",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Nothing CEO Carl Pei says smartphone apps will disappear as AI agents take their place - TechCrunch",
+    "script": "Breaking news update just in.",
+    "visual_keywords": [
+      "Nothing CEO Carl Pei says smartphone apps will disappear as AI agents take their place - TechCrunch headline",
+      "AI news footage",
+      "breaking news graphics"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

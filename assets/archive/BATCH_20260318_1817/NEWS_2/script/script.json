@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260318_928a1649",
+  "batch_id": "BATCH_20260318_1817",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Crude oil prices slide over 3 pc amid geopolitical tensions",
+    "script": "Energy markets are reeling as crude oil prices suddenly crash by over three percent. Despite escalating geopolitical tensions, fuel costs are sliding. Now, the global economy is left questioning: why is oil falling while the threat of international conflict continues to rise?",
+    "visual_keywords": [
+      "oil price ticker",
+      "cargo ship",
+      "gas station sign"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

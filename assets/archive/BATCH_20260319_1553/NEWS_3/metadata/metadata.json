@@ -1,0 +1,22 @@
+{
+  "headline": "Supply Chain Shock",
+  "topic": "Geopolitics",
+  "language": "English",
+  "batch_id": "BATCH_20260319_1553",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-19T10:23:17.586278+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMWV6MndhYTg5aXBxWm1qOGpDZFhCZV9neVJMR2FXQk52S1JueUFsN3ctTTNHQlN5NjQxT1A3anFveGVwSTljZjJLbEpqZmZ5c001Wmw4VXR4VlFNZHVUU19MemVPQlJzMWEtTkFkZkJheHMza1V0WmIzZXFVLVU3WTZia3BSWGpFcllRc1owdDdTT09yY0gxZkZoeVZ1eUd6d1o5bWQwQnd4SmZXTm9MZkM1MkVBUms?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_1553\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

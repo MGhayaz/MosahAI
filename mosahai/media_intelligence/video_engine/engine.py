@@ -3,19 +3,23 @@ from __future__ import annotations
 import json
 import logging
 import math
+from multiprocessing import context
 import os
+from pydoc import text
 import re
 import subprocess
 from abc import ABC, abstractmethod
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
+from turtle import title
 from typing import Any, Callable, Iterable, Mapping, Sequence
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 import requests
 
 from mosahai.logger import setup_logger
+from mosahai.media_intelligence.article_discovery import discover_articles, select_best_articles
 from mosahai.media_intelligence.logger import MediaEngineLogger
 from mosahai.media_intelligence.media_quality import MediaQualityAnalyzer
 from mosahai.media_intelligence.query_builder import QueryBuilder
@@ -25,6 +29,17 @@ from mosahai.media_intelligence.relevance_filter import NewsMediaRelevanceFilter
 
 
 LOGGER = setup_logger("mosahai.video_engine", level=logging.INFO)
+    
+    
+def clean_headline(text: str) -> str:
+    if not text:
+        return ""
+
+    text = text.split(" - ")[0]
+    text = text.replace("|", "")
+    text = text.replace("(", "").replace(")", "")
+
+    return text.strip()
 
 
 @dataclass(slots=True)
@@ -37,6 +52,7 @@ class VideoQueryContext:
     summary: str | None
     now: datetime
     article_urls: list[str] | None = None
+    segment_headline: str | None = None   # 🔥 ADD THIS
 
 
 @dataclass(slots=True)
@@ -207,33 +223,49 @@ class YouTubeVideoAgent(VideoSourceAgent):
         max_results = int(max_results or 3)
         max_results = max(1, min(3, max_results))
 
-        command = [
-            "yt-dlp",
-            "--dump-json",
-            "--skip-download",
+        search_terms = [
             f"ytsearch{max_results}:{safe_query}",
+            f"ytsearch3:{safe_query}",
         ]
+        process = None
+        last_error = ""
 
-        try:
-            process = subprocess.run(
-                command,
-                capture_output=True,
-                text=True,
-                timeout=self.request_timeout_seconds,
-                check=False,
-            )
-        except FileNotFoundError:
-            self._register_failure("yt-dlp is not installed or not on PATH.")
-            return []
-        except Exception as exc:
-            self._register_failure(f"yt-dlp search failed. query={safe_query} error={exc}")
-            return []
+        for term in _dedupe_strings(search_terms):
+            command = [
+                "yt-dlp",
+                "--dump-json",
+                "--skip-download",
+                "--extractor-args",
+                "youtube:player_client=web",
+                term,
+            ]
 
-        if process.returncode != 0:
+            try:
+                process = subprocess.run(
+                    command,
+                    capture_output=True,
+                    text=True,
+                    timeout=25,
+                    check=False,
+                )
+            except FileNotFoundError:
+                self._register_failure("yt-dlp is not installed or not on PATH.")
+                return []
+            except Exception as exc:
+                last_error = f"yt-dlp search failed. query={safe_query} error={exc}"
+                continue
+
+            if process.returncode == 0:
+                break
+
             stderr = (process.stderr or "").strip()
-            self._register_failure(
+            last_error = (
                 f"yt-dlp search returned non-zero exit code. query={safe_query} stderr={stderr}"
             )
+            process = None
+
+        if process is None:
+            self._register_failure(last_error or f"yt-dlp search failed. query={safe_query}")
             return []
 
         results: list[dict[str, Any]] = []
@@ -475,52 +507,24 @@ class ArticleVideoAgent(VideoSourceAgent):
         if self.seed_article_urls:
             return [{"article_url": url} for url in self.seed_article_urls]
 
-        if not self.serpapi_key:
-            LOGGER.warning("SerpAPI key missing. Set SERPAPI_KEY to enable article search.")
-            return []
-
         safe_query = str(query or "").strip()
         if not safe_query:
             return []
 
-        max_results = int(max_results or 5)
-        max_results = max(1, min(10, max_results))
-
-        params = {
-            "engine": "google",
-            "q": safe_query,
-            "tbm": "nws",
-            "num": max_results,
-            "api_key": self.serpapi_key,
-        }
-
         try:
-            response = self.session.get(
-                self.search_endpoint,
-                params=params,
-                timeout=self.request_timeout_seconds,
-            )
-            response.raise_for_status()
-            payload = response.json()
+            discovered_urls = discover_articles(safe_query)
         except Exception as exc:
             LOGGER.warning("Article search failed. query=%s error=%s", safe_query, exc)
             return []
 
-        results: list[dict[str, Any]] = []
-        for section in ("news_results", "organic_results", "top_stories"):
-            for item in payload.get(section, []) or []:
-                link = item.get("link") or item.get("url")
-                if not link:
-                    continue
-                results.append(
-                    {
-                        "article_url": link,
-                        "title": item.get("title"),
-                        "source": item.get("source"),
-                    }
-                )
+        limit = int(max_results or 8)
+        limit = max(1, min(8, limit))
+        try:
+            selected_urls = select_best_articles(safe_query, discovered_urls)
+        except Exception:
+            selected_urls = []
 
-        return results
+        return [{"article_url": url} for url in list(selected_urls)[:limit]]
 
     def filter_results(
         self, results: Sequence[Mapping[str, Any]], context: VideoQueryContext
@@ -598,6 +602,7 @@ class ArticleVideoAgent(VideoSourceAgent):
             "published_at": publish_date,
             "raw": raw_payload,
         }
+    
 
 
 class VideoIntelligenceEngine:
@@ -619,7 +624,7 @@ class VideoIntelligenceEngine:
         image_fallback_provider: Callable[[VideoQueryContext], str | None] | None = None,
     ) -> None:
         self.agents = list(agents or [
-            TwitterVideoAgent(),
+           # TwitterVideoAgent(),
             ArticleVideoAgent(),
             YouTubeVideoAgent(),
         ])
@@ -646,6 +651,7 @@ class VideoIntelligenceEngine:
         entities: Sequence[str] | None = None,
         summary: str | None = None,
         article_urls: Sequence[str] | None = None,
+        segment_headline=None,   # 🔥 ADD THIS
     ) -> dict[str, Any]:
         context = VideoQueryContext(
             batch_id=str(batch_id),
@@ -656,6 +662,7 @@ class VideoIntelligenceEngine:
             summary=str(summary) if summary else None,
             now=datetime.now(timezone.utc),
             article_urls=list(article_urls or []),
+            segment_headline=segment_headline,
         )
         print(f"[DEBUG] Processing {context.news_id}")
 
@@ -673,7 +680,13 @@ class VideoIntelligenceEngine:
             )
 
         candidates = self._collect_from_agents_parallel(queries, context)
-        print(f"[DEBUG][MEDIA] Raw candidates: {len(candidates)}")
+        print(f"[DEBUG][AGENTS] Total candidates collected: {len(candidates)}")
+
+        for c in candidates[:5]:
+            try:
+                print(f"[DEBUG][AGENTS] Source={c.source}, Score={getattr(c, 'score', 'NA')}, URL={c.url}")
+            except Exception:
+                pass
 
         source_counts = _count_by_source(candidates)
         candidates = self._apply_relevance_filter(candidates, context.news_title)
@@ -726,34 +739,24 @@ class VideoIntelligenceEngine:
 
         return response
 
+
     def build_queries(self, context: VideoQueryContext) -> list[str]:
-        title = context.news_title.strip()
-        keywords = context.keywords
-        entities = context.entities
+        raw_headline = context.segment_headline or context.news_title
+        headline = clean_headline(raw_headline)   # ✅ correct
 
-        candidates: list[str] = []
-        try:
-            candidates = self.query_builder.generate_queries(title, keywords, entities)
-        except Exception as exc:
-            LOGGER.warning("Query builder failed. error=%s", exc)
+        print(f"[DEBUG] headline used: {headline}")
+        short = " ".join(headline.split()[:6])
+        candidates = [
+            f"{headline} news",
+            f"{headline} video",
+        ]
 
-        if candidates:
-            return candidates
 
-        fallback: list[str] = []
-        if title:
-            fallback.append(title)
-        if title and keywords:
-            fallback.append(f"{title} {' '.join(keywords[:4])}")
-        if keywords:
-            fallback.append(" ".join(keywords[:6]))
-        if entities:
-            fallback.append(" ".join(entities[:4]))
-        if title and entities:
-            fallback.append(f"{title} {' '.join(entities[:3])}")
-        print(f"[DEBUG][QUERY] Generated queries: {candidates if candidates else fallback}")
+        print(f"[DEBUG][QUERY] Using headline queries: {candidates}")
 
-        return _dedupe_strings(fallback)
+        return candidates
+
+
 
     def _rank_candidates(
         self, candidates: Sequence[VideoCandidate], context: VideoQueryContext

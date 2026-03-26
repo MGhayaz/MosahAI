@@ -10,6 +10,7 @@ class VisualResourceIntelligentAssetAcquisitionEngine:
     def __init__(self, assets_dir="temp_assets", request_timeout_seconds=10):
         self.assets_dir = str(assets_dir).strip() or "temp_assets"
         self.request_timeout_seconds = max(1, int(request_timeout_seconds))
+        self.article_image_extractor = None
 
     def _safe_filename(self, short_id):
         base = str(short_id or "").strip()
@@ -30,19 +31,22 @@ class VisualResourceIntelligentAssetAcquisitionEngine:
             return None
 
         try:
-            from newspaper import Article
+            if self.article_image_extractor is None:
+                from mosahai.media_intelligence.image_pipeline.article_image_extractor import (
+                    ArticleImageExtractor,
+                )
+
+                self.article_image_extractor = ArticleImageExtractor(
+                    timeout_seconds=self.request_timeout_seconds
+                )
+            candidates = self.article_image_extractor.extract(normalized_news_url)
         except Exception as exc:
-            print(f"[VISUAL WARN] newspaper3k unavailable. error={exc}")
+            print(f"[VISUAL WARN] Failed to extract article image. url={normalized_news_url} error={exc}")
             return None
 
-        try:
-            article = Article(normalized_news_url)
-            article.download()
-            article.parse()
-            image_url = str(getattr(article, "top_image", "") or "").strip()
-        except Exception as exc:
-            print(f"[VISUAL WARN] Failed to parse article for image. url={normalized_news_url} error={exc}")
-            return None
+        image_url = ""
+        if candidates:
+            image_url = str(getattr(candidates[0], "url", "") or "").strip()
 
         if not image_url:
             return None
@@ -57,10 +61,12 @@ class VisualResourceIntelligentAssetAcquisitionEngine:
                 safe_name = self._safe_filename(short_id)
             local_file_path = os.path.join(target_dir, safe_name)
 
+            from mosahai.media_intelligence.image_downloader import HEADERS
+
             response = requests.get(
                 image_url,
                 timeout=self.request_timeout_seconds,
-                headers={"User-Agent": "Mozilla/5.0 (compatible; MosahAI/3.0)"},
+                headers=HEADERS,
             )
             response.raise_for_status()
 

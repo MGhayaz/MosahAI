@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260319_4d204de6",
+  "batch_id": "BATCH_20260319_1558",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Kishan to Lead SRH",
+    "script": "Pat Cummins is out and Sunrisers Hyderabad has a brand-new leader! Ishan Kishan is officially taking over the captaincy for the Orange Army. It is a massive shift for the franchise. Can Kishan’s explosive energy lead Hyderabad to a championship victory?",
+    "visual_keywords": [
+      "ishan kishan portrait",
+      "cricket stadium lights",
+      "sunrisers hyderabad logo"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

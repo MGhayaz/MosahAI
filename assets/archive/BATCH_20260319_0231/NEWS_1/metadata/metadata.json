@@ -1,0 +1,22 @@
+{
+  "headline": "NSA Doval, US envoy Gor discuss geopolitical issues",
+  "topic": "Geopolitics",
+  "language": "English",
+  "batch_id": "BATCH_20260319_0231",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-18T21:01:55.503225+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOM0hVTTNTX1F1QmNsc2Ixd24xZG9TVEhIN0ZUaGJsWGtxN2tGWFhUQzJBMGU2eVhnUUdvVklhTTY0Yk9pVmRndHV1dENpX2d5YVBfNXFDc2ZVeGx2NmV2VEJvMnQzc0hKU2VyMHRfNU5wMjB4dzVnOExxamVaT2xaZ3F1bXpHVEdmdzNCTEVMLWhpUVRfUUFleFloMVcwQ1RFUkJtSGs1UXNDMGZKTHFuYTRMa0hGT1pnbFHSAb8BQVVfeXFMTzVUMDNKQUU3NG5BNlpRc21FMktoVkg4ZHhpZ1pQdE5rVktadDlLVUlHLXZJMmt1dmI4X29PSlBMTXFJTWdfYXk3bGdUTHByNG83bTJJbGlWZlBwNjVvQU05Tk9Fc2FFbnpyVk50UmlqOTQzTDlsa2ZGVlZlZV9oN01oZnNGSmEydUZCblJJV1l4VmF1blM3X0xMNUhpaXJSUl8yd0FLTjRzZk1VMDBNaFZzUFFUWFgycmtFcDZnVHc?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0231\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

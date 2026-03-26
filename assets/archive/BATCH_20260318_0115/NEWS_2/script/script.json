@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260317_24b6ee70",
+  "batch_id": "BATCH_20260318_0115",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Google Personal Intelligence",
+    "script": "Google is going personal. The tech titan just revealed a massive expansion of its Personal Intelligence ecosystem, aiming to put advanced AI in every hand. This isn’t just software; it’s a fundamental shift in how humans and machines finally become one.",
+    "visual_keywords": [
+      "glowing smartphone screen",
+      "abstract neural network",
+      "fast paced urban life"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

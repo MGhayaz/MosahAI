@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260318_e3662dca",
+  "batch_id": "BATCH_20260318_1816",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "China's AI Tigers Surge",
+    "script": "The global silicon war is entering a volatile new phase. Nvidia’s CEO just hailed OpenClaw as the next ChatGPT, causing shares for China’s AI tigers to skyrocket. It’s no longer just a market rally; it’s a race for absolute computing supremacy.",
+    "visual_keywords": [
+      "chinese stock market ticker",
+      "jensen huang speaking",
+      "neural network animation"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

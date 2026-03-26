@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260319_4b42944a",
+  "batch_id": "BATCH_20260319_1553",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Energy as a Weapon",
+    "script": "The UN is sounding the alarm: the war in Iran is proof that fossil fuels have become the ultimate geopolitical weapon. Energy is no longer just about power, it is about survival. Fuel dependence is now a massive global liability.",
+    "visual_keywords": [
+      "oil refinery explosion",
+      "un headquarters building",
+      "fuel tanker convoy"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260318_0bfa27f6",
+  "batch_id": "BATCH_20260318_1632_01",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "India's Energy Influence",
+    "script": "India is officially flipping the script on global energy. Long held back by fuel dependence, the nation is transforming this vulnerability into a tool of geopolitical influence. By leveraging its strategic needs, India is turning an old weakness into power.",
+    "visual_keywords": [
+      "indian flag waving",
+      "industrial cargo port",
+      "energy infrastructure"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

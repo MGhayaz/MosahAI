@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260319_4b42944a",
+  "batch_id": "BATCH_20260319_1553",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "High-Stakes Security Meeting",
+    "script": "Behind closed doors, India’s NSA Ajit Doval and US envoy Gor just met to navigate a shifting global landscape. As tensions climb, these two powers are aligning on critical geopolitical issues. Is this the partnership that redefines global stability?",
+    "visual_keywords": [
+      "government building corridor",
+      "flags of india and usa",
+      "handshake silhouette"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

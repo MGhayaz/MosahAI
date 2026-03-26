@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260317_17cf8fdc",
+  "batch_id": "BATCH_20260318_0116_01",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Dignity Over Identity",
+    "script": "Hyderabad’s LGBTQIA+ community is sounding the alarm! They are standing firm against the Transgender Amendment Bill, demanding that the law recognizes human dignity rather than just verifying identity. It’s a powerful fight for civil rights that is reshaping the city’s social fabric.",
+    "visual_keywords": [
+      "protesters holding signs",
+      "hyderabad street view",
+      "legal gavel striking"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

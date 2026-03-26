@@ -1,0 +1,22 @@
+{
+  "headline": "Crude oil prices slide over 3 pc amid geopolitical tensions",
+  "topic": "Geopolitics",
+  "language": "English",
+  "batch_id": "BATCH_20260319_0231",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-18T21:01:57.476194+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOHFPZ21ReFdEcjJPRkRRR3d5dHJIaEhqbndzeEhOS2FHSTJnV2g1UnhOR0p3MDRqUUpodG1vTnVfRTBvSDR6OU8xMTUyZTIwU3JwNmNxR2ljd09ITGQ4dU1sbllCemhSZi1MNTdVcno0bzNsR010cmFuXzQzZkFYM0s5LXRGZ18wNEZXeDQzMA?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0231\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

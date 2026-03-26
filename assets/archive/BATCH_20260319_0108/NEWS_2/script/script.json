@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260318_6f41afb2",
+  "batch_id": "BATCH_20260319_0108",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Crude oil prices slide over 3 pc amid geopolitical tensions",
+    "script": "Markets are reeling as crude oil prices plummet over three percent. Despite escalating geopolitical tensions, the sudden slide is catching traders off guard. With global energy stability on the line, the question remains: how low will prices go?",
+    "visual_keywords": [
+      "falling stock chart",
+      "oil refinery silhouettes",
+      "trading floor chaos"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

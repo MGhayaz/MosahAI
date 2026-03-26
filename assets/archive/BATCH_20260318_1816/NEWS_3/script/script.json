@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260318_e3662dca",
+  "batch_id": "BATCH_20260318_1816",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "Banned AI App Ad",
+    "script": "A major AI controversy is forcing regulators to step in. A viral ad for an AI editing app claiming it could remove anything has been banned. This high-profile crackdown marks a turning point in the battle against misleading artificial intelligence marketing.",
+    "visual_keywords": [
+      "smartphone photo editing",
+      "red banned stamp",
+      "person looking at screen"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

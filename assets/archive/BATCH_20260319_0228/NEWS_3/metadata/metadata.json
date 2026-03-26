@@ -1,0 +1,22 @@
+{
+  "headline": "Google Vibe Design",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260319_0228",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-18T20:58:48.762867+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYkJaSndfYzVGb3ZaTERNMXVGS0Y5UzI0OEhlclFzWHg1N1ZnNjVNRm9mblJ4OUl4RW1YOUktcVlMNnFpSm5HeHpqb2ZHZm0wd3gwVWNPQTR0cE0xSks3Rm1MWktmT3liblVVRUVuZjNmSkJkRnZlY2o4SDJGeXRlQXZiRGdhSzJxeWpvcnZOS0kxdHlq?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0228\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

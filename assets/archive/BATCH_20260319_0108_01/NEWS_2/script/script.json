@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260318_c8328a9b",
+  "batch_id": "BATCH_20260319_0108_01",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Telangana Transport Surge and Welfare",
+    "script": "Public transport in Telangana is reaching a massive breaking point! RTC bus occupancy has hit a staggering 98 percent. To balance the load, the government just announced a brand-new welfare scheme for auto-rickshaw drivers to support the city's vital transport network.",
+    "visual_keywords": [
+      "crowded public bus",
+      "auto rickshaw line",
+      "government building"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

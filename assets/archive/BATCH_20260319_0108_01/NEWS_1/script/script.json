@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260318_c8328a9b",
+  "batch_id": "BATCH_20260319_0108_01",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Trans Rights Protests in Hyderabad",
+    "script": "Hyderabad is echoing with a powerful message! The LGBTQIA plus community is hitting the streets to protest the Transgender Persons Amendment Bill. Demanding that trans rights be recognized as human rights, they are fighting for dignity and legal equality across the city.",
+    "visual_keywords": [
+      "protest banners",
+      "city street crowd",
+      "legal documents"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

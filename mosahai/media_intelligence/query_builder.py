@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+from html import entities
 import re
 from dataclasses import dataclass
 from itertools import combinations
+from turtle import title
 from typing import Iterable, Sequence
 
 
@@ -156,7 +158,44 @@ class QueryBuilder:
                 min_tokens,
             )
 
-        return queries[: max_queries]
+        
+        # 🔥 NEW INTELLIGENT QUERY LAYER
+        extra_queries = []
+
+        base_terms = []
+
+        if title:
+            base_terms.extend(title_phrase.split())
+
+        base_terms.extend(keyword_terms[:5])
+        base_terms.extend(entity_terms[:3])
+
+        STOPWORDS = {"the", "and", "for", "with", "from", "this", "that", "into", "over"}
+
+        base_terms = list(dict.fromkeys([
+             t for t in base_terms 
+             if len(t) > 2 and t.lower() not in STOPWORDS
+            ]))
+        core = " ".join(base_terms[:4])
+
+        if core:
+            extra_queries.extend([
+            f"{core} news",
+            f"{core} video",
+            f"{core} footage",
+            f"{core} explained",
+            f"{core} live",
+            ])
+
+        # merge with existing
+        queries.extend(extra_queries)
+
+        # dedupe + limit
+        queries = list(dict.fromkeys(queries))[:6]
+
+        print(f"[DEBUG][QUERY_BUILDER] Final queries: {queries}")
+
+        return queries
 
 
 def _normalize_terms(terms: Sequence[str] | None) -> list[str]:

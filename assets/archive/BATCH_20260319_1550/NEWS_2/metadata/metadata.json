@@ -1,0 +1,22 @@
+{
+  "headline": "US startup advertises ‘AI bully’ role to test patience of leading chatbots - The Guardian",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260319_1550",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-19T10:21:01.486026+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdW9ZcFNPYjV3N2pYbFFtVkV4alIwbjJtVGlnTjBMSU5VVmVscTdjV2dpcmxYZVF6LXYxd3VNcU1uQURNMXAwNXpkR0ZoM1dTS05mNmVFdTRjZGFsdDA2c3Mwb2hjY1Y1UEpqNzJoSUdxNzVPRUUxbkVGM1NwbDZZbDE1M3AwQk5nX1BzRnRPVnRGNlA2MU5PaHJFQ1ZBR0d0OFhUcS1PQnFQVmJuR0NOWnBPNFVQaUc2Nng1Q1JSbi0?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_1550\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": true,
+  "generation_status": "fallback",
+  "notes": ""
+}

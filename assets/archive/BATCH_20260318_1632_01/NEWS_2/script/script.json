@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260318_0bfa27f6",
+  "batch_id": "BATCH_20260318_1632_01",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Crude Oil Prices Slide",
+    "script": "Crude oil prices just plummeted over three percent as geopolitical tensions hit a breaking point. Markets are reacting sharply to the growing instability. As the price slide accelerates, the global economy faces a massive test. Is a bigger crash coming?",
+    "visual_keywords": [
+      "oil price graph falling",
+      "oil refinery at dusk",
+      "stock market tickers"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

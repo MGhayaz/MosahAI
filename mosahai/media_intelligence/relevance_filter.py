@@ -7,11 +7,15 @@ from dataclasses import dataclass, field
 from typing import Any, Mapping, Sequence
 from urllib.parse import parse_qs, urlparse
 
+from torch import threshold
+
+from mosahai.media_intelligence.dedup_engine import _extract_url
+
 
 @dataclass(slots=True)
 class NewsMediaRelevanceFilter:
-    similarity_threshold: float = 0.6
-    youtube_similarity_threshold: float = 0.5
+    similarity_threshold: float = 0.3
+    youtube_similarity_threshold: float = 0.25
     model_name: str = "all-MiniLM-L6-v2"
     _model: object | bool | None = field(default=None, init=False, repr=False)
 
@@ -87,9 +91,14 @@ class NewsMediaRelevanceFilter:
                 threshold = self.youtube_similarity_threshold
 
             similarity = self.compute_similarity(resolved_title, title)
+            # allow slightly weak matches (soft filter)
             if similarity < threshold:
-                continue
-
+                # if it's YouTube, allow borderline matches
+                if source == "youtube" and similarity >= (threshold - 0.15):
+                    pass
+                else:
+                    continue
+            
             filtered.append(
                 {
                     "title": title,
@@ -97,8 +106,26 @@ class NewsMediaRelevanceFilter:
                     "score": round(float(similarity), 4),
                 }
             )
+        # fallback: agar kuch bhi pass nahi hua, best candidate allow karo
+            if not filtered and candidates:
+                best = None
+                try:
+                    best = max(
+                        candidates,
+                        key=lambda c: self.compute_similarity(resolved_title, _extract_title(c)),
+                    )
+                except Exception:
+                    pass
+                if best:
+                    filtered.append({
+                    "title": _extract_title(best),
+                    "url": _extract_url(best),
+                    "score": round(self.compute_similarity(resolved_title, _extract_title(best)), 4),
+                    })
+            print("[DEBUG][FILTER] Fallback activated — best candidate selected")
 
-        return filtered
+            print(f"[DEBUG][FILTER] Final selected: {len(filtered)}")
+            return filtered
 
 
 def _extract_source(candidate: Any) -> str:

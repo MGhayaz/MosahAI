@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260318_edef8a6d",
+  "batch_id": "BATCH_20260319_0228",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Good vs Bad AI",
+    "script": "Not all AI is created equal, but can you really tell the difference? Experts are now debating how to separate helpful innovation from harmful algorithms. As technology evolves, we are forced to redefine trust in the software controlling our digital lives.",
+    "visual_keywords": [
+      "digital neural network",
+      "binary code overlay",
+      "futuristic eye scan"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

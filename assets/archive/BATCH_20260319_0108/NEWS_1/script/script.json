@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260318_6f41afb2",
+  "batch_id": "BATCH_20260319_0108",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "A Geopolitical Three-Body Problem: Is The Iran Conflict Ultimately About China?",
+    "script": "Is the conflict in Iran just a massive distraction? A geopolitical three-body problem is unfolding, shifting the global power balance. Analysts are now asking: is this struggle really about Tehran, or is China the actual ultimate target?",
+    "visual_keywords": [
+      "middle east map",
+      "chinese flag",
+      "military radar screen"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

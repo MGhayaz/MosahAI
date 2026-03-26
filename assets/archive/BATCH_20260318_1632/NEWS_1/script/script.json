@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260318_6beff844",
+  "batch_id": "BATCH_20260318_1632",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Nvidia Gamer Backlash",
+    "script": "Nvidia thought they had a breakthrough, but the gaming community is revolting. A new AI-powered graphics feature was meant to revolutionize play, yet massive backlash is brewing. This isn’t just a tech update; it’s a war over the future of digital reality.",
+    "visual_keywords": [
+      "graphics card close up",
+      "angry gamer silhouette",
+      "digital glitch effects"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

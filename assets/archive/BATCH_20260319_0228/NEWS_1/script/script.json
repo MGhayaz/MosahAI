@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260318_edef8a6d",
+  "batch_id": "BATCH_20260319_0228",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "AI Ad Ban",
+    "script": "A popular AI tool just hit a major legal wall. Regulators have officially banned an advertisement for an AI photo editor that claimed it could remove anything. This crackdown follows growing concerns over deceptive marketing and impossible promises in the AI space.",
+    "visual_keywords": [
+      "smartphone editing app",
+      "red banned stamp",
+      "scrolling news feed"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

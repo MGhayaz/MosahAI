@@ -1,6 +1,10 @@
 import os
+from turtle import title
 import warnings
 import logging
+
+from mosahai.media_intelligence.image_downloader import ImageDownloader
+from mosahai.media_intelligence.image_pipeline.title_image_fetcher import fetch_primary_image
 
 warnings.filterwarnings("ignore")
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -106,7 +110,7 @@ class MosahAIFullPipelineExecutionBridge:
             vault_manager=self.vault_manager,
             enable_vault_storage=self.enable_vault_storage,
         )
-        self.visual_engine = VisualResourceIntelligentAssetAcquisitionEngine()
+        # self.visual_engine = VisualResourceIntelligentAssetAcquisitionEngine()
         self.media_processor = MediaBatchProcessor()
         self.niches = dict(PHASE15_NICHES)
 
@@ -228,15 +232,24 @@ class MosahAIFullPipelineExecutionBridge:
                 for idx, layout in enumerate(batch_layout):
                     segment = segments[idx] if idx < len(segments) else {}
                     news_item = top_three[idx] if idx < len(top_three) else {}
-                    news_url = str(news_item.get("link", "")).strip()
+                    title = str(news_item.get("title", "")).strip()
                     visual_asset_path = None
-                    if news_url:
-                        visual_asset_path = self.visual_engine.extract_visual_asset(
-                            news_url=news_url,
-                            short_id=payload.get("short_id", short_id),
-                            output_dir=layout["media_dir"],
-                            filename="image_1.jpg",
-                        )
+                    candidate = None
+
+                    if title:
+                        candidate = fetch_primary_image(title)
+
+                        if candidate:
+                            downloader = ImageDownloader()
+
+                            visual_asset_path = downloader.download_image(
+                                candidate.url,
+                                output_dir=torch.layout["media_dir"],
+                                filename="image_1"
+                            )
+
+                            print(f"[TITLE IMAGE] {title}")
+                            print(f"[IMAGE URL] {candidate.url}")
                     if visual_asset_path:
                         print(f"[VISUAL] Asset saved at {visual_asset_path}")
                         if idx == 0:
@@ -259,7 +272,7 @@ class MosahAIFullPipelineExecutionBridge:
                         selected_media.append(
                             {
                                 "source": "article",
-                                "url": news_url,
+                                "url": candidate.url,
                                 "local_path": visual_asset_path,
                                 "duration": "",
                                 "resolution": "",
@@ -303,7 +316,7 @@ class MosahAIFullPipelineExecutionBridge:
                             keywords=keywords,
                             entities=[],
                             summary=summary if summary else None,
-                            article_urls=[news_url] if news_url else None,
+                            article_urls=[candidate.url] if candidate else None,
                             media_dir=layout["media_dir"],
                             metadata_path=layout["metadata_path"],
                         )

@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260318_856687b2",
+  "batch_id": "BATCH_20260319_0234",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Ishan Kishan appointed interim captain of Sunrisers Hyderabad for TATA IPL 2026",
+    "script": "A major change is coming to the TATA IPL 2026 season! Sunrisers Hyderabad has officially named Ishan Kishan as their interim captain. This bold appointment marks a new chapter for the franchise. Will Kishan’s leadership be the game-changer the team needs?",
+    "visual_keywords": [
+      "IPL 2026 logo",
+      "cricket captain interview",
+      "stadium crowd cheering"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

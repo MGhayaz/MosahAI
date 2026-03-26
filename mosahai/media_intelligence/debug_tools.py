@@ -44,6 +44,7 @@ class MediaDebugInspector:
             entities=[str(e) for e in (entities or []) if str(e).strip()],
             summary=None,
             now=datetime.now(timezone.utc),
+        
         )
 
         queries = self.engine.build_queries(context)

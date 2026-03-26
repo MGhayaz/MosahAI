@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260317_b6062740",
+  "batch_id": "BATCH_20260318_0116",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Infosys at 3-year low on AI disruption fears",
+    "script": "Is AI killing the tech giants? Infosys has plummeted to a three-year low as investors panic over AI disruption and global instability. It is a massive wake-up call for the industry. Is this the end of the traditional outsourcing era?",
+    "visual_keywords": [
+      "falling stock chart",
+      "tech office building",
+      "digital data streams"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

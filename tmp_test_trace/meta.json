@@ -1,0 +1,15 @@
+{
+  "headline": "Trace headline",
+  "selected_media": [
+    {
+      "local_path": "C:/mock/image_1_article.jpg",
+      "url": "https://example.com/img.jpg",
+      "source": "article",
+      "score": 0.0,
+      "type": "image",
+      "domain": "example"
+    }
+  ],
+  "generation_status": "success",
+  "notes": ""
+}

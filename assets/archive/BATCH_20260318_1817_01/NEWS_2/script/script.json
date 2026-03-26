@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260318_01d3b68c",
+  "batch_id": "BATCH_20260318_1817_01",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Hyderabad PSL Captaincy",
+    "script": "A massive leadership shakeup just hit the Hyderabad cricket franchise! Aussie star Marnus Labuschagne has been officially named the new captain for the PSL season. Fans are buzzing as this cricket legend prepares to lead the team to victory. Can he succeed?",
+    "visual_keywords": [
+      "cricket captain portrait",
+      "crowded cricket stadium",
+      "action sports shot"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

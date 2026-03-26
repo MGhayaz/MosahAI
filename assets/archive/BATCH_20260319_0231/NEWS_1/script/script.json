@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260318_d47dbbba",
+  "batch_id": "BATCH_20260319_0231",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "NSA Doval, US envoy Gor discuss geopolitical issues",
+    "script": "A high-stakes meeting just unfolded behind closed doors. NSA Ajit Doval and US envoy Gor are tackling critical geopolitical issues as tensions rise. What does this alliance mean for global stability? Analysts are watching closely as these two powers align.",
+    "visual_keywords": [
+      "official diplomatic meeting",
+      "world map background",
+      "flags of India and USA"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

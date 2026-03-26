@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260317_b6062740",
+  "batch_id": "BATCH_20260318_0116",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "ING CEO: Geopolitical uncertainty may lead firms to reduce cap-ex",
+    "script": "Global business is hitting the brakes. The CEO of ING warns that soaring geopolitical uncertainty is forcing companies to slash their spending plans. Innovation is stalling as firms hoard cash to survive the storm. Are we entering a global investment freeze?",
+    "visual_keywords": [
+      "corporate boardroom meeting",
+      "currency exchange display",
+      "industrial construction site"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

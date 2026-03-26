@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260317_b6062740",
+  "batch_id": "BATCH_20260318_0116",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "Trump is lying on every single level",
+    "script": "Tensions are exploding as geopolitical analyst Shaiel Ben-Ephraim sounds the alarm. He claims Trump is lying on every single level regarding the Iran war. With global stability at risk, the truth behind these military conflicts is becoming more dangerous than ever.",
+    "visual_keywords": [
+      "political news broadcast",
+      "military fighter jets",
+      "tehran city skyline"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

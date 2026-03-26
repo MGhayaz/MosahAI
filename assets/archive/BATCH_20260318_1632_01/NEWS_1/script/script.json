@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260318_0bfa27f6",
+  "batch_id": "BATCH_20260318_1632_01",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "A Geopolitical Three-Body Problem",
+    "script": "Is the Iran conflict actually a hidden front for a much larger war? A complex geopolitical three-body problem is emerging between global giants. Experts now question: is this struggle really about Tehran, or is the ultimate target actually China?",
+    "visual_keywords": [
+      "world map animation",
+      "naval warships",
+      "beijing skyline"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260317_17cf8fdc",
+  "batch_id": "BATCH_20260318_0116_01",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "The Science of Names",
+    "script": "What is in a name? A lot, according to experts in Hyderabad! A new five-day intensive course on botanical nomenclature has officially kicked off. Scientists are diving deep into the complex world of plant naming, ensuring global standards are met right here in the city.",
+    "visual_keywords": [
+      "botanical garden plants",
+      "scientists in lab",
+      "microscope close up"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

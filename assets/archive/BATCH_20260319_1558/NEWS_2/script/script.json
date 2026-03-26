@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260319_4d204de6",
+  "batch_id": "BATCH_20260319_1558",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "SRH Interim Captain Named",
+    "script": "A major leadership shakeup is hitting the TATA IPL 2026 season! Sunrisers Hyderabad has officially named Ishan Kishan as their interim captain. This bold move marks a brand-new chapter for the team. Will Kishan’s leadership be the game-changer the squad needs?",
+    "visual_keywords": [
+      "tata ipl trophy",
+      "cricket team meeting",
+      "orange stadium flags"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

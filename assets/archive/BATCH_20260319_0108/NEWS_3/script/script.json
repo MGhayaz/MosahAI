@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260318_6f41afb2",
+  "batch_id": "BATCH_20260319_0108",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "Policy action in times of geopolitical crises",
+    "script": "Global stability is under fire as geopolitical crises force immediate policy action. Leaders are scrambling to manage escalating risks that threaten the world economy. As pressure builds, will these drastic measures be enough to prevent a total financial collapse?",
+    "visual_keywords": [
+      "government building exterior",
+      "digital globe rotating",
+      "blurred protest crowds"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

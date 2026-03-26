@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260318_01d3b68c",
+  "batch_id": "BATCH_20260318_1817_01",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "IMD Climate Warning",
+    "script": "Climate chaos is hitting hard! The IMD just issued an urgent orange alert with hailstorms striking Shimla and rain forecast for Hyderabad and Delhi. Sudden climate shifts are catching everyone off guard. Stay prepared as the weather takes a wild turn.",
+    "visual_keywords": [
+      "thunderstorm clouds",
+      "weather radar map",
+      "heavy rain"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

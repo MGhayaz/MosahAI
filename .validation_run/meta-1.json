@@ -1,0 +1,15 @@
+{
+  "headline": "Central bank announces emergency rate decision",
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://images.example.com/bank-hero.jpg",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\.validation_run\\media-1\\image_1_article.png",
+      "score": 7.0,
+      "type": "image",
+      "domain": "example"
+    }
+  ],
+  "generation_status": "success",
+  "notes": ""
+}

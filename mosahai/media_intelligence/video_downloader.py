@@ -26,7 +26,7 @@ class VideoDownloader:
     max_duration_seconds: int = 240
     min_height: int = 720
     preferred_ext: str = "mp4"
-    retries: int = 2
+    retries: int = 0
     retry_backoff_seconds: float = 1.5
     request_timeout_seconds: int = 180
     media_logger: MediaEngineLogger | None = None
@@ -71,101 +71,73 @@ class VideoDownloader:
         metadata = self._fetch_metadata(safe_url)
         command = self._build_command(safe_url, output_path)
 
-        attempt = 0
-        last_error = ""
-        while attempt <= self.retries:
-            attempt += 1
-            LOGGER.info(
-                "Downloading video (attempt %s/%s). url=%s output=%s",
-                attempt,
-                self.retries + 1,
-                safe_url,
-                output_path,
+        LOGGER.info("Downloading video (single attempt). url=%s output=%s", safe_url, output_path)
+        try:
+            print(f"[DEBUG][YT] Running command: {command}")
+            completed = subprocess.run(
+                command,
+                capture_output=True,
+                text=True,
+                timeout=25,
+                check=False,
             )
-            try:
-                completed = subprocess.run(
-                    command,
-                    capture_output=True,
-                    text=True,
-                    timeout=self.request_timeout_seconds,
-                    check=False,
-                )
-            except FileNotFoundError:
-                LOGGER.error("yt-dlp not found. Install yt-dlp and retry.")
-                return None
-            except subprocess.TimeoutExpired:
-                last_error = "timeout"
-                LOGGER.warning("yt-dlp download timed out. url=%s", safe_url)
-                self._sleep_backoff(attempt)
-                continue
-            except Exception as exc:
-                last_error = str(exc)
-                LOGGER.warning("yt-dlp download failed. url=%s error=%s", safe_url, exc)
-                self._sleep_backoff(attempt)
-                continue
+            print(f"[DEBUG][YT] Return code: {completed.returncode}")
+            print(f"[DEBUG][YT] STDERR: {(completed.stderr or '')[:300]}")
+        except FileNotFoundError:
+            LOGGER.error("yt-dlp not found. Install yt-dlp and retry.")
+            return None
+        except subprocess.TimeoutExpired:
+            LOGGER.warning("yt-dlp download timed out. url=%s", safe_url)
+            return None
+        except Exception as exc:
+            LOGGER.warning("yt-dlp download failed. url=%s error=%s", safe_url, exc)
+            return None
 
-            if completed.returncode == 0 and os.path.exists(output_path):
-                LOGGER.info("Download completed. file=%s", output_path)
-                if self.media_logger:
-                    self.media_logger.video_downloaded(
-                        batch_id=safe_batch,
-                        news_id=safe_news,
-                        url=safe_url,
-                        output_path=output_path,
-                    )
-                if self.batch_registry:
-                    self.batch_registry.register_media(
-                        batch_id=safe_batch,
-                        news_id=safe_news,
-                        source=_infer_source(safe_url),
-                        url=safe_url,
-                        local_file_path=output_path,
-                    )
-                self._write_metadata(
-                    output_path=output_path,
-                    url=safe_url,
-                    source=_infer_source(safe_url),
-                    metadata=metadata,
-                )
-                return output_path
-
+        if completed.returncode != 0:
             stderr = (completed.stderr or "").strip()
-            last_error = stderr or "yt-dlp failed"
             LOGGER.warning(
-                "yt-dlp download error. url=%s returncode=%s stderr=%s",
+                "yt-dlp download skipped after failure. url=%s returncode=%s stderr=%s",
                 safe_url,
                 completed.returncode,
                 stderr[:500],
             )
-            self._sleep_backoff(attempt)
+            return None
 
-        LOGGER.error("Download failed after retries. url=%s error=%s", safe_url, last_error)
-        return None
+        LOGGER.info("Download completed. file=%s", output_path)
+        print(f"[DEBUG][YT] Return code: {completed.returncode}")
+        print(f"[DEBUG][YT] Output exists: {os.path.exists(output_path)}")
+        if self.media_logger:
+            self.media_logger.video_downloaded(
+                batch_id=safe_batch,
+                news_id=safe_news,
+                url=safe_url,
+                output_path=output_path,
+            )
+        if self.batch_registry:
+            self.batch_registry.register_media(
+                batch_id=safe_batch,
+                news_id=safe_news,
+                source=_infer_source(safe_url),
+                url=safe_url,
+                local_file_path=output_path,
+            )
+        self._write_metadata(
+            output_path=output_path,
+            url=safe_url,
+            source=_infer_source(safe_url),
+            metadata=metadata,
+        )
+        return output_path
 
     def _build_command(self, url: str, output_path: str) -> list[str]:
-        format_selector = (
-            f"bv*[ext={self.preferred_ext}][height>={self.min_height}]"
-            f"+ba[ext=m4a]/b[ext={self.preferred_ext}][height>={self.min_height}]"
-            f"/b[height>={self.min_height}]"
-        )
         return [
             "yt-dlp",
             "--no-playlist",
-            "--no-part",
-            "--max-downloads",
-            "1",
-            "--max-duration",
-            str(self.max_duration_seconds),
-            "--merge-output-format",
-            self.preferred_ext,
-            "--remux-video",
-            self.preferred_ext,
-            "--retries",
-            str(max(0, self.retries)),
-            "--fragment-retries",
-            str(max(0, self.retries)),
+            "--quiet",
+            "--extractor-args",
+            "youtube:player_client=web",
             "-f",
-            format_selector,
+            "best[height<=720]",
             "-o",
             output_path,
             url,
@@ -176,6 +148,9 @@ class VideoDownloader:
             "yt-dlp",
             "--dump-json",
             "--skip-download",
+            "--quiet",
+            "--extractor-args",
+            "youtube:player_client=web",
             url,
         ]
 
@@ -184,8 +159,8 @@ class VideoDownloader:
                 command,
                 capture_output=True,
                 text=True,
-                timeout=min(self.request_timeout_seconds, 60),
-                check=False,
+                timeout=35,
+                check=False
             )
         except Exception:
             return {}

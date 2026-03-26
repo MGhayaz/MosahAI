@@ -1,0 +1,22 @@
+{
+  "headline": "SRH Interim Captain Named",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260319_1558",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-19T10:28:31.139374+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSFZsOFhHREFPNF9hQ0NkOGExMzdsWjhLcXNYNHNQamNrX0VISVJ3Tm0ySUlseVFFTks0bjgxWDNnUnlSbEJnSHhXeWJZZU50ZHZFdzhwd1FHVV9tVXVYRElJaXpVdFhzRTZpZUhZZjJUTEdrMEtncEFuVms2SGdNZF9fcWVZUmkxbVJMalFTYnF6WEd6NGwzN2F0WWp1aGVmcmMwVWNPYm1UNDU0UEdSaGJR?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_1558\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

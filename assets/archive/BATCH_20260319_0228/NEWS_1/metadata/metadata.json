@@ -1,0 +1,22 @@
+{
+  "headline": "AI Ad Ban",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260319_0228",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-18T20:58:46.809737+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PdHBHLUpCZm53Vy1EY3ZiUzJ1b2dMN0tDNGhhVlRPUXRRVjJXZHRja1oxVVpzVzlNa2NXcVZpc2ctM1ZRN2ZRWVlaUkVFN2E1VkRKQUZHX0luQQ?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_0228\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

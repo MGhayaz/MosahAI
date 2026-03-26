@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260318_7535bb75",
+  "batch_id": "BATCH_20260318_1633",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "PSL 2026 Captaincy Shift",
+    "script": "A major leadership shakeup is hitting the cricket world! Marnus Labuschagne has just been officially appointed as the new captain of the Hyderabad Kingsmen for PSL 2026. Fans are buzzing as the Aussie star prepares to lead the charge. Can this bold move secure the",
+    "visual_keywords": [
+      "cricket stadium crowd",
+      "Marnus Labuschagne batting",
+      "Hyderabad Kingsmen logo"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

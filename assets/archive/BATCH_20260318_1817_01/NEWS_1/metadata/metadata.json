@@ -1,0 +1,22 @@
+{
+  "headline": "IMD Climate Warning",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260318_1817_01",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-18T12:47:50.392103+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMjlWSUNfMlMxcUJaa1VHbV9tUjlwaHB6NEd0Z1lBLWVzVDk3a3ppR3E4Zm5ZYVc3bllfM1JLbU1HRWplRlgzYlNLaHk1Q3A5alg3WEp4dzIxQW5Wd0hlVkxNWWFNOG9EYjBBWnp5b3BTeFhQQzNhanJSX1VldUF5a2dNaUFmMWhjejFYdjFERS1RYzA4TDRYT2FLRVk3dENXR2NQYjVaU0N6MmkwYWQ1M2hNYVR1bnFLbnFRZnREMVRVNlQxMUV4ZlhwU3RlWGRxYXBjR25KbmYzaVFsUG9VcUwwQ1pEdDlfTE1FWklmNW5lSU8xTHl6UVRGczRqbWlZLVE4cmxycV85QkEtVHhZcmRfd3FkajU10gGeAkFVX3lxTFByamtoRDU2cDlVdm5tZDNyOEc4YUhlWUsyUlNMcUlGalI1ZldidTdXYVpBV1o0VV9maG11YU42Vmg4V0h1dzNpRFVWRkJ4aktzYm1jMTBTWVBySEdEMU15TjRPQXNYWHFOSnF5c29vdFNBQVBzVEZhX1h3a2RwY3BTb0dEOERQcUVLWnBFbVRIV25MX0dwQUxreTdJQjlNcFM3ZzVCZ1Vtcmo5N0xYeTJyWWRSWDZMSWN4bzN1bGZmemJKZXFTNHhQX3pqOFUtMU9RUEFtLTFTN3I1NFlDbGwzWm9wRGdtYk9DR1BfbDg5TnJIVkpSdUtaY0llUmtVTlAzZ1JFMXRPaWNzMW52bXhuQ0VydlJTakItZkUtc2c?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260318_1817_01\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}
