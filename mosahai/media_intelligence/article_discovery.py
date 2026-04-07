@@ -117,19 +117,44 @@ def filter_allowed_article_urls(urls: Sequence[str], *, log_cleaned: bool = True
     seen: set[str] = set()
 
     for raw_url in urls or []:
+
+        # 🔥 BLOCK JUNK DOMAINS
+        lower_raw = raw_url.lower()
+        if any(bad in lower_raw for bad in [
+            "zhihu.com",
+            "baidu.com",
+            "stackoverflow.com",
+            "stackexchange.com",
+            "quora.com",
+            "reddit.com",
+            "brainly",
+            "chegg.com"
+        ]):
+            print(f"[BLOCKED DOMAIN] {raw_url}")
+            continue
+
+        # 🔥 NORMALIZE
         cleaned = normalize_allowed_article_url(raw_url)
         if not cleaned:
             continue
+
         key = cleaned.lower()
         if key in seen:
             continue
+
         seen.add(key)
+
         if log_cleaned:
             _print_clean_article_url_debug(cleaned)
+
         filtered.append(cleaned)
 
-    return filtered[:MAX_DISCOVERED_URLS]
+    # 🔥 FALLBACK (IMPORTANT)
+    if not filtered and urls:
+        print("[FILTER FALLBACK] using raw URLs")
+        return list(urls)[:MAX_DISCOVERED_URLS]
 
+    return filtered[:MAX_DISCOVERED_URLS]
 
 def select_best_articles(news_title: str, urls: list[str]) -> list[str]:
     resolved_title = str(news_title or "").strip()

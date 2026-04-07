@@ -1,0 +1,22 @@
+{
+  "headline": "Seafarers in Crossfire",
+  "topic": "Geopolitics",
+  "language": "English",
+  "batch_id": "BATCH_20260322_0011",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-21T18:41:32.483156+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPMW03Z3FxNHdtUEtta3lVQVloU3pGa3pJUTlsdjAwSDZHbkVOVUlhTFQyTUEza2NRckRKTWVISk94NVpYekhONUpTdEVtZk5JVW1qdEd5UDZhcTZwazJtMHRDZHJEbzdXbWc4Mml3c0hhWUVZRnZxRnkxd0VLSDNRUnRjbXFDZVdadk9mbWlpb3hQSi1rV0lrSnlfZlQ1QU0zM1U3WFZYSDBKWWF6cWZ6Y0Nmd1VEV0hWLW1ka0VNNkEyWTdCVlFjY3VqcmZyT3NTRWRHVzc4QlBmZ9IB3wFBVV95cUxOSXNRRnUwTXRtZnNIM2lJQTdxRkFrczR3dWZ3ODduVmRpeDktVGJSUlkzWTlvVGpKUVI3RGFzNlhqMTFGcWNEbGFVclJsbkdENVY2bkx4dlJydVVSVjVrbVMxVGtocE9ZRTNQTTVRaUVBV3dDNWVXaWUwTUdGS2dkZjM5TnJ1cldja0hpc2RLZXV6aWNCVDNrTHJyWHFSTmhva1hMLVptOVJvaTM4akYzNlozN3ZoSjV5NFBaNHNqQ0dPREQxOHoxajRVSjExT2pnUjFwb21pSTZiT2tmNTdn?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260322_0011\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

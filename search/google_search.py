@@ -9,11 +9,25 @@ from bs4 import BeautifulSoup
 logger = logging.getLogger(__name__)
 
 BAD_DOMAINS = [
+    # Google junk
     "google.com",
     "youtube.com",
     "accounts.google",
     "maps.google",
-    "policies.google"
+    "policies.google",
+
+    # 🚫 BLOCK THESE (IMPORTANT)
+    "zhihu.com",
+    "zhidao.baidu.com",
+    "baidu.com",
+    "stackoverflow.com",
+    "stackexchange.com",
+    "superuser.com",
+    "serverfault.com",
+    "quora.com",
+    "reddit.com",
+    "brainly",
+    "chegg.com"
 ]
 
 
@@ -25,7 +39,7 @@ def fetch_html(url: str):
     try:
         response = requests.get(url, headers=headers, timeout=5)
         return response
-    except requests.exceptions.RequestException:
+    except requests.exceptions.RequestException:    
         logger.error(f"Failed to fetch {url}")
         return None
 
@@ -66,7 +80,7 @@ def clean_urls(urls: List[str]) -> List[str]:
     cleaned = []
 
     for url in urls:
-        if not any(bad in url for bad in BAD_DOMAINS):
+        if not any(bad in url.lower() for bad in BAD_DOMAINS):
             if url not in seen:
                 seen.add(url)
                 cleaned.append(url)

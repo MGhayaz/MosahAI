@@ -1,0 +1,22 @@
+{
+  "headline": "Srikakulam-Hyderabad Direct Train",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2031",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-20T15:01:30.224959+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNem9CQ2tIMHJCZmFwLTFHQk8zTWpVRjFGbGxBMDZmMnFOSlBmNjVIMTJKR19ES0V5bzhHQmtOLVRodU5keTFXMFY3aExUUlY3OWdqOEJtVlpJZEljV1JSblB4eEpuQUNZakZENnlnd1pRLTBpSEFmZkJzNlN4WmhGUTVVZDh0NXN1ZjNqQU80d0MxbWhpbVkwV1RlclZGQnFfMDJwdDNNMEVJWWhOWmdyVW5MRVlXbzhDVUZma3VzbmlCamxxNHZrZmdGVkw4Q0MzSHNmRmJWV0ZaVWN2SDBn0gHmAUFVX3lxTE44cTZpWGNxZDhuUjVqemcwZUh0UnNVVGRHYXg2T3o1NzNlUWR0NWRhb0txNXJyWGktWUExNFhVRGt5VURuNk1BbHJGejhhYkRhdnYxZ1RUS3BRaVBlWTZ4eF9sUzlDUlhSc2FweHJnTE5HU0YzNmxwR1VPd0xQekk1Z2RfSUREQkFBdW9jSUd5VnEyaDd4T0N3NlVYVDF1d3QxelZrZTRMQkpKWU5BeGVoXzM1b2g5VWJiSE01Y3F4Rlo4eFFfd3JuYzQ5YW1yNWM3cWNfaXhDYnAtbVdvN2xXMXdlazRB?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2031\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

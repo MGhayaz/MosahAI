@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260320_32514311",
+  "batch_id": "BATCH_20260320_2252",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Corporate Geopolitical Intelligence",
+    "script": "Global corporations are turning to geopolitical intelligence to survive an era of unprecedented volatility. SpecialEurasia highlights a shift where data-driven strategy replaces guesswork in the boardroom. In this high-stakes game, is intelligence now the most valuable currency on earth?",
+    "visual_keywords": [
+      "corporate boardroom",
+      "digital world map",
+      "glass office building"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260320_007f5c99",
+  "batch_id": "BATCH_20260320_2027",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "South Korea Mulls State Energy Merger",
+    "script": "South Korea is weighing a massive energy overhaul. The government is considering a state energy merger to safeguard resource security against a volatile global landscape. As geopolitics redefine national survival, will this consolidation be enough to shield the country from uncertainty?",
+    "visual_keywords": [
+      "south korean flag",
+      "industrial oil refinery",
+      "energy corporate graphic"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

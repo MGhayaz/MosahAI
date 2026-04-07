@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260319_14b45a2a",
+  "batch_id": "BATCH_20260320_0123",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Energy as a Geopolitical Weapon",
+    "script": "The UN is issuing a stark warning: the conflict in Iran confirms fossil fuel is now a primary geopolitical weapon. Energy security has transformed from a resource debate into a fight for survival. Dependence on oil is no longer a cost, it is a global",
+    "visual_keywords": [
+      "oil refinery fire",
+      "military tanks desert",
+      "UN logo assembly"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

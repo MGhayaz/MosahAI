@@ -1,0 +1,22 @@
+{
+  "headline": "Professor Appa Rao Podile: Scientific Excellence",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_1420",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-20T08:51:03.530200+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVjdOYnpKNXA3M1hwZ1Y2djRKckJEeC1mUXNBNmVQWU1jSVdnMG9tbGJsTlNFQmJPdUNwSm5Fak9sd05TN2p2RTY1R25EVGkyUWtHZG9rdXFKSW5oTjFHYmQ0VV9GVU9QZWVzQ3h2U3NJdmVtTnVMVGpsSFFOdnlFN2RyQzhMblRZVGJmcWlmY0pxMDZiYngzZl9qSzJwRTN0Tm91T1JHUHRwcEVfeVlkVVB1V0J6TUMzeVdiMWUxZFdjTzdiSGU3NHpyaTVrd0tWMVE?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_1420\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

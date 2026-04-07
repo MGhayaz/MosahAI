@@ -1,0 +1,22 @@
+{
+  "headline": "Meta Security Breach",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260320_1929",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-20T13:59:50.355509+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM2ZBcWFRTHVaS0NEZm16enJ6MEF2azJGdW14c21xbnVjQmRmbEJqQWNBWFZwZUNrS1RWUGJLNjRMaERCSUpmczhvSVJtTkJnOE1pSFM2Ulh0V2ljdmZGM3E2cHhHcW11LUpCUXN2ZzM0WGxxcDJKSzkzc2l3M0duZDVXQ1dIY0tnMkNGQ3ppNGRUWWxhUmV4emh2M0c1S2RIVldJVlhoZXMxRXpzQnoyUEZiSl9ScnVrR2tlRmZ5Ry0?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_1929\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

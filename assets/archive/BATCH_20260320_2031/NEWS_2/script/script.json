@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260320_17b7da4a",
+  "batch_id": "BATCH_20260320_2031",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Srikakulam-Hyderabad Direct Train",
+    "script": "A massive travel upgrade is finally on the horizon! Minister Ram Mohan Naidu confirms a direct train connecting Srikakulam to Hyderabad is officially on the cards. This game-changing link will slash travel times and revolutionize connectivity between these two major hubs. Stay tuned!",
+    "visual_keywords": [
+      "indian railways train",
+      "ram mohan naidu",
+      "railway tracks aerial"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

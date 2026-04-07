@@ -242,10 +242,16 @@ class MosahAIFullPipelineExecutionBridge:
                         if candidate:
                             downloader = ImageDownloader()
 
+                            media_dir = layout["media_dir"]
+
+                            print("DEBUG media_dir:", media_dir)
+
                             visual_asset_path = downloader.download_image(
-                                candidate.url,
-                                output_dir=torch.layout["media_dir"],
-                                filename="image_1"
+                                url=candidate.url,
+                                batch_id=batch_id,
+                                news_id=layout["news_id"],
+                                output_dir=media_dir,
+                                filename="image_1.jpg"
                             )
 
                             print(f"[TITLE IMAGE] {title}")

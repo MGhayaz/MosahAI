@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260320_32514311",
+  "batch_id": "BATCH_20260320_2252",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "South Korea Energy Merger",
+    "script": "South Korea is contemplating a radical state energy merger to secure its future. Driven by shifting global dynamics, the nation is prioritizing resource security over traditional market structures. Will this consolidation be enough to shield the country from a volatile energy crisis?",
+    "visual_keywords": [
+      "energy power plant",
+      "south korean flag",
+      "cargo shipping port"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

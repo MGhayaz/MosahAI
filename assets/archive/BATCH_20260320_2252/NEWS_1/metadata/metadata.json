@@ -1,0 +1,22 @@
+{
+  "headline": "Gold Rises to Historic Heights",
+  "topic": "Geopolitics",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2252",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-20T17:22:48.826351+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQNDlkNENJOEFROVMyS2JHSFFvS0pKalpNVDlpeDJsdEphbV9HcV9vWFJPUndfbjFvMFBDOVdITDNFc2x5SU5qX2dUTWctbGVaQkhmTFh1NWwtUk1IOVFNQ0M3N2NoUTFHd2p6OVktZmhWek9LN0VVQWI0bUtSZENsR1huT3psN1lmYUEtWlI3MFppX2NIbVlyRXlhY3h0MHZOUm05SnBhRS1nRldDbWYxUlZsdE9peTlXVXQtT3lRY3BmSXI3NnlkYmRlZUZfam9FNHZDMjd4U2YyZWQtSEFaMTF30gHoAUFVX3lxTE82QldtRUV6WWdkMUhfckFzcUxBam5taUlCbVVNbVdYZ242eVBkNW1HTVAtRVNHOTVDZVBhczNPTTZCMC03ZTJfV3M0bDM4V29VVmpxck9CZDF4dmg1LVVEWVJaMk0xVWlCYzNIbDF5eDdHdkg3M3FLWkxYNXVZX0NGeGtMNVFfOVNzellsMGNnMThuTzZqY1lxaGZ1VTYzNlRKWWpfZ2RVSVRueUhPWFVmeVZBdUV6MEZYdzROWmh3aml0QnVudENKR3lTSDh1MFZjb0RsQmg5b1dibnphblh3OE5lTzFaMXA?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2252\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

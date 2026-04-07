@@ -1,0 +1,22 @@
+{
+  "headline": "The Identity Trade",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260322_0008",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-21T18:39:14.146004+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYnk1aHotZmltYWFFNjFfS2VGaEdVZzhZVUdzZC16Yy1JMm5LcThVblU1eHprWGl3bXIxNFl1VFpNZ2xDeE5NeXZwT2ZuQzRKaGM0a3pVb09NcjNNYktpVHRDSTExV3dIVUJkVFVlLWo1OElyMWJ5LW1hMGo0MjZHY05B?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260322_0008\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

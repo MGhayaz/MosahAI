@@ -17,6 +17,7 @@ from mosahai.media_intelligence.article_discovery import (
 from mosahai.media_intelligence.batch_registry import BatchMediaRegistry
 from mosahai.media_intelligence.image_downloader import ImageDownloader
 from mosahai.media_intelligence.image_pipeline import fetch_primary_image
+from mosahai.media_intelligence.image_pipeline.image_pipeline import _safe_filename_part
 from mosahai.media_intelligence.video_downloader import VideoDownloader
 from mosahai.media_intelligence.video_engine.engine import VideoIntelligenceEngine
 
@@ -255,7 +256,37 @@ class MediaBatchProcessor:
             os.makedirs(media_dir, exist_ok=True)
         except OSError:
             return []
-        candidate = image_candidates[0]
+        selected_results = []
+
+        for idx, candidate in enumerate(image_candidates, start=1):
+
+            source = str(getattr(candidate, "source", "") or "article").lower()
+            safe_source = _safe_filename_part(source)
+            filename = f"image_{idx}_{safe_source}.jpg"
+
+            try:
+                local_path = self.image_downloader.download_image(
+                    url=str(getattr(candidate, "url", "") or ""),
+                    batch_id=batch_id,
+                    news_id=news_id,
+                    output_dir=media_dir,
+                    filename=filename,
+                )
+            except Exception:
+                continue
+
+            if local_path:
+                selected_results.append({
+                    "source": source,
+                    "url": str(getattr(candidate, "url", "")),
+                    "local_path": local_path,
+                    "score": float(getattr(candidate, "quality_score", 0.0)),
+                    "type": "image",
+                    "domain": str(getattr(candidate, "domain", "")),
+                })
+                break  # ✅ first success pe stop
+
+            return selected_results
         source = str(getattr(candidate, "source", "") or "article").strip().lower()
         safe_source = _safe_filename_part(source or "article")
         filename = f"image_1_{safe_source}.jpg"

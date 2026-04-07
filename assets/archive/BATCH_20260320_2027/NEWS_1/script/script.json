@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260320_007f5c99",
+  "batch_id": "BATCH_20260320_2027",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "ECB Leaves Rates Unchanged Amidst Tensions",
+    "script": "Europe’s central bank is standing still. The ECB just froze interest rates as global tensions reach a fever pitch. Faced with extreme geopolitical instability, policymakers are choosing caution over action. Is this a necessary pause or a warning of deeper economic turbulence?",
+    "visual_keywords": [
+      "european central bank building",
+      "digital finance tickers",
+      "abstract geopolitical map"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

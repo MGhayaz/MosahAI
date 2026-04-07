@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260319_a671f8b2",
+  "batch_id": "BATCH_20260320_0120",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "India's AI Tax Overhaul",
+    "script": "India is revolutionizing its tax system using artificial intelligence. This shift toward AI-powered governance aims to eliminate evasion, yet significant legal challenges remain. As the government pivots to automated audits, the line between data-driven efficiency and digital surveillance is blurring.",
+    "visual_keywords": [
+      "indian currency",
+      "computer code",
+      "tax documents"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

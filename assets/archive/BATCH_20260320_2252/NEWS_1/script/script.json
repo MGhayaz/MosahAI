@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260320_32514311",
+  "batch_id": "BATCH_20260320_2252",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Gold Rises to Historic Heights",
+    "script": "Gold is hitting record levels. Prices jumped over nineteen hundred rupees as shifting geopolitical tensions spark a massive wave of investor confidence. As market sentiment transforms, one question remains: is this the beginning of a historic gold rush?",
+    "visual_keywords": [
+      "shiny gold bars",
+      "stock market chart",
+      "busy trading floor"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

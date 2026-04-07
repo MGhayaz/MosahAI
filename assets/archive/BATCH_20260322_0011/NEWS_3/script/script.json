@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260321_4193d234",
+  "batch_id": "BATCH_20260322_0011",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "Sri Lanka’s Power Play",
+    "script": "Sri Lanka is officially challenging the status quo. By speaking truth to American power, the nation is navigating a delicate geopolitical balancing act. Is this small island’s defiance a signal that the global hierarchy is finally starting to shift?",
+    "visual_keywords": [
+      "sri lanka flag",
+      "diplomatic meeting room",
+      "colombo cityscape"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

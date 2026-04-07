@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260319_1e289323",
+  "batch_id": "BATCH_20260320_0126",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "Adulterated Food Arrest",
+    "script": "Is your food safe? A Hyderabad man was just arrested for manufacturing adulterated ginger garlic paste. This illegal operation was pumping contaminated staples into local markets before police shut it down. Authorities are now cracking down on toxic food production across the city!",
+    "visual_keywords": [
+      "ginger garlic paste",
+      "police arrest",
+      "food factory interior"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

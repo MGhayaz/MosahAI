@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260319_38c51d3e",
+  "batch_id": "BATCH_20260319_2101",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Perplexity's $30 Billion Play",
+    "script": "Did Perplexity almost own Google Chrome? CEO Aravind Srinivas revealed he once made a massive thirty billion dollar offer to buy the browser. It is a stunning look at the high-stakes battle between AI startups and the tech giants we use daily.",
+    "visual_keywords": [
+      "google chrome icon",
+      "aravind srinivas portrait",
+      "digital financial ticker"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

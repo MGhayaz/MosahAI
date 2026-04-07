@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260320_8c6fd989",
+  "batch_id": "BATCH_20260320_2229",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Microsoft Secure Agentic AI",
+    "script": "Can we truly secure autonomous AI? Microsoft is now pushing for end-to-end protection for agentic systems. As AI agents handle more sensitive tasks, this new security framework aims to prevent unauthorized actions and ensure these powerful tools remain under strict control.",
+    "visual_keywords": [
+      "microsoft headquarters logo",
+      "abstract ai brain",
+      "cyber security shield"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

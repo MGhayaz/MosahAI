@@ -1,0 +1,22 @@
+{
+  "headline": "Trump AI Policy",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260320_1929",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-20T13:59:51.288405+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xY3RXRGYzb29rQldEYjAzZkxBVHZmYVJUQUdUbmljNHVrNDV3cU9zT3VtWTFWeFNXeXFjeEtyTjhNM29kYm8tNkZFbWdaZEdTTkM3aG9mSWJCV2QxOTBWWUxUTWNiNTZDR1hOUGhnSdIBdEFVX3lxTE9rTEZzVVVXckZONGNYQkhqemEwdVhCSnRmMFhxVE5DaXJPaWhqYkVuNjR5Y0VMelhwS00ySk1GX0g1OWhUbHBRNzdUbDRiS0V3alo0b3hJMnF6X2JWb09XdlhzaWo3WlBMLWF0c01KVEtkd1pC?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_1929\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260320_17b7da4a",
+  "batch_id": "BATCH_20260320_2031",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Charminar Road Closure",
+    "script": "Attention Hyderabad commuters! Major traffic alerts are hitting the city today as roads surrounding the iconic Charminar are completely shut down. You must check the latest diversions and timings immediately to avoid massive gridlock. Plan your route now before you get stuck!",
+    "visual_keywords": [
+      "charminar traffic congestion",
+      "police road barricades",
+      "hyderabad city map"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "headline": "Illegal Samosa Unit Busted",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260322_0013",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-21T18:43:49.974156+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPNVUyT0E4OWJYd2wxQ1VzQmhBZGxURGExUFZZZUF5aVBseXYxeUZ3cGdBVE80eXhEbERJZzJKbkpLZlBrZERFdUllVHI4MDVyaGFWOVFaZkhxUy1hRGhsNDh1NWw2eEsyNlBQY3RUalRuM1JQcTFaZjZCeUMtR0ExQ1dHWC1rRVQ1STRQOElFVDVHOGM5NlA0WG1CQW50eHFmdzR1YlQzSm5vYXA4VE5nQ3F6aHdEWkVCeUl2cnQyY2RoUjB1eF85ekl4ZmxQcmVFVnRQd3pvY2NNX2V1aHdnRjlicnpRWXVFT2pwYmotVdIB9gFBVV95cUxQeWJPaEdkMEEwd3F4andBenFoV3BOeW1DRmt2T0VLOEJfMzV4anUwbk9YQUY2Zlh4SFZMakFZWFFyaVM1eDliUVJoMTRKSVl1YVl0OUtRNFpMOG8tOV9hVzNSQVJjTFNSQVh6VVBybFB6d2pjSmVvU2NGOTFUTE9ydWdicG9PMTVrVU1XUzVOWnprNDBpMUpzM3dqbXlSZUk5RktOMW51RHBYaGptZVFZNUhWdkprQVpKczVEaEp2MUZ2ZG9ZZnhqTE5MUGdEd1FwQzgwTk95S19iMDNYaEl5eENhWmVadVBjQnEtai1EQWxvWjZHckE?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260322_0013\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

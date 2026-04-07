@@ -1,0 +1,22 @@
+{
+  "headline": "Bengaluru Innovation Hub",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260322_0008",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-21T18:39:16.133505+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNT1d4MFJGRUtfVV9WRUk0UU9aNVNxLXk1U2dVQU9scW5yTm9pOGtfYmtKMXF5Nm13RFZmSEJ1Z0xyR24zYW93dUtPbnkzbXJaWEpQU0ROLWJJMHV6YmpmS1I3OVZCcW5FdU9icFI0X0FIWkl1M0ktenhTbGxIUFZpRWQ1WlVtd0ZGU01UWUZ0STZFN2Yxc2tucTRiNExSMUFnc3IwNEhidVRnMklxZWctc0d3ZFNRYzDSAb4BQVVfeXFMT0ZzUnotVDh0QklSa1d6SDU3MTFXR2JVTlNTaE1WZ09OWC03Y2NoZEZJVFNtTmdxbTc5LWZRUDRHVXFCUUZnOF9wRUswNURvazBHMjRmVlZrU3p1VzJILVgyZkJDSnBXM09mM0FueWhPUTdGNHgwVC1RYjdhRll5bmVuNC1jUkhJN0ZqTENsU1ZYZ25pLXd5WUlEemIwQnc5cTYtZk9peG1uNTZZQXFFLUdGS3RvbEI5ZG9ibnNUQQ?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260322_0008\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

@@ -1,0 +1,22 @@
+{
+  "headline": "Secure agentic AI end-to-end - Microsoft",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2250",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-20T17:20:28.067469+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRnZkeTN6RVhXZW1PRUN5VTFNdmd0ZjlmaWxtS0VqY0tjTXVMbG1yTVFMMmFDa1dRclB3SGVOM1NlS3dja3oyT1gwUFVqd1BhLXgzSjlGLUswQlE2cnRCb3E5UEFaZVFKYnZoQjc3YjVka19EUU11Wkwtbklqb0N5aVBXcVJhVVN5RFc1Rkgwcw?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2250\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": true,
+  "generation_status": "fallback",
+  "notes": ""
+}

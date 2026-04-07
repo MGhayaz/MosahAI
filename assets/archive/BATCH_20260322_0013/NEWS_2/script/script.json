@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260321_feba07d2",
+  "batch_id": "BATCH_20260322_0013",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Education Overhaul in Hyderabad",
+    "script": "Hyderabad’s education system is getting a massive upgrade! The city is launching integrated school complexes to house students from pre-primary through Class 12. This major modernization project aims to provide better facilities and bridge learning gaps. The future of education is here.",
+    "visual_keywords": [
+      "modern school building",
+      "students in classroom",
+      "architectural school blueprint"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

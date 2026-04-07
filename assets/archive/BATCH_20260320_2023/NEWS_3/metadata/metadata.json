@@ -1,0 +1,22 @@
+{
+  "headline": "Claude Viral Secret",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2023",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-20T14:54:06.852380+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUW5ibGNVeHEwVzRPX1RLN0FaZDVYb2JWQXcxYk5xdUVRUmJielJwZVZuSEtEbi1LQy1nTm9vVVAzN1E1V19ER2dZZE4xNy15R1JWazZjUmdabU83alZrTjVwUURsN29Gc3RBcTl0SzIzdnVIX1o0NmxUa0VTQzQzSzBvWDN5eHF5eFFhMlV4MGpfYkE1a0plOU1WM3dPSUlrNFZpcERSNnR0RlZCMVFpVNIBuAFBVV95cUxOdXdWUHAtT05oMk51OTFMem5BMWJ2ZFMyNmZERjZVU0YtOFhlc1pieERFYkRkX2wwSWxuaUd0c3p4MThJaDZ5U29mazRFa1Z0ZDFwUWMzeXlSQ2psMzdQNTM1VjU4VUhSOFMxNWlNMnZGVHhLZjMwRE1lRHd4dDhfNU5HbHZPZ0Q1ZV96dWhpV2xpWC1QUjlLNUxEWUhacjNHUS1sWlY5UVhHSy1Qd2hFMkczUENzOXp6?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2023\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260320_cfc74886",
+  "batch_id": "BATCH_20260320_2023",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Google Vibe Coding",
+    "script": "Coding is about to feel completely different. Google AI Studio just launched a full-stack vibe coding experience, transforming how developers build apps. This new approach streamlines the entire workflow, letting you create complex software through pure intuition and AI-driven speed.",
+    "visual_keywords": [
+      "holographic coding interface",
+      "developer using tablet",
+      "abstract digital waves"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

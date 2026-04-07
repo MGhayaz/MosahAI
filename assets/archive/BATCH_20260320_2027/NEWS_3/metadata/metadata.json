@@ -1,0 +1,22 @@
+{
+  "headline": "Geopolitics Impacting Indian Auto Industry",
+  "topic": "Geopolitics",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2027",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-20T14:57:59.500737+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4tZVpMaHNvU292WnhzbVJ2NndwbXVWRlVpY1BCM2EyUkVQdlgzYnpIbV9rQTVCTWdJclBKWGdnQWFYWklsWi0xVUJVd1FNMTBFeXhkWUx3d2FyYzhPOWdoWGp3WUI5cWN6U2x4R3VKT1c5NGgyZTRzZXpEMnE?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2027\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

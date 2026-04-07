@@ -11,12 +11,14 @@ from urllib.parse import parse_qs, urlencode, urljoin, urlparse, urlunparse
 import requests
 
 from mosahai.media_intelligence.article_discovery import normalize_allowed_article_url
+def _print_skip_url_debug(url: str, reason: str):
+    print(f"[SKIP URL] {url} :: {reason}")
 
 if TYPE_CHECKING:
     from .image_pipeline import ImageCandidate
 
 
-LOGGER = logging.getLogger("mosahai.image_pipeline.article_image_extractor")
+LOGGER = logging.getLogger("mosahai.image_pipeline.article_image_   extractor")
 REQUEST_HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Accept-Language": "en-US,en;q=0.9",
@@ -26,7 +28,7 @@ MAX_IMAGES_PER_ARTICLE = 5
 MAX_MULTI_ARTICLE_IMAGES = 30
 MIN_ARTICLE_IMAGE_WIDTH = 300
 HIGH_PRIORITY_DOMAIN_TOKENS = ("toiimg", "timesofindia")
-LOW_QUALITY_IMAGE_TOKENS = ("thumbnail", "small")
+LOW_QUALITY_IMAGE_TOKENS = ("thumbnail", "small", "logo","icon","sprite","banner","ads","placeholder",)
 
 
 @dataclass(slots=True)
@@ -242,9 +244,10 @@ def extract_multi_article_images(html: str, base_url: str) -> list[str]:
 
 def _fetch_article_html(url: str, *, timeout_seconds: int, user_agent: str) -> tuple[str, str]:
     del user_agent
-    candidate_url = normalize_allowed_article_url(url)
+    candidate_url = str(url or "").strip()
     if not candidate_url:
-        return "", ""
+        _print_skip_url_debug(url=url, reason="invalid article URL")
+        return []
 
     headers = dict(REQUEST_HEADERS)
     last_resolved_url = candidate_url

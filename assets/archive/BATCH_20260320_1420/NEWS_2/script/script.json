@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260320_e0ee27b5",
+  "batch_id": "BATCH_20260320_1420",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Baaghini Coffee Blend",
+    "script": "Forget your regular brew! A revolutionary six-coffee blend called Baaghini is officially taking center stage at one Hyderabad cafe. This bold fusion is the new obsession for local coffee lovers. Are you ready to taste the city's most intense caffeinated creation yet?",
+    "visual_keywords": [
+      "steaming coffee pour",
+      "aesthetic cafe interior",
+      "roasted coffee beans"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

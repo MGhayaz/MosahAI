@@ -1,0 +1,22 @@
+{
+  "headline": "The Intelligence Race",
+  "topic": "Geopolitics",
+  "language": "English",
+  "batch_id": "BATCH_20260320_1416",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-20T08:46:14.791298+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONFp4VXVRUEZheHRpQjF6QWpuOHQ4LVV3bUt3NkxLVkdXYURDSWF6enhQRXFhRW1Tc0tVUDN1aVpxRzJVdWh3NkJ4R3YyTXI0bl9wTm5ZRUVGUTBYUHlTMXg3VVJKaGs3cmpHcVBjR29fR3RQdzBEMnRZWFBESVpXYQ?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_1416\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

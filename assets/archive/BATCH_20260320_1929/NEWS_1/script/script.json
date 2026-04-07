@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260320_7571276e",
+  "batch_id": "BATCH_20260320_1929",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Google Vibe Coding",
+    "script": "Google is completely changing how software gets built. The tech giant just launched a full-stack vibe coding experience inside Google AI Studio. This isn’t a small update. It’s a total shift, allowing developers to build entire applications using pure AI intuition.",
+    "visual_keywords": [
+      "computer code interface",
+      "google ai studio logo",
+      "developer at desk"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

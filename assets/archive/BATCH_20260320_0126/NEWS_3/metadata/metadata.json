@@ -1,0 +1,22 @@
+{
+  "headline": "Adulterated Food Arrest",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_0126",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-19T19:56:39.336032+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV3FWenItc0cwMUpBbXBtYjdUa05QUjU1dGJtUTBXWDNnMEhFQUpsQkFOSVNDT0t3V0Z2Y0R6UFZFTU9XYjBWb2tmS2pYelpVdk9fakY0WW9WUHFJWkZDUEg3cXFCMHZKQlc4N3d2Q1ZsOWMtemF5dFAydl9pNTFYXzNmNkRNclZWM3gtMmJDV01uNUtEcV8wbngzblRSYlN1VjMyUGFxb2I3X0XSAbMBQVVfeXFMTWpBRE5WNklMMFBhRUxULVVnZFJ5aEE5enRLRHRIODdUNzVFY1F6WWoxSGd3SF9FU0FKd2RWQUJkUFppMlFwSDJXUmotYUhpVkFIc2duOGdIZXRPZ244LW1PMVFiMGxkOGFNdmRDQ3lqMEVjUFFwd2g0RHhXM2ZTWmg3b1hPNDlsc25LSEt5TkRjcWhteHFyTnRzYzNaMzJwY1k1SndsY056el9odXZFZVpLRUk?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_0126\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

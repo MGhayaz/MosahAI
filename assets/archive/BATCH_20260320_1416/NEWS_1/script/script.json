@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260320_e8b46b28",
+  "batch_id": "BATCH_20260320_1416",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "ECB Interest Rate Freeze",
+    "script": "Europe is holding its breath. The ECB has frozen interest rates as geopolitical tensions reach a breaking point. Central bankers are paralyzed by global instability, choosing extreme caution over movement. Is this a strategic pause or a sign of deeper trouble ahead?",
+    "visual_keywords": [
+      "european central bank building",
+      "financial chart downward trend",
+      "dark storm clouds over city"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

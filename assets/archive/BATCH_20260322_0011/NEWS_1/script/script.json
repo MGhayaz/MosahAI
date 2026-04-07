@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260321_4193d234",
+  "batch_id": "BATCH_20260322_0011",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Middle East War Endgame",
+    "script": "The Middle East is at a breaking point. As war consumes the Gulf, experts are decoding the final scenarios for this brutal conflict. Will we see a strategic resolution or total regional collapse? The endgame is being written right now.",
+    "visual_keywords": [
+      "middle east map",
+      "military drone footage",
+      "geopolitical expert speaking"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

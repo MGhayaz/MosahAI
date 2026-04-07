@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260321_feba07d2",
+  "batch_id": "BATCH_20260322_0013",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "Illegal Samosa Unit Busted",
+    "script": "Your favorite snack could be a health nightmare! Authorities just busted an illegal samosa unit in Jiyaguda, seizing piles of stale eggs and toxic, reused cooking oil. This dangerous operation was caught supplying contaminated food across the city. Be careful what you eat!",
+    "visual_keywords": [
+      "street food stall",
+      "dirty cooking oil",
+      "health inspectors raiding kitchen"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

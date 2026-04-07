@@ -1,0 +1,22 @@
+{
+  "headline": "Manikonda Environmental Crisis",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2254",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-20T17:24:47.020464+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUzNjU1hhREJ4c1RiZFloY0t5NXJ3U2h0empuLWVMcEoybGdQOWpnNlctajJiVzE4Q29tNG5tb3p2bFdDcjVxYTVJOUdLOU45b2xiUlVZY3hOOWVDd0ZIQ0lTQXZYOHBRUldOUEF3bHpyNi1lLUpKc3VOWnVodVYxODYtcFNzXzhjaXJTdk9XLVhaM0hyR1ZHTUpuYTlGYU9abmF2MkxCaEVyQlNLbVVjQWtxb2VaOXpwM3ZQTTFEeHV2UmNXTWpBSGw1MHA5N1lGb2M3TjNn0gHcAUFVX3lxTE5sLXBDT3l0aHluSVZBM1A0R2FTbkZMUkVZeHJram0xVS1NRDNZdVFaM3Z3cmtrNThoSkttbi0wTHJ3ZktaWEdUQkJfU3BSd0JISU1xbTJuVnpSRjJzWTlMVk9ldUpiTDAwRDBzei1NNjZjNWgtRmtnMFZjWS1jWjhBUVhGMWpTUS1xVVpkUzRGcWJjRkVXeU5OUVF3enNfRmdRcWQzamZsQnQtcy1sMW5ob3BhSExDdE1LQ3YyOXNucGlZR3NnVm0tVXdTN09IUTdLNkZzZnFDdmczNUc?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2254\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

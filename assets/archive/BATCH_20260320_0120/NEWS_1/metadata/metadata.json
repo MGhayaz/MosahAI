@@ -1,0 +1,22 @@
+{
+  "headline": "Meta Deploys AI Shield",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260320_0120",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-19T19:50:36.021734+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSnNyTm9IMzktVG1JaWUyNkZBV25waVZHQnRhTnFJWmJUbWlOZTk2czlVQW55X0hpWFZyRFdGamp2aV85eTZmOUFOYTRZNThKNk1qNFJiSzdiSzdGSGVwWFVhbVpiYUNmbUU0dGtrWVR0R1lfNzcxZEF6UWhTYldqeVRFenUyNFRWaEVaLWY1d1FxZm_SAZgBQVVfeXFMTmlHWE9wYVlDazBOcFg5WVNJbzNHUmk4NUxNRmlpNFFBX1hUemFVWnpiTTFOel9WU1VrdWZJSGt5OGNPT2YwTlNfN2txWlEwVy14NzlvbWpCZ25kbllfeHJKRUItcUEtOWx5enN0SEYyaWdFNE9rTTJtTy0xUTRCNllPaWZyNllyd0NibEZHOWlwUGZOWVFZRDk?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_0120\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

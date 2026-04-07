@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260321_4193d234",
+  "batch_id": "BATCH_20260322_0011",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Seafarers in Crossfire",
+    "script": "Rising geopolitical fire is trapping the world’s seafarers in the crossfire. As supply lines become targets, these essential workers are demanding urgent recognition. Can global trade survive if its backbone is left vulnerable in a shifting landscape of international conflict?",
+    "visual_keywords": [
+      "cargo ship waves",
+      "seaman working deck",
+      "global supply line"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

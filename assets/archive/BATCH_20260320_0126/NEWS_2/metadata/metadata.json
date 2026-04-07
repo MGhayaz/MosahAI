@@ -1,0 +1,22 @@
+{
+  "headline": "Massive Fake Food Seizure",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_0126",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-19T19:56:38.421708+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSWN6N2pTZjgwMGc4VjVaNUdBNVJ0RjlWVVQycndadDNGSjM2cldOZk5aa0stTTJyYXF1elN4MjNHTk5UNjJnTmdCWjQ3aF9CSXg4RnBObUdoQ3JYZ0RjZXVETWtEbHlFVS1hQlFXeXRpTWdJLUg3OXc2ektzLS1wUjgwMjMzZ2JodmoydTF4NzJjR0NEZlBWZWVkYndjYnhxVmlnZ1RVVG9oRDdXU21EWE5uaGxrLWI0THhxdXZRS1RranMxNHUxVGgwNW9mSFXSAdcBQVVfeXFMT0IzcEppZWxSRU9CM0hMc3BrVHczSjk1bzRNeHg3LXlGMXk5UGxydGNoZVNoN2Q0WWR2S3l6d0lFNjc4bm5NSkZtbEJ0TlNzQlBtUF9rQlBLUU4tS1ZDSVZLbDdoYXBFUW8wOWl0YlBoUmpRdzNtNjh3NXdRLXhkZTREUElGRUhzeURGYndjS29iVXNVODV5RnRFQlRlZ3RRYmFidXNWN3dadEZJRFZmWHpRZVFidUFRMWRQaGZkS1FOaFdyR0NyY3FaS01tTElsZURSaEFZMVU?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_0126\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

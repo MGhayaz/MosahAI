@@ -1,0 +1,22 @@
+{
+  "headline": "Vibe Design with Stitch",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260319_2101",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-19T15:32:06.391918+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYkJaSndfYzVGb3ZaTERNMXVGS0Y5UzI0OEhlclFzWHg1N1ZnNjVNRm9mblJ4OUl4RW1YOUktcVlMNnFpSm5HeHpqb2ZHZm0wd3gwVWNPQTR0cE0xSks3Rm1MWktmT3liblVVRUVuZjNmSkJkRnZlY2o4SDJGeXRlQXZiRGdhSzJxeWpvcnZOS0kxdHlq?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_2101\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

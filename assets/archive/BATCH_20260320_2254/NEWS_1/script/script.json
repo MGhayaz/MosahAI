@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260320_6709e40f",
+  "batch_id": "BATCH_20260320_2254",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Luxury Rent, Mosquito Nightmare",
+    "script": "Imagine paying sixty-six thousand rupees a month only to battle a late-night mosquito nightmare! A Hyderabad woman’s viral ordeal is exposing the reality of high-rent living. Despite her expensive 3BHK apartment, she claims this infestation is simply not normal.",
+    "visual_keywords": [
+      "luxury apartment interior",
+      "swarming mosquitoes",
+      "frustrated person typing"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

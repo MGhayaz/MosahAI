@@ -11,6 +11,7 @@ import time
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Optional
+from urllib.parse import urlparse
 
 from mosahai.logger import setup_logger
 from mosahai.media_intelligence.logger import MediaEngineLogger
@@ -41,6 +42,30 @@ class VideoDownloader:
         filename: str | None = None,
     ) -> Optional[str]:
         safe_url = str(url or "").strip()
+        if not safe_url:
+            LOGGER.warning("Download skipped: empty url.")
+            return None
+        if any(bad in safe_url for bad in [
+            "googletagmanager",
+            "doubleclick",
+            "ads",
+            "analytics"
+        ]):
+            LOGGER.warning("Blocked tracking URL: %s", safe_url)
+            return None
+        VALID_VIDEO_DOMAINS = [
+            "youtube.com",
+            "youtu.be",
+            "twitter.com",
+            "x.com"
+        ]
+
+        domain = urlparse(safe_url).netloc.lower()
+
+        if not any(valid in domain for valid in VALID_VIDEO_DOMAINS):
+            LOGGER.warning("Invalid video source: %s", safe_url)
+            return None
+        
         if not safe_url:
             LOGGER.warning("Download skipped: empty url.")
             return None

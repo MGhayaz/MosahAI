@@ -1,0 +1,22 @@
+{
+  "headline": "Baaghini Coffee Blend",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_1420",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-20T08:51:04.809640+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQb2JUNGJCZlJlRnQwdVlGMndXcUlEU1ptazVnV216TFRneWFPdHF5d29zOXJ2M3gweFUtY3kteEtZMkMzUzdvVi1FdUt0dHplel8zSW9BOE9pQW5zc1JocExoYXdSMFpTVmtaWlBuWjZmeFF4dnQzU3NwRHQ1R3hNZlNLcVYwZDkxS3h0NnotbTd1dk9GSEJVb09LOHRmazY5WXdmT0pGbnRDUExvWjhTdy1lUThFamJEMUlSclhvei1ocUsyQXlydE1TNA?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_1420\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

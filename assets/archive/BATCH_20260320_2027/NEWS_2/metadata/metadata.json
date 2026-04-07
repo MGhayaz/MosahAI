@@ -1,0 +1,22 @@
+{
+  "headline": "South Korea Mulls State Energy Merger",
+  "topic": "Geopolitics",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2027",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-20T14:57:58.461251+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83dWM0MzAySF9jRzR3dTdsNktoTzVIUlphRTBhQm1ZOUpYb3ZhYjlWVmp5ZkVuOGpmRHRIREtYdWFBSDBZM3ZJMG16U3FMaTd0cTc1cVRXVWltbGxGM3UzTEY1UU5iZlcy?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2027\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

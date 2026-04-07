@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260321_feba07d2",
+  "batch_id": "BATCH_20260322_0013",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Hyderabad's Use and Throw Crisis",
+    "script": "A shocking habit in Hyderabad is fueling a massive waste crisis! A new study reveals a growing 'use and throw' attitude toward household appliances. Instead of repairing electronics, residents are ditching them for new models. Is your old fridge next?",
+    "visual_keywords": [
+      "discarded electronic appliances",
+      "piles of e-waste",
+      "person buying new refrigerator"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

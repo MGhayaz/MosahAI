@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260320_e8b46b28",
+  "batch_id": "BATCH_20260320_1416",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "The Intelligence Race",
+    "script": "Data is the new armor. Geopolitical intelligence is no longer optional; it is the ultimate corporate solution for survival. Companies are racing to decode global shifts before they become catastrophes. In an age of chaos, knowing the future is the only strategy.",
+    "visual_keywords": [
+      "digital data streams",
+      "global satellite imagery",
+      "modern high tech office"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

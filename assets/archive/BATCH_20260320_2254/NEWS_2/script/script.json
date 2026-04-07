@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260320_6709e40f",
+  "batch_id": "BATCH_20260320_2254",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Hyderabad Property Boom",
+    "script": "Hyderabad’s residential market just witnessed a massive four thousand crore rupee surge! Over six thousand property registrations were recorded in February 2026 alone. This explosive growth shows no signs of slowing down as the city’s real estate demand reaches fever pitch.",
+    "visual_keywords": [
+      "modern high rise building",
+      "official registration documents",
+      "busy city construction"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

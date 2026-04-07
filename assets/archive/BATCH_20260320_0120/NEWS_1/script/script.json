@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260319_a671f8b2",
+  "batch_id": "BATCH_20260320_0120",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Meta Deploys AI Shield",
+    "script": "Meta is deploying a new digital shield. The company is integrating AI across its apps to overhaul user support and safety. This automated defense system aims to protect billions, but it raises a critical question: is this efficiency or overreach?",
+    "visual_keywords": [
+      "smartphone interface",
+      "digital shield animation",
+      "meta logo"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

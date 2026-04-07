@@ -1,0 +1,22 @@
+{
+  "headline": "CTI-REALM: A new benchmark for end-to-end detection rule generation with AI agents - Microsoft",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2250",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-20T17:20:29.066427+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQ05FclJ1S2hCVklTLXdjYlEzOWs0NmpEdU1xaWVMM0Z2T1FiQkJEZFZCLVVOYWZ6T2VCQTBDS3JiUFB6VEkwWThtZzJ2RjU5NUdhU2FORnRrYjktM2V1ZkR5RE9wSTBGbm5BUnhxQV9sRDNRNEMwMjJ0RmE1dGNwbzJGTU4xV0NWZjdvZ1paek5rd2xfM3FFRUc5U0VzQWhtTzhsS2UzbE1JUWM3ajJtUS1oX3RTY1NYLXV3QTFua2FFWkhNTjVQX0gwRVpqbFhCZi1DWGFR?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2250\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": true,
+  "generation_status": "fallback",
+  "notes": ""
+}

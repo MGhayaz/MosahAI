@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260321_cdd4cb1f",
+  "batch_id": "BATCH_20260322_0008",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "The Identity Trade",
+    "script": "Your identity is for sale. Thousands of people are trading their personal data to train the next generation of AI models. But at what cost? This massive data harvest raises critical questions about privacy and the long-term price of digital existence.",
+    "visual_keywords": [
+      "biometric data scanning",
+      "digital silhouette portrait",
+      "data server room"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

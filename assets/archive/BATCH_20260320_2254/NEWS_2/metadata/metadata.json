@@ -1,0 +1,22 @@
+{
+  "headline": "Hyderabad Property Boom",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2254",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-20T17:24:45.981562+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOREdITFpjZ0N6TGZiUDV4Y292MkNrNEVGSDFkV1FFTXBGSWt4NU03R3NEVlpUTjVUckE0U2NuMmhjWWlkeVkyckVsTGliTWZNOGlXWkRNVzVSLXBYM1BrMzVtVHVXWEFMVkN1SGFjYjg4aHJZWFNVSEhLY2s4TnBFUWNDZVpzTlV3Q01ZcWVqVUQzY3BZbVd5RWpEOEp1Q21qanhQRGpXanlVTUV5ZlBWT3lDd1FPdUhsbzZ2U21ZaDlkTzRid05zazVtNFlESFE2ZndpZk8tdWlvdTVFVDgydldJdXBmck5na2lIWW9aX1BjaUlRRElCcjVBd9IBggJBVV95cUxNa0tFb2Z5eC1oaHFJekR0NEpZcDY1b2E3LXpWUnVrU3JwX1FLZU53eEJPX1VBSF9TbVh0bnE5eW1tc2NUQjBOSndrMmxvb05fV2JYTFdaLVRQZENhcVRxMHZVdGVsTC1SVTJLSm5VblM1QU1yV3B5eTdkVmloTGxYUUozVllYTHg3Y1ZJY05tNF9iQkRGUzdfUWFBWmdJYUhiUzAwd3o4S0xUSEV6TkMwMjlIcmloN0dFNy00ZUZ3clVTVEFtOXhHZHFyZEpSaUpCZXlhNDNoYlJHY3A4cHQxVE1SVHlwc0NOdFNKZVhiUGdWVzZIc2ZRR21GTzladjVUNHc?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2254\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

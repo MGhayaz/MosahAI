@@ -1,0 +1,22 @@
+{
+  "headline": "AI Commoditization",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260322_0008",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-21T18:39:15.139972+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb0N2a3ZOQmZrT2k3d25lRk5HQ2YyS3FSRUdQbXNrdmFtV09HS0s3bEFsSUY5XzRpOGhOM1N5a1dmTEZYYmM0N0tMZlh4NHVEdmhMV1ZidThGSTNRcGFidlBxUkFET2dQVUFybzRBNUFEbUE2MEtJdnBtM0xqUEhMOHJCUTFzZFRWQUZIMzVDX2RzZjQtbV9INjJObHhNSTJzSkNCRVNQeHVOQdIBrwFBVV95cUxPVmVxeFd5UVIwUXJfQTg3ZjByTjVzZnEweEp5QjdidzhPcUF3VkJZa1dteHlfSmRPMno2MFNQLW1oQlkwanUzOHdwemF2dDRXTlBCbjVWcHhjNXFYZ1hENnVaVC1QUnA2N0lGRVlBckZKOVFEblZlV0E3Y29OMFJsMWlRVUxicEtHaUtfdUd2TERkNGxNaXFMOGdnUmxrdFF5YUt4NlV5VFlpblY2T0tB?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260322_0008\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "short_id": "GEOP_BATCH_20260319_14b45a2a",
+  "batch_id": "BATCH_20260320_0123",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "The New Map of Global Trade",
+    "script": "The geometry of global trade is shifting. McKinsey reveals that by 2026, international supply chains are no longer about distance, but strategic alliances. Trade routes are being redrawn as nations prioritize security over cost. Is your business ready for the new map of power?",
+    "visual_keywords": [
+      "global trade map",
+      "cargo ship ocean",
+      "logistics warehouse"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

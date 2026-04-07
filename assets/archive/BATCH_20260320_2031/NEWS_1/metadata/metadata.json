@@ -1,0 +1,22 @@
+{
+  "headline": "Charminar Road Closure",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2031",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-20T15:01:29.186021+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPNWJfT1RCRWRQdDdua05NNXRDRk1FS0lERXh5dERnektNdmdqNV9Yb0o4cGxQNkJEMldKa29ZQWx6MlpWYzllRXlYeFc5TU9wQzNOa242eEhrYXZhTHVydWJoZlJsdk1YMDhtdkZOTzY5SnFLbFRVYmYwejhxb2Z3bFJzNkhmQlo5VkRVRlpzSmYxOEZ4a0RHM3BicjBEd0ZESzRMV0tQYXVOajM4UUZma2RCSEI5M0pPNnFmOUpvb1hOSk1waWRzb2swSEpFanNHMk01bC16Y1BaQ0puT1VVc1VxVm1raXdPTExr0gHwAUFVX3lxTE5VY3BnbHFlekR6dVRxOFAwRTVXMTNmYUtzUWlnUEYxYWpoTDZJN0FFOFljVExnbXJ0VG9XYU0zZmJJZ0pMb25pdDk2cERBVEZuSkVCX2ZZWFhMR3gwSC1YcTQ5ODlhVFhHLXR3Rzdfb3dzRThIZmlWYjlVVGtkcjZuMk1UMFNNYTdjbDNaQXd6am5XaHFEUkhiZ2hWa1RKeHJIWWk3aDJmaHpYR3NzTUxETmpPMFpGN0IzcHA1a2YxR0EyRFkwWlBiQ0RKMzNqdXJ3UGJrWWQzbXVkYlVZOUhDOC1kY2lSS1U5MFVBTkxLQw?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2031\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

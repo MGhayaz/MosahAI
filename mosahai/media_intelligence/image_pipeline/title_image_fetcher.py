@@ -7,9 +7,11 @@ import logging
 import re
 from dataclasses import dataclass
 from html import unescape
-from typing import Sequence
+from typing import Sequence, final
 from urllib.parse import parse_qs, quote_plus, urlencode, urljoin, urlparse, urlunparse
-
+from wsgiref import headers
+from bs4 import BeautifulSoup
+from feedparser import urls
 import requests
 
 from mosahai.media_intelligence.article_discovery import (
@@ -17,8 +19,9 @@ from mosahai.media_intelligence.article_discovery import (
     normalize_allowed_article_url,
     unwrap_article_candidate_url,
 )
+from mosahai.media_intelligence.image_pipeline.twitter_image_fetcher import _normalize_image_url
 
-from .image_pipeline import ImageCandidate
+
 
 
 LOGGER = logging.getLogger("mosahai.image_pipeline.title_image_fetcher")
@@ -31,11 +34,136 @@ REQUEST_ATTEMPTS = 2
 MAX_RESULT_URLS = 5
 MAX_DISCOVERY_URLS = 10
 MAX_ARTICLE_FETCHES = 15
-TRUSTED_ARTICLE_DOMAIN_TOKENS = ("bbc", "reuters", "cnbc", "ndtv", "indianexpress", "toiimg")
+TRUSTED_ARTICLE_DOMAIN_TOKENS = (
+
+    # 🔹 Global Tech / AI / Startup
+    "techcrunch", "theverge", "wired", "venturebeat",
+    "technologyreview",
+    "inc42", "yourstory", "analyticsindiamag",
+    "medianama", "gadgets360",
+
+    # 🔹 Global News / Geopolitics
+    "bbc", "reuters", "aljazeera",
+    "bloomberg", "foreignpolicy",
+    "cfr",
+    "carnegieindia",
+    "orfonline",
+    "thediplomat",
+
+    # 🔹 Indian Major Media
+    "ndtv", "indianexpress", "theprint",
+    "livemint", "hindustantimes",
+    "timesofindia", "toi",
+
+    # 🔹 Hyderabad / Regional
+    "siasat", "telanganatoday",
+    "thehindu", "deccanchronicle",
+    "thehansindia", "greatandhra",
+    "newsmeter", "hyderabadmail",
+
+    # 🔹 Extra High Quality
+    "economictimes", "businessinsider",
+    "forbes", "washingtonpost",
+    "nytimes", "guardian",
+
+    # 🔹 Indian Media Groups / Channels
+    "news18", "firstpost", "cnnnews18",
+    "dainikbhaskar",
+    "ptcnews",
+    "thequint",
+    "punjabkesari",
+    "lokmat",
+    "financialexpress",
+    "jansatta",
+    "loksatta",
+    "jagran",
+    "inquilab",
+    "timesnow",
+    "cnbctv18",
+    "cricbuzz",
+    "kalaignar",
+    "frontline",
+    "sportstar",
+    "rajasthanpatrika",
+    "catchnews",
+    "mathrubhumi",
+    "manoramaonline",
+    "amarujala",
+    "sunnews",
+    "dinakaran",
+    "odishatv",
+    "sakal",
+    "indiatoday",
+    "aajtak",
+    "businesstoday",
+    "eenadu",
+    "sakshi",
+    "abplive",
+    "telegraphindia",
+    "northeastlive",
+    "indiatvnews",
+    "nationalherald",
+    "outlookindia",
+    "dinamalar",
+    "dinathanthi",
+    "thanthitv",
+    "zeenews",
+    "wionews",
+    "thepioneer",
+    "republicworld",
+
+    # 🔹 Sub-brands / Sister Publications (IMPORTANT 🔥)
+    "hindubusinessline",     # The Hindu group
+    "thehindubusinessline",
+    "business-standard",
+    "businessstandard",
+    "moneycontrol",          # Network18
+    "cnbc",                  # CNBC India/global
+    "ndtvprofit",
+    "ndtvprime",
+    "indiatodaygroup",
+    "timesinternet",         # Times group digital arm
+    "economictimes.indiatimes",
+    "navbharattimes",
+    "maharashtratimes",
+    "vijaykarnataka",
+    "bangaloremirror",
+    "ahmedabadmirror",
+
+    # 🔹 Indian News Agencies
+    "pti",
+    "uniindia",
+    "hindustansamachar",
+    "aninews",
+    "ians",
+    "ptibhasha",
+    "news18wire",
+    "newsvoir",
+
+    # 🔹 Global News Agencies
+    "apnews",
+    "afp",
+    "xinhuanet",
+    "tass",
+    "dpa",
+    "kyodonews",
+    "efe",
+    "unnews"
+)
 PREFERRED_IMAGE_URL_TOKENS = ("getty", "apnews", "image", "media")
 LOW_QUALITY_IMAGE_TOKENS = ("thumbnail", "small")
 BLOCKED_IMAGE_DOMAIN_TOKENS = ("googleusercontent", "gstatic", "news.google")
 BLOCKED_FILENAME_TOKENS = ("logo", "icon", "sprite")
+LOCAL_TRUSTED_DOMAINS = [
+    "siasat",
+    "telangana",
+    "thehindu",
+    "ndtv",
+]
+
+def _is_trusted_domain(url: str) -> bool:
+    domain = urlparse(url).netloc.lower()
+    return any(token in domain for token in TRUSTED_ARTICLE_DOMAIN_TOKENS)
 
 
 @dataclass(slots=True)
@@ -43,7 +171,7 @@ class _ImageMetadataCandidate:
     url: str
     width: int | None = None
     article_domain: str = ""
-
+    query: str = ""   # ✅ ADD THIS
 
 @dataclass(slots=True)
 class _ScoredImageCandidate:
@@ -56,8 +184,9 @@ class _ScoredImageCandidate:
 
 def fetch_primary_image(news_title: str) -> ImageCandidate | None:
     """Find the best available article image for a news title."""
+    from .image_pipeline import ImageCandidate
     try:
-        title = str(news_title or "").strip()
+        title = _clean_title(news_title)
         if not title:
             print("[FINAL SELECTED IMAGE] ")
             return None
@@ -99,7 +228,7 @@ def fetch_primary_image(news_title: str) -> ImageCandidate | None:
                 print(f"[FETCH IMAGE] URL: {cleaned_url}")
                 total_article_fetches += 1
                 try:
-                    extracted_candidates = _fetch_image_candidates_from_article(cleaned_url)
+                    extracted_candidates = _fetch_image_candidates_from_article(cleaned_url, query)
                 except Exception as exc:
                     LOGGER.warning("Title image article processing failed. url=%s error=%s", cleaned_url, exc)
                     _print_fetch_fail_debug(context="article", target=cleaned_url, error=exc)
@@ -115,16 +244,18 @@ def fetch_primary_image(news_title: str) -> ImageCandidate | None:
                     if existing is None or _is_better_candidate(candidate, existing):
                         attempt_candidates[image_key] = candidate
 
-            best_candidate = _select_best_candidate(list(attempt_candidates.values()))
-            if best_candidate is not None:
-                print("[ATTEMPT RESULT] success")
-                print(f"[FETCH IMAGE] Selected Image: {best_candidate.url}")
-                print(f"[FINAL SELECTED IMAGE] {best_candidate.url}")
+            ranked_candidates = _rank_candidates(list(attempt_candidates.values()))
+
+            valid_candidates = [c for c in ranked_candidates if c.score >= 0]
+
+            if valid_candidates:
+                best = valid_candidates[0]
+
                 return ImageCandidate(
-                    url=best_candidate.url,
+                    url=best.url,
                     source="article",
-                    domain=best_candidate.article_domain,
-                    quality_score=best_candidate.score,
+                    domain=best.article_domain,
+                    quality_score=best.score,
                 )
 
             print("[ATTEMPT RESULT] fail")
@@ -164,30 +295,79 @@ def _rank_candidates(candidates: Sequence[_ImageMetadataCandidate]) -> list[_Sco
             item.order,
         )
     )
+    ranked = [item for item in ranked if item.score > 0]
     return ranked
 
 
 def _select_best_candidate(candidates: Sequence[_ImageMetadataCandidate]) -> _ScoredImageCandidate | None:
     ranked = _rank_candidates(candidates)
-    if not ranked:
-        return None
+    if not ranked and candidates:
+        print("[IMAGE FALLBACK] Using first available candidate")
+        first = candidates[0]
+        return _ScoredImageCandidate(
+            url=first.url,
+            article_domain=first.article_domain,
+            width=first.width,
+            score=0.1,
+            order=0,
+    )
+    print(f"[CANDIDATES COUNT] {len(candidates)}")
     return ranked[0]
 
 
 def _score_image_candidate(candidate: _ImageMetadataCandidate) -> float:
     score = 0.0
-    lower_url = candidate.url.lower()
-    article_domain = str(candidate.article_domain or "").strip().lower()
+
+    lower_url = (candidate.url or "").lower()
+    article_domain = (candidate.article_domain or "").strip().lower()
     image_host = (urlparse(lower_url).netloc or "").lower()
 
+    # 🚫 HARD REJECT (LOGO / ICON) — FIRST
+    if any(token in lower_url for token in ["logo", "icon", "sprite"]):
+        return -999
+
+    # ✅ trusted domain boost
     if any(token in article_domain or token in image_host for token in TRUSTED_ARTICLE_DOMAIN_TOKENS):
         score += 2.0
+    else:
+        score += 0.5
+
+    # ✅ preferred image patterns
     if any(token in lower_url for token in PREFERRED_IMAGE_URL_TOKENS):
         score += 2.0
-    if candidate.width is not None and candidate.width >= 800:
+
+    # ✅ local trusted boost
+    if any(domain in article_domain for domain in LOCAL_TRUSTED_DOMAINS):
+        score += 2.5
+
+    # ✅ size handling
+    if candidate.width is None:
+        score += 0.5
+    elif candidate.width >= 800:
         score += 1.0
+
+    # ❌ low quality penalty
     if any(token in lower_url for token in LOW_QUALITY_IMAGE_TOKENS):
         score -= 2.0
+
+    # 🌍 irrelevant context penalty
+    if any(token in lower_url for token in ["tourism", "trip"]):
+        score -= 2.0
+
+    # 🔥 domain relevance boost
+    if article_domain and article_domain in lower_url:
+        score += 1.5
+
+    # 🔥 TITLE MATCH BOOST (FIXED)
+    title_words = set(re.split(r"[\s\-_]+", article_domain))
+    url_words = set(re.split(r"[\s\-_]+", lower_url))
+
+    match_score = len(title_words & url_words)
+
+    if match_score >= 2:
+        score += 2.0
+    elif match_score == 1:
+        score += 0.5
 
     return score
 
@@ -199,22 +379,31 @@ def _is_better_candidate(left: _ImageMetadataCandidate, right: _ImageMetadataCan
         return left_score > right_score
     return (left.width or 0) > (right.width or 0)
 
+def _clean_title(title: str) -> str:
+    import re
 
+    text = title or ""
+
+    # remove everything after dash
+    text = re.sub(r"\s[-–]\s.*$", "", text)
+
+    # remove common news suffix words
+    text = re.sub(r"\b(news|live|updates)\b", "", text, flags=re.I)
+
+    # remove domains
+    text = re.sub(r"\b\w+\.com\b", "", text)
+
+    # remove ALL CAPS words (usually brands)
+    text = re.sub(r"\b[A-Z]{3,}\b", "", text)
+
+    return " ".join(text.split()).strip()
 def _build_queries(news_title: str) -> list[str]:
-    title = str(news_title or "").strip()
-    if not title:
-        return []
+    clean = _clean_title(news_title)
     return [
-        query
-        for query in (
-            title,
-            _first_n_words(title, 8),
-            _remove_numbers_and_special_characters(title),
-            title.lower(),
-        )
-        if str(query or "").strip()
-    ]
-
+    clean,
+    clean + " news",
+    clean + " india news"
+] if clean else []
 
 def _first_n_words(text: str, count: int) -> str:
     words = [word for word in str(text or "").split() if word.strip()]
@@ -239,6 +428,11 @@ def _dedupe_queries(values: Sequence[str]) -> list[str]:
     return deduped
 
 
+def _is_trusted_domain(url: str) -> bool:
+    domain = urlparse(url).netloc.lower()
+    return any(token in domain for token in TRUSTED_ARTICLE_DOMAIN_TOKENS)
+
+
 def _discover_result_urls(query: str) -> list[str]:
     try:
         google_urls = _search_google(query)
@@ -246,6 +440,7 @@ def _discover_result_urls(query: str) -> list[str]:
         LOGGER.warning("Google discovery execution failed. query=%s error=%s", query, exc)
         _print_fetch_fail_debug(context="google", target=query, error=exc)
         google_urls = []
+
     bing_urls: list[str] = []
     if not google_urls:
         try:
@@ -255,13 +450,40 @@ def _discover_result_urls(query: str) -> list[str]:
             _print_fetch_fail_debug(context="bing", target=query, error=exc)
             bing_urls = []
 
+    # STEP 1: dedupe
     urls_found = _dedupe_urls([*google_urls, *bing_urls])
-    clean_urls = filter_allowed_article_urls(urls_found)[:MAX_DISCOVERY_URLS]
-    _print_discovery_debug(query=query, urls_found=urls_found, clean_urls=clean_urls)
+
+    # STEP 2: allowed filter (basic cleanup)
+    filtered_urls = filter_allowed_article_urls(urls_found)
+
+    # STEP 3: trusted filter
+    trusted_urls = [
+        url for url in filtered_urls
+        if _is_trusted_domain(url)
+    ]
+
+    # STEP 4: fallback logic
+    if trusted_urls:
+        clean_urls = trusted_urls[:MAX_DISCOVERY_URLS]
+    else:
+    # ❌ instead of blindly fallback
+        clean_urls = [
+        url for url in filtered_urls
+        if any(token in url.lower() for token in ["news", "india", "report", "live"])
+    ]   [:MAX_DISCOVERY_URLS]
+
+    _print_discovery_debug(
+        query=query,
+        urls_found=urls_found,
+        clean_urls=clean_urls
+    )
+
+    print(f"[DEBUG RAW URLS] {urls_found}")
     return clean_urls
 
 
 def _search_google(query: str) -> list[str]:
+    
     try:
         from bs4 import BeautifulSoup
     except Exception as exc:
@@ -283,14 +505,64 @@ def _search_google(query: str) -> list[str]:
 
     urls: list[str] = []
     try:
-        for result in soup.select("div.tF2Cxc"):
-            anchor = result.select_one(".yuRUbf a") or result.find("a", href=True)
-            href = str(anchor.get("href") or "").strip() if anchor is not None else ""
-            cleaned = _clean_result_url(href)
-            if cleaned:
-                urls.append(cleaned)
-            if len(urls) >= MAX_RESULT_URLS:
-                break
+        for a_tag in soup.find_all("a"):
+            href = a_tag.get("href", "")
+
+            if "/url?q=" in href:
+                try:
+                    url = parse_qs(urlparse(href).query).get("q", [""])[0]
+                except:
+                    continue
+
+                if url and "http" in url:
+                    if any(bad in url.lower() for bad in [
+                        # Google junk
+                        "google.com", "google.co.in", "webhp", "search?", "tbm=", "source=", "ved=", "ei=", "uact=", "oq=", "gs_lcp=",
+
+                        # Google services
+                        "accounts.google", "support.google", "images.google", "maps.google", "policies.google", "news.google",
+
+                        # Social / useless
+                        # "youtube.com", "youtu.be", "facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "pinterest.com",
+
+                        # Auth pages
+                        "login", "signup", "register", "signin", "logout", "auth",
+
+                        # Tracking / redirects
+                        "redirect", "utm_", "ref=", "fbclid", "gclid",
+
+                        # Files (SEO me bekaar)
+                        ".pdf", ".jpg", ".jpeg", ".png", ".webp", ".svg", ".mp4", ".mp3", ".zip",
+
+                        # Misc junk
+                        "mailto:", "tel:", "/privacy", "/terms", "/policy", "/cookies", "/about", "/contact",
+                        "stackoverflow.com",
+                        "stackexchange.com",
+                        "superuser.com",
+                        "serverfault.com",
+                        "zhihu.com",
+                        "zhidao.baidu.com",
+                        "baidu.com",
+                        "quora.com",
+                        "reddit.com",
+                        "geeksforgeeks.org",  # optional (agar avoid karna hai)
+                        "tutorialspoint.com", # optional low-quality content
+                        "medium.com",  # optional (depends on use case)
+                        "brainly",
+                        "chegg.com"
+                        
+                    ]):
+                        continue
+                    if any(spam in url.lower() for spam in [
+                        "filmweb", "douban", "imdb", "rottentomatoes",
+                          "boxoffice", "film", "movie", "cinema"
+                    ]):
+                        continue
+                    
+                    urls.append(url)
+
+                if len(urls) >= MAX_RESULT_URLS:
+                    break   
     except Exception as exc:
         LOGGER.warning("Title image Google result traversal failed. query=%s error=%s", query, exc)
         _print_parse_fail_debug(context="google-results", target=query, error=exc)
@@ -323,8 +595,22 @@ def _search_bing(query: str) -> list[str]:
         for anchor in soup.select("li.b_algo h2 a"):
             href = str(anchor.get("href") or "").strip()
             cleaned = _clean_result_url(href)
-            if cleaned:
-                urls.append(cleaned)
+            if not cleaned:
+                continue
+
+            lower_url = cleaned.lower()
+
+            if any(bad in lower_url for bad in [
+                "zhihu.com",
+                "baidu.com",
+                "stackoverflow.com",
+                "stackexchange.com",
+                "quora.com",
+                "reddit.com"
+            ]):
+                continue
+
+            urls.append(cleaned)
             if len(urls) >= MAX_RESULT_URLS:
                 break
     except Exception as exc:
@@ -342,9 +628,9 @@ def _fetch_image_candidates_from_article(url: str) -> list[_ImageMetadataCandida
         _print_parse_fail_debug(context="article-import", target=url, error=exc)
         return []
 
-    candidate_url = normalize_allowed_article_url(url)
+    candidate_url = str(url or "").strip()
     if not candidate_url:
-        _print_skip_url_debug(url=url, reason="blocked article URL")
+        _print_skip_url_debug(url=url, reason="invalid article URL")
         return []
 
     response = _request_with_retry(candidate_url, allow_redirects=True, context="article-fetch")
@@ -353,10 +639,7 @@ def _fetch_image_candidates_from_article(url: str) -> list[_ImageMetadataCandida
         return []
 
     resolved_url = str(response.url or candidate_url).strip() or candidate_url
-    clean_resolved_url = normalize_allowed_article_url(resolved_url)
-    if not clean_resolved_url:
-        _print_skip_url_debug(url=resolved_url, reason="blocked resolved article URL")
-        return []
+    clean_resolved_url = resolved_url
     try:
         soup = BeautifulSoup(response.text or "", "html.parser")
     except Exception as exc:
@@ -373,6 +656,7 @@ def _fetch_image_candidates_from_article(url: str) -> list[_ImageMetadataCandida
                 _print_rejected_image_debug(url=candidate.url, reason=rejection_reason)
                 continue
             candidate.article_domain = article_domain
+            candidate.query = query
             if not candidate.article_domain:
                 continue
             accepted.append(candidate)
@@ -419,7 +703,35 @@ def _extract_metadata_images(soup, base_url: str) -> list[_ImageMetadataCandidat
         candidate_width = candidate.width or 0
         if candidate_width > existing_width:
             best_by_url[key] = candidate
-    return list(best_by_url.values())
+    # 🔥 FALLBACK: first <img> tag
+    try:
+        first_img = soup.find("img")
+        if first_img:
+            src = _normalize_image_url(first_img.get("src"), base_url)
+            if src:
+                candidate = _ImageMetadataCandidate(url=src, width=None)
+                candidates.append(candidate)
+
+                # 🔥 also inject into best_by_url
+                key = candidate.url.lower()
+                if key not in best_by_url:
+                    best_by_url[key] = candidate
+    except Exception:
+        pass        
+        final: list[_ImageMetadataCandidate] = []
+
+    try:
+        final = list(best_by_url.values())
+
+        if not final and candidates:
+            print("[IMAGE FALLBACK] using raw img candidates")
+            final = candidates
+
+    except Exception as e:
+        print(f"[FINAL BUILD ERROR] {e}")
+        final = candidates if candidates else []
+
+    return final
 
 
 def _find_meta_candidates(
@@ -496,14 +808,20 @@ def _parse_jsonld_payloads(raw_text: str) -> list[object]:
 def _request_with_retry(url: str, *, allow_redirects: bool, context: str) -> requests.Response | None:
     for attempt in range(1, REQUEST_ATTEMPTS + 1):
         try:
+            headers = HEADERS.copy()
+            headers["Referer"] = "https://www.google.com/"
+            headers["Accept"] = "text/html,application/xhtml+xml"
+
             response = requests.get(
                 url,
-                headers=HEADERS,
+                headers=headers,
                 timeout=TIMEOUT_SECONDS,
                 allow_redirects=allow_redirects,
             )
+
             response.raise_for_status()
             return response
+
         except requests.Timeout as exc:
             LOGGER.warning(
                 "Title image request timed out. context=%s url=%s attempt=%s error=%s",
@@ -513,6 +831,7 @@ def _request_with_retry(url: str, *, allow_redirects: bool, context: str) -> req
                 exc,
             )
             _print_fetch_fail_debug(context=context, target=url, error=exc)
+
         except requests.RequestException as exc:
             LOGGER.warning(
                 "Title image request failed. context=%s url=%s attempt=%s error=%s",
@@ -522,6 +841,28 @@ def _request_with_retry(url: str, *, allow_redirects: bool, context: str) -> req
                 exc,
             )
             _print_fetch_fail_debug(context=context, target=url, error=exc)
+
+            # 🔥 SECOND FALLBACK (CRITICAL FIX)
+            try:
+                fallback_headers = HEADERS.copy()
+                fallback_headers["User-Agent"] = "Mozilla/5.0 (X11; Linux x86_64)"
+                fallback_headers["Referer"] = ""
+                fallback_headers["Accept"] = "*/*"
+
+                response = requests.get(
+                    url,
+                    headers=fallback_headers,
+                    timeout=TIMEOUT_SECONDS,
+                    allow_redirects=True
+                )
+
+                response.raise_for_status()
+                print("[FALLBACK SUCCESS]", url)
+                return response
+
+            except Exception as fallback_exc:
+                print(f"[FALLBACK FAILED] {url} :: {fallback_exc}")
+
         except Exception as exc:
             LOGGER.warning(
                 "Title image request crashed. context=%s url=%s attempt=%s error=%s",
@@ -532,6 +873,7 @@ def _request_with_retry(url: str, *, allow_redirects: bool, context: str) -> req
             )
             _print_fetch_fail_debug(context=context, target=url, error=exc)
             break
+
     return None
 
 
@@ -624,9 +966,9 @@ def _rejected_image_reason(candidate: _ImageMetadataCandidate) -> str:
     if any(token in netloc for token in BLOCKED_IMAGE_DOMAIN_TOKENS):
         return "blocked Google-hosted domain"
     filename = parsed.path.split("/")[-1]
-    if any(token in filename for token in BLOCKED_FILENAME_TOKENS):
+    if any(token in filename for token in ["logo","icon","sprite","avatar","placeholder"]):
         return "logo/icon/sprite filename"
-    return ""
+
 
 
 def _is_svg(url: str) -> bool:

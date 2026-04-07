@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260320_d6e36aed",
+  "batch_id": "BATCH_20260320_1912",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "Two-Minute AI Rejection",
+    "script": "Your next job interview might be over before it starts. Indian-origin student Bhuvana Chilukuri was reportedly rejected in just two minutes by an AI-led screening system. This rapid-fire automated process is sparking a heated debate over the future of hiring and fairness.",
+    "visual_keywords": [
+      "rejection letter",
+      "digital face scanning",
+      "student looking at phone"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

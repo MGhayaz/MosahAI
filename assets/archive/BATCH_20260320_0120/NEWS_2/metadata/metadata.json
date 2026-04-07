@@ -1,0 +1,22 @@
+{
+  "headline": "India's AI Tax Overhaul",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260320_0120",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-19T19:50:36.951793+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQU3h6WjVXVEp5R1pha3ZYZUFsRXloT1J1TFlCdlpqR1hBQzkyZDJtbDM2cERpUmxmQzRoOTRIWTFJN2R5TDIyYnJNUTRhQUJ4bFo3Tm1kd0FNd2ZGVXdlNHR1SmFwX3hYOEwxVW1qM3N2aDNfcFdrUnNVVTdjU1RyVUFuZ0s2UkE0OVRjaU5Pd3lYdGxsSHcxMUxRZnFqaktaTENGSy1IRVphaGNWVEpZWVFR0gG4AUFVX3lxTE5zSWY4XzZ4TWtDWlV2czhWbTBFMHN0dHNuNUw4SVlKWFYybEZpRkd2a0RvT1oxX2hta3NnaUkyRlRZTTRNOXpKN1JGdkFkanNOU2xFX1NCeDhKY241S19JbW1RX0RyR01fbF9hMzJpRmxmeFJfUW5tSE1UNkZBMnhpZVV6d0NSbHhLMzlTVWI0V3IyZm15cmRWOVkycllaeGZDLTFTMjFvWVJNdzJBSVVZSFI4MHN4dlk?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_0120\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "short_id": "HYDE_BATCH_20260320_e0ee27b5",
+  "batch_id": "BATCH_20260320_1420",
+  "news_id": "NEWS_1",
+  "segment": {
+    "id": 1,
+    "title": "Professor Appa Rao Podile: Scientific Excellence",
+    "script": "A legacy of scientific excellence is redefining leadership at the University of Hyderabad! Professor Appa Rao Podile is being celebrated for his transformative impact on the institution. His tenure marks a major era of research and academic growth for the city's top students.",
+    "visual_keywords": [
+      "university campus architecture",
+      "scientific research laboratory",
+      "academic leadership portrait"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

@@ -19,6 +19,8 @@ class QueryBuilder:
     max_title_words: int = 10
     min_meaningful_tokens: int = 2
 
+
+
     def generate_queries(
         self, title: str | None, keywords: Sequence[str] | None, entities: Sequence[str] | None
     ) -> list[str]:
@@ -50,6 +52,20 @@ class QueryBuilder:
 
         candidates: list[tuple[float, int, str]] = []
         order = 0
+    
+        def _clean_title(title: str) -> str:
+            title = str(title or "").strip()
+
+            # remove source suffix
+            title = title.split(" - ")[0]
+            title = title.split(" | ")[0]
+
+            # remove domains
+            bad = ["Bloomberg", "CNBC", "TechCrunch", ".com"]
+            for b in bad:
+                title = title.replace(b, "")
+
+            return title.strip()
 
         def add_candidate(text: str, score: float, force_entity: bool = False) -> None:
             nonlocal order

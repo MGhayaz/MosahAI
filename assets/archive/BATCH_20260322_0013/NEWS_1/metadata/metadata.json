@@ -1,0 +1,22 @@
+{
+  "headline": "Hyderabad's Use and Throw Crisis",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260322_0013",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-21T18:43:47.634632+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeFh1SDZjRVNETDZBZmd4VnJCbWJQblJ6cURRVEN1S1RqUFcxQXBIWWxRcWkxTWFhR09Zc085a0k4MzZTY3lhNlExV2lPQVlTSm0xLW1XS3pBd2lVdUZPeC1zdDZ1aEpBeGluOUNwa25rTnhxTzVMa0ZVa1pZX2Z2eDl4UDNRRTUteUtvZW1nNVB2c3pmRldFZy1PRjkwcWgxMjJ6Z3ZxUEtNd01ESEdVVkZ5NENPUDJjVWdOWjFFQ2pqMzlhQnJQWmxQenlZaUZLTFHSAdgBQVVfeXFMT0diQjZheWVPVnE0REVWNDVsWTg0UWk5NmF0aDk2b0xLTFRiUkEzQnZ0dWVaS0xYQWtEYW1vMW4zN3puaGk4SFBxWVVUN0RyU0lnNHZ6Q2k2YmJpS29HRnNucC1RTllGZGdTZGVGZk1VY0FUYnFOcmpjblhCV2xWd2JNdHZNWjZoUFRPTHdjelBzQVRKaURUZkotUjBybHFKNHJYMnBibHYyeW9yWHFZbks3aTVEaTI0dmV2Y3p2cWNFM1pxdEhYY2VOVWFoLUpaX2ZMVjlISjFq?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260322_0013\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

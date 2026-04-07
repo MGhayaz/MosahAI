@@ -1,0 +1,22 @@
+{
+  "headline": "Luxury Rent, Mosquito Nightmare",
+  "topic": "Hyderabad",
+  "language": "English",
+  "batch_id": "BATCH_20260320_2254",
+  "news_id": "NEWS_1",
+  "timestamp": "2026-03-20T17:24:44.928704+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNMmZaa1JYR2pGc3pWWHMxUnExMG1PMnh5RXNJVjZCWm5rbEE4SXVzWUhXUWcwcXJVSkJoWVNCV3NLVTV3UG1hLVh1Y2ZnNHJxZ0s1WXcyQm1wV1lhN1lkTmEtREs1YUF4bng4cnB1ZDczMVVGOEtyNElYZm5xR2U5Zm9TWXBUNmkxYklSZ3luRGxwUDBGb2hxanZvTEpTWDdmajZ4ZkpadmU1X1Q1MnRXaEJ4YmI2bHozWXR4TFJLanJVeDRvSlBaOWxrT1draXJhdnJvSy0zNGdzVUdhRjMwT1d6Q0ktQ1Fua0w5eU9jSWZseUdHajBN0gH8AUFVX3lxTFB6TWgtTjZSOHl1bG1VbTFwSlBpWGNjUTVSSk5XYzgzeTVFX0g3QUdyNlVJeWQ5X0lKUU5vcTh0bVNUWElZeGNfd3c2R1hwVWJhWTdfVVlBY3kycTdxdks3LVl5Q1BKY1k0YlBSRHFqQS1OeUVFNDU0bEJIcFRHRlBxdkgzaEtfRjRERTdrYW9zX2RSTUVINHY0UF9LbkVYUjdJazctS3lETmxWMkM3ck9OMDIwMURGUDZ4ZWJzdnpQYkpoa3JRLUZVS2ZHUzVFcTBiWnlzbVhFd0xaanlCVkpYY01oOEhnUVpCNF9tckZ5MVNBWUtCQldGSUk0SQ?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_2254\\NEWS_1\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

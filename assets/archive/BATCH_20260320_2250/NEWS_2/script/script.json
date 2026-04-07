@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260320_8c6fd989",
+  "batch_id": "BATCH_20260320_2250",
+  "news_id": "NEWS_2",
+  "segment": {
+    "id": 2,
+    "title": "Secure agentic AI end-to-end - Microsoft",
+    "script": "More details are emerging on this story.",
+    "visual_keywords": [
+      "Secure agentic AI end-to-end - Microsoft headline",
+      "AI news footage",
+      "breaking news graphics"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "cut",
+    "transition_trigger": true
+  }
+}

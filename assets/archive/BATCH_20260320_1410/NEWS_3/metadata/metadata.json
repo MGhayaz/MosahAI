@@ -1,0 +1,22 @@
+{
+  "headline": "AI Bot Traffic Takeover",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260320_1410",
+  "news_id": "NEWS_3",
+  "timestamp": "2026-03-20T08:41:06.660043+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQckNsV182NDc1NEZrRWZodEhkWGd3WHhfdWJ0dzN5WkJjSFc0VFJ5YzgtdWNNWFVVUFNVcXloTDdINC1FMDZKNGxra2dXdFpRYTBGMllUREltV3Y1OVZTRGw3c29fYW5NZEJVNDU1U005NEs0OXF6RkhoeXZJMnB6b09BM09IY1dCNDdHOU90Q1pmUV9SaDM5aDcxWmw5UXR4RGY0YkRsa3NVSTlS0gG0AUFVX3lxTE52RmdpMVdhSUE5RWdzMWEta3pxVDZKemNFbTZjNmdYcWJITGlpT1ZzUzlKeUNwakgxTlNpWkRRYkt1a2ZPQkhIMlhnTE4xbmtsR2d5OVJiRXYtM2xXT1ladWVvOFdWYmQxNTFKMW1ucmVTZVplNk1mTHMtak5mdVA5cUpPYUQxZkc3R1dSRDYxVVNsaEFhTUhTRGhLcTdrWTJ5OElpS3lRQy1QcGN5bUFLU1pjdg?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260320_1410\\NEWS_3\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}

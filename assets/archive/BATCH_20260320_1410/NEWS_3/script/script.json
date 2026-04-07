@@ -1,0 +1,18 @@
+{
+  "short_id": "AI_BATCH_20260320_b90f4f5e",
+  "batch_id": "BATCH_20260320_1410",
+  "news_id": "NEWS_3",
+  "segment": {
+    "id": 3,
+    "title": "AI Bot Traffic Takeover",
+    "script": "Humans are losing the internet. Cloudflare’s CEO warns that AI bots are on track to overtake human traffic by 2027. This rapid shift marks a fundamental turning point where the digital world becomes dominated by machines rather than people. The future is automated.",
+    "visual_keywords": [
+      "digital traffic visualization",
+      "human vs robot silhouette",
+      "web data flow animation"
+    ],
+    "duration_target": "15-18s",
+    "transition_type": "end",
+    "transition_trigger": false
+  }
+}

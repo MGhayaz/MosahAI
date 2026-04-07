@@ -1,0 +1,22 @@
+{
+  "headline": "Perplexity's $30 Billion Play",
+  "topic": "AI",
+  "language": "English",
+  "batch_id": "BATCH_20260319_2101",
+  "news_id": "NEWS_2",
+  "timestamp": "2026-03-19T15:32:07.337536+00:00",
+  "queries_used": [],
+  "selected_media": [
+    {
+      "source": "article",
+      "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPUVVIWEIxVzItNy02SjRWREdXMVpFMW8xaUMzZXRCOHk3MG9NeGcwdG93dzNuSkg3dFJlUk95eUk5V3B0R0xwWmpFTndiRW1zR0FjZFlqQ2tpWVM4TDd1N1JlcGs2RjhURzBlMmpNSG0ycmxEaHBSVEdvcWduT3g1MWZJU21IQVBHLWZHWDl1MkllR2x1MjBUT2lROVEyZUZLaU9mVFpBNlI5dW91Y1lISEtIRWlkcmo1R1Z2cTFFSEktZXJFZmszVXNxd1p2SDFTS21vWTFuQlV5djBTbS0yR2Z3R2VNSl9na2lLR2tvbjZBMGo5Q1VPVy0tTkJudHhvSkVJU0VmdjFjVlVqU19tOFY1cU8wNHdlc0txd2Z3OVJMYnRKUXhVUHlSbnY1UV96Y0FNeVNXdHZ6QlpIaXNNQnJ5ejFmejRzeGhyT1lVUFVBazk1WldPSkxPUjNyeXpSNXJaRDBQclNiLVdXN2lPVWdrY3PSAfoCQVVfeXFMT3M0SFU4VVJGX21HcS1TejZpcEEwMzZnblk4V3M2N2Vxcl9ody1YZFdYUUdVN3czcDZTRE9pMTlhdzYyc1pBN2NYaFl5dkJoVFFELUFOODJkdEt6b3p6MDBZbVpyVGc1ZDdJU0F3SlcwTXJmaDRqSHp0U191d2dvckNSazc0LU05ak9rcTh5S3VVTTdXWklWSVJRMjNabjNjU3NGa05FRTRlbUo0ZlY2bHdhenBLU3daV0NvWHlOV1ZNbGs4TGNDa0lXZkVPSWJHNEQwZlcwc3ZQRjRvSW1CenUwVW0waS1QUFJoeGdrbk9RVFRRczJoYXZRNUR1QUIwS0U3TDc3TVdDaGZUSG1nMDlQZDZqOTRiaHREZDFUNUVIeW9hUkZmbVZzQWtXcm9wRmN0MlpsMjU0U2ctSU1QblZUcEpEX1NvU2hBZHNCcjVBaEIzU3lmdlh0SUw5WC1oRnNNMHA5Y29tQ0RpVHRObmRCLVdUMHJmaFFB?oc=5",
+      "local_path": "C:\\Users\\moham\\Downloads\\Development\\BusinessProject\\MosahAI\\assets\\batches\\BATCH_20260319_2101\\NEWS_2\\media\\image_1.jpg",
+      "duration": "",
+      "resolution": "",
+      "score": ""
+    }
+  ],
+  "fallback_used": false,
+  "generation_status": "success",
+  "notes": ""
+}
